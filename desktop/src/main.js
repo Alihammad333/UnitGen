@@ -54,15 +54,31 @@ function readSettingsFile() {
   }
 }
 
-function decryptApiKey(record = {}) {
-  if (!record.apiKeyEncrypted) return "";
+if (process.platform === "linux") {
+  app.disableHardwareAcceleration();
+}
 
-  try {
-    const buffer = Buffer.from(record.apiKeyEncrypted, "base64");
-    return safeStorage.decryptString(buffer);
-  } catch {
-    return "";
+function decryptApiKey(record = {}) {
+  if (record.apiKeyEncrypted) {
+    try {
+      if (safeStorage.isEncryptionAvailable()) {
+        const buffer = Buffer.from(record.apiKeyEncrypted, "base64");
+        return safeStorage.decryptString(buffer);
+      }
+    } catch {
+      // Fall through if safeStorage decryption fails
+    }
   }
+
+  if (record.apiKeyPlain) {
+    try {
+      return Buffer.from(record.apiKeyPlain, "base64").toString("utf8");
+    } catch {
+      return "";
+    }
+  }
+
+  return "";
 }
 
 function normalizeProvider(provider) {
@@ -132,10 +148,22 @@ function saveSettings(data = {}) {
   settings.ollama.host = normalizeOllamaHost(settings.ollama.host);
 
   if (typeof data.apiKey === "string" && data.apiKey.trim()) {
-    const encrypted = safeStorage.encryptString(data.apiKey.trim());
-    settings.apiKeyEncrypted = encrypted.toString("base64");
+    try {
+      if (safeStorage.isEncryptionAvailable()) {
+        const encrypted = safeStorage.encryptString(data.apiKey.trim());
+        settings.apiKeyEncrypted = encrypted.toString("base64");
+        delete settings.apiKeyPlain;
+      } else {
+        settings.apiKeyPlain = Buffer.from(data.apiKey.trim()).toString("base64");
+        delete settings.apiKeyEncrypted;
+      }
+    } catch {
+      settings.apiKeyPlain = Buffer.from(data.apiKey.trim()).toString("base64");
+      delete settings.apiKeyEncrypted;
+    }
   } else if (data.apiKey === "") {
     delete settings.apiKeyEncrypted;
+    delete settings.apiKeyPlain;
   }
 
   delete settings.apiKey;
@@ -157,7 +185,8 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
-      nodeIntegration: false
+      nodeIntegration: false,
+      backgroundThrottling: false
     }
   });
 

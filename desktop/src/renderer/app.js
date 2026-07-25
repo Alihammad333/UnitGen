@@ -186,6 +186,25 @@ function bindUi() {
   });
 
   els.saveSettingsBtn.addEventListener("click", saveSettings);
+
+  [
+    els.apiKeyInput,
+    els.modelInput,
+    els.ollamaHostInput,
+    els.ollamaModelInput,
+    els.repairCandidatesInput,
+    els.dynamicDepthInput,
+    els.dynamicApisInput
+  ].forEach((inputEl) => {
+    if (inputEl) {
+      inputEl.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          saveSettings();
+        }
+      });
+    }
+  });
 }
 
 function bindIpc() {
@@ -658,29 +677,47 @@ function applySettingsToForm(settings = {}) {
 }
 
 async function saveSettings() {
-  const provider = getActiveProvider();
-  const data = {
-    provider,
-    apiKey: els.apiKeyInput.value.trim(),
-    openai: {
-      model: els.modelInput.value.trim() || "gpt-3.5-turbo"
-    },
-    ollama: {
-      host: normalizeOllamaHost(els.ollamaHostInput.value),
-      model: els.ollamaModelInput.value.trim() || "qwen2.5:1.5b"
-    },
-    advanced: collectAdvancedVars()
-  };
+  const saveBtn = els.saveSettingsBtn;
+  const originalText = saveBtn ? saveBtn.textContent : "Save Settings";
 
-  state.settings = await window.electronAPI.saveSettings(data);
-  applySettingsToForm(state.settings);
-  updateProviderUi();
-  updateProviderStatusPill();
-  closeSettings();
-  updateStartState();
+  if (saveBtn) {
+    saveBtn.disabled = true;
+    saveBtn.textContent = "Saving...";
+  }
 
-  if (provider === "ollama") {
-    checkOllamaConnection({ quiet: true });
+  try {
+    const provider = getActiveProvider();
+    const data = {
+      provider,
+      apiKey: els.apiKeyInput.value.trim(),
+      openai: {
+        model: els.modelInput.value.trim() || "gpt-3.5-turbo"
+      },
+      ollama: {
+        host: normalizeOllamaHost(els.ollamaHostInput.value),
+        model: els.ollamaModelInput.value.trim() || "qwen2.5:1.5b"
+      },
+      advanced: collectAdvancedVars()
+    };
+
+    state.settings = await window.electronAPI.saveSettings(data);
+    applySettingsToForm(state.settings);
+    updateProviderUi();
+    updateProviderStatusPill();
+    closeSettings();
+    updateStartState();
+
+    if (provider === "ollama") {
+      checkOllamaConnection({ quiet: true });
+    }
+  } catch (error) {
+    console.error("Failed to save settings:", error);
+    alert(`Error saving settings: ${error.message || String(error)}`);
+  } finally {
+    if (saveBtn) {
+      saveBtn.disabled = false;
+      saveBtn.textContent = originalText;
+    }
   }
 }
 
