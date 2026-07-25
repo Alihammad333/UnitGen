@@ -16,7 +16,12 @@ module.exports = {
     {
       from: "../backend",
       to: "backend",
-      filter: ["**/*", "!node_modules/.cache/**", "!output/**", "!results/**"]
+      filter: ["**/*", "!node_modules/**", "!output/**", "!results/**"]
+    },
+    {
+      from: "../backend/node_modules",
+      to: "backend/node_modules",
+      filter: ["**/*", "!.cache/**"]
     }
   ],
 
