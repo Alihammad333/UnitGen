@@ -506,15 +506,19 @@ ipcMain.handle("unitgen:run", async (_event, targetPath, envVars = {}) => {
   let stdoutBuffer = "";
   let stderrBuffer = "";
 
-  activeChild = spawn("node", ["src/index.js", targetPath], {
+  const nodeExecutable = process.execPath;
+  const nodeEnv = {
+    ...process.env,
+    ELECTRON_RUN_AS_NODE: "1",
+    ...providerEnv,
+    ...normalizeAdvancedEnv(
+      envVars.advanced || envVars.advancedVars || settings.advanced
+    )
+  };
+
+  activeChild = spawn(nodeExecutable, ["src/index.js", targetPath], {
     cwd: backendPath,
-    env: {
-      ...process.env,
-      ...providerEnv,
-      ...normalizeAdvancedEnv(
-        envVars.advanced || envVars.advancedVars || settings.advanced
-      )
-    },
+    env: nodeEnv,
     windowsHide: true
   });
 
