@@ -1,6 +1,6 @@
 {
   "name": "unitgen-desktop",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "productName": "UnitGen",
   "description": "Electron desktop UI for UnitGen",
   "main": "src/main.js",
