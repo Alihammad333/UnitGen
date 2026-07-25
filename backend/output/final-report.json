@@ -1,182 +1,106 @@
 {
-  "generatedAt": "2026-07-19T21:02:06.711Z",
+  "generatedAt": "2026-07-25T19:16:10.953Z",
   "project": {
     "input": {
       "ok": true,
       "kind": "folder",
-      "root": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile",
+      "root": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1",
       "files": [
-        "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile\\index.js",
-        "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile\\utils.js"
+        "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js"
       ],
       "messages": [
         {
-          "level": "info",
-          "text": "Input: Node.js project folder (package.json found)"
+          "level": "warn",
+          "text": "No package.json found. Treating as a plain JS folder."
         },
         {
           "level": "info",
-          "text": "Discovered 2 .js file(s)."
+          "text": "Discovered 1 .js file(s)."
         }
       ]
     },
-    "processedFiles": 3,
+    "processedFiles": 1,
     "skippedFiles": 0,
-    "generatedTestFiles": 4
+    "generatedTestFiles": 2
   },
   "summary": {
-    "totalSuites": 6,
-    "passedSuites": 6,
+    "totalSuites": 2,
+    "passedSuites": 2,
     "failedSuites": 0,
-    "totalTests": 29,
-    "passedTests": 29,
+    "totalTests": 14,
+    "passedTests": 14,
     "failedTests": 0,
     "success": true
   },
   "passedTests": [
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom auto-generated (prototype)",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser auto-generated (prototype)",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom Buffer content with BOM character",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser Fetch user with id 1 - Safe Invariant",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom String content with BOM character",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser Fetch user with id 2 - Safe Invariant",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom Content without BOM character",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser Fetch user with id 3 - Safe Invariant",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom Empty content",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser fallback checks source-aware result shape asynchronously",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom Content with multiple BOM characters",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser fallback checks stable result contract",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
-      "testName": "stripBom Content with BOM character at the end",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide auto-generated (prototype)",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
-      "testName": "writeFileSync auto-generated (prototype)",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Normal behavior - division of two numbers",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
-      "testName": "writeFileSync fallback checks source-aware result shape",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Error - division by zero",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
-      "testName": "writeFileSync fallback checks stable result contract",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Safe invariant - result is a number",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync auto-generated (prototype)",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Safe invariant - result is not null",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync Default behavior - file with valid JSON content",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Parameterized behavior - division of negative numbers",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync Options with custom encoding",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide Safe invariant - result is finite",
       "status": "passed"
     },
     {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync Options with custom reviver function",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync File not found - throws error",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync File not found - returns null",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync fallback checks source-aware result shape",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
-      "testName": "readFileSync fallback checks stable result contract",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify auto-generated (prototype)",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Default behavior - empty object",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Default behavior - non-empty object",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Custom EOL character",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Custom finalEOL - false",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Custom replacer function",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Custom spaces for indentation",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify Throw TypeError for undefined result",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
-      "testName": "stringify fallback checks source-aware result shape",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\jsonfile.dynamic.writeFileSync.writeFileSync.test.js",
-      "testName": "writeFileSync should be exported as a function",
-      "status": "passed"
-    },
-    {
-      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\jsonfile.dynamic.readFileSync.readFileSync.test.js",
-      "testName": "readFileSync should be exported as a function",
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/generated/input.divide.test.js",
+      "testName": "divide fallback checks source-aware result shape",
       "status": "passed"
     }
   ],
@@ -184,6 +108,6 @@
   "runner": {
     "status": 0,
     "signal": null,
-    "stderr": "(node:21824) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/utils.stripBom.test.js\nPASS tests/generated/index.writeFileSync.test.js\nPASS tests/generated/index.readFileSync.test.js\nPASS tests/generated/utils.stringify.test.js\nPASS tests/generated/jsonfile.dynamic.writeFileSync.writeFileSync.test.js\nPASS tests/generated/jsonfile.dynamic.readFileSync.readFileSync.test.js\n\nTest Suites: 6 passed, 6 total\nTests:       29 passed, 29 total\nSnapshots:   0 total\nTime:        1.408 s, estimated 2 s\nRan all test suites within paths \"tests/generated/index.readFileSync.test.js\", \"tests/generated/index.writeFileSync.test.js\", \"tests/generated/jsonfile.dynamic.readFileSync.readFileSync.test.js\", \"tests/generated/jsonfile.dynamic.writeFileSync.writeFileSync.test.js\", \"tests/generated/utils.stringify.test.js\", \"tests/generated/utils.stripBom.test.js\".\nTest results written to: tests\\generated\\.jest-results.1224.all.json\n"
+    "stderr": "(node:16790) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/input.fetchUser.test.js\nPASS tests/generated/input.divide.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       14 passed, 14 total\nSnapshots:   0 total\nTime:        0.304 s, estimated 1 s\nRan all test suites within paths \"tests/generated/input.divide.test.js\", \"tests/generated/input.fetchUser.test.js\".\nTest results written to: tests/generated/.jest-results.16126.all.json\n"
   }
 }

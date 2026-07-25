@@ -7,6 +7,26 @@ import {
 import * as __unitgenFs from "node:fs";
 import * as __unitgenPath from "node:path";
 
+// Module mocks
+jest.unstable_mockModule("axios", () => {
+  const api = {
+      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      create: jest.fn(() => api),
+      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
+    };
+
+  return {
+    __esModule: true,
+    ...api,
+    default: api
+  };
+}, { virtual: true });
 // Import/load AFTER global setup and module mocks
 const __unitgenRequire = __unitgenCreateRequire(import.meta.url);
 
@@ -47,15 +67,15 @@ function __unitgenBuildModuleCandidates() {
     }
   };
 
-  add("specifier", "../../benchmark_packages/jsonfile/utils.js");
-  addResolved("../../benchmark_packages/jsonfile/utils.js");
+  add("specifier", "../sample1/input.js");
+  addResolved("../sample1/input.js");
 
   const fromTestDir = __unitgenPath.dirname(
     __unitgenFileURLToPath(import.meta.url)
   );
 
   try {
-    const absFromTest = __unitgenPath.resolve(fromTestDir, "../../benchmark_packages/jsonfile/utils.js");
+    const absFromTest = __unitgenPath.resolve(fromTestDir, "../sample1/input.js");
     add("file", absFromTest);
 
     if (absFromTest.includes("/dist/esm/")) {
@@ -166,7 +186,7 @@ async function __unitgenLoadModule() {
     })
     .join("\n");
 
-  throw new Error("UnitGen module load failed for ../../benchmark_packages/jsonfile/utils.js:\n" + __unitgenMessage);
+  throw new Error("UnitGen module load failed for ../sample1/input.js:\n" + __unitgenMessage);
 }
 function __unitgenResolveExport(moduleObject, exportName, isDefaultExport) {
   const candidates = [];
@@ -213,23 +233,23 @@ function __unitgenResolveExport(moduleObject, exportName, isDefaultExport) {
 }
 
 let mod;
-let stringify;
+let divide;
 
 beforeAll(async () => {
   mod = await __unitgenLoadModule();
-  stringify = __unitgenResolveExport(mod, "stringify", false);
+  divide = __unitgenResolveExport(mod, "divide", false);
 });
 
-describe("stringify", () => {
+describe("divide", () => {
   test("auto-generated (prototype)", async () => {
-    if (typeof stringify !== "function") {
-      throw new TypeError("stringify import did not resolve to a function");
+    if (typeof divide !== "function") {
+      throw new TypeError("divide import did not resolve to a function");
     }
-    const obj = 1;
-    const options = {};
+    const a = 1;
+    const b = 2;
     let result;
     try {
-      result = stringify(obj, options);
+      result = divide(a, b);
       if (result && typeof result.then === "function") {
         result = await result;
       }
@@ -240,81 +260,71 @@ describe("stringify", () => {
   });
 
   
-  test("Default behavior - empty object", () => {
+  test("Normal behavior - division of two numbers", () => {
     {
-      const obj = {};
-      const options = {};
-      const result = stringify(obj, options);
-      expect(result).toBe('{}\n');
+      const a = 10;
+      const b = 2;
+      const result = divide(a, b);
+      expect(result).toBe(5)
     }
   });
 
 
-  test("Default behavior - non-empty object", () => {
+  test("Error - division by zero", () => {
     {
-      const obj = { key: 'value' };
-      const options = {};
-      const result = stringify(obj, options);
-      expect(result).toBe('{"key":"value"}\n');
+      const a = 5;
+      const b = 0;
+      expect(() => divide(a, b)).toThrow('Division by zero');
     }
   });
 
 
-  test("Custom EOL character", () => {
+  test("Safe invariant - result is a number", () => {
     {
-      const obj = { key: 'value' };
-      const options = { EOL: '\r\n' };
-      const result = stringify(obj, options);
-      expect(result).toBe('{"key":"value"}\r\n');
+      const a = 8;
+      const b = 4;
+      const result = divide(a, b);
+      expect(typeof result).toBe('number')
     }
   });
 
 
-  test("Custom finalEOL - false", () => {
+  test("Safe invariant - result is not null", () => {
     {
-      const obj = { key: 'value' };
-      const options = { finalEOL: false };
-      const result = stringify(obj, options);
-      expect(result).toBe('{"key":"value"}');
+      const a = 6;
+      const b = 3;
+      const result = divide(a, b);
+      expect(result).not.toBeNull()
     }
   });
 
 
-  test("Custom replacer function", () => {
+  test("Parameterized behavior - division of negative numbers", () => {
     {
-      const obj = { key: 'value' };
-      const options = { replacer: (key, value) => (key === 'key' ? 'modifiedValue' : value) };
-      const result = stringify(obj, options);
-      expect(result).toBe('{"key":"modifiedValue"}\n');
+      const a = -12;
+      const b = 3;
+      const result = divide(a, b);
+      expect(result).toBe(-4)
     }
   });
 
 
-  test("Custom spaces for indentation", () => {
+  test("Safe invariant - result is finite", () => {
     {
-      const obj = { key: 'value' };
-      const options = { spaces: 2 };
-      const result = stringify(obj, options);
-      expect(result).toBe('{\n  "key": "value"\n}\n');
-    }
-  });
-
-
-  test("Throw TypeError for undefined result", () => {
-    {
-      const obj = undefined;
-      const options = {};
-      expect(() => stringify(obj, options)).toThrow(TypeError);
+      const a = 7;
+      const b = 2;
+      const result = divide(a, b);
+      expect(Number.isFinite(result)).toBe(true)
     }
   });
 
 
   test("fallback checks source-aware result shape", () => {
     {
-      const obj = {};
-      const options = {};
-      const result = stringify(obj, options);
-      expect(result == null || typeof result === "string").toBe(true);
+      const a = 1;
+      const b = 2;
+      const result = divide(a, b);
+      expect(result).toBeDefined();
     }
   });
 });
