@@ -1,0 +1,96 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: cd desktop && npm install
+      - name: Build Windows
+        run: cd desktop && npx electron-builder --config electron-builder.config.js --win --publish never
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: desktop/dist/*.exe
+
+  build-mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: cd desktop && npm install
+      - name: Build Mac
+        run: cd desktop && npx electron-builder --config electron-builder.config.js --mac --publish never
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mac-build
+          path: desktop/dist/*.dmg
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install Snapcraft
+        run: sudo snap install snapcraft --classic
+      - name: Build Linux
+        run: cd desktop && npm install
+      - name: Build Linux
+        run: cd desktop && npx electron-builder --config electron-builder.config.js --linux snap --publish never
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: desktop/dist/*.snap
+
+  release:
+    needs: [build-windows, build-mac, build-linux]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-build
+          path: ./artifacts
+      - name: Download Mac artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: mac-build
+          path: ./artifacts
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-build
+          path: ./artifacts
+      - name: List artifacts
+        run: ls -la ./artifacts/
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ./artifacts/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
