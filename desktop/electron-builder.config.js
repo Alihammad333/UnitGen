@@ -25,7 +25,8 @@ module.exports = {
   // Windows SmartScreen will warn — user clicks "More info" → "Run anyway".
   win: {
     target: [{ target: "nsis", arch: ["x64"] }],
-    icon: "assets/icon.ico"
+    icon: "assets/icon.ico",
+    artifactName: "UnitGen-Setup-${version}.${ext}"
   },
   nsis: {
     oneClick: false,                          // show install wizard, not silent install
@@ -46,7 +47,8 @@ module.exports = {
     icon: "assets/icon.icns",
     identity: null,        // disable code signing
     hardenedRuntime: false,
-    gatekeeperAssess: false
+    gatekeeperAssess: false,
+    artifactName: "UnitGen-${version}-${arch}.${ext}"
   },
   dmg: {
     title: "UnitGen Installer",
@@ -61,7 +63,8 @@ module.exports = {
   linux: {
     target: [{ target: "snap", arch: ["x64"] }],
     icon: "assets/icon.png",
-    category: "Development"
+    category: "Development",
+    artifactName: "UnitGen-${version}-amd64.${ext}"
   },
   snap: {
     grade: "stable",
