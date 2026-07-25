@@ -1,7 +1,7 @@
 const BASE = import.meta.env.VITE_GITHUB_RELEASES_BASE_URL
   || "https://github.com/Alihammad333/UnitGen/releases/download";
 
-export const VERSION = "v1.0.0";
+export const VERSION = "v2.0.0";
 
 // Extract raw version (e.g., "1.0.0" from "v1.0.0")
 const RAW_VERSION = VERSION.replace(/^v/, "");
