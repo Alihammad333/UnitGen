@@ -1,0 +1,1013 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-dirty
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 26 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\.eslintrc.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\for-each.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\load.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set-drain-256-bytes-per-doc.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set-drain.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-filter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-loop.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-push.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-loop-with-object-keys.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-loop.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\example\bob.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\lib\dirty\dirty.js
+==============================
+✅ Found 1 function(s): Dirty
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\lib\dirty\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\.eslintrc.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\config.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-api.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-nostore.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-system.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-types.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+⚠️ Package-entry mode produced no tests. Trying dynamic public API discovery...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 20 API candidate(s), 9 public target candidate(s).
+✅ Dynamic preflight passed: Dirty
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js (Dirty)
+✅ Dynamic preflight passed: Dirty
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: Dirty
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.Dirty.test.js (Dirty)
+✅ Dynamic preflight passed: Dirty.prototype.set
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js (Dirty.prototype.set)
+✅ Dynamic preflight passed: Dirty.prototype.get
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js (Dirty.prototype.get)
+✅ Dynamic preflight passed: Dirty.prototype.size
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js (Dirty.prototype.size)
+✅ Dynamic preflight passed: Dirty.prototype.rm
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js (Dirty.prototype.rm)
+✅ Dynamic preflight passed: Dirty.prototype.forEach
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js (Dirty.prototype.forEach)
+✅ Dynamic preflight passed: Dirty.prototype.update
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js (Dirty.prototype.update)
+✅ Dynamic preflight passed: Dirty.prototype.close
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js (Dirty.prototype.close)
+ℹ️ Dynamic API preflight kept 9 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 8
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  9
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for Dirty
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 2
+   LLM sanitizer reasons:
+   - CASE_PARSE_FAILED: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 3
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js (1 + 1 repair candidate(s))
+🧪 LLM injection summary for Dirty.prototype.set
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 6
+   fallback sanitizer accepted: 6
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 6
+   fallback runtime passed: 6
+   fallback runtime failed: 0
+   fallback injected: 6
+   final injected: 6
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   - UNDECLARED_REFERENCE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 6
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js (6)
+🧪 LLM injection summary for Dirty.prototype.get
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 6
+   fallback sanitizer accepted: 6
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 6
+   fallback runtime passed: 6
+   fallback runtime failed: 0
+   fallback injected: 6
+   final injected: 6
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 6
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js (6)
+🧪 LLM injection summary for Dirty.prototype.size
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 5
+   fallback sanitizer accepted: 5
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 5
+   fallback runtime passed: 5
+   fallback runtime failed: 0
+   fallback injected: 5
+   final injected: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 5
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js (5)
+🧪 LLM injection summary for Dirty.prototype.rm
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 5
+   fallback sanitizer accepted: 5
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 5
+   fallback runtime passed: 5
+   fallback runtime failed: 0
+   fallback injected: 5
+   final injected: 5
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 5
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js (5)
+🧪 LLM injection summary for Dirty.prototype.forEach
+   received: 7
+   sanitizer accepted: 1
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 4
+   fallback sanitizer accepted: 4
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 4
+   fallback runtime passed: 4
+   fallback runtime failed: 0
+   fallback injected: 4
+   final injected: 4
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_REFERENCE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js (4)
+🧪 LLM injection summary for Dirty.prototype.update
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 4
+   fallback sanitizer accepted: 4
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 4
+   fallback runtime passed: 4
+   fallback runtime failed: 0
+   fallback injected: 4
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js (4)
+🧪 LLM injection summary for Dirty.prototype.close
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 3
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 3
+   fallback runtime passed: 3
+   fallback runtime failed: 0
+   fallback injected: 3
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 3
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js (3)
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+
+🛡️ Post-LLM preflight completed. Kept 8 file(s), removed 0 unsafe file(s).
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 1
+Total Tests       : 44
+Passed            : 43
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js
+  ● Dirty › [repair-candidate] Safe invariant test: result shape and type expect(received).toBe(expected) // Object.is equality Expected: "undefined" Received: "object" 27 | const result = __unitgen_target__('arg1'); 28...
+------------------------------------------------------------
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+❌ FAIL  - Dirty [repair-candidate] Safe invariant test: result shape and type
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "undefined" Received: "object" at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generat...
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Dirty.close waits for queued persistent writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm leaves other keys intact
+✅ PASS  - Dirty.prototype.rm Dirty.rm persists deletion across reload
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks stable result contract
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get returns undefined for a missing key
+✅ PASS  - Dirty.prototype.get Dirty.get observes the latest stored value
+✅ PASS  - Dirty.prototype.get Dirty.get reloads a persisted value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+✅ PASS  - Dirty.prototype.get Dirty.get checks stable result contract
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update can initialize a missing value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty.prototype.update Dirty.update checks stable result contract
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+✅ PASS  - Dirty.prototype.set Dirty.set overwrites an existing value
+✅ PASS  - Dirty.prototype.set Dirty.set keeps distinct keys independently
+✅ PASS  - Dirty.prototype.set Dirty.set invokes its callback in transient mode
+✅ PASS  - Dirty.prototype.set Dirty.set persists a value before drain
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach visits stored entries
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach supports callback-directed early termination
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks stable result contract
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size is zero for an empty instance
+✅ PASS  - Dirty.prototype.size Dirty.size decreases after removing a stored key
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+✅ PASS  - Dirty.prototype.size Dirty.size checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 1
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: node-dirty.dynamic.Dirty.default.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T20:51:06.730Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"undefined\" Received: \"object\" at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.default.test.js:29:29) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: node-dirty.dynamic.Dirty.default.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+✅ LLM repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-19T20:51:11.038Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"LLM repair","repairStrategy":"LLM Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-19T20:51:11.039Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"Repair candidate","repairStrategy":"LLM Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🎉 All tests repaired.
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 0
+Total Tests       : 44
+Passed            : 44
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+✅ PASS  - Dirty [repair-candidate] Safe invariant test: result shape and type
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get returns undefined for a missing key
+✅ PASS  - Dirty.prototype.get Dirty.get observes the latest stored value
+✅ PASS  - Dirty.prototype.get Dirty.get reloads a persisted value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+✅ PASS  - Dirty.prototype.get Dirty.get checks stable result contract
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Dirty.close waits for queued persistent writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+✅ PASS  - Dirty.prototype.set Dirty.set overwrites an existing value
+✅ PASS  - Dirty.prototype.set Dirty.set keeps distinct keys independently
+✅ PASS  - Dirty.prototype.set Dirty.set invokes its callback in transient mode
+✅ PASS  - Dirty.prototype.set Dirty.set persists a value before drain
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm leaves other keys intact
+✅ PASS  - Dirty.prototype.rm Dirty.rm persists deletion across reload
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks stable result contract
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update can initialize a missing value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty.prototype.update Dirty.update checks stable result contract
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size is zero for an empty instance
+✅ PASS  - Dirty.prototype.size Dirty.size decreases after removing a stored key
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+✅ PASS  - Dirty.prototype.size Dirty.size checks stable result contract
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach visits stored entries
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach supports callback-directed early termination
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks stable result contract
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.default.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:15.450Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:15.450Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:15.450Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toBe: object(keys=_events, _eventsCount, _maxListeners, path, _data)
+🧠 [AST-Repair] Optimized: toBe
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toBeDefined: object(keys=_events, _eventsCount, _maxListeners, path, _data)
+🧠 [AST-Repair] Optimized: toBeDefined
+ℹ️ No meaningful single-assertion change proposed.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dirty.dynamic.Dirty.Dirty.test.js
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:19.567Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:19.567Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:19.567Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:19.567Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:23.172Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:26.775Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:30.535Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:34.494Z","testFile":"node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:34.514Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:34.515Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:34.515Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:34.515Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:34.515Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:38.824Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:42.784Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:46.596Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:50.203Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:53.821Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:53.845Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:53.845Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:51:53.845Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"string\" || typeof result === \"number\" || typeof result === \"boolean\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:51:57.592Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:01.194Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:04.925Z","testFile":"node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"string\" || typeof result === \"number\" || typeof result === \"boolean\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 8 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.947Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(instance.get(key)).toBeUndefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(reader.get(key)).toBeUndefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:04.948Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:09.040Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:13.321Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeUndefined: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBeUndefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:17.155Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(instance.get(key)).toBeUndefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:20.748Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:24.209Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeUndefined: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBeUndefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:27.720Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(reader.get(key)).toBeUndefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:31.335Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:35.089Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 10 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Invalid assertion","original":"expect(instance.get(key)).toBe(value)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Invalid assertion","original":"expect(instance.get(key)).toBe(value)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(instance.get(key)).toBeUndefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T20:52:35.099Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: number(1)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:39.132Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(instance.get(key)).toBe(value)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: number(1)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:43.655Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(instance.get(key)).toBe(value)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:48.057Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.400000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:52.679Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:52:57.001Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeUndefined: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBeUndefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:53:01.249Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(instance.get(key)).toBeUndefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T20:53:05.583Z","testFile":"node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Assertion strengthening stopped: stable assertion low-yield stop: 30 rejected, 0 accepted.
+ℹ️ Assertion strengthening stopped: stable assertion low-yield stop: 30 rejected, 0 accepted.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 0
+Total Tests       : 44
+Passed            : 44
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+✅ PASS  - Dirty.prototype.set Dirty.set overwrites an existing value
+✅ PASS  - Dirty.prototype.set Dirty.set keeps distinct keys independently
+✅ PASS  - Dirty.prototype.set Dirty.set invokes its callback in transient mode
+✅ PASS  - Dirty.prototype.set Dirty.set persists a value before drain
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm leaves other keys intact
+✅ PASS  - Dirty.prototype.rm Dirty.rm persists deletion across reload
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks stable result contract
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Dirty.close waits for queued persistent writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update can initialize a missing value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty.prototype.update Dirty.update checks stable result contract
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get returns undefined for a missing key
+✅ PASS  - Dirty.prototype.get Dirty.get observes the latest stored value
+✅ PASS  - Dirty.prototype.get Dirty.get reloads a persisted value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+✅ PASS  - Dirty.prototype.get Dirty.get checks stable result contract
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach visits stored entries
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach supports callback-directed early termination
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks stable result contract
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+✅ PASS  - Dirty [repair-candidate] Safe invariant test: result shape and type
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size is zero for an empty instance
+✅ PASS  - Dirty.prototype.size Dirty.size decreases after removing a stored key
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+✅ PASS  - Dirty.prototype.size Dirty.size checks stable result contract
+============================================================
+
+
+✅ Done.
+

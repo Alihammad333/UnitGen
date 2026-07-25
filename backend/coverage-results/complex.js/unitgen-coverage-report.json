@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-07-18T09:05:42.796Z",
+  "packageName": "complex.js",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\complex.js",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 52,
+  "totalTests": 286,
+  "passingTests": 275,
+  "failedTests": 11,
+  "coverageMode": "passing-tests-only-isolated-coverage-runs",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 413,
+        "covered": 302,
+        "skipped": 0,
+        "pct": 73.12
+      },
+      "statements": {
+        "total": 416,
+        "covered": 305,
+        "skipped": 0,
+        "pct": 73.31
+      },
+      "functions": {
+        "total": 59,
+        "covered": 56,
+        "skipped": 0,
+        "pct": 94.91
+      },
+      "branches": {
+        "total": 331,
+        "covered": 164,
+        "skipped": 0,
+        "pct": 49.54
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": [
+    {
+      "file": "tests\\generated\\complex.Complex.test.js",
+      "name": "Complex [repair-candidate] Instantiate Complex with only real part"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.mul.test.js",
+      "name": "Complex.prototype.mul [repair-candidate] Multiplying two real values"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.asech.test.js",
+      "name": "Complex.prototype.asech [repair-candidate] Return Infinity when input is zero"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.ceil.test.js",
+      "name": "Complex.prototype.ceil [repair-candidate] Ceil with positive places"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.acoth.test.js",
+      "name": "Complex.prototype.acoth [repair-candidate] Returns i * π / 2 when z = 0"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.inverse.test.js",
+      "name": "Complex.prototype.inverse [repair-candidate] Returns Infinity when input is zero"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.log.test.js",
+      "name": "Complex.prototype.log [repair-candidate] Default behavior - b is 0 and a is greater than 0"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.floor.test.js",
+      "name": "Complex.prototype.floor [repair-candidate] Floor with default places"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.div.test.js",
+      "name": "Complex.prototype.div [repair-candidate] Divide two non-zero complex numbers"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.exp.test.js",
+      "name": "Complex.prototype.exp [repair-candidate] Complex.exp with zero imaginary part"
+    },
+    {
+      "file": "tests\\generated\\complex.Complex.prototype.abs.test.js",
+      "name": "Complex.prototype.abs [repair-candidate] Returns the magnitude of the complex number"
+    }
+  ]
+}

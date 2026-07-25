@@ -1,0 +1,19 @@
+{
+  "name": "unitgen-desktop",
+  "version": "1.0.0",
+  "productName": "UnitGen",
+  "description": "Electron desktop UI for UnitGen",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "dev": "electron . --no-sandbox",
+    "build": "electron-builder --config electron-builder.config.js",
+    "build:win": "electron-builder --config electron-builder.config.js --win",
+    "build:mac": "electron-builder --config electron-builder.config.js --mac",
+    "build:linux": "electron-builder --config electron-builder.config.js --linux"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  }
+}

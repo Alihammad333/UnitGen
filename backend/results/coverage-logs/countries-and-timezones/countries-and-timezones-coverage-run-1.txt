@@ -1,0 +1,1034 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/countries-and-timezones
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 4 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\countries-and-timezones\dist\index.js
+==============================
+✅ Found 17 function(s): buildCountry, getTimezonesMap, buildTimezonesMap, buildTimezone, getOffsetString, getNumberString, getAllCountries, getAllTimezones, getCountry, memoizeCountry, getTimezone, memoizeTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry, deliverTimezones, deliverCountry
+✅ Exported function(s): getAllCountries, getAllTimezones, getCountry, getTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 35 snippet(s) found from 4 scanned file(s)
+   - getAllCountries: 5
+   - getAllTimezones: 5
+   - getCountry: 5
+   - getTimezone: 5
+   - getCountriesForTimezone: 5
+   - getCountryForTimezone: 5
+   - getTimezonesForCountry: 5
+📝 Doc comments:
+   - 7/7 function(s) have comment context
+   - getAllCountries: JSDoc, 6 param tag(s), returns, 2 example(s)
+   - getAllTimezones: JSDoc, 8 param tag(s), returns, 2 example(s)
+   - getCountry: JSDoc, 3 param tag(s), returns, 1 example(s)
+   - getTimezone: JSDoc, 1 param tag(s), returns, 1 example(s)
+   - getCountriesForTimezone: JSDoc, 9 param tag(s), returns, 2 example(s)
+   - getCountryForTimezone: JSDoc, 9 param tag(s), returns, 2 example(s)
+   - getTimezonesForCountry: JSDoc, 3 param tag(s), returns, 1 example(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getAllCountries.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getAllTimezones.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountry.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getTimezone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountriesForTimezone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountryForTimezone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getTimezonesForCountry.test.js
+
+==============================
+📄 Skipping: benchmark_packages\countries-and-timezones\dist\index.min.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\countries-and-timezones\esm\index.js
+==============================
+✅ Found 17 function(s): buildCountry, getTimezonesMap, buildTimezonesMap, buildTimezone, getOffsetString, getNumberString, getAllCountries, getAllTimezones, getCountry, memoizeCountry, getTimezone, memoizeTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry, deliverTimezones, deliverCountry
+✅ Exported function(s): getAllCountries, getAllTimezones, getCountry, getTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 35 snippet(s) found from 4 scanned file(s)
+   - getAllCountries: 5
+   - getAllTimezones: 5
+   - getCountry: 5
+   - getTimezone: 5
+   - getCountriesForTimezone: 5
+   - getCountryForTimezone: 5
+   - getTimezonesForCountry: 5
+📝 Doc comments:
+   - 7/7 function(s) have comment context
+   - getAllCountries: JSDoc, 6 param tag(s), returns, 2 example(s)
+   - getAllTimezones: JSDoc, 8 param tag(s), returns, 2 example(s)
+   - getCountry: JSDoc, 3 param tag(s), returns, 1 example(s)
+   - getTimezone: JSDoc, 1 param tag(s), returns, 1 example(s)
+   - getCountriesForTimezone: JSDoc, 9 param tag(s), returns, 2 example(s)
+   - getCountryForTimezone: JSDoc, 9 param tag(s), returns, 2 example(s)
+   - getTimezonesForCountry: JSDoc, 3 param tag(s), returns, 1 example(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+⚠️ Duplicate generated test target skipped: index.getAllCountries.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getAllTimezones.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getCountry.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getTimezone.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getCountriesForTimezone.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getCountryForTimezone.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+⚠️ Duplicate generated test target skipped: index.getTimezonesForCountry.test.js from benchmark_packages\countries-and-timezones\esm\index.js
+
+==============================
+📄 Skipping: benchmark_packages\countries-and-timezones\esm\index.min.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 7 API candidate(s), 7 public target candidate(s).
+✅ Dynamic preflight passed: getAllCountries
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getAllCountries.getAllCountries.test.js (getAllCountries)
+✅ Dynamic preflight passed: getAllTimezones
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getAllTimezones.getAllTimezones.test.js (getAllTimezones)
+✅ Dynamic preflight passed: getCountriesForTimezone
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getCountriesForTimezone.getCountriesForTimezone.test.js (getCountriesForTimezone)
+✅ Dynamic preflight passed: getCountry
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getCountry.getCountry.test.js (getCountry)
+✅ Dynamic preflight passed: getCountryForTimezone
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getCountryForTimezone.getCountryForTimezone.test.js (getCountryForTimezone)
+✅ Dynamic preflight passed: getTimezone
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getTimezone.getTimezone.test.js (getTimezone)
+✅ Dynamic preflight passed: getTimezonesForCountry
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\countries-and-timezones.dynamic.getTimezonesForCountry.getTimezonesForCountry.test.js (getTimezonesForCountry)
+ℹ️ Dynamic API preflight kept 7 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 3
+⚠️ Files skipped:  2
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  14
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for getAllCountries
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for getAllCountries; keeping prototype only.
+🧪 LLM injection summary for getAllTimezones
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 3
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getAllTimezones.test.js (5)
+🧪 LLM injection summary for getCountry
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountry.test.js (2)
+🧪 LLM injection summary for getTimezone
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 5
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getTimezone.test.js (7)
+🧪 LLM injection summary for getCountriesForTimezone
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 3
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 2
+   - NULL_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountriesForTimezone.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for getCountryForTimezone
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 3
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM sanitizer reasons:
+   - FABRICATED_EXPECTED_VARIABLE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountryForTimezone.test.js (5)
+🧪 LLM injection summary for getTimezonesForCountry
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getTimezonesForCountry.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 14
+Failed Suites     : 1
+Total Tests       : 39
+Passed            : 38
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.getCountriesForTimezone.test.js
+  ● getCountriesForTimezone › [repair-candidate] Returns countries for a timezone with deprecated timezones included expect(received).toEqual(expected) // deep equality - Expected - 0 + Received + 2 @@ -9,16 +9,18 @@ Ob...
+------------------------------------------------------------
+✅ PASS  - getCountriesForTimezone auto-generated (prototype)
+✅ PASS  - getCountriesForTimezone Returns countries for a timezone with default options
+✅ PASS  - getCountriesForTimezone Returns null for a timezone with no countries
+✅ PASS  - getCountriesForTimezone Returns null for an unknown timezone
+❌ FAIL  - getCountriesForTimezone [repair-candidate] Returns countries for a timezone with deprecated timezones included
+   Error: Error: expect(received).toEqual(expected) // deep equality - Expected - 0 + Received + 2 @@ -9,16 +9,18 @@ Object { "id": "DE", "name": "Germany", "timezones": Array [ "Europe/Berlin", + "Europe/Busingen", "Europe/Zur...
+✅ PASS  - getAllCountries auto-generated (prototype)
+✅ PASS  - getCountry auto-generated (prototype)
+✅ PASS  - getCountry fallback checks source-aware result shape
+✅ PASS  - getCountry fallback checks stable result contract
+✅ PASS  - getAllTimezones auto-generated (prototype)
+✅ PASS  - getAllTimezones Safe invariant - result is an object
+✅ PASS  - getAllTimezones Safe invariant - result includes specific keys
+✅ PASS  - getAllTimezones Safe invariant - result is not null
+✅ PASS  - getAllTimezones fallback checks source-aware result shape
+✅ PASS  - getAllTimezones fallback checks stable result contract
+✅ PASS  - getTimezone auto-generated (prototype)
+✅ PASS  - getTimezone Invalid timezone name - returns null
+✅ PASS  - getTimezone Empty timezone name - returns null
+✅ PASS  - getTimezone Safe invariant: Result is an object or null
+✅ PASS  - getTimezone Safe invariant: Result has expected properties or is null
+✅ PASS  - getTimezone Valid timezone name - returns timezone data with different UTC offset
+✅ PASS  - getTimezone fallback checks source-aware result shape
+✅ PASS  - getTimezone fallback checks stable result contract
+✅ PASS  - getCountryForTimezone auto-generated (prototype)
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with deprecated timezones included
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with empty options
+✅ PASS  - getCountryForTimezone fallback checks source-aware result shape
+✅ PASS  - getCountryForTimezone fallback checks stable result contract
+✅ PASS  - getTimezonesForCountry auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry fallback checks source-aware result shape
+✅ PASS  - getTimezonesForCountry fallback checks stable result contract
+✅ PASS  - getAllCountries should be exported as a function
+✅ PASS  - getTimezone should be exported as a function
+✅ PASS  - getTimezonesForCountry should be exported as a function
+✅ PASS  - getCountryForTimezone should be exported as a function
+✅ PASS  - getCountry should be exported as a function
+✅ PASS  - getAllTimezones should be exported as a function
+✅ PASS  - getCountriesForTimezone should be exported as a function
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 1
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: index.getCountriesForTimezone.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T09:22:13.203Z","testFile":"index.getCountriesForTimezone.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality - Expected - 0 + Received + 2 @@ -9,16 +9,18 @@ Object { \"id\": \"DE\", \"name\": \"Germany\", \"timezones\": Array [ \"Europe/Berlin\", + \"Europe/Busingen\", \"Europe/Zurich\", ], }, Object { \"id\": \"LI\", \"name\": \"Liechtenstein\", \"timezones\": Array [ + \"Europe/Vaduz\", \"Europe/Zurich\", ], }, ] at Object.<","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-18T09:22:19.449Z","testFile":"index.getCountriesForTimezone.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-18T09:22:19.449Z","testFile":"index.getCountriesForTimezone.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🎉 All tests repaired.
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 14
+Failed Suites     : 0
+Total Tests       : 39
+Passed            : 39
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - getCountriesForTimezone auto-generated (prototype)
+✅ PASS  - getCountriesForTimezone Returns countries for a timezone with default options
+✅ PASS  - getCountriesForTimezone Returns null for a timezone with no countries
+✅ PASS  - getCountriesForTimezone Returns null for an unknown timezone
+✅ PASS  - getCountriesForTimezone Returns countries for a timezone with deprecated timezones included
+✅ PASS  - getAllCountries auto-generated (prototype)
+✅ PASS  - getCountry auto-generated (prototype)
+✅ PASS  - getCountry fallback checks source-aware result shape
+✅ PASS  - getCountry fallback checks stable result contract
+✅ PASS  - getCountriesForTimezone should be exported as a function
+✅ PASS  - getCountryForTimezone should be exported as a function
+✅ PASS  - getAllCountries should be exported as a function
+✅ PASS  - getAllTimezones auto-generated (prototype)
+✅ PASS  - getAllTimezones Safe invariant - result is an object
+✅ PASS  - getAllTimezones Safe invariant - result includes specific keys
+✅ PASS  - getAllTimezones Safe invariant - result is not null
+✅ PASS  - getAllTimezones fallback checks source-aware result shape
+✅ PASS  - getAllTimezones fallback checks stable result contract
+✅ PASS  - getTimezone auto-generated (prototype)
+✅ PASS  - getTimezone Invalid timezone name - returns null
+✅ PASS  - getTimezone Empty timezone name - returns null
+✅ PASS  - getTimezone Safe invariant: Result is an object or null
+✅ PASS  - getTimezone Safe invariant: Result has expected properties or is null
+✅ PASS  - getTimezone Valid timezone name - returns timezone data with different UTC offset
+✅ PASS  - getTimezone fallback checks source-aware result shape
+✅ PASS  - getTimezone fallback checks stable result contract
+✅ PASS  - getTimezonesForCountry should be exported as a function
+✅ PASS  - getAllTimezones should be exported as a function
+✅ PASS  - getTimezone should be exported as a function
+✅ PASS  - getCountry should be exported as a function
+✅ PASS  - getCountryForTimezone auto-generated (prototype)
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with deprecated timezones included
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with empty options
+✅ PASS  - getCountryForTimezone fallback checks source-aware result shape
+✅ PASS  - getCountryForTimezone fallback checks stable result contract
+✅ PASS  - getTimezonesForCountry auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry fallback checks source-aware result shape
+✅ PASS  - getTimezonesForCountry fallback checks stable result contract
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getAllCountries.getAllCountries.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getAllTimezones.getAllTimezones.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getCountriesForTimezone.getCountriesForTimezone.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getCountry.getCountry.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getCountryForTimezone.getCountryForTimezone.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getTimezone.getTimezone.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: countries-and-timezones.dynamic.getTimezonesForCountry.getTimezonesForCountry.test.js
+
+🔍 Analyzing File: index.getAllCountries.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:22:33.157Z","testFile":"index.getAllCountries.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:22:33.158Z","testFile":"index.getAllCountries.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getAllCountries.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllCountries.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:07.368Z","testFile":"index.getAllCountries.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=AD, AE, AF, AG, AI)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getAllCountries.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllCountries.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:13.824Z","testFile":"index.getAllCountries.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: index.getAllTimezones.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 7 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(result).not.toBeNull()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(Array.isArray(result) || typeof result === \"object\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:13.838Z","testFile":"index.getAllTimezones.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getAllTimezones.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:19.269Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeNull: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBeNull
+📊 Single Target [index.getAllTimezones.test.js :: toBeNull + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:24.550Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(result).not.toBeNull()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getAllTimezones.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:29.873Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(Array.isArray(result) || typeof result === \"object\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getAllTimezones.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:35.210Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getAllTimezones.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:40.902Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getAllTimezones.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:46.405Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=Africa/Abidjan, Africa/Algiers, Africa/Bissau, Africa/Cairo, Africa/Casablanca)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getAllTimezones.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getAllTimezones.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:23:51.838Z","testFile":"index.getAllTimezones.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: index.getCountriesForTimezone.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:51.848Z","testFile":"index.getCountriesForTimezone.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:51.848Z","testFile":"index.getCountriesForTimezone.test.js","issue":"Weak assertion","original":"expect(result).not.toBeUndefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:51.848Z","testFile":"index.getCountriesForTimezone.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:51.848Z","testFile":"index.getCountriesForTimezone.test.js","issue":"Weak assertion","original":"expect(result).toEqual([])","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:23:51.848Z","testFile":"index.getCountriesForTimezone.test.js","issue":"Weak assertion","original":"expect(result).toEqual([])","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toBeUndefined: array(length=3)
+🧠 [AST-Repair] Optimized: toBeUndefined
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toBeDefined: array(length=0)
+🧠 [AST-Repair] Optimized: toBeDefined
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toEqual: array(length=0)
+🧠 [AST-Repair] Optimized: toEqual
+ℹ️ No meaningful single-assertion change proposed.
+🔬 Runtime observed for toEqual: array(length=0)
+🧠 [AST-Repair] Optimized: toEqual
+ℹ️ No meaningful single-assertion change proposed.
+
+🔍 Analyzing File: index.getCountry.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:01.306Z","testFile":"index.getCountry.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:01.306Z","testFile":"index.getCountry.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:01.306Z","testFile":"index.getCountry.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:01.306Z","testFile":"index.getCountry.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountry.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountry.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:06.851Z","testFile":"index.getCountry.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountry.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountry.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:12.358Z","testFile":"index.getCountry.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountry.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountry.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:17.838Z","testFile":"index.getCountry.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: null
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getCountry.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountry.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:23.345Z","testFile":"index.getCountry.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: index.getCountryForTimezone.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 7 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Invalid assertion","original":"expect(result).toBe(expected)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Invalid assertion","original":"expect(result).toBe(expected)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Invalid assertion","original":"expect(result).toBe(expected)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:24:23.355Z","testFile":"index.getCountryForTimezone.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:29.038Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result).toBe(expected)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:34.464Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result).toBe(expected)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:39.844Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result).toBe(expected)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:45.294Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:50.669Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getCountryForTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:24:55.890Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"number\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: null
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.getCountryForTimezone.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getCountryForTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:01.349Z","testFile":"index.getCountryForTimezone.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: index.getTimezone.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === 'object').toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(result === null || result.hasOwnProperty('name') && result.hasOwnProperty('countries') && result.hasOwnProperty('utcOffset') && result.hasOwnProperty('utcOffsetStr') && result.hasOwnProperty('dstOffset') && result.hasOwnProperty('dstOffsetStr') && result.hasOwnProperty('aliasOf')).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T09:25:01.356Z","testFile":"index.getTimezone.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getTimezone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:06.603Z","testFile":"index.getTimezone.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:11.856Z","testFile":"index.getTimezone.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === 'object').toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:17.143Z","testFile":"index.getTimezone.test.js","issue":"Assertion rejected","original":"expect(result === null || result.hasOwnProperty('name') && result.hasOwnProperty('countries') && result.hasOwnProperty('utcOffset') && result.hasOwnProperty('utcOffsetStr') && result.hasOwnProperty('dstOffset') && result.hasOwnProperty('dstOffsetStr') && result.hasOwnProperty('aliasOf')).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:22.327Z","testFile":"index.getTimezone.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.getTimezone.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.getTimezone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T09:25:27.706Z","testFile":"index.getTimezone.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Assertion strengthening stopped: stable assertion low-yield stop: 30 rejected, 0 accepted.
+ℹ️ Assertion strengthening stopped: stable assertion low-yield stop: 30 rejected, 0 accepted.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 14
+Failed Suites     : 0
+Total Tests       : 39
+Passed            : 39
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - getTimezone auto-generated (prototype)
+✅ PASS  - getTimezone Invalid timezone name - returns null
+✅ PASS  - getTimezone Empty timezone name - returns null
+✅ PASS  - getTimezone Safe invariant: Result is an object or null
+✅ PASS  - getTimezone Safe invariant: Result has expected properties or is null
+✅ PASS  - getTimezone Valid timezone name - returns timezone data with different UTC offset
+✅ PASS  - getTimezone fallback checks source-aware result shape
+✅ PASS  - getTimezone fallback checks stable result contract
+✅ PASS  - getAllTimezones auto-generated (prototype)
+✅ PASS  - getAllTimezones Safe invariant - result is an object
+✅ PASS  - getAllTimezones Safe invariant - result includes specific keys
+✅ PASS  - getAllTimezones Safe invariant - result is not null
+✅ PASS  - getAllTimezones fallback checks source-aware result shape
+✅ PASS  - getAllTimezones fallback checks stable result contract
+✅ PASS  - getCountryForTimezone auto-generated (prototype)
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with deprecated timezones included
+✅ PASS  - getCountryForTimezone Returns null when country is not found for a given timezone with empty options
+✅ PASS  - getCountryForTimezone fallback checks source-aware result shape
+✅ PASS  - getCountryForTimezone fallback checks stable result contract
+✅ PASS  - getTimezonesForCountry auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry fallback checks source-aware result shape
+✅ PASS  - getTimezonesForCountry fallback checks stable result contract
+✅ PASS  - getCountriesForTimezone auto-generated (prototype)
+✅ PASS  - getCountriesForTimezone Returns countries for a timezone with default options
+✅ PASS  - getCountriesForTimezone Returns null for a timezone with no countries
+✅ PASS  - getCountriesForTimezone Returns null for an unknown timezone
+✅ PASS  - getCountriesForTimezone Returns countries for a timezone with deprecated timezones included
+✅ PASS  - getCountriesForTimezone should be exported as a function
+✅ PASS  - getTimezone should be exported as a function
+✅ PASS  - getAllCountries auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry should be exported as a function
+✅ PASS  - getCountry auto-generated (prototype)
+✅ PASS  - getCountry fallback checks source-aware result shape
+✅ PASS  - getCountry fallback checks stable result contract
+✅ PASS  - getCountryForTimezone should be exported as a function
+✅ PASS  - getCountry should be exported as a function
+✅ PASS  - getAllCountries should be exported as a function
+✅ PASS  - getAllTimezones should be exported as a function
+============================================================
+
+
+✅ Done.
+

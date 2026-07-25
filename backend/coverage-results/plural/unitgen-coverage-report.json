@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-17T19:26:49.011Z",
+  "packageName": "plural",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\plural",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 8,
+  "totalTests": 19,
+  "passingTests": 19,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 53,
+        "covered": 49,
+        "skipped": 0,
+        "pct": 92.45
+      },
+      "statements": {
+        "total": 65,
+        "covered": 52,
+        "skipped": 0,
+        "pct": 80
+      },
+      "functions": {
+        "total": 19,
+        "covered": 9,
+        "skipped": 0,
+        "pct": 47.36
+      },
+      "branches": {
+        "total": 22,
+        "covered": 16,
+        "skipped": 0,
+        "pct": 72.72
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": []
+}

@@ -1,0 +1,79 @@
+{
+  "name": "countries-and-timezones",
+  "version": "3.9.0",
+  "description": "Minimalistic library to work with countries and timezones data.",
+  "main": "./dist/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/types.d.ts",
+  "exports": {
+    "import": {
+      "types": "./esm/types.d.ts",
+      "default": "./esm/index.js"
+    },
+    "require": {
+      "types": "./esm/types.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "esm"
+  ],
+  "scripts": {
+    "build": "vite build && ./bin/addEsmPackage.sh",
+    "lint:ts": "xo --fix",
+    "lint:json": "prettier --write \"**/*.json\"",
+    "lint:md": "markdownlint \"**/*.md\" --fix --dot --ignore-path .gitignore && prettier --write \"**/*.md\"",
+    "lint": "npm run lint:ts && npm run lint:json && npm run lint:md",
+    "prepack": "npm run build",
+    "release": "release-it",
+    "test:unit": "vitest",
+    "test:types": "tsd --files types/index.test-d.ts",
+    "test": "npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelmhtr/countries-and-timezones.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=8.x",
+    "npm": ">=5.x"
+  },
+  "keywords": [
+    "Countries",
+    "Timezones",
+    "Country",
+    "Timezone",
+    "Time",
+    "Date",
+    "DST",
+    "IANA",
+    "ICANN"
+  ],
+  "author": "Manuel de la Torre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manuelmhtr/countries-and-timezones/issues"
+  },
+  "homepage": "https://github.com/manuelmhtr/countries-and-timezones#readme",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.6",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@types/node": "^25.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "markdownlint-cli": "^0.48.0",
+    "prettier": "^3.5.3",
+    "release-it": "^19.2.4",
+    "tsd": "^0.33.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.8",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^4.1.4",
+    "xo": "^2.0.2"
+  },
+  "packageManager": "npm@11.3.0"
+}

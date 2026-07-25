@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package zip-a-folder
+
+
+================ UnitGen Coverage Summary ================
+Package            : zip-a-folder
+Generated test files: 6
+Total tests         : 9
+Passing tests       : 8
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 20%
+Branch coverage     : 0%
+==========================================================
+

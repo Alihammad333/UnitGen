@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-07-19T21:22:50.695Z",
+  "packageName": "jsonfile",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 6,
+  "totalTests": 29,
+  "passingTests": 29,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 47,
+        "covered": 29,
+        "skipped": 0,
+        "pct": 61.7
+      },
+      "statements": {
+        "total": 48,
+        "covered": 30,
+        "skipped": 0,
+        "pct": 62.5
+      },
+      "functions": {
+        "total": 6,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 66.66
+      },
+      "branches": {
+        "total": 36,
+        "covered": 18,
+        "skipped": 0,
+        "pct": 50
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "includedCoverageFiles": [
+    "index.js",
+    "utils.js"
+  ],
+  "excludedCoverageFiles": [],
+  "failedTestNames": []
+}

@@ -1,0 +1,193 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 4,
+  "numPassedTests": 7,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 4,
+  "numTotalTests": 7,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1781756177160,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "defaultExport"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "defaultExport auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756177697,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "defaultExport"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "defaultExport fallback checks source-aware result shape asynchronously",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756177699,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape asynchronously"
+        },
+        {
+          "ancestorTitles": [
+            "defaultExport"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "defaultExport fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756177700,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "defaultExport"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "defaultExport [repair-candidate] Default behavior - HTTP URL",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756177701,
+          "status": "passed",
+          "title": "[repair-candidate] Default behavior - HTTP URL"
+        }
+      ],
+      "endTime": 1781756177702,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\request.defaultExport.test.js",
+      "startTime": 1781756177199,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "image"
+          ],
+          "duration": 52,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "image auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756177809,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1781756177864,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.image.test.js",
+      "startTime": 1781756177711,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "TimeoutError"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "TimeoutError auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781756177994,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1781756177996,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\TimeoutError.TimeoutError.test.js",
+      "startTime": 1781756177893,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "image"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "image should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781756178059,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781756178061,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\image-downloader.dynamic.image.image.test.js",
+      "startTime": 1781756178000,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

@@ -1,0 +1,611 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/zip-a-folder
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\lib\zip-a-folder.js
+==============================
+✅ Found 1 function(s): ZipAFolder
+ℹ️ Class-like exports will use constructor prototype generation: ZipAFolder
+✅ Exported function(s): ZipAFolder
+🏛️ Class export analysis:
+   - ZipAFolder: constructor params (none), 0 prototype method(s), 2 static method(s)
+     static: zip, zipFolder
+📚 Usage snippets:
+   - 10 snippet(s) found from 4 scanned file(s)
+   - zip: 5
+   - zipFolder: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - archiver -> archiver (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   ZipAFolder.zip:
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path -> path (reference)
+   - fs.access -> fs (transitive-member-call)
+   - fs.access -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.constants.F_OK -> fs (transitive-member-chain)
+   - fs.constants -> fs (transitive-member)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - archiver() -> archiver (transitive-direct-call)
+   - archiver -> archiver (transitive-member-call)
+   - archiver -> archiver (transitive-reference)
+   ZipAFolder.zipFolder:
+   - fs.access -> fs (member-call)
+   - fs.access -> fs (member)
+   - fs -> fs (reference)
+   - fs.constants.F_OK -> fs (member-chain)
+   - fs.constants -> fs (member)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path -> path (reference)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - archiver() -> archiver (direct-call)
+   - archiver -> archiver (member-call)
+   - archiver -> archiver (reference)
+🧩 Mock plan:
+   ZipAFolder.zip:
+   - path (builtin) members: dirname; targets: path, dirname;
+   - fs (builtin) members: access, constants, createWriteStream; targets: fs, access, F_OK, constants, createWriteStream; chains: constants.F_OK;
+   - archiver (external) members: none; targets: archiver;
+   ZipAFolder.zipFolder:
+   - fs (builtin) members: access, constants, createWriteStream; targets: fs, access, F_OK, constants, createWriteStream; chains: constants.F_OK;
+   - path (builtin) members: dirname; targets: path, dirname;
+   - archiver (external) members: none; targets: archiver;
+🧪 Rendered mocks:
+   ZipAFolder.zip: 3 mock block(s)
+   ZipAFolder.zipFolder: 3 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js
+
+==============================
+📄 Skipping: benchmark_packages\zip-a-folder\test\zip-a-folder.test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 3 API candidate(s), 3 public target candidate(s).
+✅ Dynamic preflight passed: ZipAFolder
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.ZipAFolder.default.test.js (ZipAFolder)
+✅ Dynamic preflight passed: zip
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zip.zip.test.js (zip)
+✅ Dynamic preflight passed: zipFolder
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zipFolder.zipFolder.test.js (zipFolder)
+ℹ️ Dynamic API preflight kept 3 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 3
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 2
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  6
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 1
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js (2)
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder.zip
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for ZipAFolder.zip; keeping prototype only.
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder.zipFolder
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js (1)
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.ZipAFolder.default.test.js (2 + 1 repair candidate(s))
+Ã°Å¸Â§Âª LLM injection summary for zip
+   received: 7
+   sanitizer accepted: 2
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 3
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zip.zip.test.js (0 + 1 repair candidate(s))
+Ã°Å¸Â§Âª LLM injection summary for zipFolder
+   received: 7
+   sanitizer accepted: 0
+   sanitizer rejected: 7
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zipFolder.zipFolder.test.js (1)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:9168) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/generated/zip-a-folder.ZipAFolder.zip.test.js (5.629 s)
+  ● ZipAFolder.zip › auto-generated (prototype)
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      311 |
+      312 | describe("ZipAFolder.zip", () => {
+    > 313 |   test("auto-generated (prototype)", async () => {
+          |   ^
+      314 |     const __unitgenTmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "unitgen-"));
+      315 |     const __unitgenOutputDir = fs.mkdtempSync(path.join(os.tmpdir(), "unitgen-out-"));
+      316 |     const __unitgenFilePath = path.join(__unitgenTmpDir, "sample.json");
+
+      at tests/generated/zip-a-folder.ZipAFolder.zip.test.js:313:3
+      at tests/generated/zip-a-folder.ZipAFolder.zip.test.js:312:1
+
+FAIL tests/generated/zip-a-folder.dynamic.zip.zip.test.js
+  ● zip › [repair-candidate] Safe invariant - Result is defined
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      19 |       const zipFilePath = 'output.zip';
+      20 |       const result = await __unitgen_target__(srcFolder, zipFilePath);
+    > 21 |       expect(result).toBeDefined()
+         |                      ^
+      22 |     }
+      23 |   });
+      24 | });
+
+      at Object.<anonymous> (tests/generated/zip-a-folder.dynamic.zip.zip.test.js:21:22)
+
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+Initial Jest run crashed before producing JSON. Running generated-test safety preflight...
+
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js
+⚠️ Removing failed prototype-only generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zip.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.ZipAFolder.default.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zip.zip.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:2564) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/generated/zip-a-folder.dynamic.zip.zip.test.js
+  ● zip › [repair-candidate] Safe invariant - Result is defined
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      19 |       const zipFilePath = 'output.zip';
+      20 |       const result = await __unitgen_target__(srcFolder, zipFilePath);
+    > 21 |       expect(result).toBeDefined()
+         |                      ^
+      22 |     }
+      23 |   });
+      24 | });
+
+      at Object.<anonymous> (tests/generated/zip-a-folder.dynamic.zip.zip.test.js:21:22)
+
+FAIL tests/generated/zip-a-folder.dynamic.ZipAFolder.default.test.js
+  ● ZipAFolder › [repair-candidate] Safe invariant - Result should be a Promise
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+    Received constructor: ZipAFolder
+
+      38 |     {
+      39 |       const result = await new __unitgen_target__(1, 1);
+    > 40 |       expect(result).toBeInstanceOf(Promise);
+         |                      ^
+      41 |     }
+      42 |   });
+      43 | });
+
+      at Object.<anonymous> (tests/generated/zip-a-folder.dynamic.ZipAFolder.default.test.js:40:22)
+
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+⚠️ Full-suite preflight found unrecoverable Jest crash. Cleanup round 1/3.
+⚠️ Removing failing dynamic test file after suite crash: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.ZipAFolder.default.test.js
+⚠️ Removing failing dynamic test file after suite crash: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zip.zip.test.js
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:5160) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+⚠️ Full-suite preflight found unrecoverable Jest crash. Cleanup round 2/3.
+⚠️ Could not isolate crashing generated test file automatically.
+
+🛡️ Post-LLM preflight completed. Kept 3 file(s), removed 3 unsafe file(s).
+
+
+Re-running Jest after generated-test safety preflight...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:14348) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+🔁 Running adaptive repair...
+
+⚠️ Initial Jest failed in an unrecoverable way.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:18544) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+⚠️ Baseline Jest run did not collect tests. Assertion enhancement skipped.
+
+🧪 Re-running Jest after assertion enhancement...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:6216) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+✅ Done.
+

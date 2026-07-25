@@ -1,0 +1,1851 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 29,
+  "numPassedTests": 88,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 30,
+  "numTotalTests": 89,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1784459031027,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031633,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project Project constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031635,
+          "status": "passed",
+          "title": "Project constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project Project constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459031636,
+          "status": "passed",
+          "title": "Project constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459031637,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Project.test.js",
+      "startTime": 1784459031069,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031737,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with default collections",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459031739,
+          "status": "passed",
+          "title": "Group constructor with default collections"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459031740,
+          "status": "passed",
+          "title": "Group constructor with client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with empty client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459031740,
+          "status": "passed",
+          "title": "Group constructor with empty client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with empty data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459031740,
+          "status": "passed",
+          "title": "Group constructor with empty data"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031741,
+          "status": "passed",
+          "title": "Group constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459031741,
+          "status": "passed",
+          "title": "Group constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459031742,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Group.test.js",
+      "startTime": 1784459031643,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031845,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue Issue constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459031846,
+          "status": "passed",
+          "title": "Issue constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue Issue constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459031847,
+          "status": "passed",
+          "title": "Issue constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459031848,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Issue.test.js",
+      "startTime": 1784459031747,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Environment"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Environment auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459031930,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459031932,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Environment.test.js",
+      "startTime": 1784459031852,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032013,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Default behavior - Trace function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032015,
+          "status": "passed",
+          "title": "Default behavior - Trace function"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Safe invariant - Trace function result type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032015,
+          "status": "passed",
+          "title": "Safe invariant - Trace function result type"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Trace constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032015,
+          "status": "passed",
+          "title": "Trace constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Trace constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032015,
+          "status": "passed",
+          "title": "Trace constructor exposes an object-like result"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Safe invariant - Trace namespace",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032016,
+          "status": "passed",
+          "title": "Safe invariant - Trace namespace"
+        }
+      ],
+      "endTime": 1784459032017,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Trace.test.js",
+      "startTime": 1784459031935,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "User"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "User auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032099,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032101,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.User.test.js",
+      "startTime": 1784459032020,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Job"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Job auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032184,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032186,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Job.test.js",
+      "startTime": 1784459032104,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Tag"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Tag auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032267,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032269,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Tag.test.js",
+      "startTime": 1784459032189,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Tag"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Tag auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032349,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032351,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Tag.test.js",
+      "startTime": 1784459032272,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Iteration"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Iteration auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032435,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032437,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Iteration.test.js",
+      "startTime": 1784459032360,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032517,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue Issue constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032518,
+          "status": "passed",
+          "title": "Issue constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Issue"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Issue Issue constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032519,
+          "status": "passed",
+          "title": "Issue constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459032520,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Issue.test.js",
+      "startTime": 1784459032440,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032601,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with default collections",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459032603,
+          "status": "passed",
+          "title": "Group constructor with default collections"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459032604,
+          "status": "passed",
+          "title": "Group constructor with client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor with empty data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "startAt": 1784459032604,
+          "status": "passed",
+          "title": "Group constructor with empty data"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032605,
+          "status": "passed",
+          "title": "Group constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Group"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Group Group constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032605,
+          "status": "passed",
+          "title": "Group constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459032606,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Group.test.js",
+      "startTime": 1784459032523,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032688,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client Client constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032690,
+          "status": "passed",
+          "title": "Client constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client Client constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032692,
+          "status": "passed",
+          "title": "Client constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459032693,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Client.test.js",
+      "startTime": 1784459032609,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032781,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Default behavior - Trace function call",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032783,
+          "status": "passed",
+          "title": "Default behavior - Trace function call"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Safe invariant - Check if Trace function returns an object",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032783,
+          "status": "passed",
+          "title": "Safe invariant - Check if Trace function returns an object"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Trace constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032784,
+          "status": "passed",
+          "title": "Trace constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Trace"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Trace Trace constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032784,
+          "status": "passed",
+          "title": "Trace constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459032785,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Trace.test.js",
+      "startTime": 1784459032706,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032870,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest Safe invariant test - MergeRequest discussions collection",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032871,
+          "status": "passed",
+          "title": "Safe invariant test - MergeRequest discussions collection"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest Safe invariant test - MergeRequest notes collection",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032872,
+          "status": "passed",
+          "title": "Safe invariant test - MergeRequest notes collection"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest Test default behavior of MergeRequest",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032872,
+          "status": "passed",
+          "title": "Test default behavior of MergeRequest"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest Parameterized behavior test - MergeRequest with specific data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032872,
+          "status": "passed",
+          "title": "Parameterized behavior test - MergeRequest with specific data"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest MergeRequest constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459032873,
+          "status": "passed",
+          "title": "MergeRequest constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest MergeRequest constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032873,
+          "status": "passed",
+          "title": "MergeRequest constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459032874,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.MergeRequest.test.js",
+      "startTime": 1784459032791,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Branch"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Branch auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459032954,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459032955,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Branch.test.js",
+      "startTime": 1784459032877,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033036,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - default behavior",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033037,
+          "status": "passed",
+          "title": "Collection - default behavior"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - construct as null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033038,
+          "status": "passed",
+          "title": "Collection - construct as null"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - construct as undefined",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033038,
+          "status": "passed",
+          "title": "Collection - construct as undefined"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - client as null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033039,
+          "status": "passed",
+          "title": "Collection - client as null"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - client as undefined",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033039,
+          "status": "passed",
+          "title": "Collection - client as undefined"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - parent as null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033039,
+          "status": "passed",
+          "title": "Collection - parent as null"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection - parent as undefined",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459033039,
+          "status": "passed",
+          "title": "Collection - parent as undefined"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033040,
+          "status": "passed",
+          "title": "Collection constructor creates an instance"
+        }
+      ],
+      "endTime": 1784459033041,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Collection.test.js",
+      "startTime": 1784459032958,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033121,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033122,
+          "status": "passed",
+          "title": "Collection constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Collection"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Collection Collection constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033122,
+          "status": "passed",
+          "title": "Collection constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459033123,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Collection.test.js",
+      "startTime": 1784459033043,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Release"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Release auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033205,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033207,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Release.test.js",
+      "startTime": 1784459033126,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033296,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client Client constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033298,
+          "status": "passed",
+          "title": "Client constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Client"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Client Client constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033299,
+          "status": "passed",
+          "title": "Client constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459033300,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Client.test.js",
+      "startTime": 1784459033219,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Iteration"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Iteration auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033383,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033385,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Iteration.test.js",
+      "startTime": 1784459033303,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "User"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "User auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033467,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033469,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.User.test.js",
+      "startTime": 1784459033388,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Release"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Release auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033581,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033583,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Release.test.js",
+      "startTime": 1784459033472,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033667,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest MergeRequest constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033668,
+          "status": "passed",
+          "title": "MergeRequest constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "MergeRequest"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "MergeRequest MergeRequest constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033669,
+          "status": "passed",
+          "title": "MergeRequest constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459033669,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.MergeRequest.test.js",
+      "startTime": 1784459033585,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Branch"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Branch auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033762,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033764,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Branch.test.js",
+      "startTime": 1784459033682,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Job"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Job auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033852,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784459033854,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Job.test.js",
+      "startTime": 1784459033766,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033936,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline with client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033937,
+          "status": "passed",
+          "title": "Pipeline with client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459033938,
+          "status": "passed",
+          "title": "Pipeline constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459033938,
+          "status": "passed",
+          "title": "Pipeline constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459033939,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.cjs.development.Pipeline.test.js",
+      "startTime": 1784459033856,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Environment"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Environment auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459034022,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Environment"
+          ],
+          "duration": 15,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Environment Environment function does not throw an error",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459034024,
+          "status": "passed",
+          "title": "Environment function does not throw an error"
+        }
+      ],
+      "endTime": 1784459034040,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Environment.test.js",
+      "startTime": 1784459033941,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459034123,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project Safe invariant - Project with client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784459034124,
+          "status": "passed",
+          "title": "Safe invariant - Project with client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project Project constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459034125,
+          "status": "passed",
+          "title": "Project constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Project"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Project Project constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459034125,
+          "status": "passed",
+          "title": "Project constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784459034126,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Project.test.js",
+      "startTime": 1784459034042,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459034216,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline with client and data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459034218,
+          "status": "passed",
+          "title": "Pipeline with client and data"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784459034218,
+          "status": "passed",
+          "title": "Pipeline constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Pipeline Pipeline constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784459034218,
+          "status": "passed",
+          "title": "Pipeline constructor exposes an object-like result"
+        },
+        {
+          "ancestorTitles": [
+            "Pipeline"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "Error: expect(received).toContain(expected) // indexOf\n\nMatcher error: received value must not be null nor undefined\n\nReceived has value: undefined\n    at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Pipeline.test.js:301:33)\n    at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1497:10)\n    at _callCircusTest (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1007:40)\n    at _runTest (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:947:3)\n    at C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:857:11)\n    at run (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1918:21)\n    at jestAdapter (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-circus\\build\\runner.js:101:19)\n    at runTestInternal (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-runner\\build\\index.js:275:16)\n    at runTest (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\node_modules\\jest-runner\\build\\index.js:343:7)"
+          ],
+          "fullName": "Pipeline [repair-candidate] Pipeline with data containing strings",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1784459034218,
+          "status": "failed",
+          "title": "[repair-candidate] Pipeline with data containing strings"
+        }
+      ],
+      "endTime": 1784459034230,
+      "message": "  ● Pipeline › [repair-candidate] Pipeline with data containing strings\n\n    expect(received).toContain(expected) // indexOf\n\n    Matcher error: received value must not be null nor undefined\n\n    Received has value: undefined\n\n      299 |       const data = ['a', 'b', 'c'];\n      300 |       const result = new Pipeline(client, data);\n    > 301 |       expect(result.jobs.items).toContain('a');\n          |                                 ^\n      302 |     }\n      303 |   });\n      304 | });\n\n      at Object.<anonymous> (tests/generated/gitlab-js.esm.Pipeline.test.js:301:33)\n",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\gitlab-js.esm.Pipeline.test.js",
+      "startTime": 1784459034137,
+      "status": "failed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package geo-point
+
+
+================ UnitGen Coverage Summary ================
+Package            : geo-point
+Generated test files: 19
+Total tests         : 84
+Passing tests       : 83
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 60.97%
+Branch coverage     : 82.35%
+==========================================================
+

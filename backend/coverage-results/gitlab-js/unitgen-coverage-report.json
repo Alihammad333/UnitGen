@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-07-19T11:05:47.264Z",
+  "packageName": "gitlab-js",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\gitlab-js",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 30,
+  "totalTests": 89,
+  "passingTests": 88,
+  "failedTests": 1,
+  "coverageMode": "passing-tests-only-isolated-coverage-runs",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 202,
+        "covered": 113,
+        "skipped": 0,
+        "pct": 55.94
+      },
+      "statements": {
+        "total": 205,
+        "covered": 113,
+        "skipped": 0,
+        "pct": 55.12
+      },
+      "functions": {
+        "total": 58,
+        "covered": 34,
+        "skipped": 0,
+        "pct": 58.62
+      },
+      "branches": {
+        "total": 144,
+        "covered": 34,
+        "skipped": 0,
+        "pct": 23.61
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "includedCoverageFiles": [
+    "src\\gitlab.classes.ts"
+  ],
+  "excludedCoverageFiles": [
+    "node_modules\\regenerator-runtime\\runtime.js"
+  ],
+  "failedTestNames": [
+    {
+      "file": "tests\\generated\\gitlab-js.esm.Pipeline.test.js",
+      "name": "Pipeline [repair-candidate] Pipeline with data containing strings"
+    }
+  ]
+}

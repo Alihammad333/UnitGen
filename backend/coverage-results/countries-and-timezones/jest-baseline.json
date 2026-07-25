@@ -1,0 +1,837 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 14,
+  "numPassedTests": 39,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 14,
+  "numTotalTests": 39,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1784366922472,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923295,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone Invalid timezone name - returns null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923299,
+          "status": "passed",
+          "title": "Invalid timezone name - returns null"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone Empty timezone name - returns null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923300,
+          "status": "passed",
+          "title": "Empty timezone name - returns null"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone Safe invariant: Result is an object or null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923300,
+          "status": "passed",
+          "title": "Safe invariant: Result is an object or null"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone Safe invariant: Result has expected properties or is null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923301,
+          "status": "passed",
+          "title": "Safe invariant: Result has expected properties or is null"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone Valid timezone name - returns timezone data with different UTC offset",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923302,
+          "status": "passed",
+          "title": "Valid timezone name - returns timezone data with different UTC offset"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923302,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923303,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1784366923304,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getTimezone.test.js",
+      "startTime": 1784366922559,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923424,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones Safe invariant - result is an object",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784366923431,
+          "status": "passed",
+          "title": "Safe invariant - result is an object"
+        },
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones Safe invariant - result includes specific keys",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784366923433,
+          "status": "passed",
+          "title": "Safe invariant - result includes specific keys"
+        },
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones Safe invariant - result is not null",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923434,
+          "status": "passed",
+          "title": "Safe invariant - result is not null"
+        },
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784366923436,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923437,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1784366923439,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getAllTimezones.test.js",
+      "startTime": 1784366923313,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923570,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone Returns null when country is not found for a given timezone",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923572,
+          "status": "passed",
+          "title": "Returns null when country is not found for a given timezone"
+        },
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone Returns null when country is not found for a given timezone with deprecated timezones included",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923573,
+          "status": "passed",
+          "title": "Returns null when country is not found for a given timezone with deprecated timezones included"
+        },
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone Returns null when country is not found for a given timezone with empty options",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923574,
+          "status": "passed",
+          "title": "Returns null when country is not found for a given timezone with empty options"
+        },
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923574,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923575,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1784366923576,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getCountryForTimezone.test.js",
+      "startTime": 1784366923457,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923690,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone Returns countries for a timezone with default options",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923692,
+          "status": "passed",
+          "title": "Returns countries for a timezone with default options"
+        },
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone Returns null for a timezone with no countries",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923696,
+          "status": "passed",
+          "title": "Returns null for a timezone with no countries"
+        },
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone Returns null for an unknown timezone",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923697,
+          "status": "passed",
+          "title": "Returns null for an unknown timezone"
+        },
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone Returns countries for a timezone with deprecated timezones included",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784366923697,
+          "status": "passed",
+          "title": "Returns countries for a timezone with deprecated timezones included"
+        }
+      ],
+      "endTime": 1784366923702,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getCountriesForTimezone.test.js",
+      "startTime": 1784366923584,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountry"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountry auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923810,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getCountry"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountry fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923812,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "getCountry"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountry fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923813,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1784366923814,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getCountry.test.js",
+      "startTime": 1784366923709,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountryForTimezone"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountryForTimezone should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366923920,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366923923,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getCountryForTimezone.getCountryForTimezone.test.js",
+      "startTime": 1784366923819,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getAllCountries"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllCountries should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924033,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924038,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getAllCountries.getAllCountries.test.js",
+      "startTime": 1784366923928,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getTimezonesForCountry"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezonesForCountry auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924153,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezonesForCountry"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezonesForCountry fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924155,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "getTimezonesForCountry"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezonesForCountry fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924156,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1784366924158,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getTimezonesForCountry.test.js",
+      "startTime": 1784366924043,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getAllCountries"
+          ],
+          "duration": 4,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllCountries auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924280,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        }
+      ],
+      "endTime": 1784366924285,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.getAllCountries.test.js",
+      "startTime": 1784366924165,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountry"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountry should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924386,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924390,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getCountry.getCountry.test.js",
+      "startTime": 1784366924291,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getCountriesForTimezone"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getCountriesForTimezone should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924501,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924505,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getCountriesForTimezone.getCountriesForTimezone.test.js",
+      "startTime": 1784366924405,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getTimezone"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezone should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924608,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924611,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getTimezone.getTimezone.test.js",
+      "startTime": 1784366924511,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getTimezonesForCountry"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getTimezonesForCountry should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924727,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924732,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getTimezonesForCountry.getTimezonesForCountry.test.js",
+      "startTime": 1784366924617,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "getAllTimezones"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "getAllTimezones should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784366924837,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1784366924840,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\countries-and-timezones.dynamic.getAllTimezones.getAllTimezones.test.js",
+      "startTime": 1784366924738,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

@@ -1,0 +1,112 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 4,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 4,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1781807494361,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "uneval"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uneval should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781807495117,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "uneval"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uneval fallback follows source guard for obj",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781807495121,
+          "status": "passed",
+          "title": "fallback follows source guard for obj"
+        },
+        {
+          "ancestorTitles": [
+            "uneval"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uneval fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781807495121,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "uneval"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "uneval [repair-candidate] Observed behavior returns \"1\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781807495122,
+          "status": "passed",
+          "title": "[repair-candidate] Observed behavior returns \"1\""
+        }
+      ],
+      "endTime": 1781807495124,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-uneval.dynamic.uneval.default.test.js",
+      "startTime": 1781807494444,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

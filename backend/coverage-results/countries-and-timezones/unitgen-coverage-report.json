@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-07-18T09:28:48.777Z",
+  "packageName": "countries-and-timezones",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\countries-and-timezones",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 14,
+  "totalTests": 39,
+  "passingTests": 39,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 70,
+        "covered": 69,
+        "skipped": 0,
+        "pct": 98.57
+      },
+      "statements": {
+        "total": 83,
+        "covered": 80,
+        "skipped": 0,
+        "pct": 96.38
+      },
+      "functions": {
+        "total": 5,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 80
+      },
+      "branches": {
+        "total": 73,
+        "covered": 57,
+        "skipped": 0,
+        "pct": 78.08
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": []
+}

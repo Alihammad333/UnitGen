@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package crawler-url-parser
+
+
+================ UnitGen Coverage Summary ================
+Package            : crawler-url-parser
+Generated test files: 6
+Total tests         : 15
+Passing tests       : 14
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 71.17%
+Branch coverage     : 55%
+==========================================================
+

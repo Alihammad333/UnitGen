@@ -1,0 +1,264 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 6,
+  "numPassedTests": 10,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 6,
+  "numTotalTests": 10,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1781865804057,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ZipAFolder"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781865804910,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "ZipAFolder"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder ZipAFolder constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781865804917,
+          "status": "passed",
+          "title": "ZipAFolder constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "ZipAFolder"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder ZipAFolder constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865804918,
+          "status": "passed",
+          "title": "ZipAFolder constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1781865804921,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.ZipAFolder.test.js",
+      "startTime": 1781865804135,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ZipAFolder.zip"
+          ],
+          "duration": 7,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder.zip auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781865805091,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "ZipAFolder.zip"
+          ],
+          "duration": 8,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder.zip ZipAFolder.zip rejects conflicting path inputs",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865805099,
+          "status": "passed",
+          "title": "ZipAFolder.zip rejects conflicting path inputs"
+        }
+      ],
+      "endTime": 1781865805108,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.ZipAFolder.zip.test.js",
+      "startTime": 1781865804929,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "zipFolder"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "zipFolder should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865805276,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781865805279,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.dynamic.zipFolder.zipFolder.test.js",
+      "startTime": 1781865805121,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ZipAFolder.zipFolder"
+          ],
+          "duration": 10,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder.zipFolder auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781865805451,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "ZipAFolder.zipFolder"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder.zipFolder ZipAFolder.zipFolder checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865805461,
+          "status": "passed",
+          "title": "ZipAFolder.zipFolder checks stable result contract"
+        }
+      ],
+      "endTime": 1781865805463,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.ZipAFolder.zipFolder.test.js",
+      "startTime": 1781865805287,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ZipAFolder"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ZipAFolder should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865805629,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781865805633,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.dynamic.ZipAFolder.default.test.js",
+      "startTime": 1781865805473,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "zip"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "zip should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781865805796,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781865805800,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\zip-a-folder.dynamic.zip.zip.test.js",
+      "startTime": 1781865805640,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

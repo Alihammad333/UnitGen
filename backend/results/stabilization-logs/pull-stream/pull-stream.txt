@@ -1,0 +1,1785 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/pull-stream
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 54 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\benchmarks\flatten.js
+==============================
+✅ Found 2 function(s): getRandomValues, setValues
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\benchmarks\helpers\lifecycle-configs.js
+==============================
+✅ Found 5 function(s): getLifecycleConfigs, calcMemUsage, onCycle, onStart, onComplete
+✅ Exported function(s): getLifecycleConfigs
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - getLifecycleConfigs: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prettyBytes -> pretty-bytes (require:*, cjs)
+   - gc -> expose-gc/function (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧱 Top-level external mocks/stubs:
+   - pretty-bytes (missing-external)
+   - expose-gc/function (missing-external)
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\lifecycle-configs.getLifecycleConfigs.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\benchmarks\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\benchmarks\node.js
+==============================
+✅ Found 3 function(s): Values, Async, Collect
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\benchmarks\pull.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\pull.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\pull.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\collect.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\collect.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\concat.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\concat.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\drain.js
+==============================
+✅ Found 2 function(s): defaultExport, sink
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\drain.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\find.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\find.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\log.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\log.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\on-end.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\on-end.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\reduce.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\reduce.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\count.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\count.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\empty.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\empty.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\error.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\error.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\infinite.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\infinite.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\keys.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ./values (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\keys.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\once.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\once.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\values.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\values.defaultExport.test.js
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\abort-stalled.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\async-map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\collect.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\compose.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\concat.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\continuable.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-abort.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-if.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\filter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\find.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\flatten.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\keys.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\pull.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\take.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\through.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\unique.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\values.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\async-map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\async-map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter-not.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter-not.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\flatten.js
+==============================
+✅ Found 3 function(s): defaultExport, nextChunk, nextStream
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ../sources/values (require:*, cjs)
+   - once -> ../sources/once (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\flatten.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\non-unique.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - unique -> ./unique (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\non-unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\take.js
+==============================
+✅ Found 2 function(s): defaultExport, terminate
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\take.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\through.js
+==============================
+✅ Found 2 function(s): defaultExport, once
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\through.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\unique.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\abort-cb.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\prop.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\prop.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\tester.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ./prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\tester.defaultExport.test.js
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 36
+⚠️ Files skipped:  18
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  28
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for getLifecycleConfigs
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for getLifecycleConfigs; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\pull.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\collect.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 1
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\concat.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\drain.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 0
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\log.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\on-end.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\reduce.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\count.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\empty.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\error.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\infinite.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 1
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\once.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\async-map.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter-not.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 1
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - ASSERTION_ORACLE_FAILURE: 1
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\flatten.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   - UNDECLARED_REFERENCE: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\map.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 0
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\non-unique.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - CASE_PARSE_FAILED: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 2
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\take.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\through.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\unique.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 5
+   sanitizer accepted: 3
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 3
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 0
+   fallback runtime failed: 1
+   fallback injected: 0
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\prop.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 1
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\tester.defaultExport.test.js (3)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 28
+Failed Suites     : 2
+Total Tests       : 86
+Passed            : 84
+Failed            : 2
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\lifecycle-configs.getLifecycleConfigs.test.js
+  ● getLifecycleConfigs › auto-generated (prototype) UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from '...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js
+  ● defaultExport › auto-generated (prototype) expect(received).toBeDefined() Received: undefined 230 | const onAbort = () => 0; 231 | const result = defaultExport(cb, abort, onAbort); > 232 | expect(result).toBeDefined...
+------------------------------------------------------------
+❌ FAIL  - getLifecycleConfigs auto-generated (prototype)
+   Error: Error: UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/he...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport Simple parameterized behavior - numeric key
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport auto-generated (prototype)
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js:232:20) at Promise.fin...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined check
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - abort is false
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is null
+✅ PASS  - defaultExport Safe invariant - end is not null
+✅ PASS  - defaultExport Parameterized behavior - op and onEnd are provided
+✅ PASS  - defaultExport Safe invariant - end is null
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - Check if result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - prop function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - no operation, no done callback
+✅ PASS  - defaultExport Safe invariant - result shape and type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior with Math.random
+✅ PASS  - defaultExport Parameterized behavior with custom generate function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: lifecycle-configs.getLifecycleConfigs.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:17.159Z","testFile":"lifecycle-configs.getLifecycleConfigs.test.js","failureType":"IMPORT","before":"Error: UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js' Attempt 2: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helper","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:17.161Z","testFile":"abort-cb.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\tests\\generated\\abort-cb.defaultExport.test.js:232:20) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: lifecycle-configs.getLifecycleConfigs.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: abort-cb.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: lifecycle-configs.getLifecycleConfigs.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:21.286Z","testFile":"lifecycle-configs.getLifecycleConfigs.test.js","failureType":"IMPORT","before":"Error: UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js' Attempt 2: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helper","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:21.286Z","testFile":"abort-cb.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\tests\\generated\\abort-cb.defaultExport.test.js:232:20) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: lifecycle-configs.getLifecycleConfigs.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: abort-cb.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: lifecycle-configs.getLifecycleConfigs.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:23.910Z","testFile":"lifecycle-configs.getLifecycleConfigs.test.js","failureType":"IMPORT","before":"Error: UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js' Attempt 2: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/helper","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T10:35:23.911Z","testFile":"abort-cb.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\tests\\generated\\abort-cb.defaultExport.test.js:232:20) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: lifecycle-configs.getLifecycleConfigs.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: abort-cb.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+❌ Repair attempts finished.
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: abort-cb.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T10:35:31.737Z","testFile":"abort-cb.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [abort-cb.defaultExport.test.js :: toBeDefined] -> Before: 4 | After: 4
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T10:36:51.413Z","testFile":"abort-cb.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: lifecycle-configs.getLifecycleConfigs.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T10:36:51.426Z","testFile":"lifecycle-configs.getLifecycleConfigs.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [lifecycle-configs.getLifecycleConfigs.test.js :: toBeDefined] -> Before: 4 | After: 4
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting lifecycle-configs.getLifecycleConfigs.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T10:36:55.390Z","testFile":"lifecycle-configs.getLifecycleConfigs.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 28
+Failed Suites     : 2
+Total Tests       : 86
+Passed            : 84
+Failed            : 2
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js
+  ● defaultExport › auto-generated (prototype) expect(received).toBeDefined() Received: undefined 230 | const onAbort = () => 0; 231 | const result = defaultExport(cb, abort, onAbort); > 232 | expect(result).toBeDefined...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\lifecycle-configs.getLifecycleConfigs.test.js
+  ● getLifecycleConfigs › auto-generated (prototype) UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from '...
+------------------------------------------------------------
+❌ FAIL  - defaultExport auto-generated (prototype)
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js:232:20) at Promise.fin...
+❌ FAIL  - getLifecycleConfigs auto-generated (prototype)
+   Error: Error: UnitGen module load failed for ../../benchmark_packages/pull-stream/benchmarks/helpers/lifecycle-configs.js: Attempt 1: Cannot find module 'expose-gc/function' from 'benchmark_packages/pull-stream/benchmarks/he...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - Check if result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - abort is false
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is null
+✅ PASS  - defaultExport Safe invariant - end is not null
+✅ PASS  - defaultExport Parameterized behavior - op and onEnd are provided
+✅ PASS  - defaultExport Safe invariant - end is null
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - prop function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - no operation, no done callback
+✅ PASS  - defaultExport Safe invariant - result shape and type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined check
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport Simple parameterized behavior - numeric key
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior with Math.random
+✅ PASS  - defaultExport Parameterized behavior with custom generate function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+============================================================
+
+
+✅ Done.
+

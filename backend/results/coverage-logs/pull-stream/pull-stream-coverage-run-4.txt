@@ -1,0 +1,2795 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/pull-stream
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 54 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\flatten.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\helpers\lifecycle-configs.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\index.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\node.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\pull.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\pull.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - pull: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\pull.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\collect.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - collect: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - reduce() -> ./reduce (direct-call)
+   - reduce -> ./reduce (member-call)
+   - reduce -> ./reduce (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./reduce (local) members: none; targets: reduce;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\collect.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\concat.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - concat: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - reduce() -> ./reduce (direct-call)
+   - reduce -> ./reduce (member-call)
+   - reduce -> ./reduce (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./reduce (local) members: none; targets: reduce;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\concat.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\drain.js
+==============================
+✅ Found 2 function(s): defaultExport, sink
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - drain: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\drain.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\find.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - find: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - prop() -> ../util/prop (direct-call)
+   - prop -> ../util/prop (member-call)
+   - prop -> ../util/prop (reference)
+   - drain() -> ./drain (direct-call)
+   - drain -> ./drain (member-call)
+   - drain -> ./drain (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/prop (local) members: none; targets: prop;
+   - ./drain (local) members: none; targets: drain;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\find.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\log.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - log: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - drain() -> ./drain (direct-call)
+   - drain -> ./drain (member-call)
+   - drain -> ./drain (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./drain (local) members: none; targets: drain;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\on-end.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - onEnd: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - drain() -> ./drain (direct-call)
+   - drain -> ./drain (member-call)
+   - drain -> ./drain (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./drain (local) members: none; targets: drain;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\on-end.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\reduce.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - reduce: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - drain() -> ./drain (direct-call)
+   - drain -> ./drain (member-call)
+   - drain -> ./drain (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./drain (local) members: none; targets: drain;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\reduce.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\count.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - count: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\count.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\empty.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - empty: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\empty.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\error.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - error: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\error.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\infinite.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - infinite: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\infinite.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\keys.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - keys: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ./values (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - values() -> ./values (direct-call)
+   - values -> ./values (member-call)
+   - values -> ./values (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./values (local) members: none; targets: values;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\keys.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\once.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - once: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\once.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\values.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - values: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\values.defaultExport.test.js
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\abort-stalled.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\async-map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\collect.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\compose.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\concat.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\continuable.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-abort.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-if.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\filter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\find.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\flatten.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\keys.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\pull.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\take.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\through.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\unique.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\values.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\async-map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - asyncMap: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - prop() -> ../util/prop (direct-call)
+   - prop -> ../util/prop (member-call)
+   - prop -> ../util/prop (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/prop (local) members: none; targets: prop;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\async-map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter-not.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - filterNot: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - tester() -> ../util/tester (direct-call)
+   - tester -> ../util/tester (member-call)
+   - tester -> ../util/tester (reference)
+   - filter() -> ./filter (direct-call)
+   - filter -> ./filter (member-call)
+   - filter -> ./filter (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/tester (local) members: none; targets: tester;
+   - ./filter (local) members: none; targets: filter;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\filter-not.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - filter: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - tester() -> ../util/tester (direct-call)
+   - tester -> ../util/tester (member-call)
+   - tester -> ../util/tester (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/tester (local) members: none; targets: tester;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\filter.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\flatten.js
+==============================
+✅ Found 3 function(s): defaultExport, nextChunk, nextStream
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - flatten: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ../sources/values (require:*, cjs)
+   - once -> ../sources/once (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\flatten.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - map: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - prop() -> ../util/prop (direct-call)
+   - prop -> ../util/prop (member-call)
+   - prop -> ../util/prop (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/prop (local) members: none; targets: prop;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\non-unique.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - nonUnique: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - unique -> ./unique (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - unique() -> ./unique (direct-call)
+   - unique -> ./unique (member-call)
+   - unique -> ./unique (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./unique (local) members: none; targets: unique;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\non-unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\take.js
+==============================
+✅ Found 2 function(s): defaultExport, terminate
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - take: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\take.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\through.js
+==============================
+✅ Found 2 function(s): defaultExport, once
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - through: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\through.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\unique.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - unique: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - prop() -> ../util/prop (direct-call)
+   - prop -> ../util/prop (member-call)
+   - prop -> ../util/prop (reference)
+   - filter() -> ./filter (direct-call)
+   - filter -> ./filter (member-call)
+   - filter -> ./filter (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ../util/prop (local) members: none; targets: prop;
+   - ./filter (local) members: none; targets: filter;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\abort-cb.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - abortCb: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\abort-cb.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\prop.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - prop: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\prop.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\tester.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 84 scanned file(s)
+   - tester: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ./prop (require:*, cjs)
+🔗 Dependency usage:
+   defaultExport:
+   - prop() -> ./prop (direct-call)
+   - prop -> ./prop (member-call)
+   - prop -> ./prop (reference)
+🧩 Mock plan:
+   defaultExport:
+   - ./prop (local) members: none; targets: prop;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\tester.defaultExport.test.js
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 31
+⚠️ Files skipped:  23
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  27
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for defaultExport
+   received: 8
+   sanitizer accepted: 8
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 8
+   runtime passed: 8
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 8
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\pull.defaultExport.test.js (8)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 1
+   runtime failed: 5
+   runtime repair candidates available: 5
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   - BOOLEAN_ORACLE_FAILURE: 1
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\collect.defaultExport.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 1
+   runtime failed: 5
+   runtime repair candidates available: 5
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\concat.defaultExport.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   - INVALID_CASE_SHAPE: 2
+   - CASE_PARSE_FAILED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\drain.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 1
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 1
+   - THROW_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.defaultExport.test.js (4 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\on-end.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 8
+   sanitizer accepted: 8
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 8
+   runtime passed: 8
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 8
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\reduce.defaultExport.test.js (8)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 6
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 4
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - NULL_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\count.defaultExport.test.js (2 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 2
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\empty.defaultExport.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 7
+   sanitizer accepted: 0
+   sanitizer rejected: 7
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 7
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\error.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 2
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\infinite.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 6
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\keys.defaultExport.test.js (0 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\once.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 5
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 5
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\values.defaultExport.test.js (5)
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 5
+   - UNDECLARED_REFERENCE: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\async-map.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\filter-not.defaultExport.test.js (7)
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 5
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 8
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\filter.defaultExport.test.js (8)
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 7
+   sanitizer accepted: 6
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 1
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\flatten.defaultExport.test.js (4)
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 6
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\map.defaultExport.test.js (8)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   - NULL_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\non-unique.defaultExport.test.js (2 + 1 repair candidate(s))
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 6
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\take.defaultExport.test.js (8)
+Source-driven higher-order behavior: accepted for defaultExport
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\through.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique.defaultExport.test.js (0 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\abort-cb.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 7
+   sanitizer accepted: 5
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 4
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 5
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\prop.defaultExport.test.js (4 + 1 repair candidate(s))
+🧪 LLM injection summary for defaultExport
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 6
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\tester.defaultExport.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 27
+Failed Suites     : 9
+Total Tests       : 135
+Passed            : 126
+Failed            : 9
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\keys.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Empty object expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 247 | const object = {}; 248 | const result = defaultExport(objec...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Parameterized behavior - invert true expect(received).toBe(expected) // Object.is equality Expected: true Received: false 250 | const result = defaultExport(field, invert); 251 | e...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\prop.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Parameterized behavior - object key with exec function expect(received).toBe(expected) // Object.is equality Expected: "test" Received: undefined 283 | const key = { exec: () => /t...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\collect.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - empty array expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function sink] 274 | const cb = () => {}; 275 | const result = defaultExp...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\concat.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - empty string expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] 274 | const cb = () => []; 275 | const result = default...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\empty.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Return true when calling empty function expect(received).toBe(expected) // Object.is equality Expected: true Received: [Function anonymous] 269 | { 270 | const result = defaultExpo...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\count.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - no end condition expect(received).toEqual(expected) // deep equality Expected: [null, 0] Received: undefined 265 | const max = 10; 266 | const result = defaultEx...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Safe invariant - log function returns undefined expect(received).toBe(expected) // Object.is equality Expected: true Received: false 283 | const done = jest.fn(); 284 | const resul...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\non-unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] field is an empty array expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 265 | const field = []; 266 | const result = defaultExport(f...
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Empty object
+   Error: Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Parameterized behavior - invert true
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique....
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - array is an array
+✅ PASS  - defaultExport Default behavior - array is an object
+✅ PASS  - defaultExport Safe invariant - array is null
+✅ PASS  - defaultExport Safe invariant - array is undefined
+✅ PASS  - defaultExport Parameterized behavior - array with one element
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - other key type
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport Parameterized behavior - string key
+❌ FAIL  - defaultExport [repair-candidate] Parameterized behavior - object key with exec function
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "test" Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\p...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided, invoking returned function
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback, invoking returned function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - empty array
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function sink] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\c...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - empty string
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Test filterNot function with regexp filter
+✅ PASS  - defaultExport Test filterNot function with array filter
+✅ PASS  - defaultExport Test filterNot function with numeric filter
+✅ PASS  - defaultExport Test filterNot function with empty string filter
+✅ PASS  - defaultExport Test filterNot function with undefined filter
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Return type function when calling empty function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Return true when calling empty function
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\ge...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - no end condition
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [null, 0] Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - empty input
+✅ PASS  - defaultExport Parameterized behavior - test function returns true
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport Normal behavior - test function returns false
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - log function returns a function
+✅ PASS  - defaultExport Safe invariant - log function output is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Safe invariant - log function returns undefined
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.def...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - no mapper provided
+✅ PASS  - defaultExport Normal behavior - valid mapper provided
+✅ PASS  - defaultExport Safe invariant - result shape with null mapper
+✅ PASS  - defaultExport Safe invariant - result shape with valid mapper
+✅ PASS  - defaultExport Parameterized behavior - mapper function with specific input
+✅ PASS  - defaultExport Safe invariant - result shape with undefined mapper
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Safe invariant test: aborting the current stream
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Normal behavior - single function argument
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport Parameterized behavior - multiple function arguments
+✅ PASS  - defaultExport Safe invariant - empty argument array
+✅ PASS  - defaultExport Safe invariant - non-function argument
+✅ PASS  - defaultExport Safe invariant - object argument
+✅ PASS  - defaultExport Safe invariant - number argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is true
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport Parameterized behavior - test is a number
+✅ PASS  - defaultExport Safe invariant - end is true
+✅ PASS  - defaultExport Safe invariant - end is false
+✅ PASS  - defaultExport Safe invariant - test is a number
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] field is an empty array
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\genera...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is false, generate is Math.random
+✅ PASS  - defaultExport End is true, generate is a function - callback is not provided
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 9
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:11:40.633Z","testFile":"keys.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\keys.defaultExport.test.js:249:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:11:48.872Z","testFile":"keys.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:11:48.876Z","testFile":"unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\unique.defaultExport.test.js:252:37) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: prop.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:11:48.923Z","testFile":"prop.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"test\" Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\prop.defaultExport.test.js:285:35) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Versio","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-20T18:11:56.345Z","testFile":"prop.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-20T18:11:56.346Z","testFile":"prop.defaultExport.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🔧 Repairing file: collect.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:11:56.347Z","testFile":"collect.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function sink] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\collect.defaultExport.test.js:276:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Ver","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:12:04.786Z","testFile":"collect.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:12:04.790Z","testFile":"concat.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"\" Received: [Function sink] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\concat.defaultExport.test.js:276:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Ve","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: empty.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:12:04.817Z","testFile":"empty.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\empty.defaultExport.test.js:271:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Comple","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: count.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:12:04.844Z","testFile":"count.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [null, 0] Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\count.defaultExport.test.js:267:40) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Vers","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-20T18:12:13.980Z","testFile":"count.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-20T18:12:13.980Z","testFile":"count.defaultExport.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🔧 Repairing file: log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:12:13.981Z","testFile":"log.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\log.defaultExport.test.js:285:30) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backe","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:12:14.006Z","testFile":"non-unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\non-unique.defaultExport.test.js:267:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:12:22.788Z","testFile":"non-unique.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: keys.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: non-unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: collect.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+✅ LLM repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-20T18:12:56.028Z","testFile":"collect.defaultExport.test.js","failureType":"LLM repair","repairStrategy":"LLM Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-20T18:12:56.028Z","testFile":"collect.defaultExport.test.js","failureType":"Repair candidate","repairStrategy":"LLM Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🤖 LLM repairing: empty.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+✅ LLM repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-20T18:13:06.560Z","testFile":"empty.defaultExport.test.js","failureType":"LLM repair","repairStrategy":"LLM Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-20T18:13:06.561Z","testFile":"empty.defaultExport.test.js","failureType":"Repair candidate","repairStrategy":"LLM Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🤖 LLM repairing: log.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: concat.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:13:27.020Z","testFile":"keys.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\keys.defaultExport.test.js:249:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:13:36.031Z","testFile":"keys.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:13:36.034Z","testFile":"log.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\log.defaultExport.test.js:285:30) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backe","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:13:36.059Z","testFile":"non-unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\non-unique.defaultExport.test.js:267:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:13:44.051Z","testFile":"non-unique.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:13:44.055Z","testFile":"unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\unique.defaultExport.test.js:252:37) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:13:44.072Z","testFile":"concat.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"\" Received: [Function sink] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\concat.defaultExport.test.js:276:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Ve","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: keys.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: log.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: non-unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: concat.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:14:22.534Z","testFile":"keys.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\keys.defaultExport.test.js:249:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:14:30.369Z","testFile":"keys.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:14:30.374Z","testFile":"log.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\log.defaultExport.test.js:285:30) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backe","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:14:30.405Z","testFile":"non-unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\non-unique.defaultExport.test.js:267:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-20T18:14:38.310Z","testFile":"non-unique.defaultExport.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:14:38.314Z","testFile":"unique.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\unique.defaultExport.test.js:252:37) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-20T18:14:38.329Z","testFile":"concat.defaultExport.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"\" Received: [Function sink] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\concat.defaultExport.test.js:276:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Ve","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: keys.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: log.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: non-unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: unique.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: concat.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+❌ Repair attempts finished.
+
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 27
+Failed Suites     : 5
+Total Tests       : 135
+Passed            : 130
+Failed            : 5
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\keys.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Empty object expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 247 | const object = {}; 248 | const result = defaultExport(objec...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Safe invariant - log function returns undefined expect(received).toBe(expected) // Object.is equality Expected: true Received: false 283 | const done = jest.fn(); 284 | const resul...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\non-unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] field is an empty array expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 265 | const field = []; 266 | const result = defaultExport(f...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\concat.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - empty string expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] 274 | const cb = () => []; 275 | const result = default...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Parameterized behavior - invert true expect(received).toBe(expected) // Object.is equality Expected: true Received: false 250 | const result = defaultExport(field, invert); 251 | e...
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Empty object
+   Error: Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - log function returns a function
+✅ PASS  - defaultExport Safe invariant - log function output is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Safe invariant - log function returns undefined
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.def...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] field is an empty array
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\genera...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - empty string
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated...
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Parameterized behavior - invert true
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique....
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Normal behavior - single function argument
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport Parameterized behavior - multiple function arguments
+✅ PASS  - defaultExport Safe invariant - empty argument array
+✅ PASS  - defaultExport Safe invariant - non-function argument
+✅ PASS  - defaultExport Safe invariant - object argument
+✅ PASS  - defaultExport Safe invariant - number argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided, invoking returned function
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback, invoking returned function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is false, generate is Math.random
+✅ PASS  - defaultExport End is true, generate is a function - callback is not provided
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - empty input
+✅ PASS  - defaultExport Parameterized behavior - test function returns true
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport Normal behavior - test function returns false
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is true
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport Parameterized behavior - test is a number
+✅ PASS  - defaultExport Safe invariant - end is true
+✅ PASS  - defaultExport Safe invariant - end is false
+✅ PASS  - defaultExport Safe invariant - test is a number
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport [repair-candidate] Default behavior - empty array
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Safe invariant test: aborting the current stream
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Test filterNot function with regexp filter
+✅ PASS  - defaultExport Test filterNot function with array filter
+✅ PASS  - defaultExport Test filterNot function with numeric filter
+✅ PASS  - defaultExport Test filterNot function with empty string filter
+✅ PASS  - defaultExport Test filterNot function with undefined filter
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport Default behavior - no end condition
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - other key type
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport Parameterized behavior - string key
+✅ PASS  - defaultExport Parameterized behavior - object key with exec function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - no mapper provided
+✅ PASS  - defaultExport Normal behavior - valid mapper provided
+✅ PASS  - defaultExport Safe invariant - result shape with null mapper
+✅ PASS  - defaultExport Safe invariant - result shape with valid mapper
+✅ PASS  - defaultExport Parameterized behavior - mapper function with specific input
+✅ PASS  - defaultExport Safe invariant - result shape with undefined mapper
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - array is an array
+✅ PASS  - defaultExport Default behavior - array is an object
+✅ PASS  - defaultExport Safe invariant - array is null
+✅ PASS  - defaultExport Safe invariant - array is undefined
+✅ PASS  - defaultExport Parameterized behavior - array with one element
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Return type function when calling empty function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport [repair-candidate] Return true when calling empty function
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: concat.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.869Z","testFile":"concat.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result).toBe('')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.869Z","testFile":"concat.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.870Z","testFile":"concat.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.870Z","testFile":"concat.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.870Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:15:34.870Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [concat.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:15:44.054Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBe('')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [concat.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:15:53.655Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [concat.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:02.367Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [concat.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:10.485Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [concat.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:19.271Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [concat.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:27.648Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: keys.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:27.667Z","testFile":"keys.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result).toStrictEqual([])","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:27.667Z","testFile":"keys.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:27.667Z","testFile":"keys.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toStrictEqual: OBSERVED
+🧠 [AST-Repair] Optimized: toStrictEqual
+📊 Single Target [keys.defaultExport.test.js :: toStrictEqual] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:35.964Z","testFile":"keys.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toStrictEqual([])","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [keys.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:45.075Z","testFile":"keys.defaultExport.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [keys.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:16:53.194Z","testFile":"keys.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: log.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 7 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.216Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(typeof result).toBe('function')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result).not.toBeNull()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:16:53.217Z","testFile":"log.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:01.495Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:09.635Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:17.914Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:26.164Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:34.463Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeNull: OBSERVED
+🧠 [AST-Repair] Optimized: toBeNull
+📊 Single Target [log.defaultExport.test.js :: toBeNull] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:42.604Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).not.toBeNull()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [log.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:17:51.268Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: non-unique.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:17:51.287Z","testFile":"non-unique.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result).toEqual([])","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:17:51.287Z","testFile":"non-unique.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:17:51.287Z","testFile":"non-unique.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:17:51.287Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:17:51.287Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toEqual: OBSERVED
+🧠 [AST-Repair] Optimized: toEqual
+📊 Single Target [non-unique.defaultExport.test.js :: toEqual] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:00.299Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toEqual([])","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [non-unique.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.0999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:08.568Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [non-unique.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:16.532Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [non-unique.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:25.243Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [non-unique.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:33.560Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: unique.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:18:33.570Z","testFile":"unique.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(Array.isArray(result)).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:18:33.570Z","testFile":"unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:18:33.570Z","testFile":"unique.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T18:18:33.570Z","testFile":"unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [unique.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.3
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:41.623Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(Array.isArray(result)).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [unique.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.3
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:49.805Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [unique.defaultExport.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:18:57.992Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [unique.defaultExport.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.7999999999999999
+  },
+  "toStrictEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T18:19:06.026Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 27
+Failed Suites     : 5
+Total Tests       : 135
+Passed            : 130
+Failed            : 5
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Parameterized behavior - invert true expect(received).toBe(expected) // Object.is equality Expected: true Received: false 250 | const result = defaultExport(field, invert); 251 | e...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\concat.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - empty string expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] 274 | const cb = () => []; 275 | const result = default...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\keys.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Empty object expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 247 | const object = {}; 248 | const result = defaultExport(objec...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\non-unique.defaultExport.test.js
+  ● defaultExport › [repair-candidate] field is an empty array expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] 265 | const field = []; 266 | const result = defaultExport(f...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Safe invariant - log function returns undefined expect(received).toBe(expected) // Object.is equality Expected: true Received: false 283 | const done = jest.fn(); 284 | const resul...
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Parameterized behavior - invert true
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\unique....
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - empty string
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "" Received: [Function sink] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated...
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport [repair-candidate] Empty object
+   Error: Error: expect(received).toStrictEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] field is an empty array
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [] Received: [Function anonymous] at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\genera...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - log function returns a function
+✅ PASS  - defaultExport Safe invariant - log function output is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Safe invariant - log function returns undefined
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\log.def...
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport [repair-candidate] Default behavior - empty array
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Safe invariant test: aborting the current stream
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - no mapper provided
+✅ PASS  - defaultExport Normal behavior - valid mapper provided
+✅ PASS  - defaultExport Safe invariant - result shape with null mapper
+✅ PASS  - defaultExport Safe invariant - result shape with valid mapper
+✅ PASS  - defaultExport Parameterized behavior - mapper function with specific input
+✅ PASS  - defaultExport Safe invariant - result shape with undefined mapper
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Normal behavior - single function argument
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport Parameterized behavior - multiple function arguments
+✅ PASS  - defaultExport Safe invariant - empty argument array
+✅ PASS  - defaultExport Safe invariant - non-function argument
+✅ PASS  - defaultExport Safe invariant - object argument
+✅ PASS  - defaultExport Safe invariant - number argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Test filterNot function with regexp filter
+✅ PASS  - defaultExport Test filterNot function with array filter
+✅ PASS  - defaultExport Test filterNot function with numeric filter
+✅ PASS  - defaultExport Test filterNot function with empty string filter
+✅ PASS  - defaultExport Test filterNot function with undefined filter
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - other key type
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport Parameterized behavior - string key
+✅ PASS  - defaultExport Parameterized behavior - object key with exec function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is false, generate is Math.random
+✅ PASS  - defaultExport End is true, generate is a function - callback is not provided
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - end is true
+✅ PASS  - defaultExport Default behavior - end is false
+✅ PASS  - defaultExport Parameterized behavior - test is a number
+✅ PASS  - defaultExport Safe invariant - end is true
+✅ PASS  - defaultExport Safe invariant - end is false
+✅ PASS  - defaultExport Safe invariant - test is a number
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport source-driven returned callback processes a finite input
+✅ PASS  - defaultExport Default behavior - empty input
+✅ PASS  - defaultExport Parameterized behavior - test function returns true
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport Normal behavior - test function returns false
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback
+✅ PASS  - defaultExport Reducer with initial accumulator and callback provided, invoking returned function
+✅ PASS  - defaultExport Reducer with initial accumulator provided, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, no callback, invoking returned function
+✅ PASS  - defaultExport Reducer without initial accumulator, with callback, invoking returned function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Return type function when calling empty function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport [repair-candidate] Return true when calling empty function
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - array is an array
+✅ PASS  - defaultExport Default behavior - array is an object
+✅ PASS  - defaultExport Safe invariant - array is null
+✅ PASS  - defaultExport Safe invariant - array is undefined
+✅ PASS  - defaultExport Parameterized behavior - array with one element
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport Default behavior - no end condition
+============================================================
+
+
+✅ Done.
+

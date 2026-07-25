@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package countries-and-timezones
+
+
+================ UnitGen Coverage Summary ================
+Package            : countries-and-timezones
+Generated test files: 14
+Total tests         : 39
+Passing tests       : 39
+Failed tests        : 0
+Coverage mode       : all-tests-pass-single-coverage-run
+Statement coverage  : 96.38%
+Branch coverage     : 78.08%
+==========================================================
+

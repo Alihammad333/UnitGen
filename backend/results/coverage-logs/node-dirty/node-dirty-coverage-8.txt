@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package node-dirty
+
+
+================ UnitGen Coverage Summary ================
+Package            : node-dirty
+Generated test files: 9
+Total tests         : 44
+Passing tests       : 44
+Failed tests        : 0
+Coverage mode       : all-tests-pass-single-coverage-run
+Statement coverage  : 82.07%
+Branch coverage     : 71.15%
+==========================================================
+

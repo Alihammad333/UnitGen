@@ -1,0 +1,651 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-dir
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 5 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-dir\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\paths.js
+==============================
+✅ Found 12 function(s): promiseFiles, files, paths, subdirs, processor, cb, done, getStatHandler, subloop, onDirRead, onStat, iCallback
+✅ Exported function(s): promiseFiles, files, paths, subdirs
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 20 snippet(s) found from 6 scanned file(s)
+   - promiseFiles: 5
+   - files: 5
+   - paths: 5
+   - subdirs: 5
+📝 Doc comments:
+   - none found for 4 function(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   files:
+   - Buffer.from -> global:Buffer (global-member-call)
+   - Buffer.from -> global:Buffer (global-member)
+   - Buffer -> global:Buffer (global-reference)
+   - fs.statSync -> fs (member-call)
+   - fs.statSync -> fs (member)
+   - fs -> fs (reference)
+   - fs.stat -> fs (member-call)
+   - fs.stat -> fs (member)
+   - fs.readdirSync -> fs (transitive-member-call)
+   - fs.readdirSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - path.join -> path (transitive-member-call)
+   - path.join -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - path.sep -> path (transitive-member)
+   - fs.statSync -> fs (transitive-member-call)
+   - fs.statSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.stat -> fs (transitive-member-call)
+   - fs.stat -> fs (transitive-member)
+   paths:
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.statSync -> fs (transitive-member-call)
+   - fs.statSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.stat -> fs (transitive-member-call)
+   - fs.stat -> fs (transitive-member)
+   - fs.readdirSync -> fs (transitive-member-call)
+   - fs.readdirSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - path.join -> path (transitive-member-call)
+   - path.join -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - path.sep -> path (transitive-member)
+   - fs.statSync -> fs (transitive-member-call)
+   - fs.statSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.stat -> fs (transitive-member-call)
+   - fs.stat -> fs (transitive-member)
+   subdirs:
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.statSync -> fs (transitive-member-call)
+   - fs.statSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.stat -> fs (transitive-member-call)
+   - fs.stat -> fs (transitive-member)
+   - fs.readdirSync -> fs (transitive-member-call)
+   - fs.readdirSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - path.join -> path (transitive-member-call)
+   - path.join -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - path.sep -> path (transitive-member)
+   - fs.statSync -> fs (transitive-member-call)
+   - fs.statSync -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.stat -> fs (transitive-member-call)
+   - fs.stat -> fs (transitive-member)
+🧩 Mock plan:
+   files:
+   - global:Buffer (global) members: Buffer; targets: Buffer, from, concat; chains: from, concat;
+   - fs (builtin) members: statSync, stat, readdirSync, readdir; targets: fs, statSync, stat, readdirSync, readdir;
+   - path (builtin) members: join, sep; targets: path, join, sep;
+   paths:
+   - global:Buffer (global) members: Buffer; targets: Buffer, from, concat; chains: from, concat;
+   - fs (builtin) members: statSync, stat, readdirSync, readdir; targets: fs, statSync, stat, readdirSync, readdir;
+   - path (builtin) members: join, sep; targets: path, join, sep;
+   subdirs:
+   - global:Buffer (global) members: Buffer; targets: Buffer, from, concat; chains: from, concat;
+   - fs (builtin) members: statSync, stat, readdirSync, readdir; targets: fs, statSync, stat, readdirSync, readdir;
+   - path (builtin) members: join, sep; targets: path, join, sep;
+🧪 Rendered mocks:
+   files: 2 mock block(s)
+   paths: 2 mock block(s)
+   subdirs: 2 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.promiseFiles.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.files.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.paths.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.subdirs.test.js
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\readfiles.js
+==============================
+✅ Found 4 function(s): extend, matches, readFiles, done
+✅ Exported function(s): readFiles
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 6 scanned file(s)
+   - readFiles: 5
+📝 Doc comments:
+   - 1/1 function(s) have comment context
+   - readFiles: JSDoc, 5 param tag(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   readFiles:
+   - fs.readdir -> fs (member-call)
+   - fs.readdir -> fs (member)
+   - fs -> fs (reference)
+🧩 Mock plan:
+   readFiles:
+   - fs (builtin) members: readdir; targets: fs, readdir;
+🧪 Rendered mocks:
+   readFiles: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\readfiles.readFiles.test.js
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\readfilesstream.js
+==============================
+✅ Found 4 function(s): extend, matches, readFilesStream, done
+✅ Exported function(s): readFilesStream
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 6 scanned file(s)
+   - readFilesStream: 5
+📝 Doc comments:
+   - 1/1 function(s) have comment context
+   - readFilesStream: JSDoc, 5 param tag(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - mm -> minimatch (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   readFilesStream:
+   - fs.readdir -> fs (member-call)
+   - fs.readdir -> fs (member)
+   - fs -> fs (reference)
+🧩 Mock plan:
+   readFilesStream:
+   - fs (builtin) members: readdir; targets: fs, readdir;
+🧪 Rendered mocks:
+   readFilesStream: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\readfilesstream.readFilesStream.test.js
+
+==============================
+📄 Skipping: benchmark_packages\node-dir\test\test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 6 API candidate(s), 6 public target candidate(s).
+✅ Dynamic preflight passed: promiseFiles
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.promiseFiles.promiseFiles.test.js (promiseFiles)
+✅ Dynamic preflight passed: files
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.files.files.test.js (files)
+✅ Dynamic preflight passed: paths
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.paths.paths.test.js (paths)
+✅ Dynamic preflight passed: subdirs
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.subdirs.subdirs.test.js (subdirs)
+✅ Dynamic preflight passed: readFiles
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.readFiles.readFiles.test.js (readFiles)
+✅ Dynamic preflight passed: readFilesStream
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dir.dynamic.readFilesStream.readFilesStream.test.js (readFilesStream)
+ℹ️ Dynamic API preflight kept 6 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 5
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  12
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for promiseFiles
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.promiseFiles.test.js (2)
+🧪 LLM injection summary for files
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 8
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.files.test.js (2)
+🧪 LLM injection summary for paths
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 3
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.paths.test.js (2)
+🧪 LLM injection summary for subdirs
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\paths.subdirs.test.js (2)
+🧪 LLM injection summary for readFiles
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 8
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\readfiles.readFiles.test.js (2)
+🧪 LLM injection summary for readFilesStream
+   received: 8
+   sanitizer accepted: 0
+   sanitizer rejected: 8
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 3
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 8
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\readfilesstream.readFilesStream.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 12
+Failed Suites     : 0
+Total Tests       : 24
+Passed            : 24
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - promiseFiles should be exported as a function
+✅ PASS  - paths should be exported as a function
+✅ PASS  - paths auto-generated (prototype)
+✅ PASS  - paths fallback checks source-aware result shape
+✅ PASS  - paths fallback checks stable result contract
+✅ PASS  - files auto-generated (prototype)
+✅ PASS  - files fallback checks source-aware result shape
+✅ PASS  - files fallback checks stable result contract
+✅ PASS  - files should be exported as a function
+✅ PASS  - subdirs should be exported as a function
+✅ PASS  - subdirs auto-generated (prototype)
+✅ PASS  - subdirs fallback checks source-aware result shape
+✅ PASS  - subdirs fallback checks stable result contract
+✅ PASS  - readFilesStream auto-generated (prototype)
+✅ PASS  - readFilesStream fallback checks source-aware result shape
+✅ PASS  - readFilesStream fallback checks stable result contract
+✅ PASS  - readFiles auto-generated (prototype)
+✅ PASS  - readFiles fallback checks source-aware result shape
+✅ PASS  - readFiles fallback checks stable result contract
+✅ PASS  - promiseFiles auto-generated (prototype)
+✅ PASS  - promiseFiles fallback checks source-aware result shape asynchronously
+✅ PASS  - promiseFiles fallback checks stable result contract
+✅ PASS  - readFiles should be exported as a function
+✅ PASS  - readFilesStream should be exported as a function
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.files.files.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.paths.paths.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.promiseFiles.promiseFiles.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.readFiles.readFiles.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.readFilesStream.readFilesStream.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-dir.dynamic.subdirs.subdirs.test.js
+
+🔍 Analyzing File: paths.files.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:03.165Z","testFile":"paths.files.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:03.166Z","testFile":"paths.files.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:03.166Z","testFile":"paths.files.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:03.166Z","testFile":"paths.files.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: paths.paths.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:06.653Z","testFile":"paths.paths.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:06.653Z","testFile":"paths.paths.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:06.654Z","testFile":"paths.paths.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:06.654Z","testFile":"paths.paths.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [paths.paths.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting paths.paths.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T09:20:09.397Z","testFile":"paths.paths.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [paths.paths.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting paths.paths.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T09:20:12.883Z","testFile":"paths.paths.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [paths.paths.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting paths.paths.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T09:20:16.057Z","testFile":"paths.paths.test.js","issue":"Assertion rejected","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [paths.paths.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting paths.paths.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-20T09:20:19.447Z","testFile":"paths.paths.test.js","issue":"Assertion rejected","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: paths.promiseFiles.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:19.458Z","testFile":"paths.promiseFiles.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:19.458Z","testFile":"paths.promiseFiles.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:19.458Z","testFile":"paths.promiseFiles.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:19.458Z","testFile":"paths.promiseFiles.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBe: array(length=1)
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBe: array(length=1)
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBeDefined: array(length=0)
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: paths.subdirs.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:23.867Z","testFile":"paths.subdirs.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:23.868Z","testFile":"paths.subdirs.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:23.868Z","testFile":"paths.subdirs.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:23.868Z","testFile":"paths.subdirs.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: readfiles.readFiles.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:27.891Z","testFile":"readfiles.readFiles.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:27.891Z","testFile":"readfiles.readFiles.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:27.891Z","testFile":"readfiles.readFiles.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:27.891Z","testFile":"readfiles.readFiles.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: readfilesstream.readFilesStream.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:32.384Z","testFile":"readfilesstream.readFilesStream.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:32.384Z","testFile":"readfilesstream.readFilesStream.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:32.385Z","testFile":"readfilesstream.readFilesStream.test.js","issue":"Weak assertion","original":"expect(result == null || Array.isArray(result) || typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-20T09:20:32.385Z","testFile":"readfilesstream.readFilesStream.test.js","issue":"Weak assertion","original":"expect(result == null || result.name !== \"Error\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 12
+Failed Suites     : 0
+Total Tests       : 24
+Passed            : 24
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - paths auto-generated (prototype)
+✅ PASS  - paths fallback checks source-aware result shape
+✅ PASS  - paths fallback checks stable result contract
+✅ PASS  - readFiles auto-generated (prototype)
+✅ PASS  - readFiles fallback checks source-aware result shape
+✅ PASS  - readFiles fallback checks stable result contract
+✅ PASS  - subdirs auto-generated (prototype)
+✅ PASS  - subdirs fallback checks source-aware result shape
+✅ PASS  - subdirs fallback checks stable result contract
+✅ PASS  - readFilesStream auto-generated (prototype)
+✅ PASS  - readFilesStream fallback checks source-aware result shape
+✅ PASS  - readFilesStream fallback checks stable result contract
+✅ PASS  - promiseFiles auto-generated (prototype)
+✅ PASS  - promiseFiles fallback checks source-aware result shape asynchronously
+✅ PASS  - promiseFiles fallback checks stable result contract
+✅ PASS  - files should be exported as a function
+✅ PASS  - files auto-generated (prototype)
+✅ PASS  - files fallback checks source-aware result shape
+✅ PASS  - files fallback checks stable result contract
+✅ PASS  - subdirs should be exported as a function
+✅ PASS  - paths should be exported as a function
+✅ PASS  - readFilesStream should be exported as a function
+✅ PASS  - promiseFiles should be exported as a function
+✅ PASS  - readFiles should be exported as a function
+============================================================
+
+
+✅ Done.
+

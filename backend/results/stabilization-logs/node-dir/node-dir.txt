@@ -1,0 +1,295 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-dir
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 5 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-dir\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\paths.js
+==============================
+✅ Found 8 function(s): processor, cb, done, getStatHandler, subloop, onDirRead, onStat, iCallback
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\readfiles.js
+==============================
+✅ Found 4 function(s): extend, matches, readFiles, done
+✅ Exported function(s): readFiles
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 6 scanned file(s)
+   - readFiles: 5
+📝 Doc comments:
+   - 1/1 function(s) have comment context
+   - readFiles: JSDoc, 5 param tag(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   readFiles:
+   - fs.readdir -> fs (member-call)
+   - fs.readdir -> fs (member)
+   - fs -> fs (reference)
+🧩 Mock plan:
+   readFiles:
+   - fs (builtin) members: readdir; targets: fs, readdir;
+🧪 Rendered mocks:
+   readFiles: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfiles.readFiles.test.js
+
+==============================
+📄 Processing: benchmark_packages\node-dir\lib\readfilesstream.js
+==============================
+✅ Found 4 function(s): extend, matches, readFilesStream, done
+✅ Exported function(s): readFilesStream
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 6 scanned file(s)
+   - readFilesStream: 5
+📝 Doc comments:
+   - 1/1 function(s) have comment context
+   - readFilesStream: JSDoc, 5 param tag(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - mm -> minimatch (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   readFilesStream:
+   - fs.readdir -> fs (member-call)
+   - fs.readdir -> fs (member)
+   - fs -> fs (reference)
+🧩 Mock plan:
+   readFilesStream:
+   - fs (builtin) members: readdir; targets: fs, readdir;
+🧪 Rendered mocks:
+   readFilesStream: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfilesstream.readFilesStream.test.js
+
+==============================
+📄 Skipping: benchmark_packages\node-dir\test\test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 4
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  2
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for readFiles
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   - UNDECLARED_REFERENCE: 1
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for readFiles; keeping prototype only.
+🧪 LLM injection summary for readFilesStream
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for readFilesStream; keeping prototype only.
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 2
+Failed Suites     : 2
+Total Tests       : 2
+Passed            : 0
+Failed            : 2
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfilesstream.readFilesStream.test.js
+  ● readFilesStream › auto-generated (prototype) TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) 71 | }; 72 | > 73 | fs.readdir(dir, function(err, list) { ...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfiles.readFiles.test.js
+  ● readFiles › auto-generated (prototype) TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) 62 | }; 63 | > 64 | fs.readdir(dir, function(err, list) { | ^ 65...
+------------------------------------------------------------
+❌ FAIL  - readFilesStream auto-generated (prototype)
+   Error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App versio...
+❌ FAIL  - readFiles auto-generated (prototype)
+   Error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App versio...
+============================================================
+
+
+🔁 Running adaptive repair...
+
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: readfilesstream.readFilesStream.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:19.972Z","testFile":"readfilesstream.readFilesStream.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfilesstream.js:73:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\Unit","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: readfiles.readFiles.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:19.974Z","testFile":"readfiles.readFiles.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfiles.js:64:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen Ap","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: readfilesstream.readFilesStream.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: readfiles.readFiles.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: readfilesstream.readFilesStream.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:24.029Z","testFile":"readfilesstream.readFilesStream.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfilesstream.js:73:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\Unit","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: readfiles.readFiles.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:24.029Z","testFile":"readfiles.readFiles.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfiles.js:64:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen Ap","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: readfilesstream.readFilesStream.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: readfiles.readFiles.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: readfilesstream.readFilesStream.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:28.471Z","testFile":"readfilesstream.readFilesStream.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfilesstream.js:73:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\Unit","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: readfiles.readFiles.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-13T11:46:28.471Z","testFile":"readfiles.readFiles.test.js","failureType":"TYPE","before":"TypeError: The \"path\" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\node-dir\\lib\\readfiles.js:64:8) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen Ap","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: readfilesstream.readFilesStream.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: readfiles.readFiles.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+
+❌ Repair attempts finished.
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: readfiles.readFiles.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:46:32.916Z","testFile":"readfiles.readFiles.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: readfilesstream.readFilesStream.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:46:34.222Z","testFile":"readfilesstream.readFilesStream.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 2
+Failed Suites     : 2
+Total Tests       : 2
+Passed            : 0
+Failed            : 2
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfiles.readFiles.test.js
+  ● readFiles › auto-generated (prototype) TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) 62 | }; 63 | > 64 | fs.readdir(dir, function(err, list) { | ^ 65...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\readfilesstream.readFilesStream.test.js
+  ● readFilesStream › auto-generated (prototype) TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) 71 | }; 72 | > 73 | fs.readdir(dir, function(err, list) { ...
+------------------------------------------------------------
+❌ FAIL  - readFiles auto-generated (prototype)
+   Error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App versio...
+❌ FAIL  - readFilesStream auto-generated (prototype)
+   Error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (1) at Object.readdir (node:fs:1515:10) at readdir (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App versio...
+============================================================
+
+
+✅ Done.
+

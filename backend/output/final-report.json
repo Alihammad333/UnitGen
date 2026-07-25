@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-07-19T21:02:06.711Z",
+  "project": {
+    "input": {
+      "ok": true,
+      "kind": "folder",
+      "root": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile",
+      "files": [
+        "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile\\index.js",
+        "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\jsonfile\\utils.js"
+      ],
+      "messages": [
+        {
+          "level": "info",
+          "text": "Input: Node.js project folder (package.json found)"
+        },
+        {
+          "level": "info",
+          "text": "Discovered 2 .js file(s)."
+        }
+      ]
+    },
+    "processedFiles": 3,
+    "skippedFiles": 0,
+    "generatedTestFiles": 4
+  },
+  "summary": {
+    "totalSuites": 6,
+    "passedSuites": 6,
+    "failedSuites": 0,
+    "totalTests": 29,
+    "passedTests": 29,
+    "failedTests": 0,
+    "success": true
+  },
+  "passedTests": [
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom Buffer content with BOM character",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom String content with BOM character",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom Content without BOM character",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom Empty content",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom Content with multiple BOM characters",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stripBom.test.js",
+      "testName": "stripBom Content with BOM character at the end",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
+      "testName": "writeFileSync auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
+      "testName": "writeFileSync fallback checks source-aware result shape",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.writeFileSync.test.js",
+      "testName": "writeFileSync fallback checks stable result contract",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync Default behavior - file with valid JSON content",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync Options with custom encoding",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync Options with custom reviver function",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync File not found - throws error",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync File not found - returns null",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync fallback checks source-aware result shape",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\index.readFileSync.test.js",
+      "testName": "readFileSync fallback checks stable result contract",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Default behavior - empty object",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Default behavior - non-empty object",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Custom EOL character",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Custom finalEOL - false",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Custom replacer function",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Custom spaces for indentation",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify Throw TypeError for undefined result",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\utils.stringify.test.js",
+      "testName": "stringify fallback checks source-aware result shape",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\jsonfile.dynamic.writeFileSync.writeFileSync.test.js",
+      "testName": "writeFileSync should be exported as a function",
+      "status": "passed"
+    },
+    {
+      "testFile": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\jsonfile.dynamic.readFileSync.readFileSync.test.js",
+      "testName": "readFileSync should be exported as a function",
+      "status": "passed"
+    }
+  ],
+  "failedTests": [],
+  "runner": {
+    "status": 0,
+    "signal": null,
+    "stderr": "(node:21824) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/utils.stripBom.test.js\nPASS tests/generated/index.writeFileSync.test.js\nPASS tests/generated/index.readFileSync.test.js\nPASS tests/generated/utils.stringify.test.js\nPASS tests/generated/jsonfile.dynamic.writeFileSync.writeFileSync.test.js\nPASS tests/generated/jsonfile.dynamic.readFileSync.readFileSync.test.js\n\nTest Suites: 6 passed, 6 total\nTests:       29 passed, 29 total\nSnapshots:   0 total\nTime:        1.408 s, estimated 2 s\nRan all test suites within paths \"tests/generated/index.readFileSync.test.js\", \"tests/generated/index.writeFileSync.test.js\", \"tests/generated/jsonfile.dynamic.readFileSync.readFileSync.test.js\", \"tests/generated/jsonfile.dynamic.writeFileSync.writeFileSync.test.js\", \"tests/generated/utils.stringify.test.js\", \"tests/generated/utils.stripBom.test.js\".\nTest results written to: tests\\generated\\.jest-results.1224.all.json\n"
+  }
+}

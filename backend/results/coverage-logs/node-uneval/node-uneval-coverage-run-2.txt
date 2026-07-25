@@ -1,0 +1,148 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-uneval
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 4 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\index.js
+==============================
+✅ Found 1 function(s): wrapRoot
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: benchmark_packages\node-uneval\test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_expected.js
+==============================
+❌ Invalid JavaScript (skipping): Unexpected token (13:1)
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_input.js
+==============================
+⚠️ No functions detected.
+
+⚠️ Package-entry mode produced no tests. Trying dynamic public API discovery...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 1 API candidate(s), 1 public target candidate(s).
+✅ Dynamic preflight passed: uneval
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-uneval.dynamic.uneval.default.test.js (uneval)
+ℹ️ Dynamic API preflight kept 1 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 1
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 1 API candidate(s), 1 public target candidate(s).
+✅ Dynamic preflight passed: uneval
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-uneval.dynamic.uneval.default.test.js (uneval)
+ℹ️ Dynamic API preflight kept 1 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 1
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 2
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  2
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+Ã°Å¸Â§Âª LLM injection summary for uneval
+   received: 7
+   sanitizer accepted: 6
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 6
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 4
+   - NULL_ORACLE_FAILURE: 1
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-uneval.dynamic.uneval.default.test.js (2 + 1 repair candidate(s))
+Skipping duplicate LLM context for uneval: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-uneval.dynamic.uneval.default.test.js
+
+ℹ️ Post-LLM preflight skipped for dynamic-api+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 4
+Passed            : 4
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - uneval should be exported as a function
+✅ PASS  - uneval fallback follows source guard for obj
+✅ PASS  - uneval fallback checks source-aware result shape
+✅ PASS  - uneval [repair-candidate] Observed behavior returns "1"
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 1
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: node-uneval.dynamic.uneval.default.test.js
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 4
+Passed            : 4
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - uneval should be exported as a function
+✅ PASS  - uneval fallback follows source guard for obj
+✅ PASS  - uneval fallback checks source-aware result shape
+✅ PASS  - uneval [repair-candidate] Observed behavior returns "1"
+============================================================
+
+
+✅ Done.
+

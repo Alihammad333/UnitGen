@@ -1,0 +1,25 @@
+{
+  "name": "pull-stream",
+  "description": "minimal pull stream",
+  "version": "3.6.14",
+  "homepage": "https://pull-stream.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pull-stream/pull-stream.git"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "expose-gc": "^1.0.0",
+    "faker": "^5.5.1",
+    "pretty-bytes": "^5.6.0",
+    "tap-bail": "^1.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "~5.2.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js | tap-bail | tap-spec",
+    "test-verbose": "TEST_VERBOSE npm test"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}

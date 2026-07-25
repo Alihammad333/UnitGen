@@ -1,0 +1,40 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-uneval
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 4 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\index.js
+==============================
+✅ Found 1 function(s): wrapRoot
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: benchmark_packages\node-uneval\test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_expected.js
+==============================
+❌ Invalid JavaScript (skipping): Unexpected token (13:1)
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_input.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 2
+⚠️ Files skipped:  2
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  0
+📁 Output folder:  tests/generated/
+
+⚠️ No tests generated.
+

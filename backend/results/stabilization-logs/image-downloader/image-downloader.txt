@@ -1,0 +1,365 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/image-downloader
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 6 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\.eslintrc.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\index.js
+==============================
+✅ Found 1 function(s): image
+✅ Exported function(s): image
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 9 scanned file(s)
+   - image: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - path -> path (require:*, cjs)
+   - request -> ./lib/request (require:*, cjs)
+🔗 Dependency usage:
+   image:
+   - path.extname -> path (member-call)
+   - path.extname -> path (member)
+   - path -> path (reference)
+   - URL -> global:URL (global-constructor-call)
+   - URL -> global:URL (global-reference)
+   - path.basename -> path (member-call)
+   - path.basename -> path (member)
+   - path.join -> path (member-call)
+   - path.join -> path (member)
+   - path.isAbsolute -> path (member-call)
+   - path.isAbsolute -> path (member)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - request() -> ./lib/request (direct-call)
+   - request -> ./lib/request (member-call)
+   - request -> ./lib/request (reference)
+🧩 Mock plan:
+   image:
+   - path (builtin) members: extname, basename, join, isAbsolute, resolve; targets: path, extname, basename, join, isAbsolute, resolve;
+   - global:URL (global) members: URL; targets: URL;
+   - ./lib/request (local) members: none; targets: request;
+🧪 Rendered mocks:
+   image: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\index.image.test.js
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\jest.config.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\lib\request.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (9 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - createWriteStream -> fs (destructured-require:createWriteStream, cjs) [createWriteStream]
+   - TimeoutError -> ./TimeoutError (destructured-require:TimeoutError, cjs) [TimeoutError]
+   - http -> follow-redirects (destructured-require:http, cjs) [http]
+   - https -> follow-redirects (destructured-require:https, cjs) [https]
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\request.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\lib\TimeoutError.js
+==============================
+✅ Found 1 function(s): TimeoutError
+ℹ️ Class-like exports will use constructor prototype generation: TimeoutError
+✅ Exported function(s): TimeoutError
+🏛️ Class export analysis:
+   - TimeoutError: constructor params (none), 0 prototype method(s), 0 static method(s)
+📚 Usage snippets:
+   - 4 snippet(s) found from 9 scanned file(s)
+   - TimeoutError: 4
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\TimeoutError.TimeoutError.test.js
+
+==============================
+📄 Skipping: benchmark_packages\image-downloader\test\index.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 1 API candidate(s), 1 public target candidate(s).
+✅ Dynamic preflight passed: image
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\image-downloader.dynamic.image.image.test.js (image)
+ℹ️ Dynamic API preflight kept 1 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 1
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 6
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  4
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for image
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - CASE_PARSE_FAILED: 4
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for image; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASYNC_MATCHER_MISUSE: 2
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\request.defaultExport.test.js (2)
+🧪 LLM injection summary for TimeoutError
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 4
+   fallback sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 2
+⚠️ No runtime-passing LLM or fallback cases for TimeoutError; keeping prototype only.
+🧪 LLM injection summary for image
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASYNC_MATCHER_MISUSE: 2
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\image-downloader.dynamic.image.image.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:11248) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/generated/index.image.test.js
+  ● image › auto-generated (prototype)
+
+    The options.url is required
+
+      4 | module.exports.image = ({ extractFilename = true, ...options } = {}) => {
+      5 |   if (!options.url) {
+    > 6 |     return Promise.reject(new Error('The options.url is required'));
+        |                           ^
+      7 |   }
+      8 |
+      9 |   if (!options.dest) {
+
+      at module.exports.image (benchmark_packages/image-downloader/index.js:6:27)
+      at Object.<anonymous> (tests/generated/index.image.test.js:252:26)
+
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\image-downloader\lib\request.js:18
+  const request = url.trimLeft().startsWith('https') ? https : http;
+                      ^
+
+[TypeError: Cannot read properties of undefined (reading 'trimLeft')]
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+Initial Jest run crashed before producing JSON. Running generated-test safety preflight...
+
+
+🛡️ Running post-LLM generated test preflight...
+
+⚠️ Removing failed prototype-only generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\index.image.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\request.defaultExport.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\TimeoutError.TimeoutError.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\image-downloader.dynamic.image.image.test.js
+
+🛡️ Post-LLM preflight completed. Kept 1 file(s), removed 3 unsafe file(s).
+
+
+Re-running Jest after generated-test safety preflight...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 1
+Passed            : 1
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - TimeoutError auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: TimeoutError.TimeoutError.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T18:08:58.847Z","testFile":"TimeoutError.TimeoutError.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T18:08:58.848Z","testFile":"TimeoutError.TimeoutError.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [TimeoutError.TimeoutError.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting TimeoutError.TimeoutError.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T18:09:00.443Z","testFile":"TimeoutError.TimeoutError.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [TimeoutError.TimeoutError.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting TimeoutError.TimeoutError.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T18:09:02.056Z","testFile":"TimeoutError.TimeoutError.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 1
+Passed            : 1
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - TimeoutError auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

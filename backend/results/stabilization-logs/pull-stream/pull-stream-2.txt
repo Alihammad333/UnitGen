@@ -1,0 +1,3142 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/pull-stream
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 54 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\flatten.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\helpers\lifecycle-configs.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\index.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\node.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\benchmarks\pull.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\pull.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\pull.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\collect.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\collect.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\concat.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - reduce -> ./reduce (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\concat.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\drain.js
+==============================
+✅ Found 2 function(s): defaultExport, sink
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\drain.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\find.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\find.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\log.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\log.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\on-end.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\on-end.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sinks\reduce.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - drain -> ./drain (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\reduce.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\count.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\count.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\empty.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\empty.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\error.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\error.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\infinite.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\infinite.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\keys.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ./values (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\keys.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\once.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\once.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\sources\values.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - abortCb -> ../util/abort-cb (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\values.defaultExport.test.js
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\abort-stalled.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\async-map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\collect.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\compose.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\concat.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\continuable.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-abort.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\drain-if.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\filter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\find.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\flatten.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\keys.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\map.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\pull.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\take.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\through.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\unique.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\pull-stream\test\values.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\async-map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\async-map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter-not.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter-not.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\filter.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - tester -> ../util/tester (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\flatten.js
+==============================
+✅ Found 3 function(s): defaultExport, nextChunk, nextStream
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - values -> ../sources/values (require:*, cjs)
+   - once -> ../sources/once (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\flatten.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\map.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\map.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\non-unique.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - unique -> ./unique (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\non-unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\take.js
+==============================
+✅ Found 2 function(s): defaultExport, terminate
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\take.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\through.js
+==============================
+✅ Found 2 function(s): defaultExport, once
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\through.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\throughs\unique.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ../util/prop (require:*, cjs)
+   - filter -> ./filter (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\unique.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\abort-cb.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\prop.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\prop.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\pull-stream\util\tester.js
+==============================
+✅ Found 2 function(s): defaultExport, id
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (84 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - prop -> ./prop (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\tester.defaultExport.test.js
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 31
+⚠️ Files skipped:  23
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  27
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 3
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 0
+   fallback runtime failed: 1
+   fallback injected: 0
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\pull.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\collect.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\concat.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\drain.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\log.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\on-end.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\reduce.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 1
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\count.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\empty.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - UNDECLARED_REFERENCE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\error.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\infinite.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 3
+   sanitizer accepted: 2
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\once.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for defaultExport; keeping prototype only.
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\async-map.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter-not.defaultExport.test.js (3)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\filter.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 3
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\flatten.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   - UNDECLARED_REFERENCE: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\map.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 2
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\non-unique.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\take.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\through.defaultExport.test.js (4)
+🧪 LLM injection summary for defaultExport
+   received: 5
+   sanitizer accepted: 1
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 3
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\unique.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\abort-cb.defaultExport.test.js (1)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\prop.defaultExport.test.js (2)
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 2
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\tester.defaultExport.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 27
+Failed Suites     : 0
+Total Tests       : 87
+Passed            : 87
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - single argument
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - no operation, no done callback
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined check
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior with Math.random
+✅ PASS  - defaultExport Default behavior with deterministic generate
+✅ PASS  - defaultExport Safe invariant: Result shape and null behavior
+✅ PASS  - defaultExport Simple parameterized behavior
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Parameterized behavior - non-unique field with specific value
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - abort is false
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is null
+✅ PASS  - defaultExport Safe invariant - end is not null
+✅ PASS  - defaultExport Parameterized behavior - op and onEnd are provided
+✅ PASS  - defaultExport Safe invariant - end is null
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: abort-cb.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:01:45.679Z","testFile":"abort-cb.defaultExport.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:01:45.680Z","testFile":"abort-cb.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [abort-cb.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:01:50.965Z","testFile":"abort-cb.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [abort-cb.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting abort-cb.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:01:56.190Z","testFile":"abort-cb.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: async-map.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:01:56.199Z","testFile":"async-map.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:01:56.199Z","testFile":"async-map.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:01:56.199Z","testFile":"async-map.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [async-map.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting async-map.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:02:03.523Z","testFile":"async-map.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [async-map.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting async-map.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:18.406Z","testFile":"async-map.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [async-map.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting async-map.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:22.643Z","testFile":"async-map.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: collect.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:22.664Z","testFile":"collect.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:22.664Z","testFile":"collect.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:22.664Z","testFile":"collect.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:22.664Z","testFile":"collect.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [collect.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting collect.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:27.951Z","testFile":"collect.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [collect.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting collect.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:33.158Z","testFile":"collect.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [collect.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting collect.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:38.429Z","testFile":"collect.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [collect.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Single assertion rejected. Reverting collect.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:43.310Z","testFile":"collect.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: concat.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:43.315Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:43.315Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:43.315Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:06:43.315Z","testFile":"concat.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [concat.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:48.436Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [concat.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:53.451Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [concat.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:06:58.429Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [concat.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  }
+}
+⚠️ Single assertion rejected. Reverting concat.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:03.441Z","testFile":"concat.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: count.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:03.448Z","testFile":"count.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:03.448Z","testFile":"count.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:03.448Z","testFile":"count.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:03.448Z","testFile":"count.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [count.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  }
+}
+⚠️ Single assertion rejected. Reverting count.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:08.563Z","testFile":"count.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [count.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  }
+}
+⚠️ Single assertion rejected. Reverting count.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:13.550Z","testFile":"count.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [count.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  }
+}
+⚠️ Single assertion rejected. Reverting count.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:18.686Z","testFile":"count.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [count.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  }
+}
+⚠️ Single assertion rejected. Reverting count.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:23.740Z","testFile":"count.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: drain.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:23.747Z","testFile":"drain.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:23.747Z","testFile":"drain.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:23.747Z","testFile":"drain.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:23.747Z","testFile":"drain.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [drain.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  }
+}
+⚠️ Single assertion rejected. Reverting drain.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:28.682Z","testFile":"drain.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [drain.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  }
+}
+⚠️ Single assertion rejected. Reverting drain.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:33.844Z","testFile":"drain.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [drain.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.4
+  }
+}
+⚠️ Single assertion rejected. Reverting drain.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:38.972Z","testFile":"drain.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [drain.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.6
+  }
+}
+⚠️ Single assertion rejected. Reverting drain.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:44.107Z","testFile":"drain.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: empty.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:44.111Z","testFile":"empty.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:44.112Z","testFile":"empty.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:44.112Z","testFile":"empty.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [empty.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.6
+  }
+}
+⚠️ Single assertion rejected. Reverting empty.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:49.327Z","testFile":"empty.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [empty.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting empty.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:54.496Z","testFile":"empty.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [empty.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting empty.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:07:59.572Z","testFile":"empty.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: error.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:59.577Z","testFile":"error.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:59.577Z","testFile":"error.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:07:59.577Z","testFile":"error.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [error.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting error.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:04.672Z","testFile":"error.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [error.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  }
+}
+⚠️ Single assertion rejected. Reverting error.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:09.764Z","testFile":"error.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [error.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting error.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:14.906Z","testFile":"error.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: filter-not.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:14.912Z","testFile":"filter-not.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:14.913Z","testFile":"filter-not.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:14.913Z","testFile":"filter-not.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:14.913Z","testFile":"filter-not.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [filter-not.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter-not.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:20.098Z","testFile":"filter-not.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [filter-not.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter-not.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:25.304Z","testFile":"filter-not.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [filter-not.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.600000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter-not.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:30.527Z","testFile":"filter-not.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [filter-not.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.800000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter-not.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:35.701Z","testFile":"filter-not.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: filter.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:35.707Z","testFile":"filter.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:35.707Z","testFile":"filter.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:35.707Z","testFile":"filter.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [filter.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.800000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:40.864Z","testFile":"filter.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [filter.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:45.948Z","testFile":"filter.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [filter.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.200000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting filter.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:51.033Z","testFile":"filter.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: find.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:51.039Z","testFile":"find.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [find.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting find.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:08:56.300Z","testFile":"find.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: flatten.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:56.306Z","testFile":"flatten.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:56.306Z","testFile":"flatten.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:56.306Z","testFile":"flatten.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:56.306Z","testFile":"flatten.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:08:56.306Z","testFile":"flatten.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [flatten.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting flatten.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:02.278Z","testFile":"flatten.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [flatten.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.400000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting flatten.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:11.547Z","testFile":"flatten.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [flatten.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.600000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting flatten.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:21.308Z","testFile":"flatten.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [flatten.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.800000000000002
+  }
+}
+⚠️ Single assertion rejected. Reverting flatten.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:30.627Z","testFile":"flatten.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [flatten.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 5.000000000000002
+  }
+}
+⚠️ Single assertion rejected. Reverting flatten.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:40.000Z","testFile":"flatten.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: infinite.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:09:40.017Z","testFile":"infinite.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:09:40.017Z","testFile":"infinite.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:09:40.017Z","testFile":"infinite.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:09:40.017Z","testFile":"infinite.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:09:40.017Z","testFile":"infinite.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [infinite.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 5.200000000000002
+  }
+}
+⚠️ Single assertion rejected. Reverting infinite.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:47.688Z","testFile":"infinite.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [infinite.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 5.400000000000002
+  }
+}
+⚠️ Single assertion rejected. Reverting infinite.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:09:55.503Z","testFile":"infinite.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [infinite.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 5.600000000000002
+  }
+}
+⚠️ Single assertion rejected. Reverting infinite.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:03.860Z","testFile":"infinite.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [infinite.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 5.8000000000000025
+  }
+}
+⚠️ Single assertion rejected. Reverting infinite.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:13.496Z","testFile":"infinite.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [infinite.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.000000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting infinite.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:22.557Z","testFile":"infinite.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: keys.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:22.573Z","testFile":"keys.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [keys.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.200000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting keys.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:31.452Z","testFile":"keys.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: log.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:31.465Z","testFile":"log.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:31.465Z","testFile":"log.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:31.465Z","testFile":"log.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [log.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.200000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:38.881Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [log.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.400000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:47.350Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [log.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.600000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting log.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:10:55.581Z","testFile":"log.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: map.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:55.594Z","testFile":"map.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:10:55.594Z","testFile":"map.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [map.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.600000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting map.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:04.001Z","testFile":"map.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [map.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.800000000000003
+  }
+}
+⚠️ Single assertion rejected. Reverting map.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:11.331Z","testFile":"map.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: non-unique.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:11.345Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).not.toBeNull()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:11.345Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:11.345Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:11.345Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:11.345Z","testFile":"non-unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeNull: OBSERVED
+🧠 [AST-Repair] Optimized: toBeNull
+📊 Single Target [non-unique.defaultExport.test.js :: toBeNull] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.800000000000003
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:19.497Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).not.toBeNull()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [non-unique.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 6.800000000000003
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:27.223Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [non-unique.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.0000000000000036
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:34.553Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [non-unique.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.200000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:42.091Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [non-unique.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.400000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting non-unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:49.753Z","testFile":"non-unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: on-end.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:49.762Z","testFile":"on-end.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:49.762Z","testFile":"on-end.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:49.762Z","testFile":"on-end.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:49.762Z","testFile":"on-end.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:11:49.762Z","testFile":"on-end.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [on-end.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.400000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting on-end.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:11:57.227Z","testFile":"on-end.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [on-end.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.400000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting on-end.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:05.040Z","testFile":"on-end.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [on-end.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.600000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting on-end.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:13.655Z","testFile":"on-end.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [on-end.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 7.800000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting on-end.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:22.146Z","testFile":"on-end.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [on-end.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.000000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting on-end.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:30.370Z","testFile":"on-end.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: once.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:12:30.384Z","testFile":"once.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:12:30.384Z","testFile":"once.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:12:30.384Z","testFile":"once.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [once.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.000000000000004
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting once.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:38.818Z","testFile":"once.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [once.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.200000000000003
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting once.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:46.034Z","testFile":"once.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [once.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.400000000000002
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting once.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:52.196Z","testFile":"once.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: prop.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:12:52.201Z","testFile":"prop.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [prop.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.600000000000001
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting prop.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:12:58.278Z","testFile":"prop.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: pull.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:12:58.284Z","testFile":"pull.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBeDefined: array(length=3)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [pull.defaultExport.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting pull.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:04.510Z","testFile":"pull.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: reduce.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:04.546Z","testFile":"reduce.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:04.546Z","testFile":"reduce.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [reduce.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 8.8
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting reduce.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:11.046Z","testFile":"reduce.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [reduce.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting reduce.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:16.378Z","testFile":"reduce.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: take.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:16.383Z","testFile":"take.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:16.384Z","testFile":"take.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:16.384Z","testFile":"take.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [take.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting take.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:22.342Z","testFile":"take.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [take.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.2
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting take.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:27.471Z","testFile":"take.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [take.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.399999999999999
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting take.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:32.939Z","testFile":"take.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: tester.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:32.944Z","testFile":"tester.defaultExport.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:32.944Z","testFile":"tester.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:32.944Z","testFile":"tester.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [tester.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.399999999999999
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting tester.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:38.022Z","testFile":"tester.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: number(1)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [tester.defaultExport.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.599999999999998
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting tester.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:43.217Z","testFile":"tester.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: number(1)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [tester.defaultExport.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.799999999999997
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting tester.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:48.461Z","testFile":"tester.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: through.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:48.468Z","testFile":"through.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:48.468Z","testFile":"through.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:48.468Z","testFile":"through.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:48.468Z","testFile":"through.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof result).toBe('function')","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:13:48.468Z","testFile":"through.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [through.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.000000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.799999999999997
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting through.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:53.643Z","testFile":"through.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [through.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.200000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.799999999999997
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting through.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:13:58.914Z","testFile":"through.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [through.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.400000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.799999999999997
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting through.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:04.168Z","testFile":"through.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [through.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.799999999999997
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting through.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:09.348Z","testFile":"through.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('function')","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [through.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 9.999999999999996
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting through.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:14.527Z","testFile":"through.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: unique.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:14:14.532Z","testFile":"unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:14:14.532Z","testFile":"unique.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [unique.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 10.199999999999996
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:19.771Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [unique.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 10.399999999999995
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting unique.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:24.955Z","testFile":"unique.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: values.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T11:14:24.961Z","testFile":"values.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [values.defaultExport.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 10.599999999999994
+  },
+  "toBeNull": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting values.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T11:14:30.272Z","testFile":"values.defaultExport.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 27
+Failed Suites     : 0
+Total Tests       : 87
+Passed            : 87
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior with Math.random
+✅ PASS  - defaultExport Default behavior with deterministic generate
+✅ PASS  - defaultExport Safe invariant: Result shape and null behavior
+✅ PASS  - defaultExport Simple parameterized behavior
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is defined
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Parameterized behavior - non-unique field with specific value
+✅ PASS  - defaultExport Safe invariant - result is not null
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - single argument
+✅ PASS  - defaultExport Safe invariant - null argument
+✅ PASS  - defaultExport Safe invariant - undefined argument
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - abort is false
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport Safe invariant - result type
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - no operation, no done callback
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result is a function
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Default behavior - end is null
+✅ PASS  - defaultExport Safe invariant - end is not null
+✅ PASS  - defaultExport Parameterized behavior - op and onEnd are provided
+✅ PASS  - defaultExport Safe invariant - end is null
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - result defined check
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport Safe invariant - null key
+✅ PASS  - defaultExport Safe invariant - undefined key
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape
+✅ PASS  - defaultExport fallback checks stable result contract
+============================================================
+
+
+✅ Done.
+

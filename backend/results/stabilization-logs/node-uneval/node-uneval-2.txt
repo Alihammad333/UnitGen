@@ -1,0 +1,146 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-uneval
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 4 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\index.js
+==============================
+✅ Found 1 function(s): wrapRoot
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: benchmark_packages\node-uneval\test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_expected.js
+==============================
+❌ Invalid JavaScript (skipping): Unexpected token (13:1)
+
+==============================
+📄 Processing: benchmark_packages\node-uneval\test_input.js
+==============================
+⚠️ No functions detected.
+
+⚠️ Package-entry mode produced no tests. Trying dynamic public API discovery...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 1 API candidate(s), 1 direct target candidate(s).
+✅ Dynamic preflight passed: defaultExport
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\node-uneval.dynamic.defaultExport.test.js (defaultExport)
+ℹ️ Dynamic API preflight kept 1 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  1
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for defaultExport
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\node-uneval.dynamic.defaultExport.test.js (1)
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\node-uneval.dynamic.defaultExport.test.js
+
+🛡️ Post-LLM preflight completed. Kept 1 file(s), removed 0 unsafe file(s).
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 2
+Passed            : 2
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - defaultExport should be exported as a function
+✅ PASS  - defaultExport Safe invariant - null input
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: node-uneval.dynamic.defaultExport.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:41:47.930Z","testFile":"node-uneval.dynamic.defaultExport.test.js","issue":"Weak assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-uneval.dynamic.defaultExport.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-uneval.dynamic.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:41:50.911Z","testFile":"node-uneval.dynamic.defaultExport.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 2
+Passed            : 2
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - defaultExport should be exported as a function
+✅ PASS  - defaultExport Safe invariant - null input
+============================================================
+
+
+✅ Done.
+

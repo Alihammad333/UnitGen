@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package node-dir
+
+
+================ UnitGen Coverage Summary ================
+Package            : node-dir
+Generated test files: 12
+Total tests         : 31
+Passing tests       : 30
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 66.43%
+Branch coverage     : 56.15%
+==========================================================
+

@@ -1,0 +1,657 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/jsonfile
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\jsonfile\index.js
+==============================
+✅ Found 4 function(s): _readFile, readFileSync, _writeFile, writeFileSync
+✅ Exported function(s): readFileSync, writeFileSync
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 10 snippet(s) found from 3 scanned file(s)
+   - readFileSync: 5
+   - writeFileSync: 5
+📝 Doc comments:
+   - 1/2 function(s) have comment context
+   - writeFileSync: JSDoc
+🔎 Import map:
+   - universalify -> universalify (require:*, cjs)
+   - stringify -> ./utils (destructured-require:stringify, cjs) [stringify]
+   - stripBom -> ./utils (destructured-require:stripBom, cjs) [stripBom]
+🔗 Dependency usage:
+   readFileSync:
+   - stripBom() -> ./utils (direct-call)
+   - stripBom -> ./utils (member-call)
+   - stripBom -> ./utils (reference)
+   writeFileSync:
+   - stringify() -> ./utils (direct-call)
+   - stringify -> ./utils (member-call)
+   - stringify -> ./utils (reference)
+🧩 Mock plan:
+   readFileSync:
+   - ./utils (local) members: stripBom; targets: stripBom;
+   writeFileSync:
+   - ./utils (local) members: stringify; targets: stringify;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.readFileSync.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.writeFileSync.test.js
+
+==============================
+📄 Processing: benchmark_packages\jsonfile\utils.js
+==============================
+✅ Found 2 function(s): stringify, stripBom
+✅ Exported function(s): stringify, stripBom
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 10 snippet(s) found from 3 scanned file(s)
+   - stringify: 5
+   - stripBom: 5
+📝 Doc comments:
+   - 1/2 function(s) have comment context
+   - stringify: JSDoc
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   stripBom:
+   - Buffer.isBuffer -> global:Buffer (global-member-call)
+   - Buffer.isBuffer -> global:Buffer (global-member)
+   - Buffer -> global:Buffer (global-reference)
+🧩 Mock plan:
+   stripBom:
+   - global:Buffer (global) members: Buffer; targets: Buffer, isBuffer; chains: isBuffer;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stringify.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stripBom.test.js
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 4 API candidate(s), 4 public target candidate(s).
+✅ Dynamic preflight passed: readFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.readFile.readFile.test.js (readFile)
+✅ Dynamic preflight passed: readFileSync
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: readFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.readFileSync.readFileSync.test.js (readFileSync)
+✅ Dynamic preflight passed: writeFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.writeFile.writeFile.test.js (writeFile)
+✅ Dynamic preflight passed: writeFileSync
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: writeFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.writeFileSync.writeFileSync.test.js (writeFileSync)
+ℹ️ Dynamic API preflight kept 4 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 2
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 3
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  8
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for readFileSync
+   received: 8
+   sanitizer accepted: 6
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.readFileSync.test.js (7)
+🧪 LLM injection summary for writeFileSync
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 0
+   runtime failed: 7
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 7
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 7
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.writeFileSync.test.js (2)
+🧪 LLM injection summary for stringify
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 7
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 7
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stringify.test.js (8)
+🧪 LLM injection summary for stripBom
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 6
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 6
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stripBom.test.js (6)
+🧪 LLM injection summary for readFile
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.readFile.readFile.test.js (2)
+🧪 LLM injection summary for writeFile
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 6
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.writeFile.writeFile.test.js (8)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:12836) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/utils.stripBom.test.js
+node:fs:386
+  binding.open(getValidatedPath(path), flagsNumber, 0o666, req);
+               ^
+
+TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
+    at readFile (node:fs:386:16)
+    at go$readFile (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\node_modules\graceful-fs\graceful-fs.js:118:14)
+    at readFile (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\node_modules\graceful-fs\graceful-fs.js:115:12)
+    at C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\node_modules\universalify\index.js:9:12
+    at new Promise (<anonymous>)
+    at readFile (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\node_modules\universalify\index.js:7:14)
+    at _readFile (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\index.js:22:58)
+    at _readFile (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\benchmark_packages\jsonfile\node_modules\universalify\index.js:18:45)
+    at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.readFile.readFile.test.js:19:22)
+    at Promise.finally.completed (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+    at _callCircusTest (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+    at _runTest (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+    at C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+    at _runTestsForDescribeBlock (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+    at _runTestsForDescribeBlock (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+    at run (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+    at runAndTransformResultsToJestFormat (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+    at jestAdapter (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-runner\build\index.js:275:16)
+    at runTest (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\node_modules\jest-runner\build\index.js:343:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+Initial Jest run crashed before producing JSON. Running generated-test safety preflight...
+
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.readFileSync.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\index.writeFileSync.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stringify.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\utils.stripBom.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.readFile.readFile.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\jsonfile.dynamic.writeFile.writeFile.test.js
+
+🛡️ Post-LLM preflight completed. Kept 4 file(s), removed 2 unsafe file(s).
+
+
+Re-running Jest after generated-test safety preflight...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 0
+Total Tests       : 29
+Passed            : 29
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - readFileSync should be exported as a function
+✅ PASS  - stripBom auto-generated (prototype)
+✅ PASS  - stripBom Buffer content with BOM character
+✅ PASS  - stripBom String content with BOM character
+✅ PASS  - stripBom Content without BOM character
+✅ PASS  - stripBom Empty content
+✅ PASS  - stripBom Content with multiple BOM characters
+✅ PASS  - stripBom Content with BOM character at the end
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - readFileSync auto-generated (prototype)
+✅ PASS  - readFileSync Default behavior - file with valid JSON content
+✅ PASS  - readFileSync Options with custom encoding
+✅ PASS  - readFileSync Options with custom reviver function
+✅ PASS  - readFileSync File not found - throws error
+✅ PASS  - readFileSync File not found - returns null
+✅ PASS  - readFileSync fallback checks source-aware result shape
+✅ PASS  - readFileSync fallback checks stable result contract
+✅ PASS  - stringify auto-generated (prototype)
+✅ PASS  - stringify Default behavior - empty object
+✅ PASS  - stringify Default behavior - non-empty object
+✅ PASS  - stringify Custom EOL character
+✅ PASS  - stringify Custom finalEOL - false
+✅ PASS  - stringify Custom replacer function
+✅ PASS  - stringify Custom spaces for indentation
+✅ PASS  - stringify Throw TypeError for undefined result
+✅ PASS  - stringify fallback checks source-aware result shape
+✅ PASS  - writeFileSync auto-generated (prototype)
+✅ PASS  - writeFileSync fallback checks source-aware result shape
+✅ PASS  - writeFileSync fallback checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: index.readFileSync.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.048Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.051Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.051Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.051Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.052Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:07.052Z","testFile":"index.readFileSync.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.readFileSync.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:11.307Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=name, ok)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.readFileSync.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:15.587Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=name, ok)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.readFileSync.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:19.655Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"string\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.readFileSync.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:23.826Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.readFileSync.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:27.896Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [index.readFileSync.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting index.readFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:31.990Z","testFile":"index.readFileSync.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: index.writeFileSync.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:32.014Z","testFile":"index.writeFileSync.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:32.014Z","testFile":"index.writeFileSync.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:32.015Z","testFile":"index.writeFileSync.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.writeFileSync.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting index.writeFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:36.106Z","testFile":"index.writeFileSync.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.writeFileSync.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting index.writeFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:40.177Z","testFile":"index.writeFileSync.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [index.writeFileSync.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting index.writeFileSync.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:44.470Z","testFile":"index.writeFileSync.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: jsonfile.dynamic.readFileSync.readFileSync.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: jsonfile.dynamic.writeFileSync.writeFileSync.test.js
+
+🔍 Analyzing File: utils.stringify.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:44.499Z","testFile":"utils.stringify.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:44.499Z","testFile":"utils.stringify.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"string\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:44.499Z","testFile":"utils.stringify.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [utils.stringify.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting utils.stringify.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:48.690Z","testFile":"utils.stringify.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: string({}
+)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [utils.stringify.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting utils.stringify.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:52.658Z","testFile":"utils.stringify.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"string\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: string(1
+)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [utils.stringify.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting utils.stringify.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:01:56.669Z","testFile":"utils.stringify.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: utils.stripBom.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:56.686Z","testFile":"utils.stripBom.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T21:01:56.686Z","testFile":"utils.stripBom.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [utils.stripBom.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting utils.stripBom.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:02:00.549Z","testFile":"utils.stripBom.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: string(sample)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [utils.stripBom.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Single assertion rejected. Reverting utils.stripBom.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T21:02:04.453Z","testFile":"utils.stripBom.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 0
+Total Tests       : 29
+Passed            : 29
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - stripBom auto-generated (prototype)
+✅ PASS  - stripBom Buffer content with BOM character
+✅ PASS  - stripBom String content with BOM character
+✅ PASS  - stripBom Content without BOM character
+✅ PASS  - stripBom Empty content
+✅ PASS  - stripBom Content with multiple BOM characters
+✅ PASS  - stripBom Content with BOM character at the end
+✅ PASS  - writeFileSync auto-generated (prototype)
+✅ PASS  - writeFileSync fallback checks source-aware result shape
+✅ PASS  - writeFileSync fallback checks stable result contract
+✅ PASS  - readFileSync auto-generated (prototype)
+✅ PASS  - readFileSync Default behavior - file with valid JSON content
+✅ PASS  - readFileSync Options with custom encoding
+✅ PASS  - readFileSync Options with custom reviver function
+✅ PASS  - readFileSync File not found - throws error
+✅ PASS  - readFileSync File not found - returns null
+✅ PASS  - readFileSync fallback checks source-aware result shape
+✅ PASS  - readFileSync fallback checks stable result contract
+✅ PASS  - stringify auto-generated (prototype)
+✅ PASS  - stringify Default behavior - empty object
+✅ PASS  - stringify Default behavior - non-empty object
+✅ PASS  - stringify Custom EOL character
+✅ PASS  - stringify Custom finalEOL - false
+✅ PASS  - stringify Custom replacer function
+✅ PASS  - stringify Custom spaces for indentation
+✅ PASS  - stringify Throw TypeError for undefined result
+✅ PASS  - stringify fallback checks source-aware result shape
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - readFileSync should be exported as a function
+============================================================
+
+
+✅ Done.
+

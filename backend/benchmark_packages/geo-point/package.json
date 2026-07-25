@@ -1,0 +1,54 @@
+{
+  "name": "geo-point",
+  "version": "2.0.2",
+  "description": "geo point",
+  "main": "build",
+  "types": "build",
+  "scripts": {
+    "test": "nyc mocha -r ts-node/register src/*.spec.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainder/node-geo-point.git"
+  },
+  "keywords": [
+    "geo",
+    "point",
+    "struct"
+  ],
+  "author": "Andrius Skerla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rainder/node-geo-point/issues"
+  },
+  "homepage": "https://github.com/rainder/node-geo-point#readme",
+  "dependencies": {
+    "compute-deg2rad": "^1.0.0",
+    "compute-rad2deg": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ],
+    "exclude": [
+      "node_modules",
+      "coverage",
+      "src/*.spec.ts"
+    ],
+    "all": true
+  }
+}

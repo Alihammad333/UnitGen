@@ -1,0 +1,35 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package zip-a-folder
+
+Jest did not produce a baseline JSON result.
+(node:7680) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+PASS tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+ReferenceError: You are trying to `import` a file after the Jest environment has been torn down. From tests/generated/zip-a-folder.dynamic.zipFolder.zipFolder.test.js.
+
+      30 |                 if (notExistingError) {
+      31 |                     return callback(notExistingError);
+    > 32 |                 }
+         |                  ^
+      33 |                 var output = fs.createWriteStream(zipFilePath);
+      34 |                 var zipArchive = archiver('zip');
+      35 |
+
+      at Archiver.Readable (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_readable.js:170:22)
+      at Archiver.Duplex (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_duplex.js:60:12)
+      at Archiver.Transform (benchmark_packages/zip-a-folder/node_modules/readable-stream/lib/_stream_transform.js:100:10)
+      at new Archiver (benchmark_packages/zip-a-folder/node_modules/archiver/lib/core.js:40:13)
+      at vending.create (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:33:20)
+      at vending (benchmark_packages/zip-a-folder/node_modules/archiver/index.js:21:18)
+      at benchmark_packages/zip-a-folder/lib/zip-a-folder.js:32:26
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:174
+  var isDuplex = this instanceof Duplex;
+                      ^
+
+[TypeError: Right-hand side of 'instanceof' is not callable]
+
+Node.js v24.14.0
+

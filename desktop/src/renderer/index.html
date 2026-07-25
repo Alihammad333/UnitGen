@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitGen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-icon" aria-hidden="true">
+            <img src="./assets/unitgen-logo.png" alt="UnitGen logo">
+          </div>
+          <div>
+            <h1>UnitGen</h1>
+            <p>Automated Unit Test Generation, Repair &amp; Quality Enhancement for JavaScript/Node.js</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <span id="providerStatusPill" class="provider-status warning">No API Key</span>
+          <button id="settingsBtn" class="icon-button" type="button" aria-label="Open settings">⚙</button>
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <section class="section-card">
+            <div class="section-heading">
+              <div>
+                <h2>Source Code Input</h2>
+                <p>Provide a JavaScript/Node.js project folder, a .js file, or an npm package to start automated unit test generation.</p>
+              </div>
+            </div>
+            <div class="input-grid">
+              <button id="dropZone" class="drop-zone" type="button">
+                <span class="upload-icon" aria-hidden="true">↑</span>
+                <span id="dropTitle" class="drop-title">Select project folder or JavaScript file</span>
+                <span id="dropSubtitle" class="drop-subtitle">or click to browse from your computer</span>
+              </button>
+              <div class="input-actions">
+                <button id="browseBtn" class="primary-button" type="button">Browse Files</button>
+                <p class="accepted">
+                  Accepted: <strong>Node.js project folder</strong>, <strong>.js file</strong>, or <strong>npm package</strong>.
+                </p>
+                <button id="startBtn" class="primary-button" type="button" disabled>
+                  <span class="spinner" aria-hidden="true"></span>
+                  <span id="startText">Start UnitGen</span>
+                </button>
+                <button id="stopBtn" class="danger-button hidden" type="button">Stop</button>
+                <button id="downloadBtn" class="outline-button" type="button" disabled>Download Test Suite</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Processing Timeline</h2>
+            </div>
+            <ol id="timeline" class="timeline"></ol>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading horizontal">
+              <div>
+                <h2>Generated Test Activity</h2>
+                <p>CLI-style logs of generated, repaired, and improved tests.</p>
+              </div>
+              <span class="preview-pill">Preview Only</span>
+            </div>
+            <div class="activity-wrap">
+              <table class="activity-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Test / Action</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="activityBody">
+                  <tr class="empty-row">
+                    <td colspan="3">No activity yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Dependencies &amp; Mocks</h2>
+              <p>External calls detected in your project and their generated mock templates.</p>
+            </div>
+            <div id="dependenciesList" class="scroll-list placeholder">No dependencies detected yet.</div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Failure Classification &amp; Repair</h2>
+              <p>How UnitGen classifies failing tests and applies the repair loop.</p>
+            </div>
+            <div id="repairList" class="scroll-list placeholder">When tests fail, they will be classified and repaired here.</div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Assertion Quality</h2>
+              <p>Weak assertions flagged and stronger alternatives suggested.</p>
+            </div>
+            <div id="assertionList" class="scroll-list placeholder">Weak assertions will be listed here.</div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div id="settingsOverlay" class="modal-overlay hidden">
+      <section class="settings-modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <div class="modal-header">
+          <h2 id="settingsTitle">Settings</h2>
+          <button id="closeSettingsBtn" class="icon-button" type="button" aria-label="Close settings">×</button>
+        </div>
+        <div id="apiWarning" class="warning-banner hidden">⚠ Please add your OpenAI API key to get started.</div>
+
+        <label class="field-label" for="providerSelect">Provider</label>
+        <select id="providerSelect" class="text-input">
+          <option value="openai" selected>OpenAI</option>
+          <option value="ollama">Ollama (Local)</option>
+        </select>
+
+        <div id="openaiSettings">
+          <label class="field-label" for="apiKeyInput">OpenAI API Key</label>
+          <div class="password-field">
+            <input id="apiKeyInput" type="password" autocomplete="off">
+            <button id="toggleKeyBtn" type="button" aria-label="Show API key">👁</button>
+          </div>
+
+          <label class="field-label" for="modelInput">Model</label>
+          <input id="modelInput" class="text-input" type="text" value="gpt-3.5-turbo">
+        </div>
+
+        <div id="ollamaSettings" class="hidden">
+          <div class="info-banner">
+            <span>ℹ Ollama runs locally. Make sure Ollama is installed and running, and that you have pulled your chosen model.</span>
+            <button id="downloadOllamaBtn" type="button">Download Ollama →</button>
+          </div>
+
+          <label class="field-label" for="ollamaHostInput">Ollama Host</label>
+          <input id="ollamaHostInput" class="text-input" type="text" value="http://localhost:11434">
+          <p class="field-hint">Change only if Ollama is running on a custom port.</p>
+
+          <div class="connection-row">
+            <button id="checkOllamaBtn" class="outline-button" type="button">Check Connection</button>
+            <span id="ollamaConnectionStatus" class="connection-status muted">Not checked</span>
+          </div>
+
+          <label class="field-label" for="ollamaModelInput">Model</label>
+          <input id="ollamaModelInput" class="text-input" type="text" list="ollamaModels" value="qwen2.5:1.5b">
+          <datalist id="ollamaModels"></datalist>
+          <p class="field-hint">Must match a model you have already pulled via <code>ollama pull</code>.</p>
+        </div>
+
+        <button id="advancedToggle" class="advanced-toggle" type="button">
+          <span id="advancedChevron">›</span>
+          Advanced Settings
+        </button>
+
+        <div id="advancedPanel" class="advanced-panel hidden">
+          <label class="field-label" for="repairCandidatesInput">UNITGEN_REPAIR_CANDIDATES_PER_FUNCTION</label>
+          <input id="repairCandidatesInput" class="text-input" type="number" min="0" value="1">
+
+          <label class="field-label" for="dynamicDepthInput">UNITGEN_DYNAMIC_API_MAX_DEPTH</label>
+          <input id="dynamicDepthInput" class="text-input" type="number" min="1" value="4">
+
+          <label class="field-label" for="dynamicApisInput">UNITGEN_DYNAMIC_API_MAX_APIS</label>
+          <input id="dynamicApisInput" class="text-input" type="number" min="1" value="120">
+
+          <label class="switch-row" for="mockExternalsInput">
+            <span>UNITGEN_MOCK_TOP_LEVEL_EXTERNALS</span>
+            <input id="mockExternalsInput" type="checkbox" checked>
+          </label>
+        </div>
+
+        <button id="saveSettingsBtn" class="primary-button modal-save" type="button">Save Settings</button>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

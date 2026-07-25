@@ -1,0 +1,681 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 12,
+  "numPassedTests": 31,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 12,
+  "numTotalTests": 31,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1781957247679,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248407,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 13,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248414,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248428,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248431,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream [repair-candidate] Options object with default values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248434,
+          "status": "passed",
+          "title": "[repair-candidate] Options object with default values"
+        }
+      ],
+      "endTime": 1781957248436,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\readfilesstream.readFilesStream.test.js",
+      "startTime": 1781957247743,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "subdirs"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "subdirs auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248546,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "subdirs"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "subdirs fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248553,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "subdirs"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "subdirs fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248558,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "subdirs"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "subdirs fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248560,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1781957248563,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\paths.subdirs.test.js",
+      "startTime": 1781957248453,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "promiseFiles"
+          ],
+          "duration": 4,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "promiseFiles auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248657,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "promiseFiles"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "promiseFiles fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248661,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "promiseFiles"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "promiseFiles fallback checks source-aware result shape asynchronously",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248668,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape asynchronously"
+        },
+        {
+          "ancestorTitles": [
+            "promiseFiles"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "promiseFiles fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248671,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1781957248674,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\paths.promiseFiles.test.js",
+      "startTime": 1781957248568,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "readFiles"
+          ],
+          "duration": 7,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFiles auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248776,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "readFiles"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFiles fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248784,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "readFiles"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFiles fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248790,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "readFiles"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFiles fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248792,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1781957248796,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\readfiles.readFiles.test.js",
+      "startTime": 1781957248679,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "files"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "files auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248918,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "files"
+          ],
+          "duration": 14,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "files fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248921,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "files"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "files fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248935,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "files"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "files fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957248937,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1781957248940,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\paths.files.test.js",
+      "startTime": 1781957248801,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "paths"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "paths auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249037,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "paths"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "paths fallback traverses a temporary directory tree",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249044,
+          "status": "passed",
+          "title": "fallback traverses a temporary directory tree"
+        },
+        {
+          "ancestorTitles": [
+            "paths"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "paths fallback checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249050,
+          "status": "passed",
+          "title": "fallback checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "paths"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "paths fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249052,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        }
+      ],
+      "endTime": 1781957249056,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\paths.paths.test.js",
+      "startTime": 1781957248945,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "readFilesStream"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFilesStream should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249160,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249163,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.readFilesStream.readFilesStream.test.js",
+      "startTime": 1781957249062,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "promiseFiles"
+          ],
+          "duration": 4,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "promiseFiles should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249293,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249301,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.promiseFiles.promiseFiles.test.js",
+      "startTime": 1781957249169,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "paths"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "paths should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249392,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249395,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.paths.paths.test.js",
+      "startTime": 1781957249307,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "readFiles"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "readFiles should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249491,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249494,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.readFiles.readFiles.test.js",
+      "startTime": 1781957249400,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "files"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "files should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249587,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249591,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.files.files.test.js",
+      "startTime": 1781957249499,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "subdirs"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "subdirs should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781957249681,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781957249684,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dir.dynamic.subdirs.subdirs.test.js",
+      "startTime": 1781957249595,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

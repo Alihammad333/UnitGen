@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package complex.js
+
+
+================ UnitGen Coverage Summary ================
+Package            : complex.js
+Generated test files: 52
+Total tests         : 286
+Passing tests       : 275
+Failed tests        : 11
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 73.31%
+Branch coverage     : 49.54%
+==========================================================
+

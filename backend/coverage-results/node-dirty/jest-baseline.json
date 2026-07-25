@@ -1,0 +1,872 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 9,
+  "numPassedTests": 44,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 9,
+  "numTotalTests": 44,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1781902649926,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650699,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set stores a value observable through get",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650703,
+          "status": "passed",
+          "title": "Dirty.set stores a value observable through get"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set removes a value when given undefined",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650704,
+          "status": "passed",
+          "title": "Dirty.set removes a value when given undefined"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set overwrites an existing value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650705,
+          "status": "passed",
+          "title": "Dirty.set overwrites an existing value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set keeps distinct keys independently",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650706,
+          "status": "passed",
+          "title": "Dirty.set keeps distinct keys independently"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set invokes its callback in transient mode",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1781902650706,
+          "status": "passed",
+          "title": "Dirty.set invokes its callback in transient mode"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.set"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.set Dirty.set persists a value before drain",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1781902650709,
+          "status": "passed",
+          "title": "Dirty.set persists a value before drain"
+        }
+      ],
+      "endTime": 1781902650718,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js",
+      "startTime": 1781902649998,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.update"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.update should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650829,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.update"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.update Dirty.update derives and stores the next value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650831,
+          "status": "passed",
+          "title": "Dirty.update derives and stores the next value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.update"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.update Dirty.update can initialize a missing value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650832,
+          "status": "passed",
+          "title": "Dirty.update can initialize a missing value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.update"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.update Dirty.update checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650832,
+          "status": "passed",
+          "title": "Dirty.update checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.update"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.update Dirty.update checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650833,
+          "status": "passed",
+          "title": "Dirty.update checks stable result contract"
+        }
+      ],
+      "endTime": 1781902650835,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js",
+      "startTime": 1781902650729,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650934,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm Dirty.rm removes a previously stored value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650936,
+          "status": "passed",
+          "title": "Dirty.rm removes a previously stored value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm Dirty.rm leaves other keys intact",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1781902650937,
+          "status": "passed",
+          "title": "Dirty.rm leaves other keys intact"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm Dirty.rm persists deletion across reload",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902650937,
+          "status": "passed",
+          "title": "Dirty.rm persists deletion across reload"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm Dirty.rm checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650943,
+          "status": "passed",
+          "title": "Dirty.rm checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.rm"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.rm Dirty.rm checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902650944,
+          "status": "passed",
+          "title": "Dirty.rm checks stable result contract"
+        }
+      ],
+      "endTime": 1781902650945,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js",
+      "startTime": 1781902650842,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.forEach"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.forEach should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651042,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.forEach"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.forEach Dirty.forEach visits stored entries",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902651045,
+          "status": "passed",
+          "title": "Dirty.forEach visits stored entries"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.forEach"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.forEach Dirty.forEach supports callback-directed early termination",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902651046,
+          "status": "passed",
+          "title": "Dirty.forEach supports callback-directed early termination"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.forEach"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.forEach Dirty.forEach checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651046,
+          "status": "passed",
+          "title": "Dirty.forEach checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.forEach"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.forEach Dirty.forEach checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651047,
+          "status": "passed",
+          "title": "Dirty.forEach checks stable result contract"
+        }
+      ],
+      "endTime": 1781902651049,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js",
+      "startTime": 1781902650951,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651154,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty fallback checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651157,
+          "status": "passed",
+          "title": "fallback checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty [repair-candidate] Safe invariant test: result shape and type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1781902651158,
+          "status": "passed",
+          "title": "[repair-candidate] Safe invariant test: result shape and type"
+        }
+      ],
+      "endTime": 1781902651160,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.default.test.js",
+      "startTime": 1781902651055,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651252,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get returns a previously stored value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651254,
+          "status": "passed",
+          "title": "Dirty.get returns a previously stored value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get returns undefined for a missing key",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651255,
+          "status": "passed",
+          "title": "Dirty.get returns undefined for a missing key"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get observes the latest stored value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651256,
+          "status": "passed",
+          "title": "Dirty.get observes the latest stored value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 12,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get reloads a persisted value",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651256,
+          "status": "passed",
+          "title": "Dirty.get reloads a persisted value"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651268,
+          "status": "passed",
+          "title": "Dirty.get checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.get"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.get Dirty.get checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651269,
+          "status": "passed",
+          "title": "Dirty.get checks stable result contract"
+        }
+      ],
+      "endTime": 1781902651271,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js",
+      "startTime": 1781902651166,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.close"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.close should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651385,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.close"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.close Dirty.close waits for queued persistent writes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651387,
+          "status": "passed",
+          "title": "Dirty.close waits for queued persistent writes"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.close"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.close Dirty.close checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651390,
+          "status": "passed",
+          "title": "Dirty.close checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.close"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.close Dirty.close checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651390,
+          "status": "passed",
+          "title": "Dirty.close checks stable result contract"
+        }
+      ],
+      "endTime": 1781902651391,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js",
+      "startTime": 1781902651278,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651499,
+          "status": "passed",
+          "title": "should be exported as a function"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size Dirty.size reflects stored entries",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651501,
+          "status": "passed",
+          "title": "Dirty.size reflects stored entries"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size Dirty.size is zero for an empty instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651502,
+          "status": "passed",
+          "title": "Dirty.size is zero for an empty instance"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size Dirty.size decreases after removing a stored key",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651502,
+          "status": "passed",
+          "title": "Dirty.size decreases after removing a stored key"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size Dirty.size checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651502,
+          "status": "passed",
+          "title": "Dirty.size checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "Dirty.prototype.size"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty.prototype.size Dirty.size checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651503,
+          "status": "passed",
+          "title": "Dirty.size checks stable result contract"
+        }
+      ],
+      "endTime": 1781902651505,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js",
+      "startTime": 1781902651398,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Dirty"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dirty should be exported as a function",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1781902651604,
+          "status": "passed",
+          "title": "should be exported as a function"
+        }
+      ],
+      "endTime": 1781902651607,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.Dirty.test.js",
+      "startTime": 1781902651510,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

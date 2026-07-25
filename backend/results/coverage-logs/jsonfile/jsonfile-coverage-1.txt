@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package jsonfile
+
+
+================ UnitGen Coverage Summary ================
+Package            : jsonfile
+Generated test files: 6
+Total tests         : 29
+Passing tests       : 29
+Failed tests        : 0
+Coverage mode       : all-tests-pass-single-coverage-run
+Statement coverage  : 62.5%
+Branch coverage     : 50%
+==========================================================
+

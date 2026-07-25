@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package pull-stream
+
+
+================ UnitGen Coverage Summary ================
+Package            : pull-stream
+Generated test files: 27
+Total tests         : 151
+Passing tests       : 141
+Failed tests        : 10
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 71.42%
+Branch coverage     : 57%
+==========================================================
+

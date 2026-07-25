@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package node-graceful-fs
+
+
+================ UnitGen Coverage Summary ================
+Package            : node-graceful-fs
+Generated test files: 123
+Total tests         : 128
+Passing tests       : 127
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 35.94%
+Branch coverage     : 12.12%
+==========================================================
+

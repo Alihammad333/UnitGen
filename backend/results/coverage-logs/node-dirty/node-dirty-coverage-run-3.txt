@@ -1,0 +1,706 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-dirty
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 26 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\.eslintrc.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\for-each.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\load.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set-drain-256-bytes-per-doc.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set-drain.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\dirty\set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-filter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-loop.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-push.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\array-set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-get.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-loop-with-object-keys.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-loop.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\benchmark\v8\object-set.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\example\bob.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\lib\dirty\dirty.js
+==============================
+✅ Found 1 function(s): Dirty
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\node-dirty\lib\dirty\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\.eslintrc.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\config.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-api.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-nostore.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-system.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-dirty\test\test-types.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+⚠️ Package-entry mode produced no tests. Trying dynamic public API discovery...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 20 API candidate(s), 9 public target candidate(s).
+✅ Dynamic preflight passed: Dirty
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js (Dirty)
+✅ Dynamic preflight passed: Dirty
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: Dirty
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.Dirty.test.js (Dirty)
+✅ Dynamic preflight passed: Dirty.prototype.set
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js (Dirty.prototype.set)
+✅ Dynamic preflight passed: Dirty.prototype.get
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js (Dirty.prototype.get)
+✅ Dynamic preflight passed: Dirty.prototype.size
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js (Dirty.prototype.size)
+✅ Dynamic preflight passed: Dirty.prototype.rm
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js (Dirty.prototype.rm)
+✅ Dynamic preflight passed: Dirty.prototype.forEach
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js (Dirty.prototype.forEach)
+✅ Dynamic preflight passed: Dirty.prototype.update
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js (Dirty.prototype.update)
+✅ Dynamic preflight passed: Dirty.prototype.close
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js (Dirty.prototype.close)
+ℹ️ Dynamic API preflight kept 9 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 8
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  9
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for Dirty
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 3
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js (1 + 1 repair candidate(s))
+🧪 LLM injection summary for Dirty.prototype.set
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js (2)
+🧪 LLM injection summary for Dirty.prototype.get
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js (7)
+🧪 LLM injection summary for Dirty.prototype.size
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 1
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js (3)
+🧪 LLM injection summary for Dirty.prototype.rm
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 4
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM sanitizer reasons:
+   - CALLBACK_CASE_WITH_EMPTY_OR_NULL_INPUT: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js (6 + 1 repair candidate(s))
+🧪 LLM injection summary for Dirty.prototype.forEach
+   received: 7
+   sanitizer accepted: 3
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 1
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   - UNDECLARED_REFERENCE: 1
+   - CALLBACK_CASE_WITH_EMPTY_OR_NULL_INPUT: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   fallback sanitizer reasons:
+   - CALLBACK_CASE_WITH_EMPTY_OR_NULL_INPUT: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js (1 + 1 repair candidate(s))
+🧪 LLM injection summary for Dirty.prototype.update
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js (2)
+🧪 LLM injection summary for Dirty.prototype.close
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 3
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js (5)
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.set.Dirty.prototype.set.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.get.Dirty.prototype.get.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.size.Dirty.prototype.size.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.update.Dirty.prototype.update.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.close.Dirty.prototype.close.test.js
+
+🛡️ Post-LLM preflight completed. Kept 8 file(s), removed 0 unsafe file(s).
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 3
+Total Tests       : 39
+Passed            : 36
+Failed            : 3
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+  ● Dirty.prototype.rm › [repair-candidate] Safe invariant - result is defined expect(received).toBeDefined() Received: undefined 90 | const instance = new Dirty(); 91 | const result = instance.rm(key, cb); > 92 | expec...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.default.test.js
+  ● Dirty › [repair-candidate] Safe invariant test: result shape and type expect(received).toBe(expected) // Object.is equality Expected: "undefined" Received: "object" 26 | { 27 | const result = __unitgen_target__('arg...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+  ● Dirty.prototype.forEach › [repair-candidate] Callback function modifies values expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined 31 | const instance = new Dirty(); 32...
+------------------------------------------------------------
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to undefined
+✅ PASS  - Dirty.prototype.rm Safe invariant - result type is null
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to empty string
+✅ PASS  - Dirty.prototype.rm Safe invariant - result is null
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+❌ FAIL  - Dirty.prototype.rm [repair-candidate] Safe invariant - result is defined
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.rm.Dir...
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+❌ FAIL  - Dirty [repair-candidate] Safe invariant test: result shape and type
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: "undefined" Received: "object" at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generat...
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+❌ FAIL  - Dirty.prototype.forEach [repair-candidate] Callback function modifies values
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\gen...
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Close method with non-empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and no in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Safe invariant - key does not exist in data
+✅ PASS  - Dirty.prototype.get Safe invariant - key is null
+✅ PASS  - Dirty.prototype.get Simple parameterized behavior - key is an empty string
+✅ PASS  - Dirty.prototype.get Safe invariant - key is undefined
+✅ PASS  - Dirty.prototype.get Safe invariant - key is a number
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Empty data size is zero
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 3
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T13:42:10.457Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js:92:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\b","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-19T13:42:12.689Z","testFile":"node-dirty.dynamic.Dirty.prototype.rm.Dirty.prototype.rm.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+🔧 Repairing file: node-dirty.dynamic.Dirty.default.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T13:42:12.689Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: \"undefined\" Received: \"object\" at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.default.test.js:28:29) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T13:42:12.691Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js:33:22) at Promise.finally.completed (C:\\Users\\DELL\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-19T13:42:14.868Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: node-dirty.dynamic.Dirty.default.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+✅ LLM repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-19T13:42:18.307Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"LLM repair","repairStrategy":"LLM Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-06-19T13:42:18.307Z","testFile":"node-dirty.dynamic.Dirty.default.test.js","failureType":"Repair candidate","repairStrategy":"LLM Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🤖 LLM repairing: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T13:42:21.573Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js:33:22) at Promise.finally.completed (C:\\Users\\DELL\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-19T13:42:23.693Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-19T13:42:26.389Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js:33:22) at Promise.finally.completed (C:\\Users\\DELL\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-06-19T13:42:28.460Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ No usable LLM repair cases.
+
+❌ Repair attempts finished.
+
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 1
+Total Tests       : 39
+Passed            : 38
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+  ● Dirty.prototype.forEach › [repair-candidate] Callback function modifies values expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined 31 | const instance = new Dirty(); 32...
+------------------------------------------------------------
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+❌ FAIL  - Dirty.prototype.forEach [repair-candidate] Callback function modifies values
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\gen...
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+✅ PASS  - Dirty [repair-candidate] Safe invariant test: result shape and type
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Close method with non-empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and no in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to undefined
+✅ PASS  - Dirty.prototype.rm Safe invariant - result type is null
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to empty string
+✅ PASS  - Dirty.prototype.rm Safe invariant - result is null
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+✅ PASS  - Dirty.prototype.rm [repair-candidate] Safe invariant - result is defined
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Safe invariant - key does not exist in data
+✅ PASS  - Dirty.prototype.get Safe invariant - key is null
+✅ PASS  - Dirty.prototype.get Simple parameterized behavior - key is an empty string
+✅ PASS  - Dirty.prototype.get Safe invariant - key is undefined
+✅ PASS  - Dirty.prototype.get Safe invariant - key is a number
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Empty data size is zero
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T13:42:33.914Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Failed oracle assertion","original":"expect(result).toEqual([[1, 2], [2, 4]])","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T13:42:33.914Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T13:42:33.914Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toEqual: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toEqual] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T13:42:37.378Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result).toEqual([[1, 2], [2, 4]])","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T13:42:40.774Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js :: toBe] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toEqual": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T13:42:44.046Z","testFile":"node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 9
+Failed Suites     : 1
+Total Tests       : 39
+Passed            : 38
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\node-dirty.dynamic.Dirty.prototype.forEach.Dirty.prototype.forEach.test.js
+  ● Dirty.prototype.forEach › [repair-candidate] Callback function modifies values expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined 31 | const instance = new Dirty(); 32...
+------------------------------------------------------------
+✅ PASS  - Dirty.prototype.forEach should be exported as a function
+✅ PASS  - Dirty.prototype.forEach Dirty.forEach checks source-aware result shape
+❌ FAIL  - Dirty.prototype.forEach [repair-candidate] Callback function modifies values
+   Error: Error: expect(received).toEqual(expected) // deep equality Expected: [[1, 2], [2, 4]] Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\gen...
+✅ PASS  - Dirty.prototype.update should be exported as a function
+✅ PASS  - Dirty.prototype.update Dirty.update derives and stores the next value
+✅ PASS  - Dirty.prototype.update Dirty.update checks source-aware result shape
+✅ PASS  - Dirty.prototype.set should be exported as a function
+✅ PASS  - Dirty.prototype.set Dirty.set stores a value observable through get
+✅ PASS  - Dirty.prototype.set Dirty.set removes a value when given undefined
+✅ PASS  - Dirty.prototype.close should be exported as a function
+✅ PASS  - Dirty.prototype.close Close method with non-empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and no in-flight writes
+✅ PASS  - Dirty.prototype.close Close method with empty queue and in-flight writes
+✅ PASS  - Dirty.prototype.close Dirty.close checks source-aware result shape
+✅ PASS  - Dirty.prototype.close Dirty.close checks stable result contract
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty.prototype.rm should be exported as a function
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to undefined
+✅ PASS  - Dirty.prototype.rm Safe invariant - result type is null
+✅ PASS  - Dirty.prototype.rm Default behavior - key is set to empty string
+✅ PASS  - Dirty.prototype.rm Safe invariant - result is null
+✅ PASS  - Dirty.prototype.rm Dirty.rm removes a previously stored value
+✅ PASS  - Dirty.prototype.rm Dirty.rm checks source-aware result shape
+✅ PASS  - Dirty.prototype.rm [repair-candidate] Safe invariant - result is defined
+✅ PASS  - Dirty.prototype.size should be exported as a function
+✅ PASS  - Dirty.prototype.size Empty data size is zero
+✅ PASS  - Dirty.prototype.size Dirty.size reflects stored entries
+✅ PASS  - Dirty.prototype.size Dirty.size checks source-aware result shape
+✅ PASS  - Dirty should be exported as a function
+✅ PASS  - Dirty fallback checks stable result contract
+✅ PASS  - Dirty [repair-candidate] Safe invariant test: result shape and type
+✅ PASS  - Dirty.prototype.get should be exported as a function
+✅ PASS  - Dirty.prototype.get Safe invariant - key does not exist in data
+✅ PASS  - Dirty.prototype.get Safe invariant - key is null
+✅ PASS  - Dirty.prototype.get Simple parameterized behavior - key is an empty string
+✅ PASS  - Dirty.prototype.get Safe invariant - key is undefined
+✅ PASS  - Dirty.prototype.get Safe invariant - key is a number
+✅ PASS  - Dirty.prototype.get Dirty.get returns a previously stored value
+✅ PASS  - Dirty.prototype.get Dirty.get checks source-aware result shape
+============================================================
+
+🧹 Removed runtime temp file: arg1
+🧹 Removed runtime temp file: default
+🧹 Removed runtime temp file: param
+
+✅ Done.
+

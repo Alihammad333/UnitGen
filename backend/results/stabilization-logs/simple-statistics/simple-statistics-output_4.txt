@@ -1,0 +1,1406 @@
+
+> unitgen@1.0.0 start
+> node src/index.js ..\benchmark_packages\simple-statistics
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 94 .js file(s).
+ℹ️ Package project detected: preferring package entry/public API files.
+ℹ️ Selected 3 entry file(s) for testing.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\dist\simple-statistics.js
+==============================
+✅ Found 109 function(s): addToMean, chunk, makeMatrix, numericSort, uniqueCountSorted, ssq, fillMatrixColumn, fillMatrices, ckmeans, sum, mean, sumNthPowerDeviations, sampleVariance, sampleStandardDeviation, coefficientOfVariation, combinations, combinationsReplacement, combineMeans, combineVariances, max, min, equalIntervalBreaks, extent, extentSorted, geometricMean, harmonicMean, quantileSorted, quickselect, swap, quantile, quantileSelect, multiQuantileSelect, compare, quantileIndex, interquartileRange, jenksBreaks, jenksMatrices, jenks, linearRegression, linearRegressionLine, logAverage, maxSorted, sumSimple, meanSimple, median, medianAbsoluteDeviation, medianSorted, minSorted, modeSorted, mode, modeFast, permutationsHeap, product, quantileRankSorted, lowerBound, upperBound, quantileRank, rSquared, rootMeanSquare, shuffleInPlace, shuffle, sample, sampleCovariance, sampleCorrelation, sampleKurtosis, sampleRankCorrelation, sampleSkewness, sampleWithReplacement, variance, standardDeviation, subtractFromMean, tTest, tTestTwoSample, wilcoxonRankSum, replaceRanksInPlace, relativeError, approxEqual, BayesianClassifier, bernoulliDistribution, binomialDistribution, sign, bisect, chiSquaredGoodnessOfFit, cumulativeStdLogisticProbability, cumulativeDistribution, cumulativeStdNormalProbability, errorFunction, factorial, gamma, gammaln, inverseErrorFunction, euclideanDistance, kMeansCluster, labelPoints, calculateCentroids, calculateChange, kernelDensityEstimation, logit, PerceptronModel, permutationTest, poissonDistribution, probit, silhouette, createGroups, calculateAllDistances, meanDistanceToNearestGroup, meanDistanceFromPointToGroup, silhouetteMetric, zScore
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\dist\simple-statistics.min.js
+==============================
+✅ Found 52 function(s): t, n, e, a, o, i, u, h, f, l, s, c, g, v, p, m, w, M, d, b, q, E, y, N, S, x, k, I, A, P, C, T, _, D, R, F, L, U, X, K, Y, W, J, Q, Z, $, er, ar, or, ir, ur, i
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\index.js
+==============================
+⚠️ No functions detected.
+
+⚠️ Package-entry mode produced no tests. Falling back to full project scan...
+
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\add_to_mean.js
+==============================
+✅ Found 1 function(s): addToMean
+✅ Exported function(s): addToMean
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\add_to_mean.addToMean.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\approx_equal.js
+==============================
+✅ Found 1 function(s): approxEqual
+✅ Exported function(s): approxEqual
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\bayesian_classifier.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\bernoulli_distribution.js
+==============================
+✅ Found 1 function(s): bernoulliDistribution
+✅ Exported function(s): bernoulliDistribution
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\bernoulli_distribution.bernoulliDistribution.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\binomial_distribution.js
+==============================
+✅ Found 1 function(s): binomialDistribution
+✅ Exported function(s): binomialDistribution
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\binomial_distribution.binomialDistribution.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\bisect.js
+==============================
+✅ Found 1 function(s): bisect
+✅ Exported function(s): bisect
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\bisect.bisect.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\chi_squared_distribution_table.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\chi_squared_goodness_of_fit.js
+==============================
+✅ Found 1 function(s): chiSquaredGoodnessOfFit
+✅ Exported function(s): chiSquaredGoodnessOfFit
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\chi_squared_goodness_of_fit.chiSquaredGoodnessOfFit.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\chunk.js
+==============================
+✅ Found 1 function(s): chunk
+✅ Exported function(s): chunk
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\chunk.chunk.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\ckmeans.js
+==============================
+✅ Found 4 function(s): ssq, fillMatrixColumn, fillMatrices, ckmeans
+✅ Exported function(s): ckmeans
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\ckmeans.ckmeans.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\coefficient_of_variation.js
+==============================
+✅ Found 1 function(s): coefficientOfVariation
+✅ Exported function(s): coefficientOfVariation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\coefficient_of_variation.coefficientOfVariation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\combinations.js
+==============================
+✅ Found 1 function(s): combinations
+✅ Exported function(s): combinations
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\combinations.combinations.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\combinations_replacement.js
+==============================
+✅ Found 1 function(s): combinationsReplacement
+✅ Exported function(s): combinationsReplacement
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\combinations_replacement.combinationsReplacement.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\combine_means.js
+==============================
+✅ Found 1 function(s): combineMeans
+✅ Exported function(s): combineMeans
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\combine_means.combineMeans.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\combine_variances.js
+==============================
+✅ Found 1 function(s): combineVariances
+✅ Exported function(s): combineVariances
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\combine_variances.combineVariances.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\cumulative_std_logistic_probability.js
+==============================
+✅ Found 1 function(s): cumulativeStdLogisticProbability
+✅ Exported function(s): cumulativeStdLogisticProbability
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\cumulative_std_logistic_probability.cumulativeStdLogisticProbability.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\cumulative_std_normal_probability.js
+==============================
+✅ Found 1 function(s): cumulativeStdNormalProbability
+✅ Exported function(s): cumulativeStdNormalProbability
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\cumulative_std_normal_probability.cumulativeStdNormalProbability.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\epsilon.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\equal_interval_breaks.js
+==============================
+✅ Found 1 function(s): equalIntervalBreaks
+✅ Exported function(s): equalIntervalBreaks
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\equal_interval_breaks.equalIntervalBreaks.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\error_function.js
+==============================
+✅ Found 1 function(s): errorFunction
+✅ Exported function(s): errorFunction
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\error_function.errorFunction.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\euclidean_distance.js
+==============================
+✅ Found 1 function(s): euclideanDistance
+✅ Exported function(s): euclideanDistance
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\euclidean_distance.euclideanDistance.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\extent.js
+==============================
+✅ Found 1 function(s): extent
+✅ Exported function(s): extent
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\extent.extent.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\extent_sorted.js
+==============================
+✅ Found 1 function(s): extentSorted
+✅ Exported function(s): extentSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\extent_sorted.extentSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\factorial.js
+==============================
+✅ Found 1 function(s): factorial
+✅ Exported function(s): factorial
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\factorial.factorial.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\gamma.js
+==============================
+✅ Found 1 function(s): gamma
+✅ Exported function(s): gamma
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\gamma.gamma.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\gammaln.js
+==============================
+✅ Found 1 function(s): gammaln
+✅ Exported function(s): gammaln
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\gammaln.gammaln.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\geometric_mean.js
+==============================
+✅ Found 1 function(s): geometricMean
+✅ Exported function(s): geometricMean
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\geometric_mean.geometricMean.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\harmonic_mean.js
+==============================
+✅ Found 1 function(s): harmonicMean
+✅ Exported function(s): harmonicMean
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\harmonic_mean.harmonicMean.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\interquartile_range.js
+==============================
+✅ Found 1 function(s): interquartileRange
+✅ Exported function(s): interquartileRange
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_range.interquartileRange.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\inverse_error_function.js
+==============================
+✅ Found 1 function(s): inverseErrorFunction
+✅ Exported function(s): inverseErrorFunction
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\inverse_error_function.inverseErrorFunction.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\jenks.js
+==============================
+✅ Found 1 function(s): jenks
+✅ Exported function(s): jenks
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\jenks.jenks.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\jenks_breaks.js
+==============================
+✅ Found 1 function(s): jenksBreaks
+✅ Exported function(s): jenksBreaks
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\jenks_breaks.jenksBreaks.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\jenks_matrices.js
+==============================
+✅ Found 1 function(s): jenksMatrices
+✅ Exported function(s): jenksMatrices
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\jenks_matrices.jenksMatrices.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\kernel_density_estimation.js
+==============================
+✅ Found 1 function(s): kernelDensityEstimation
+✅ Exported function(s): kernelDensityEstimation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\kernel_density_estimation.kernelDensityEstimation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\k_means_cluster.js
+==============================
+✅ Found 4 function(s): kMeansCluster, labelPoints, calculateCentroids, calculateChange
+✅ Exported function(s): kMeansCluster
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\k_means_cluster.kMeansCluster.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\linear_regression.js
+==============================
+✅ Found 1 function(s): linearRegression
+✅ Exported function(s): linearRegression
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression.linearRegression.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\linear_regression_line.js
+==============================
+✅ Found 1 function(s): linearRegressionLine
+✅ Exported function(s): linearRegressionLine
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression_line.linearRegressionLine.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\logit.js
+==============================
+✅ Found 1 function(s): logit
+✅ Exported function(s): logit
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\logit.logit.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\log_average.js
+==============================
+✅ Found 1 function(s): logAverage
+✅ Exported function(s): logAverage
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\log_average.logAverage.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\make_matrix.js
+==============================
+✅ Found 1 function(s): makeMatrix
+✅ Exported function(s): makeMatrix
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\make_matrix.makeMatrix.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\max.js
+==============================
+✅ Found 1 function(s): max
+✅ Exported function(s): max
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\max.max.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\max_sorted.js
+==============================
+✅ Found 1 function(s): maxSorted
+✅ Exported function(s): maxSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\max_sorted.maxSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\mean.js
+==============================
+✅ Found 1 function(s): mean
+✅ Exported function(s): mean
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mean.mean.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\mean_simple.js
+==============================
+✅ Found 1 function(s): meanSimple
+✅ Exported function(s): meanSimple
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mean_simple.meanSimple.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\median.js
+==============================
+✅ Found 1 function(s): median
+✅ Exported function(s): median
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\median.median.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\median_absolute_deviation.js
+==============================
+✅ Found 1 function(s): medianAbsoluteDeviation
+✅ Exported function(s): medianAbsoluteDeviation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\median_absolute_deviation.medianAbsoluteDeviation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\median_sorted.js
+==============================
+✅ Found 1 function(s): medianSorted
+✅ Exported function(s): medianSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\median_sorted.medianSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\min.js
+==============================
+✅ Found 1 function(s): min
+✅ Exported function(s): min
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\min.min.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\min_sorted.js
+==============================
+✅ Found 1 function(s): minSorted
+✅ Exported function(s): minSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\min_sorted.minSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\mode.js
+==============================
+✅ Found 1 function(s): mode
+✅ Exported function(s): mode
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mode.mode.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\mode_fast.js
+==============================
+✅ Found 1 function(s): modeFast
+✅ Exported function(s): modeFast
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mode_fast.modeFast.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\mode_sorted.js
+==============================
+✅ Found 1 function(s): modeSorted
+✅ Exported function(s): modeSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mode_sorted.modeSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\numeric_sort.js
+==============================
+✅ Found 1 function(s): numericSort
+✅ Exported function(s): numericSort
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\numeric_sort.numericSort.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\perceptron.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\permutations_heap.js
+==============================
+✅ Found 1 function(s): permutationsHeap
+✅ Exported function(s): permutationsHeap
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\permutations_heap.permutationsHeap.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\permutation_test.js
+==============================
+✅ Found 1 function(s): permutationTest
+✅ Exported function(s): permutationTest
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\permutation_test.permutationTest.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\poisson_distribution.js
+==============================
+✅ Found 1 function(s): poissonDistribution
+✅ Exported function(s): poissonDistribution
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\poisson_distribution.poissonDistribution.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\probit.js
+==============================
+✅ Found 1 function(s): probit
+✅ Exported function(s): probit
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\probit.probit.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\product.js
+==============================
+✅ Found 1 function(s): product
+✅ Exported function(s): product
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\product.product.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\quantile.js
+==============================
+✅ Found 5 function(s): quantile, quantileSelect, multiQuantileSelect, compare, quantileIndex
+✅ Exported function(s): quantile
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\quantile.quantile.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\quantile_rank.js
+==============================
+✅ Found 1 function(s): quantileRank
+✅ Exported function(s): quantileRank
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\quantile_rank.quantileRank.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\quantile_rank_sorted.js
+==============================
+✅ Found 3 function(s): quantileRankSorted, lowerBound, upperBound
+✅ Exported function(s): quantileRankSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\quantile_rank_sorted.quantileRankSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\quantile_sorted.js
+==============================
+✅ Found 1 function(s): quantileSorted
+✅ Exported function(s): quantileSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\quantile_sorted.quantileSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\quickselect.js
+==============================
+✅ Found 2 function(s): quickselect, swap
+✅ Exported function(s): quickselect
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\quickselect.quickselect.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\relative_error.js
+==============================
+✅ Found 1 function(s): relativeError
+✅ Exported function(s): relativeError
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\relative_error.relativeError.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\root_mean_square.js
+==============================
+✅ Found 1 function(s): rootMeanSquare
+✅ Exported function(s): rootMeanSquare
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\root_mean_square.rootMeanSquare.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\r_squared.js
+==============================
+✅ Found 1 function(s): rSquared
+✅ Exported function(s): rSquared
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\r_squared.rSquared.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample.js
+==============================
+✅ Found 1 function(s): sample
+✅ Exported function(s): sample
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample.sample.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_correlation.js
+==============================
+✅ Found 1 function(s): sampleCorrelation
+✅ Exported function(s): sampleCorrelation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_correlation.sampleCorrelation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_covariance.js
+==============================
+✅ Found 1 function(s): sampleCovariance
+✅ Exported function(s): sampleCovariance
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_covariance.sampleCovariance.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_kurtosis.js
+==============================
+✅ Found 1 function(s): sampleKurtosis
+✅ Exported function(s): sampleKurtosis
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_kurtosis.sampleKurtosis.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_rank_correlation.js
+==============================
+✅ Found 1 function(s): sampleRankCorrelation
+✅ Exported function(s): sampleRankCorrelation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_rank_correlation.sampleRankCorrelation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_skewness.js
+==============================
+✅ Found 1 function(s): sampleSkewness
+✅ Exported function(s): sampleSkewness
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_skewness.sampleSkewness.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_standard_deviation.js
+==============================
+✅ Found 1 function(s): sampleStandardDeviation
+✅ Exported function(s): sampleStandardDeviation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_standard_deviation.sampleStandardDeviation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_variance.js
+==============================
+✅ Found 1 function(s): sampleVariance
+✅ Exported function(s): sampleVariance
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_variance.sampleVariance.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sample_with_replacement.js
+==============================
+✅ Found 1 function(s): sampleWithReplacement
+✅ Exported function(s): sampleWithReplacement
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sample_with_replacement.sampleWithReplacement.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\shuffle.js
+==============================
+✅ Found 1 function(s): shuffle
+✅ Exported function(s): shuffle
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\shuffle.shuffle.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\shuffle_in_place.js
+==============================
+✅ Found 1 function(s): shuffleInPlace
+✅ Exported function(s): shuffleInPlace
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\shuffle_in_place.shuffleInPlace.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sign.js
+==============================
+✅ Found 1 function(s): sign
+✅ Exported function(s): sign
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sign.sign.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\silhouette.js
+==============================
+✅ Found 5 function(s): silhouette, createGroups, calculateAllDistances, meanDistanceToNearestGroup, meanDistanceFromPointToGroup
+✅ Exported function(s): silhouette
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\silhouette.silhouette.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\silhouette_metric.js
+==============================
+✅ Found 1 function(s): silhouetteMetric
+✅ Exported function(s): silhouetteMetric
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\silhouette_metric.silhouetteMetric.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\standard_deviation.js
+==============================
+✅ Found 1 function(s): standardDeviation
+✅ Exported function(s): standardDeviation
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\standard_deviation.standardDeviation.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\standard_normal_table.js
+==============================
+✅ Found 1 function(s): cumulativeDistribution
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\subtract_from_mean.js
+==============================
+✅ Found 1 function(s): subtractFromMean
+✅ Exported function(s): subtractFromMean
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\subtract_from_mean.subtractFromMean.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sum.js
+==============================
+✅ Found 1 function(s): sum
+✅ Exported function(s): sum
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sum.sum.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sum_nth_power_deviations.js
+==============================
+✅ Found 1 function(s): sumNthPowerDeviations
+✅ Exported function(s): sumNthPowerDeviations
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sum_nth_power_deviations.sumNthPowerDeviations.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\sum_simple.js
+==============================
+✅ Found 1 function(s): sumSimple
+✅ Exported function(s): sumSimple
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\sum_simple.sumSimple.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\t_test.js
+==============================
+✅ Found 1 function(s): tTest
+✅ Exported function(s): tTest
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\t_test.tTest.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\t_test_two_sample.js
+==============================
+✅ Found 1 function(s): tTestTwoSample
+✅ Exported function(s): tTestTwoSample
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\t_test_two_sample.tTestTwoSample.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\unique_count_sorted.js
+==============================
+✅ Found 1 function(s): uniqueCountSorted
+✅ Exported function(s): uniqueCountSorted
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorted.uniqueCountSorted.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\variance.js
+==============================
+✅ Found 1 function(s): variance
+✅ Exported function(s): variance
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\variance.variance.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\wilcoxon_rank_sum.js
+==============================
+✅ Found 2 function(s): wilcoxonRankSum, replaceRanksInPlace
+✅ Exported function(s): wilcoxonRankSum
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\wilcoxon_rank_sum.wilcoxonRankSum.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\simple-statistics\src\z_score.js
+==============================
+✅ Found 1 function(s): zScore
+✅ Exported function(s): zScore
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\z_score.zScore.test.js
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 94
+⚠️ Files skipped:  0
+🧾 Tests created:  88
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via Ollama...
+
+⚠️ LLM produced no safe test cases for addToMean; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js
+⚠️ LLM produced no safe test cases for bernoulliDistribution; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\binomial_distribution.binomialDistribution.test.js
+⚠️ LLM skipped for bisect; prototype only for risky function family.
+⚠️ LLM skipped for chiSquaredGoodnessOfFit; prototype only for risky function family.
+⚠️ LLM produced no safe test cases for chunk; keeping prototype only.
+⚠️ LLM skipped for ckmeans; prototype only for risky function family.
+⚠️ LLM produced no safe test cases for coefficientOfVariation; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\combinations.combinations.test.js
+⚠️ LLM produced no safe test cases for combinationsReplacement; keeping prototype only.
+⚠️ LLM produced no safe test cases for combineMeans; keeping prototype only.
+⚠️ LLM produced no safe test cases for combineVariances; keeping prototype only.
+⚠️ LLM produced no safe test cases for cumulativeStdLogisticProbability; keeping prototype only.
+⚠️ LLM produced no safe test cases for cumulativeStdNormalProbability; keeping prototype only.
+⚠️ LLM produced no safe test cases for equalIntervalBreaks; keeping prototype only.
+⚠️ LLM produced no safe test cases for errorFunction; keeping prototype only.
+⚠️ LLM produced no safe test cases for euclideanDistance; keeping prototype only.
+⚠️ LLM produced no safe test cases for extent; keeping prototype only.
+⚠️ LLM produced no safe test cases for extentSorted; keeping prototype only.
+⚠️ LLM produced no safe test cases for factorial; keeping prototype only.
+⚠️ LLM produced no safe test cases for gamma; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\gammaln.gammaln.test.js
+⚠️ LLM produced no safe test cases for geometricMean; keeping prototype only.
+⚠️ LLM produced no safe test cases for harmonicMean; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_range.interquartileRange.test.js
+⚠️ LLM produced no safe test cases for inverseErrorFunction; keeping prototype only.
+⚠️ LLM skipped for jenks; prototype only for risky function family.
+⚠️ LLM skipped for jenksBreaks; prototype only for risky function family.
+⚠️ LLM skipped for jenksMatrices; prototype only for risky function family.
+⚠️ LLM skipped for kernelDensityEstimation; prototype only for risky function family.
+⚠️ LLM skipped for kMeansCluster; prototype only for risky function family.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression.linearRegression.test.js
+⚠️ LLM produced no safe test cases for linearRegressionLine; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\logit.logit.test.js
+⚠️ LLM produced no safe test cases for logAverage; keeping prototype only.
+⚠️ LLM skipped for makeMatrix; prototype only for risky function family.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\max.max.test.js
+⚠️ LLM produced no safe test cases for maxSorted; keeping prototype only.
+⚠️ LLM produced no safe test cases for mean; keeping prototype only.
+⚠️ LLM produced no safe test cases for meanSimple; keeping prototype only.
+⚠️ LLM produced no safe test cases for median; keeping prototype only.
+⚠️ LLM produced no safe test cases for medianAbsoluteDeviation; keeping prototype only.
+⚠️ LLM produced no safe test cases for medianSorted; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\min.min.test.js
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\min_sorted.minSorted.test.js
+⚠️ LLM produced no safe test cases for mode; keeping prototype only.
+⚠️ LLM produced no safe test cases for modeFast; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\mode_sorted.modeSorted.test.js
+⚠️ LLM produced no safe test cases for numericSort; keeping prototype only.
+⚠️ LLM skipped for permutationsHeap; prototype only for risky function family.
+⚠️ LLM skipped for permutationTest; prototype only for risky function family.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\poisson_distribution.poissonDistribution.test.js
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\probit.probit.test.js
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\product.product.test.js
+⚠️ LLM produced no safe test cases for quantile; keeping prototype only.
+⚠️ LLM produced no safe test cases for quantileRank; keeping prototype only.
+⚠️ LLM produced no safe test cases for quantileRankSorted; keeping prototype only.
+⚠️ LLM produced no safe test cases for quantileSorted; keeping prototype only.
+⚠️ LLM skipped for quickselect; prototype only for risky function family.
+⚠️ LLM produced no safe test cases for relativeError; keeping prototype only.
+⚠️ LLM produced no safe test cases for rootMeanSquare; keeping prototype only.
+⚠️ LLM skipped for rSquared; prototype only for risky function family.
+⚠️ LLM skipped for sample; prototype only for risky function family.
+⚠️ LLM skipped for sampleCorrelation; prototype only for risky function family.
+⚠️ LLM skipped for sampleCovariance; prototype only for risky function family.
+⚠️ LLM skipped for sampleKurtosis; prototype only for risky function family.
+⚠️ LLM skipped for sampleRankCorrelation; prototype only for risky function family.
+⚠️ LLM skipped for sampleSkewness; prototype only for risky function family.
+⚠️ LLM skipped for sampleStandardDeviation; prototype only for risky function family.
+⚠️ LLM skipped for sampleVariance; prototype only for risky function family.
+⚠️ LLM skipped for sampleWithReplacement; prototype only for risky function family.
+⚠️ LLM skipped for shuffle; prototype only for risky function family.
+⚠️ LLM skipped for shuffleInPlace; prototype only for risky function family.
+⚠️ LLM produced no safe test cases for sign; keeping prototype only.
+⚠️ LLM skipped for silhouette; prototype only for risky function family.
+⚠️ LLM skipped for silhouetteMetric; prototype only for risky function family.
+⚠️ LLM produced no safe test cases for standardDeviation; keeping prototype only.
+⚠️ LLM produced no safe test cases for subtractFromMean; keeping prototype only.
+⚠️ LLM produced no safe test cases for sum; keeping prototype only.
+⚠️ LLM produced no safe test cases for sumNthPowerDeviations; keeping prototype only.
+⚠️ LLM produced no safe test cases for sumSimple; keeping prototype only.
+⚠️ LLM produced no safe test cases for tTest; keeping prototype only.
+⚠️ LLM skipped for tTestTwoSample; prototype only for risky function family.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorted.uniqueCountSorted.test.js
+⚠️ LLM produced no safe test cases for variance; keeping prototype only.
+⚠️ LLM produced no safe test cases for wilcoxonRankSum; keeping prototype only.
+⚠️ LLM produced no safe test cases for zScore; keeping prototype only.
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 88
+Failed Suites     : 7
+Total Tests       : 112
+Passed            : 104
+Failed            : 8
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\k_means_cluster.kMeansCluster.test.js
+  ● kMeansCluster › auto-generated (prototype) TypeError: Cannot read properties of undefined (reading '0') [0m [90m 84 |[39m [36mconst[39m current [33m=[39m centroids[label][33m;[39m [90m 85 |[39m [36mfor[...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_range.interquartileRange.test.js
+  ● interquartileRange › Interquartile Range with Quantiles expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 [0m [90m 23 |[39m [36mconst[39m x [33m=[39m [[35m1[39m[33m,[39m [35...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\probit.probit.test.js
+  ● probit › Probit with epsilon expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity [0m ...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorted.uniqueCountSorted.test.js
+  ● uniqueCountSorted › Test uniqueCountSorted with duplicate elements in an array expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 [0m [90m 32 |[39m [36mconst[39m x [33m=[39m [[32m'...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js
+  ● approxEqual › Test approxEqual with custom tolerance expect(received).toBeTruthy() Received: false [0m [90m 34 |[39m [36mconst[39m actual [33m=[39m [35m1.5[39m[33m;[39m [36mconst[39m expected [33m=[39...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression.linearRegression.test.js
+  ● linearRegression › Simple Linear Regression with Single Point expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 [0m [90m 23 |...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\binomial_distribution.binomialDistribution.test.js
+  ● binomialDistribution › binomialDistribution with valid parameters expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580...
+------------------------------------------------------------
+❌ FAIL  - kMeansCluster auto-generated (prototype)
+   Error: TypeError: Cannot read properties of undefined (reading '0') at j (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\benchmark_packages\simple-statistics\src\k_means_cluster.js:86:21) at calculateCent...
+✅ PASS  - modeSorted auto-generated (prototype)
+✅ PASS  - modeSorted modeSorted with a single element array
+✅ PASS  - modeSorted modeSorted with multiple elements array
+✅ PASS  - interquartileRange auto-generated (prototype)
+❌ FAIL  - interquartileRange Interquartile Range with Quantiles
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_ra...
+✅ PASS  - probit auto-generated (prototype)
+❌ FAIL  - probit Probit with epsilon
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity at Object.<anonymous> (C:\Use...
+✅ PASS  - minSorted auto-generated (prototype)
+✅ PASS  - minSorted minSorted with a single element array
+✅ PASS  - uniqueCountSorted auto-generated (prototype)
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a single element array
+❌ FAIL  - uniqueCountSorted Test uniqueCountSorted with duplicate elements in an array
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorte...
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a large array of random elements
+✅ PASS  - bisect auto-generated (prototype)
+✅ PASS  - combinationsReplacement auto-generated (prototype)
+✅ PASS  - silhouetteMetric auto-generated (prototype)
+✅ PASS  - combinations auto-generated (prototype)
+✅ PASS  - combinations combinations with two elements and k=2
+✅ PASS  - combinations combinations with three elements and k=3
+✅ PASS  - chiSquaredGoodnessOfFit auto-generated (prototype)
+✅ PASS  - coefficientOfVariation auto-generated (prototype)
+✅ PASS  - approxEqual auto-generated (prototype)
+✅ PASS  - approxEqual Test approxEqual with default tolerance
+❌ FAIL  - approxEqual Test approxEqual with custom tolerance
+   Error: Error: expect(received).toBeTruthy() Received: false at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js:36:21) at Promise...
+✅ PASS  - approxEqual Test approxEqual with exact equality
+✅ PASS  - rootMeanSquare auto-generated (prototype)
+✅ PASS  - combineVariances auto-generated (prototype)
+✅ PASS  - zScore auto-generated (prototype)
+✅ PASS  - sampleRankCorrelation auto-generated (prototype)
+✅ PASS  - medianSorted auto-generated (prototype)
+✅ PASS  - linearRegression auto-generated (prototype)
+❌ FAIL  - linearRegression Simple Linear Regression with Single Point
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\De...
+❌ FAIL  - linearRegression Simple Linear Regression with Multiple Points
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0.6 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 1.4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FY...
+✅ PASS  - sampleStandardDeviation auto-generated (prototype)
+✅ PASS  - geometricMean auto-generated (prototype)
+✅ PASS  - wilcoxonRankSum auto-generated (prototype)
+✅ PASS  - sign auto-generated (prototype)
+✅ PASS  - sample auto-generated (prototype)
+✅ PASS  - medianAbsoluteDeviation auto-generated (prototype)
+✅ PASS  - extent auto-generated (prototype)
+✅ PASS  - extentSorted auto-generated (prototype)
+✅ PASS  - sampleVariance auto-generated (prototype)
+✅ PASS  - sampleCovariance auto-generated (prototype)
+✅ PASS  - quantile auto-generated (prototype)
+✅ PASS  - modeFast auto-generated (prototype)
+✅ PASS  - variance auto-generated (prototype)
+✅ PASS  - numericSort auto-generated (prototype)
+✅ PASS  - rSquared auto-generated (prototype)
+✅ PASS  - tTestTwoSample auto-generated (prototype)
+✅ PASS  - gamma auto-generated (prototype)
+✅ PASS  - binomialDistribution auto-generated (prototype)
+❌ FAIL  - binomialDistribution binomialDistribution with valid parameters
+   Error: Error: expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580249979, + 0.0009765625, + 0.009765625, + 0.0439453125, + 0.11...
+✅ PASS  - shuffleInPlace auto-generated (prototype)
+✅ PASS  - sampleCorrelation auto-generated (prototype)
+✅ PASS  - poissonDistribution auto-generated (prototype)
+✅ PASS  - poissonDistribution Test poissonDistribution with valid lambda
+✅ PASS  - euclideanDistance auto-generated (prototype)
+✅ PASS  - kernelDensityEstimation auto-generated (prototype)
+✅ PASS  - chunk auto-generated (prototype)
+✅ PASS  - relativeError auto-generated (prototype)
+✅ PASS  - jenksBreaks auto-generated (prototype)
+✅ PASS  - permutationTest auto-generated (prototype)
+✅ PASS  - quantileSorted auto-generated (prototype)
+✅ PASS  - min auto-generated (prototype)
+✅ PASS  - min min with a single element
+✅ PASS  - min min with multiple elements
+✅ PASS  - tTest auto-generated (prototype)
+✅ PASS  - jenksMatrices auto-generated (prototype)
+✅ PASS  - makeMatrix auto-generated (prototype)
+✅ PASS  - inverseErrorFunction auto-generated (prototype)
+✅ PASS  - cumulativeStdNormalProbability auto-generated (prototype)
+✅ PASS  - ckmeans auto-generated (prototype)
+✅ PASS  - addToMean auto-generated (prototype)
+✅ PASS  - sumSimple auto-generated (prototype)
+✅ PASS  - subtractFromMean auto-generated (prototype)
+✅ PASS  - quantileRankSorted auto-generated (prototype)
+✅ PASS  - meanSimple auto-generated (prototype)
+✅ PASS  - mean auto-generated (prototype)
+✅ PASS  - jenks auto-generated (prototype)
+✅ PASS  - max auto-generated (prototype)
+✅ PASS  - max max with a single element
+✅ PASS  - max max with multiple elements
+✅ PASS  - equalIntervalBreaks auto-generated (prototype)
+✅ PASS  - cumulativeStdLogisticProbability auto-generated (prototype)
+✅ PASS  - bernoulliDistribution auto-generated (prototype)
+✅ PASS  - sum auto-generated (prototype)
+✅ PASS  - silhouette auto-generated (prototype)
+✅ PASS  - sampleSkewness auto-generated (prototype)
+✅ PASS  - quantileRank auto-generated (prototype)
+✅ PASS  - median auto-generated (prototype)
+✅ PASS  - logit auto-generated (prototype)
+✅ PASS  - logit logit Function Call
+✅ PASS  - errorFunction auto-generated (prototype)
+✅ PASS  - combineMeans auto-generated (prototype)
+✅ PASS  - permutationsHeap auto-generated (prototype)
+✅ PASS  - mode auto-generated (prototype)
+✅ PASS  - linearRegressionLine auto-generated (prototype)
+✅ PASS  - standardDeviation auto-generated (prototype)
+✅ PASS  - product auto-generated (prototype)
+✅ PASS  - product product with simple literal input
+✅ PASS  - sumNthPowerDeviations auto-generated (prototype)
+✅ PASS  - sampleWithReplacement auto-generated (prototype)
+✅ PASS  - sampleKurtosis auto-generated (prototype)
+✅ PASS  - maxSorted auto-generated (prototype)
+✅ PASS  - factorial auto-generated (prototype)
+✅ PASS  - gammaln auto-generated (prototype)
+✅ PASS  - gammaln Test gammaln Function with Zero Input
+✅ PASS  - harmonicMean auto-generated (prototype)
+✅ PASS  - shuffle auto-generated (prototype)
+✅ PASS  - quickselect auto-generated (prototype)
+✅ PASS  - logAverage auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: k_means_cluster.kMeansCluster.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: interquartile_range.interquartileRange.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: probit.probit.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: unique_count_sorted.uniqueCountSorted.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: approx_equal.approxEqual.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: binomial_distribution.binomialDistribution.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: linear_regression.linearRegression.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: k_means_cluster.kMeansCluster.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+✅ LLM repair accepted.
+🤖 LLM repairing: interquartile_range.interquartileRange.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: probit.probit.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: unique_count_sorted.uniqueCountSorted.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: approx_equal.approxEqual.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: binomial_distribution.binomialDistribution.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: linear_regression.linearRegression.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: interquartile_range.interquartileRange.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: probit.probit.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: approx_equal.approxEqual.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: binomial_distribution.binomialDistribution.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: unique_count_sorted.uniqueCountSorted.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: linear_regression.linearRegression.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: interquartile_range.interquartileRange.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: probit.probit.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: approx_equal.approxEqual.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: binomial_distribution.binomialDistribution.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: unique_count_sorted.uniqueCountSorted.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: linear_regression.linearRegression.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: interquartile_range.interquartileRange.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: probit.probit.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: approx_equal.approxEqual.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: binomial_distribution.binomialDistribution.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: unique_count_sorted.uniqueCountSorted.test.js
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+🔧 Repairing file: linear_regression.linearRegression.test.js
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: interquartile_range.interquartileRange.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: probit.probit.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: approx_equal.approxEqual.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: binomial_distribution.binomialDistribution.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: unique_count_sorted.uniqueCountSorted.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ JSON parse failed.
+🤖 LLM repairing: linear_regression.linearRegression.test.js
+🤖 LLM Request (Attempt 1/3)
+✅ LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+❌ Repair attempts finished.
+
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 88
+Failed Suites     : 6
+Total Tests       : 112
+Passed            : 105
+Failed            : 7
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_range.interquartileRange.test.js
+  ● interquartileRange › Interquartile Range with Quantiles expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 [0m [90m 23 |[39m [36mconst[39m x [33m=[39m [[35m1[39m[33m,[39m [35...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js
+  ● approxEqual › Test approxEqual with custom tolerance expect(received).toBeTruthy() Received: false [0m [90m 34 |[39m [36mconst[39m actual [33m=[39m [35m1.5[39m[33m;[39m [36mconst[39m expected [33m=[39...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\binomial_distribution.binomialDistribution.test.js
+  ● binomialDistribution › binomialDistribution with valid parameters expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression.linearRegression.test.js
+  ● linearRegression › Simple Linear Regression with Single Point expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 [0m [90m 23 |...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\probit.probit.test.js
+  ● probit › Probit with epsilon expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity [0m ...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorted.uniqueCountSorted.test.js
+  ● uniqueCountSorted › Test uniqueCountSorted with duplicate elements in an array expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 [0m [90m 32 |[39m [36mconst[39m x [33m=[39m [[32m'...
+------------------------------------------------------------
+✅ PASS  - interquartileRange auto-generated (prototype)
+❌ FAIL  - interquartileRange Interquartile Range with Quantiles
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_ra...
+✅ PASS  - approxEqual auto-generated (prototype)
+✅ PASS  - approxEqual Test approxEqual with default tolerance
+❌ FAIL  - approxEqual Test approxEqual with custom tolerance
+   Error: Error: expect(received).toBeTruthy() Received: false at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js:36:21) at Promise...
+✅ PASS  - approxEqual Test approxEqual with exact equality
+✅ PASS  - binomialDistribution auto-generated (prototype)
+❌ FAIL  - binomialDistribution binomialDistribution with valid parameters
+   Error: Error: expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580249979, + 0.0009765625, + 0.009765625, + 0.0439453125, + 0.11...
+✅ PASS  - linearRegression auto-generated (prototype)
+❌ FAIL  - linearRegression Simple Linear Regression with Single Point
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\De...
+❌ FAIL  - linearRegression Simple Linear Regression with Multiple Points
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0.6 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 1.4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FY...
+✅ PASS  - probit auto-generated (prototype)
+❌ FAIL  - probit Probit with epsilon
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity at Object.<anonymous> (C:\Use...
+✅ PASS  - uniqueCountSorted auto-generated (prototype)
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a single element array
+❌ FAIL  - uniqueCountSorted Test uniqueCountSorted with duplicate elements in an array
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorte...
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a large array of random elements
+✅ PASS  - errorFunction auto-generated (prototype)
+✅ PASS  - silhouette auto-generated (prototype)
+✅ PASS  - sampleSkewness auto-generated (prototype)
+✅ PASS  - bernoulliDistribution auto-generated (prototype)
+✅ PASS  - min auto-generated (prototype)
+✅ PASS  - min min with a single element
+✅ PASS  - min min with multiple elements
+✅ PASS  - kMeansCluster kMeansCluster test case with undefined parameters
+✅ PASS  - modeSorted auto-generated (prototype)
+✅ PASS  - modeSorted modeSorted with a single element array
+✅ PASS  - modeSorted modeSorted with multiple elements array
+✅ PASS  - cumulativeStdNormalProbability auto-generated (prototype)
+✅ PASS  - jenksMatrices auto-generated (prototype)
+✅ PASS  - modeFast auto-generated (prototype)
+✅ PASS  - silhouetteMetric auto-generated (prototype)
+✅ PASS  - rSquared auto-generated (prototype)
+✅ PASS  - medianAbsoluteDeviation auto-generated (prototype)
+✅ PASS  - quantileRankSorted auto-generated (prototype)
+✅ PASS  - geometricMean auto-generated (prototype)
+✅ PASS  - permutationsHeap auto-generated (prototype)
+✅ PASS  - sampleRankCorrelation auto-generated (prototype)
+✅ PASS  - gammaln auto-generated (prototype)
+✅ PASS  - gammaln Test gammaln Function with Zero Input
+✅ PASS  - extentSorted auto-generated (prototype)
+✅ PASS  - sumNthPowerDeviations auto-generated (prototype)
+✅ PASS  - mode auto-generated (prototype)
+✅ PASS  - mean auto-generated (prototype)
+✅ PASS  - ckmeans auto-generated (prototype)
+✅ PASS  - sampleVariance auto-generated (prototype)
+✅ PASS  - sampleKurtosis auto-generated (prototype)
+✅ PASS  - minSorted auto-generated (prototype)
+✅ PASS  - minSorted minSorted with a single element array
+✅ PASS  - sampleWithReplacement auto-generated (prototype)
+✅ PASS  - poissonDistribution auto-generated (prototype)
+✅ PASS  - poissonDistribution Test poissonDistribution with valid lambda
+✅ PASS  - relativeError auto-generated (prototype)
+✅ PASS  - kernelDensityEstimation auto-generated (prototype)
+✅ PASS  - cumulativeStdLogisticProbability auto-generated (prototype)
+✅ PASS  - sampleCorrelation auto-generated (prototype)
+✅ PASS  - wilcoxonRankSum auto-generated (prototype)
+✅ PASS  - sumSimple auto-generated (prototype)
+✅ PASS  - medianSorted auto-generated (prototype)
+✅ PASS  - tTest auto-generated (prototype)
+✅ PASS  - meanSimple auto-generated (prototype)
+✅ PASS  - max auto-generated (prototype)
+✅ PASS  - max max with a single element
+✅ PASS  - max max with multiple elements
+✅ PASS  - rootMeanSquare auto-generated (prototype)
+✅ PASS  - extent auto-generated (prototype)
+✅ PASS  - quantileRank auto-generated (prototype)
+✅ PASS  - jenks auto-generated (prototype)
+✅ PASS  - bisect auto-generated (prototype)
+✅ PASS  - tTestTwoSample auto-generated (prototype)
+✅ PASS  - chunk auto-generated (prototype)
+✅ PASS  - combinations auto-generated (prototype)
+✅ PASS  - combinations combinations with two elements and k=2
+✅ PASS  - combinations combinations with three elements and k=3
+✅ PASS  - variance auto-generated (prototype)
+✅ PASS  - shuffle auto-generated (prototype)
+✅ PASS  - product auto-generated (prototype)
+✅ PASS  - product product with simple literal input
+✅ PASS  - logit auto-generated (prototype)
+✅ PASS  - logit logit Function Call
+✅ PASS  - inverseErrorFunction auto-generated (prototype)
+✅ PASS  - equalIntervalBreaks auto-generated (prototype)
+✅ PASS  - zScore auto-generated (prototype)
+✅ PASS  - makeMatrix auto-generated (prototype)
+✅ PASS  - gamma auto-generated (prototype)
+✅ PASS  - euclideanDistance auto-generated (prototype)
+✅ PASS  - combineMeans auto-generated (prototype)
+✅ PASS  - combinationsReplacement auto-generated (prototype)
+✅ PASS  - subtractFromMean auto-generated (prototype)
+✅ PASS  - sampleStandardDeviation auto-generated (prototype)
+✅ PASS  - maxSorted auto-generated (prototype)
+✅ PASS  - chiSquaredGoodnessOfFit auto-generated (prototype)
+✅ PASS  - shuffleInPlace auto-generated (prototype)
+✅ PASS  - quantileSorted auto-generated (prototype)
+✅ PASS  - median auto-generated (prototype)
+✅ PASS  - sum auto-generated (prototype)
+✅ PASS  - combineVariances auto-generated (prototype)
+✅ PASS  - coefficientOfVariation auto-generated (prototype)
+✅ PASS  - quickselect auto-generated (prototype)
+✅ PASS  - addToMean auto-generated (prototype)
+✅ PASS  - standardDeviation auto-generated (prototype)
+✅ PASS  - logAverage auto-generated (prototype)
+✅ PASS  - factorial auto-generated (prototype)
+✅ PASS  - sample auto-generated (prototype)
+✅ PASS  - numericSort auto-generated (prototype)
+✅ PASS  - sampleCovariance auto-generated (prototype)
+✅ PASS  - harmonicMean auto-generated (prototype)
+✅ PASS  - sign auto-generated (prototype)
+✅ PASS  - quantile auto-generated (prototype)
+✅ PASS  - permutationTest auto-generated (prototype)
+✅ PASS  - jenksBreaks auto-generated (prototype)
+✅ PASS  - linearRegressionLine auto-generated (prototype)
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline Jest run is not stable enough for assertion enhancement.
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 88
+Failed Suites     : 6
+Total Tests       : 112
+Passed            : 105
+Failed            : 7
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_range.interquartileRange.test.js
+  ● interquartileRange › Interquartile Range with Quantiles expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 [0m [90m 23 |[39m [36mconst[39m x [33m=[39m [[35m1[39m[33m,[39m [35...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\binomial_distribution.binomialDistribution.test.js
+  ● binomialDistribution › binomialDistribution with valid parameters expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\linear_regression.linearRegression.test.js
+  ● linearRegression › Simple Linear Regression with Single Point expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 [0m [90m 23 |...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js
+  ● approxEqual › Test approxEqual with custom tolerance expect(received).toBeTruthy() Received: false [0m [90m 34 |[39m [36mconst[39m actual [33m=[39m [35m1.5[39m[33m;[39m [36mconst[39m expected [33m=[39...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\probit.probit.test.js
+  ● probit › Probit with epsilon expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity [0m ...
+- C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorted.uniqueCountSorted.test.js
+  ● uniqueCountSorted › Test uniqueCountSorted with duplicate elements in an array expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 [0m [90m 32 |[39m [36mconst[39m x [33m=[39m [[32m'...
+------------------------------------------------------------
+✅ PASS  - interquartileRange auto-generated (prototype)
+❌ FAIL  - interquartileRange Interquartile Range with Quantiles
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 1.5 Received: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\interquartile_ra...
+✅ PASS  - binomialDistribution auto-generated (prototype)
+❌ FAIL  - binomialDistribution binomialDistribution with valid parameters
+   Error: Error: expect(received).toBe(expected) // Object.is equality - Expected - 3 + Received + 11 Array [ - 0.246913580249979, - 0.4999999999999999, - 0.246913580249979, + 0.0009765625, + 0.009765625, + 0.0439453125, + 0.11...
+✅ PASS  - linearRegression auto-generated (prototype)
+❌ FAIL  - linearRegression Simple Linear Regression with Single Point
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 2 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\De...
+❌ FAIL  - linearRegression Simple Linear Regression with Multiple Points
+   Error: Error: expect(received).toBeCloseTo(expected) Expected: 0.6 Received: 2 Expected precision: 2 Expected difference: < 0.005 Received difference: 1.4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FY...
+✅ PASS  - approxEqual auto-generated (prototype)
+✅ PASS  - approxEqual Test approxEqual with default tolerance
+❌ FAIL  - approxEqual Test approxEqual with custom tolerance
+   Error: Error: expect(received).toBeTruthy() Received: false at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\approx_equal.approxEqual.test.js:36:21) at Promise...
+✅ PASS  - approxEqual Test approxEqual with exact equality
+✅ PASS  - probit auto-generated (prototype)
+❌ FAIL  - probit Probit with epsilon
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 1.718281828459045 Received: -Infinity Expected precision: 4 Expected difference: < 0.00005 Received difference: Infinity at Object.<anonymous> (C:\Use...
+✅ PASS  - uniqueCountSorted auto-generated (prototype)
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a single element array
+❌ FAIL  - uniqueCountSorted Test uniqueCountSorted with duplicate elements in an array
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 4 at Object.<anonymous> (C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\unique_count_sorte...
+✅ PASS  - uniqueCountSorted Test uniqueCountSorted with a large array of random elements
+✅ PASS  - sampleWithReplacement auto-generated (prototype)
+✅ PASS  - errorFunction auto-generated (prototype)
+✅ PASS  - cumulativeStdNormalProbability auto-generated (prototype)
+✅ PASS  - sampleVariance auto-generated (prototype)
+✅ PASS  - poissonDistribution auto-generated (prototype)
+✅ PASS  - poissonDistribution Test poissonDistribution with valid lambda
+✅ PASS  - shuffle auto-generated (prototype)
+✅ PASS  - sampleKurtosis auto-generated (prototype)
+✅ PASS  - quantile auto-generated (prototype)
+✅ PASS  - meanSimple auto-generated (prototype)
+✅ PASS  - mean auto-generated (prototype)
+✅ PASS  - sampleSkewness auto-generated (prototype)
+✅ PASS  - quantileRankSorted auto-generated (prototype)
+✅ PASS  - gammaln auto-generated (prototype)
+✅ PASS  - gammaln Test gammaln Function with Zero Input
+✅ PASS  - quantileSorted auto-generated (prototype)
+✅ PASS  - quantileRank auto-generated (prototype)
+✅ PASS  - mode auto-generated (prototype)
+✅ PASS  - permutationTest auto-generated (prototype)
+✅ PASS  - extentSorted auto-generated (prototype)
+✅ PASS  - geometricMean auto-generated (prototype)
+✅ PASS  - ckmeans auto-generated (prototype)
+✅ PASS  - bernoulliDistribution auto-generated (prototype)
+✅ PASS  - sampleCorrelation auto-generated (prototype)
+✅ PASS  - modeSorted auto-generated (prototype)
+✅ PASS  - modeSorted modeSorted with a single element array
+✅ PASS  - modeSorted modeSorted with multiple elements array
+✅ PASS  - chunk auto-generated (prototype)
+✅ PASS  - min auto-generated (prototype)
+✅ PASS  - min min with a single element
+✅ PASS  - min min with multiple elements
+✅ PASS  - silhouette auto-generated (prototype)
+✅ PASS  - relativeError auto-generated (prototype)
+✅ PASS  - jenksMatrices auto-generated (prototype)
+✅ PASS  - rSquared auto-generated (prototype)
+✅ PASS  - sumNthPowerDeviations auto-generated (prototype)
+✅ PASS  - silhouetteMetric auto-generated (prototype)
+✅ PASS  - modeFast auto-generated (prototype)
+✅ PASS  - sampleRankCorrelation auto-generated (prototype)
+✅ PASS  - medianAbsoluteDeviation auto-generated (prototype)
+✅ PASS  - combineVariances auto-generated (prototype)
+✅ PASS  - sampleStandardDeviation auto-generated (prototype)
+✅ PASS  - wilcoxonRankSum auto-generated (prototype)
+✅ PASS  - sample auto-generated (prototype)
+✅ PASS  - kMeansCluster kMeansCluster test case with undefined parameters
+✅ PASS  - kernelDensityEstimation auto-generated (prototype)
+✅ PASS  - rootMeanSquare auto-generated (prototype)
+✅ PASS  - max auto-generated (prototype)
+✅ PASS  - max max with a single element
+✅ PASS  - max max with multiple elements
+✅ PASS  - jenks auto-generated (prototype)
+✅ PASS  - cumulativeStdLogisticProbability auto-generated (prototype)
+✅ PASS  - sumSimple auto-generated (prototype)
+✅ PASS  - coefficientOfVariation auto-generated (prototype)
+✅ PASS  - tTest auto-generated (prototype)
+✅ PASS  - permutationsHeap auto-generated (prototype)
+✅ PASS  - factorial auto-generated (prototype)
+✅ PASS  - extent auto-generated (prototype)
+✅ PASS  - combineMeans auto-generated (prototype)
+✅ PASS  - combinations auto-generated (prototype)
+✅ PASS  - combinations combinations with two elements and k=2
+✅ PASS  - combinations combinations with three elements and k=3
+✅ PASS  - logit auto-generated (prototype)
+✅ PASS  - logit logit Function Call
+✅ PASS  - jenksBreaks auto-generated (prototype)
+✅ PASS  - harmonicMean auto-generated (prototype)
+✅ PASS  - chiSquaredGoodnessOfFit auto-generated (prototype)
+✅ PASS  - product auto-generated (prototype)
+✅ PASS  - product product with simple literal input
+✅ PASS  - minSorted auto-generated (prototype)
+✅ PASS  - minSorted minSorted with a single element array
+✅ PASS  - logAverage auto-generated (prototype)
+✅ PASS  - euclideanDistance auto-generated (prototype)
+✅ PASS  - zScore auto-generated (prototype)
+✅ PASS  - variance auto-generated (prototype)
+✅ PASS  - sampleCovariance auto-generated (prototype)
+✅ PASS  - bisect auto-generated (prototype)
+✅ PASS  - tTestTwoSample auto-generated (prototype)
+✅ PASS  - inverseErrorFunction auto-generated (prototype)
+✅ PASS  - shuffleInPlace auto-generated (prototype)
+✅ PASS  - maxSorted auto-generated (prototype)
+✅ PASS  - addToMean auto-generated (prototype)
+✅ PASS  - subtractFromMean auto-generated (prototype)
+✅ PASS  - standardDeviation auto-generated (prototype)
+✅ PASS  - combinationsReplacement auto-generated (prototype)
+✅ PASS  - equalIntervalBreaks auto-generated (prototype)
+✅ PASS  - medianSorted auto-generated (prototype)
+✅ PASS  - median auto-generated (prototype)
+✅ PASS  - gamma auto-generated (prototype)
+✅ PASS  - makeMatrix auto-generated (prototype)
+✅ PASS  - sign auto-generated (prototype)
+✅ PASS  - linearRegressionLine auto-generated (prototype)
+✅ PASS  - numericSort auto-generated (prototype)
+✅ PASS  - sum auto-generated (prototype)
+✅ PASS  - quickselect auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

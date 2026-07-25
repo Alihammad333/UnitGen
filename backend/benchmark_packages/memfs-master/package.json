@@ -1,0 +1,100 @@
+{
+  "name": "memfs-monorepo",
+  "version": "4.57.2",
+  "private": true,
+  "description": "In-memory file-system with Node's fs API.",
+  "keywords": [
+    "fs",
+    "filesystem",
+    "fs.js",
+    "memory-fs",
+    "memfs",
+    "file",
+    "file system",
+    "mount",
+    "memory",
+    "in-memory",
+    "virtual",
+    "test",
+    "testing",
+    "mock",
+    "fsa",
+    "file system access",
+    "native file system"
+  ],
+  "homepage": "https://github.com/streamich/memfs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streamich/memfs.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/streamich"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "streamich",
+    "url": "https://github.com/streamich"
+  },
+  "scripts": {
+    "clean": "rimraf lib coverage typedocs gh-pages && yarn workspaces foreach -Apt run clean",
+    "build": "yarn workspaces foreach -Apt run build",
+    "typecheck": "yarn workspaces foreach -Apt run typecheck",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "test": "jest --maxWorkers 2",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "tslint": "tslint \"src/**/*.ts\" -t verbose",
+    "watch": "watch \"npm run build\" ./src",
+    "coverage": "yarn test --collectCoverage",
+    "build:pages": "npx rimraf@5.0.5 gh-pages && mkdir -p gh-pages && cp -r typedocs/* gh-pages && cp -r coverage gh-pages/coverage"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "testEnvironment": "node",
+    "testRegex": ".*/__tests__/.*\\.(test|spec)\\.(jsx?|tsx?)$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^24.5.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "yarn@4.12.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

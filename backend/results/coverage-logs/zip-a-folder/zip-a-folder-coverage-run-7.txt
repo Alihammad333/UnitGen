@@ -1,0 +1,841 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/zip-a-folder
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\lib\zip-a-folder.js
+==============================
+✅ Found 1 function(s): ZipAFolder
+ℹ️ Class-like exports will use constructor prototype generation: ZipAFolder
+✅ Exported function(s): ZipAFolder
+🏛️ Class export analysis:
+   - ZipAFolder: constructor params (none), 0 prototype method(s), 2 static method(s)
+     static: zip, zipFolder
+📚 Usage snippets:
+   - 10 snippet(s) found from 4 scanned file(s)
+   - zip: 5
+   - zipFolder: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - archiver -> archiver (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   ZipAFolder.zip:
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path -> path (reference)
+   - fs.access -> fs (transitive-member-call)
+   - fs.access -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.constants.F_OK -> fs (transitive-member-chain)
+   - fs.constants -> fs (transitive-member)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - archiver() -> archiver (transitive-direct-call)
+   - archiver -> archiver (transitive-member-call)
+   - archiver -> archiver (transitive-reference)
+   ZipAFolder.zipFolder:
+   - fs.access -> fs (member-call)
+   - fs.access -> fs (member)
+   - fs -> fs (reference)
+   - fs.constants.F_OK -> fs (member-chain)
+   - fs.constants -> fs (member)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path -> path (reference)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - archiver() -> archiver (direct-call)
+   - archiver -> archiver (member-call)
+   - archiver -> archiver (reference)
+🧩 Mock plan:
+   ZipAFolder.zip:
+   - path (builtin) members: dirname; targets: path, dirname;
+   - fs (builtin) members: access, constants, createWriteStream; targets: fs, access, F_OK, constants, createWriteStream; chains: constants.F_OK;
+   - archiver (external) members: none; targets: archiver;
+   ZipAFolder.zipFolder:
+   - fs (builtin) members: access, constants, createWriteStream; targets: fs, access, F_OK, constants, createWriteStream; chains: constants.F_OK;
+   - path (builtin) members: dirname; targets: path, dirname;
+   - archiver (external) members: none; targets: archiver;
+🧪 Rendered mocks:
+   ZipAFolder.zip: 3 mock block(s)
+   ZipAFolder.zipFolder: 3 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js
+
+==============================
+📄 Skipping: benchmark_packages\zip-a-folder\test\zip-a-folder.test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 3 API candidate(s), 3 public target candidate(s).
+✅ Dynamic preflight passed: ZipAFolder
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: ZipAFolder
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.ZipAFolder.default.test.js (ZipAFolder)
+✅ Dynamic preflight passed: zip
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: zip
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zip.zip.test.js (zip)
+✅ Dynamic preflight passed: zipFolder
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: zipFolder
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.dynamic.zipFolder.zipFolder.test.js (zipFolder)
+ℹ️ Dynamic API preflight kept 3 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 0
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 2
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  6
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - THROW_ORACLE_FAILURE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js (2)
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder.zip
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 5
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 4
+   - THROW_ORACLE_FAILURE: 1
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+   - RUNTIME_FAILED: 1
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zip.test.js (1 + 1 repair candidate(s))
+Ã°Å¸Â§Âª LLM injection summary for ZipAFolder.zipFolder
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js (1)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 0
+Total Tests       : 11
+Passed            : 11
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - ZipAFolder.zip auto-generated (prototype)
+✅ PASS  - ZipAFolder.zip ZipAFolder.zip rejects conflicting path inputs
+✅ PASS  - ZipAFolder.zip [repair-candidate] Resolves when zipping a folder asynchronously
+✅ PASS  - ZipAFolder should be exported as a function
+✅ PASS  - zipFolder should be exported as a function
+✅ PASS  - zip should be exported as a function
+✅ PASS  - ZipAFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder ZipAFolder constructor creates an instance
+✅ PASS  - ZipAFolder ZipAFolder constructor exposes an object-like result
+✅ PASS  - ZipAFolder.zipFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder.zipFolder ZipAFolder.zipFolder checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 1
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: zip-a-folder.dynamic.zip.zip.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: zip-a-folder.dynamic.ZipAFolder.default.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: zip-a-folder.dynamic.zipFolder.zipFolder.test.js
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.971Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.972Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.972Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.972Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.972Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:36.972Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:11592) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:39.319Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:18312) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:41.644Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:4460) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:44.060Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:16796) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:46.339Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:18624) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:48.717Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:9724) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:51.003Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.zip.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:51.022Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:51.022Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:51.022Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Weak assertion","original":"await expect(result).toBeUndefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:3760) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zip.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:53.272Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:15564) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zip.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:55.492Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeUndefined: OBSERVED
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:15252) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zip.test.js :: toBeUndefined] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:57.718Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Assertion rejected","original":"await expect(result).toBeUndefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.zipFolder.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:57.727Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:57.727Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-19T08:38:57.727Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:10896) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zipFolder.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zipFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:38:59.951Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:17296) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zipFolder.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zipFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:39:02.177Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:17052) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+📊 Single Target [zip-a-folder.ZipAFolder.zipFolder.test.js :: toBe] -> Before: 0 | After: 0
+⚠️ Regression detected (All collected tests disappeared).
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeUndefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zipFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-19T08:39:04.441Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Assertion rejected","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:5200) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+✅ Done.
+

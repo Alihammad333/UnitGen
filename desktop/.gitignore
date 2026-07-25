@@ -1,0 +1,9 @@
+dist/
+build/
+out/
+release/
+node_modules/
+
+# OS specific
+.DS_Store
+Thumbs.db

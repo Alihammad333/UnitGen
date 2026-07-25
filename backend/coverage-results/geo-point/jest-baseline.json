@@ -1,0 +1,1975 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 19,
+  "numPassedTests": 103,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 19,
+  "numTotalTests": 103,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1784409488418,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDestination"
+          ],
+          "duration": 3,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDestination auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409489113,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDestination"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDestination GeoPoint.calculateDestination checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489117,
+          "status": "passed",
+          "title": "GeoPoint.calculateDestination checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDestination"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDestination GeoPoint.calculateDestination checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489118,
+          "status": "passed",
+          "title": "GeoPoint.calculateDestination checks stable result contract"
+        }
+      ],
+      "endTime": 1784409489119,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.calculateDestination.test.js",
+      "startTime": 1784409488485,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489223,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Valid GeoJSON Point",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489226,
+          "status": "passed",
+          "title": "Valid GeoJSON Point"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 16,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489227,
+          "status": "passed",
+          "title": "Invalid GeoJSON Point - Missing Type"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Coordinates",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489243,
+          "status": "passed",
+          "title": "Invalid GeoJSON Point - Missing Coordinates"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489246,
+          "status": "passed",
+          "title": "Invalid GeoJSON Point - Incorrect Type"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489247,
+          "status": "passed",
+          "title": "Invalid GeoJSON Point - Incorrect Coordinates"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates Length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489248,
+          "status": "passed",
+          "title": "Invalid GeoJSON Point - Incorrect Coordinates Length"
+        }
+      ],
+      "endTime": 1784409489251,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.fromGeoJSON.test.js",
+      "startTime": 1784409489128,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489363,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject Valid object with latitude and longitude properties",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489365,
+          "status": "passed",
+          "title": "Valid object with latitude and longitude properties"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 10,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject Object missing latitude property",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489366,
+          "status": "passed",
+          "title": "Object missing latitude property"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject Object missing longitude property",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489376,
+          "status": "passed",
+          "title": "Object missing longitude property"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject Non-object argument",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489377,
+          "status": "passed",
+          "title": "Non-object argument"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromObject Empty object",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489377,
+          "status": "passed",
+          "title": "Empty object"
+        }
+      ],
+      "endTime": 1784409489379,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.fromObject.test.js",
+      "startTime": 1784409489268,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDistance"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDistance auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489476,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDistance"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDistance Calculate distance between two points with latitude and longitude as zero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489478,
+          "status": "passed",
+          "title": "Calculate distance between two points with latitude and longitude as zero"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDistance"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDistance Calculate distance between two points with latitude and longitude",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489479,
+          "status": "passed",
+          "title": "Calculate distance between two points with latitude and longitude"
+        }
+      ],
+      "endTime": 1784409489480,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.calculateDistance.test.js",
+      "startTime": 1784409489386,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.toTile"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.toTile auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489571,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.toTile"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.toTile Calculate tile coordinates for a point at the equator",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489577,
+          "status": "passed",
+          "title": "Calculate tile coordinates for a point at the equator"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.toTile"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.toTile GeoPoint.toTile checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489578,
+          "status": "passed",
+          "title": "GeoPoint.toTile checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.toTile"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.toTile GeoPoint.toTile checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489579,
+          "status": "passed",
+          "title": "GeoPoint.toTile checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.toTile"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.toTile Calculate tile coordinates for a given point and zoom level",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409489579,
+          "status": "passed",
+          "title": "Calculate tile coordinates for a given point and zoom level"
+        }
+      ],
+      "endTime": 1784409489581,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.toTile.test.js",
+      "startTime": 1784409489485,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409489674,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returns a plain object with latitude and longitude properties",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489676,
+          "status": "passed",
+          "title": "Returns a plain object with latitude and longitude properties"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returns an object with correct latitude and longitude values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489677,
+          "status": "passed",
+          "title": "Returns an object with correct latitude and longitude values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returned object has latitude and longitude properties",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489677,
+          "status": "passed",
+          "title": "Returned object has latitude and longitude properties"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returned object has latitude and longitude keys",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489678,
+          "status": "passed",
+          "title": "Returned object has latitude and longitude keys"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returned object has correct latitude type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489679,
+          "status": "passed",
+          "title": "Returned object has correct latitude type"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject Returned object has correct longitude type",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489679,
+          "status": "passed",
+          "title": "Returned object has correct longitude type"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject GeoPoint.toObject checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489680,
+          "status": "passed",
+          "title": "GeoPoint.toObject checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toObject"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toObject GeoPoint.toObject checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489680,
+          "status": "passed",
+          "title": "GeoPoint.toObject checks stable result contract"
+        }
+      ],
+      "endTime": 1784409489681,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toObject.test.js",
+      "startTime": 1784409489586,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489781,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray Create GeoPoint from valid array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489783,
+          "status": "passed",
+          "title": "Create GeoPoint from valid array"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray Create GeoPoint from different valid array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489784,
+          "status": "passed",
+          "title": "Create GeoPoint from different valid array"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray Create GeoPoint from array with more than two elements",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489784,
+          "status": "passed",
+          "title": "Create GeoPoint from array with more than two elements"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489785,
+          "status": "passed",
+          "title": "GeoPoint.fromLatLngArray checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLatLngArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489785,
+          "status": "passed",
+          "title": "GeoPoint.fromLatLngArray checks stable result contract"
+        }
+      ],
+      "endTime": 1784409489787,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.fromLatLngArray.test.js",
+      "startTime": 1784409489692,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489885,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint GeoPoint constructor creates an instance",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409489888,
+          "status": "passed",
+          "title": "GeoPoint constructor creates an instance"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint GeoPoint constructor exposes an object-like result",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489889,
+          "status": "passed",
+          "title": "GeoPoint constructor exposes an object-like result"
+        }
+      ],
+      "endTime": 1784409489891,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.test.js",
+      "startTime": 1784409489791,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409489990,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString Returns string with latitude and longitude reversed",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489992,
+          "status": "passed",
+          "title": "Returns string with latitude and longitude reversed"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString Returns string with zero latitude and longitude",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489992,
+          "status": "passed",
+          "title": "Returns string with zero latitude and longitude"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString Returns string with latitude and longitude as decimals",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489993,
+          "status": "passed",
+          "title": "Returns string with latitude and longitude as decimals"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString Returns string with latitude and longitude as integers",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489994,
+          "status": "passed",
+          "title": "Returns string with latitude and longitude as integers"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString Returns string with latitude and longitude as negative decimals",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489995,
+          "status": "passed",
+          "title": "Returns string with latitude and longitude as negative decimals"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString GeoPoint.toString checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489995,
+          "status": "passed",
+          "title": "GeoPoint.toString checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString GeoPoint.toString checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489995,
+          "status": "passed",
+          "title": "GeoPoint.toString checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toString"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toString [repair-candidate] Observed behavior returns \"1,1\"",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409489996,
+          "status": "passed",
+          "title": "[repair-candidate] Observed behavior returns \"1,1\""
+        }
+      ],
+      "endTime": 1784409489998,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toString.test.js",
+      "startTime": 1784409489898,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 5,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490094,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with positive values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490100,
+          "status": "passed",
+          "title": "Create GeoPoint from LngLat array with positive values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with negative values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490100,
+          "status": "passed",
+          "title": "Create GeoPoint from LngLat array with negative values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with zero values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490101,
+          "status": "passed",
+          "title": "Create GeoPoint from LngLat array with zero values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with non-integer values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490102,
+          "status": "passed",
+          "title": "Create GeoPoint from LngLat array with non-integer values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with small values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490103,
+          "status": "passed",
+          "title": "Create GeoPoint from LngLat array with small values"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490103,
+          "status": "passed",
+          "title": "GeoPoint.fromLngLatArray checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.fromLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490104,
+          "status": "passed",
+          "title": "GeoPoint.fromLngLatArray checks stable result contract"
+        }
+      ],
+      "endTime": 1784409490106,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.fromLngLatArray.test.js",
+      "startTime": 1784409490004,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toTile"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toTile auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490206,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toTile"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toTile Calculate tile coordinates at zoom level 0",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490209,
+          "status": "passed",
+          "title": "Calculate tile coordinates at zoom level 0"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toTile"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toTile GeoPoint.toTile checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490210,
+          "status": "passed",
+          "title": "GeoPoint.toTile checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toTile"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toTile GeoPoint.toTile checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490210,
+          "status": "passed",
+          "title": "GeoPoint.toTile checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toTile"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toTile Calculate tile coordinates at zoom level 7",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490211,
+          "status": "passed",
+          "title": "Calculate tile coordinates at zoom level 7"
+        }
+      ],
+      "endTime": 1784409490213,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toTile.test.js",
+      "startTime": 1784409490111,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490314,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoJSON Point has keys 'type' and 'coordinates'",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490317,
+          "status": "passed",
+          "title": "GeoJSON Point has keys 'type' and 'coordinates'"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoJSON Point type is 'Point'",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490318,
+          "status": "passed",
+          "title": "GeoJSON Point type is 'Point'"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoJSON Point coordinates are an array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490318,
+          "status": "passed",
+          "title": "GeoJSON Point coordinates are an array"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoJSON Point has exactly 2 keys",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490319,
+          "status": "passed",
+          "title": "GeoJSON Point has exactly 2 keys"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490319,
+          "status": "passed",
+          "title": "GeoPoint.toGeoJSON checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490320,
+          "status": "passed",
+          "title": "GeoPoint.toGeoJSON checks stable result contract"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toGeoJSON"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toGeoJSON Returns GeoJSON Point with longitude and latitude",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490320,
+          "status": "passed",
+          "title": "Returns GeoJSON Point with longitude and latitude"
+        }
+      ],
+      "endTime": 1784409490322,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toGeoJSON.test.js",
+      "startTime": 1784409490218,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDistance"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDistance auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490423,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDistance"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDistance Calculate distance between two GeoPoints with same coordinates",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490425,
+          "status": "passed",
+          "title": "Calculate distance between two GeoPoints with same coordinates"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateDistance"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateDistance Calculate distance between two GeoPoints",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490425,
+          "status": "passed",
+          "title": "Calculate distance between two GeoPoints"
+        }
+      ],
+      "endTime": 1784409490426,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.calculateDistance.test.js",
+      "startTime": 1784409490337,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490520,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision Adjust precision with positive integer",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490522,
+          "status": "passed",
+          "title": "Adjust precision with positive integer"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision Adjust precision with zero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490524,
+          "status": "passed",
+          "title": "Adjust precision with zero"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision Adjust precision with large positive integer",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490524,
+          "status": "passed",
+          "title": "Adjust precision with large positive integer"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision Adjust precision with precision greater than number of decimal places",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490525,
+          "status": "passed",
+          "title": "Adjust precision with precision greater than number of decimal places"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision Adjust precision with precision as string",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490525,
+          "status": "passed",
+          "title": "Adjust precision with precision as string"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490525,
+          "status": "passed",
+          "title": "GeoPoint.adjustPrecision checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.adjustPrecision"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490526,
+          "status": "passed",
+          "title": "GeoPoint.adjustPrecision checks stable result contract"
+        }
+      ],
+      "endTime": 1784409490527,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.adjustPrecision.test.js",
+      "startTime": 1784409490432,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDestination"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDestination auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490623,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDestination"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDestination Calculate destination with different coordinates, distance, and bearing",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490625,
+          "status": "passed",
+          "title": "Calculate destination with different coordinates, distance, and bearing"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDestination"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDestination Calculate destination with zero distance and bearing",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490626,
+          "status": "passed",
+          "title": "Calculate destination with zero distance and bearing"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateDestination"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateDestination Calculate destination with default parameters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490626,
+          "status": "passed",
+          "title": "Calculate destination with default parameters"
+        }
+      ],
+      "endTime": 1784409490628,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.calculateDestination.test.js",
+      "startTime": 1784409490532,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLatLngArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLatLngArray auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490729,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLatLngArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLatLngArray Return array with two elements",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490731,
+          "status": "passed",
+          "title": "Return array with two elements"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLatLngArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490731,
+          "status": "passed",
+          "title": "GeoPoint.toLatLngArray checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLatLngArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490732,
+          "status": "passed",
+          "title": "GeoPoint.toLatLngArray checks stable result contract"
+        }
+      ],
+      "endTime": 1784409490733,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toLatLngArray.test.js",
+      "startTime": 1784409490634,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateBearing"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateBearing auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490853,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateBearing"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateBearing Calculate bearing with same GeoPoint",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490856,
+          "status": "passed",
+          "title": "Calculate bearing with same GeoPoint"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateBearing"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateBearing Calculate bearing with latitude difference",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409490857,
+          "status": "passed",
+          "title": "Calculate bearing with latitude difference"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.calculateBearing"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.calculateBearing Calculate bearing between two GeoPoints",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409490858,
+          "status": "passed",
+          "title": "Calculate bearing between two GeoPoints"
+        }
+      ],
+      "endTime": 1784409490860,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.calculateBearing.test.js",
+      "startTime": 1784409490738,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLngLatArray"
+          ],
+          "duration": 6,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLngLatArray auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "startAt": 1784409490998,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLngLatArray Safe invariant - Result is an array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409491005,
+          "status": "passed",
+          "title": "Safe invariant - Result is an array"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLngLatArray"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLngLatArray Safe invariant - Result has length 2",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409491006,
+          "status": "passed",
+          "title": "Safe invariant - Result has length 2"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLngLatArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks source-aware result shape",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409491006,
+          "status": "passed",
+          "title": "GeoPoint.toLngLatArray checks source-aware result shape"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.prototype.toLngLatArray"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks stable result contract",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409491007,
+          "status": "passed",
+          "title": "GeoPoint.toLngLatArray checks stable result contract"
+        }
+      ],
+      "endTime": 1784409491009,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toLngLatArray.test.js",
+      "startTime": 1784409490867,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateBearing"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateBearing auto-generated (prototype)",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409491127,
+          "status": "passed",
+          "title": "auto-generated (prototype)"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateBearing"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateBearing Calculate bearing between two points with latitude and longitude values close to zero",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1784409491129,
+          "status": "passed",
+          "title": "Calculate bearing between two points with latitude and longitude values close to zero"
+        },
+        {
+          "ancestorTitles": [
+            "GeoPoint.calculateBearing"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "GeoPoint.calculateBearing Calculate bearing between two points with positive latitude and longitude values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1784409491130,
+          "status": "passed",
+          "title": "Calculate bearing between two points with positive latitude and longitude values"
+        }
+      ],
+      "endTime": 1784409491131,
+      "message": "",
+      "name": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.calculateBearing.test.js",
+      "startTime": 1784409491029,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

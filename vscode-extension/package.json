@@ -1,0 +1,26 @@
+{
+  "name": "unitgen-dashboard",
+  "displayName": "UnitGen Dashboard",
+  "description": "VS Code dashboard for UnitGen automated unit test generation",
+  "version": "0.0.1",
+  "publisher": "unitgen",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:unitgen.openDashboard"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "unitgen.openDashboard",
+        "title": "UnitGen: Open Dashboard"
+      }
+    ]
+  }
+  
+}

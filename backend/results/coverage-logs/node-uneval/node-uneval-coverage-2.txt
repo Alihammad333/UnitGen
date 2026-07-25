@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package node-uneval
+
+
+================ UnitGen Coverage Summary ================
+Package            : node-uneval
+Generated test files: 1
+Total tests         : 4
+Passing tests       : 4
+Failed tests        : 0
+Coverage mode       : all-tests-pass-single-coverage-run
+Statement coverage  : 68.75%
+Branch coverage     : 54.16%
+==========================================================
+

@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package simple-statistics
+
+
+================ UnitGen Coverage Summary ================
+Package            : simple-statistics
+Generated test files: 184
+Total tests         : 1172
+Passing tests       : 1157
+Failed tests        : 15
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 93.3%
+Branch coverage     : 82.05%
+==========================================================
+

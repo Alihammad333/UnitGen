@@ -1,0 +1,584 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/crawler-url-parser
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 10 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\crawler-url-parser\crawler-url-parser.js
+==============================
+✅ Found 4 function(s): _has_illegal_chars, parse, extract, gettype
+✅ Exported function(s): parse, extract, gettype
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 15 snippet(s) found from 12 scanned file(s)
+   - parse: 5
+   - extract: 5
+   - gettype: 5
+📝 Doc comments:
+   - none found for 3 function(s)
+🔎 Import map:
+   - URL -> url (require:*, cjs)
+   - psl -> psl (require:*, cjs)
+   - cheerio -> cheerio (require:*, cjs)
+🔗 Dependency usage:
+   parse:
+   - URL.parse -> url (member-call)
+   - URL.parse -> global:URL (global-member-call)
+   - URL.parse -> url (member)
+   - URL.parse -> global:URL (global-member)
+   - URL -> url (reference)
+   - URL -> global:URL (global-reference)
+   - URL.format -> url (member-call)
+   - URL.format -> global:URL (global-member-call)
+   - URL.format -> url (member)
+   - URL.format -> global:URL (global-member)
+   - URL.resolve -> url (member-call)
+   - URL.resolve -> global:URL (global-member-call)
+   - URL.resolve -> url (member)
+   - URL.resolve -> global:URL (global-member)
+   - psl.parse -> psl (member-call)
+   - psl.parse -> psl (member)
+   - psl -> psl (reference)
+   extract:
+   - cheerio.load -> cheerio (member-call)
+   - cheerio.load -> cheerio (member)
+   - cheerio -> cheerio (reference)
+   - URL.parse -> url (transitive-member-call)
+   - URL.parse -> global:URL (transitive-global-member-call)
+   - URL.parse -> url (transitive-member)
+   - URL.parse -> global:URL (transitive-global-member)
+   - URL -> url (transitive-reference)
+   - URL -> global:URL (transitive-global-reference)
+   - URL.format -> url (transitive-member-call)
+   - URL.format -> global:URL (transitive-global-member-call)
+   - URL.format -> url (transitive-member)
+   - URL.format -> global:URL (transitive-global-member)
+   - URL.resolve -> url (transitive-member-call)
+   - URL.resolve -> global:URL (transitive-global-member-call)
+   - URL.resolve -> url (transitive-member)
+   - URL.resolve -> global:URL (transitive-global-member)
+   - psl.parse -> psl (transitive-member-call)
+   - psl.parse -> psl (transitive-member)
+   - psl -> psl (transitive-reference)
+   - URL.parse -> url (transitive-member-call)
+   - URL.parse -> global:URL (transitive-global-member-call)
+   - URL.parse -> url (transitive-member)
+   - URL.parse -> global:URL (transitive-global-member)
+   - URL -> url (transitive-reference)
+   - URL -> global:URL (transitive-global-reference)
+   - URL.format -> url (transitive-member-call)
+   - URL.format -> global:URL (transitive-global-member-call)
+   - URL.format -> url (transitive-member)
+   - URL.format -> global:URL (transitive-global-member)
+   - URL.resolve -> url (transitive-member-call)
+   - URL.resolve -> global:URL (transitive-global-member-call)
+   - URL.resolve -> url (transitive-member)
+   - URL.resolve -> global:URL (transitive-global-member)
+   - psl.parse -> psl (transitive-member-call)
+   - psl.parse -> psl (transitive-member)
+   - psl -> psl (transitive-reference)
+   gettype:
+   - URL.parse -> url (transitive-member-call)
+   - URL.parse -> global:URL (transitive-global-member-call)
+   - URL.parse -> url (transitive-member)
+   - URL.parse -> global:URL (transitive-global-member)
+   - URL -> url (transitive-reference)
+   - URL -> global:URL (transitive-global-reference)
+   - URL.format -> url (transitive-member-call)
+   - URL.format -> global:URL (transitive-global-member-call)
+   - URL.format -> url (transitive-member)
+   - URL.format -> global:URL (transitive-global-member)
+   - URL.resolve -> url (transitive-member-call)
+   - URL.resolve -> global:URL (transitive-global-member-call)
+   - URL.resolve -> url (transitive-member)
+   - URL.resolve -> global:URL (transitive-global-member)
+   - psl.parse -> psl (transitive-member-call)
+   - psl.parse -> psl (transitive-member)
+   - psl -> psl (transitive-reference)
+🧩 Mock plan:
+   parse:
+   - url (builtin) members: parse, format, resolve; targets: URL, parse, format, resolve;
+   - global:URL (global) members: URL; targets: URL, parse, format, resolve; chains: parse, format, resolve;
+   - psl (external) members: parse; targets: psl, parse;
+   extract:
+   - cheerio (external) members: load; targets: cheerio, load;
+   - url (builtin) members: parse, format, resolve; targets: URL, parse, format, resolve;
+   - global:URL (global) members: URL; targets: URL, parse, format, resolve; chains: parse, format, resolve;
+   - psl (external) members: parse; targets: psl, parse;
+   gettype:
+   - url (builtin) members: parse, format, resolve; targets: URL, parse, format, resolve;
+   - global:URL (global) members: URL; targets: URL, parse, format, resolve; chains: parse, format, resolve;
+   - psl (external) members: parse; targets: psl, parse;
+🧪 Rendered mocks:
+   parse: 2 mock block(s)
+   extract: 3 mock block(s)
+   gettype: 2 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.parse.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.extract.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.gettype.test.js
+
+==============================
+📄 Processing: benchmark_packages\crawler-url-parser\QUICKSTART.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\01_parse-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\02_extract-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\03_getlevel-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\04_querycount-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\05_crawler-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\06_type-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\07_readme-parse-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\crawler-url-parser\test\08_crawler-test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 3 API candidate(s), 3 public target candidate(s).
+✅ Dynamic preflight passed: parse
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.parse.parse.test.js (parse)
+✅ Dynamic preflight passed: extract
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.extract.extract.test.js (extract)
+✅ Dynamic preflight passed: gettype
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.gettype.gettype.test.js (gettype)
+ℹ️ Dynamic API preflight kept 3 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 3
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 3
+⚠️ Files skipped:  8
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  6
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+Ã°Å¸Â§Âª LLM injection summary for parse
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 3
+   LLM runtime reasons:
+   - SYNTAX_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - SYNTAX_FAILED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.parse.test.js (1)
+Ã°Å¸Â§Âª LLM injection summary for extract
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 0
+   runtime failed: 7
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 7
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for extract; keeping prototype only.
+Ã°Å¸Â§Âª LLM injection summary for gettype
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for gettype; keeping prototype only.
+Ã°Å¸Â§Âª LLM injection summary for parse
+   received: 8
+   sanitizer accepted: 6
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - FULL_RESULT_DEEP_EQUALITY_WITHOUT_INPUT: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.parse.parse.test.js (2)
+Ã°Å¸Â§Âª LLM injection summary for extract
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 2
+   runtime failed: 5
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 4
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.extract.extract.test.js (2 + 1 repair candidate(s))
+Ã°Å¸Â§Âª LLM injection summary for gettype
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 2
+   runtime failed: 4
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.gettype.gettype.test.js (4 + 1 repair candidate(s))
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 1
+Total Tests       : 17
+Passed            : 16
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\crawler-url-parser.dynamic.extract.extract.test.js
+  ● extract › [repair-candidate] Valid data and sourceUrl with single URL expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Array [ Object { "text": "Link", - "type": undefined, - "url": ...
+------------------------------------------------------------
+✅ PASS  - gettype auto-generated (prototype)
+✅ PASS  - extract should be exported as a function
+✅ PASS  - extract Empty data and sourceUrl
+✅ PASS  - extract Data as string and sourceUrl with invalid URL
+❌ FAIL  - extract [repair-candidate] Valid data and sourceUrl with single URL
+   Error: Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Array [ Object { "text": "Link", - "type": undefined, - "url": "https://example.com", + "type": "external", + "url": "https://ex...
+✅ PASS  - parse auto-generated (prototype)
+✅ PASS  - parse currentUrlStr is undefined
+✅ PASS  - extract auto-generated (prototype)
+✅ PASS  - gettype should be exported as a function
+✅ PASS  - gettype Link URL and Page URL have same host and same path
+✅ PASS  - gettype Link URL is uplevel
+✅ PASS  - gettype fallback checks source-aware result shape
+✅ PASS  - gettype fallback checks stable result contract
+✅ PASS  - gettype [repair-candidate] Observed behavior returns "samelevel"
+✅ PASS  - parse should be exported as a function
+✅ PASS  - parse fallback checks source-aware result shape
+✅ PASS  - parse fallback checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 2
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: crawler-url-parser.dynamic.extract.extract.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-18T18:06:52.176Z","testFile":"crawler-url-parser.dynamic.extract.extract.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Array [ Object { \"text\": \"Link\", - \"type\": undefined, - \"url\": \"https://example.com\", + \"type\": \"external\", + \"url\": \"https://example.com/\", }, ] at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generat","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-06-18T18:06:55.761Z","testFile":"crawler-url-parser.dynamic.extract.extract.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+🎉 All tests repaired.
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 0
+Total Tests       : 17
+Passed            : 17
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - extract should be exported as a function
+✅ PASS  - extract Empty data and sourceUrl
+✅ PASS  - extract Data as string and sourceUrl with invalid URL
+✅ PASS  - extract [repair-candidate] Valid data and sourceUrl with single URL
+✅ PASS  - extract auto-generated (prototype)
+✅ PASS  - gettype auto-generated (prototype)
+✅ PASS  - parse should be exported as a function
+✅ PASS  - parse fallback checks source-aware result shape
+✅ PASS  - parse fallback checks stable result contract
+✅ PASS  - gettype should be exported as a function
+✅ PASS  - gettype Link URL and Page URL have same host and same path
+✅ PASS  - gettype Link URL is uplevel
+✅ PASS  - gettype fallback checks source-aware result shape
+✅ PASS  - gettype fallback checks stable result contract
+✅ PASS  - gettype [repair-candidate] Observed behavior returns "samelevel"
+✅ PASS  - parse auto-generated (prototype)
+✅ PASS  - parse currentUrlStr is undefined
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: crawler-url-parser.dynamic.extract.extract.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: crawler-url-parser.dynamic.gettype.gettype.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: crawler-url-parser.dynamic.parse.parse.test.js
+
+🔍 Analyzing File: crawler-url-parser.extract.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:03.720Z","testFile":"crawler-url-parser.extract.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:03.720Z","testFile":"crawler-url-parser.extract.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [crawler-url-parser.extract.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.extract.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:09.345Z","testFile":"crawler-url-parser.extract.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [crawler-url-parser.extract.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.extract.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:14.429Z","testFile":"crawler-url-parser.extract.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: crawler-url-parser.gettype.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:14.439Z","testFile":"crawler-url-parser.gettype.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:14.439Z","testFile":"crawler-url-parser.gettype.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [crawler-url-parser.gettype.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.gettype.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:20.039Z","testFile":"crawler-url-parser.gettype.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: string(external)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [crawler-url-parser.gettype.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.gettype.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:25.416Z","testFile":"crawler-url-parser.gettype.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: crawler-url-parser.parse.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:25.446Z","testFile":"crawler-url-parser.parse.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-18T18:07:25.446Z","testFile":"crawler-url-parser.parse.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [crawler-url-parser.parse.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.parse.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:31.479Z","testFile":"crawler-url-parser.parse.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: null
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [crawler-url-parser.parse.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting crawler-url-parser.parse.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-18T18:07:37.492Z","testFile":"crawler-url-parser.parse.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 6
+Failed Suites     : 0
+Total Tests       : 17
+Passed            : 17
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - parse auto-generated (prototype)
+✅ PASS  - parse currentUrlStr is undefined
+✅ PASS  - gettype should be exported as a function
+✅ PASS  - gettype Link URL and Page URL have same host and same path
+✅ PASS  - gettype Link URL is uplevel
+✅ PASS  - gettype fallback checks source-aware result shape
+✅ PASS  - gettype fallback checks stable result contract
+✅ PASS  - gettype [repair-candidate] Observed behavior returns "samelevel"
+✅ PASS  - extract should be exported as a function
+✅ PASS  - extract Empty data and sourceUrl
+✅ PASS  - extract Data as string and sourceUrl with invalid URL
+✅ PASS  - extract [repair-candidate] Valid data and sourceUrl with single URL
+✅ PASS  - gettype auto-generated (prototype)
+✅ PASS  - extract auto-generated (prototype)
+✅ PASS  - parse should be exported as a function
+✅ PASS  - parse fallback checks source-aware result shape
+✅ PASS  - parse fallback checks stable result contract
+============================================================
+
+
+✅ Done.
+

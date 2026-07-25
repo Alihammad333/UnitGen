@@ -1,0 +1,187 @@
+
+> unitgen@1.0.0 start
+> node src/index.js ..\benchmark_packages\countries-and-timezones
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Package project detected: preferring package entry/public API files.
+ℹ️ Selected 2 entry file(s) for testing.
+
+==============================
+📄 Processing: ..\benchmark_packages\countries-and-timezones\dist\index.js
+==============================
+✅ Found 17 function(s): buildCountry, getTimezonesMap, buildTimezonesMap, buildTimezone, getOffsetString, getNumberString, getAllCountries, getAllTimezones, getCountry, memoizeCountry, getTimezone, memoizeTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry, deliverTimezones, deliverCountry
+✅ Exported function(s): getAllCountries, getAllTimezones, getCountry, getTimezone, getCountriesForTimezone, getCountryForTimezone, getTimezonesForCountry
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getAllCountries.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getAllTimezones.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getCountry.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getTimezone.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getCountriesForTimezone.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getCountryForTimezone.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getTimezonesForCountry.test.js
+ℹ️ Package-entry mode: using first compatible entry file and stopping further entry scanning.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  0
+🧾 Tests created:  7
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via Ollama...
+
+⚠️ LLM produced no safe test cases for getAllCountries; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getAllTimezones.test.js
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getCountry.test.js
+⚠️ LLM produced no safe test cases for getTimezone; keeping prototype only.
+⚠️ LLM produced no safe test cases for getCountriesForTimezone; keeping prototype only.
+⚠️ LLM produced no safe test cases for getCountryForTimezone; keeping prototype only.
+✨ LLM injected tests: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.getTimezonesForCountry.test.js
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 7
+Failed Suites     : 0
+Total Tests       : 12
+Passed            : 12
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - getTimezonesForCountry auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry Test getTimezonesForCountry with valid countryId and options
+✅ PASS  - getTimezone auto-generated (prototype)
+✅ PASS  - getCountryForTimezone auto-generated (prototype)
+✅ PASS  - getCountry auto-generated (prototype)
+✅ PASS  - getCountry getCountry with valid id and options
+✅ PASS  - getCountry getCountry with valid options object
+✅ PASS  - getCountriesForTimezone auto-generated (prototype)
+✅ PASS  - getAllTimezones auto-generated (prototype)
+✅ PASS  - getAllTimezones Test getAllTimezones with default options
+✅ PASS  - getAllTimezones Test getAllTimezones with custom options
+✅ PASS  - getAllCountries auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+
+🔍 Analyzing File: index.getAllCountries.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.getAllCountries.test.js] -> Before: 0 | After: 2
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Regression detected (Failed suites increased).
+⚠️ Stability Check Failed: Reverting index.getAllCountries.test.js
+
+🔍 Analyzing File: index.getAllTimezones.test.js
+🧠 Identified 3 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+🧠 [AST-Repair] Optimized: toBeDefined
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Proposed code failed syntax validation. Skipping.
+
+🔍 Analyzing File: index.getCountriesForTimezone.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.getCountriesForTimezone.test.js] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0.2,
+    "failures": 1
+  }
+}
+✨ Optimization: Assertion strengthened without breaking stability.
+✅ Success: Enhancement committed to index.getCountriesForTimezone.test.js
+
+🔍 Analyzing File: index.getCountry.test.js
+🧠 Identified 3 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+🧠 [AST-Repair] Optimized: toBeDefined
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Proposed code failed syntax validation. Skipping.
+
+🔍 Analyzing File: index.getCountryForTimezone.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.getCountryForTimezone.test.js] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0.4,
+    "failures": 1
+  }
+}
+✨ Optimization: Assertion strengthened without breaking stability.
+✅ Success: Enhancement committed to index.getCountryForTimezone.test.js
+
+🔍 Analyzing File: index.getTimezone.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.getTimezone.test.js] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0.6000000000000001,
+    "failures": 1
+  }
+}
+✨ Optimization: Assertion strengthened without breaking stability.
+✅ Success: Enhancement committed to index.getTimezone.test.js
+
+🔍 Analyzing File: index.getTimezonesForCountry.test.js
+🧠 Identified 2 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.getTimezonesForCountry.test.js] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 1,
+    "failures": 1
+  }
+}
+✨ Optimization: Assertion strengthened without breaking stability.
+✅ Success: Enhancement committed to index.getTimezonesForCountry.test.js
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 7
+Failed Suites     : 0
+Total Tests       : 12
+Passed            : 12
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - getAllCountries auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry auto-generated (prototype)
+✅ PASS  - getTimezonesForCountry Test getTimezonesForCountry with valid countryId and options
+✅ PASS  - getCountry auto-generated (prototype)
+✅ PASS  - getCountry getCountry with valid id and options
+✅ PASS  - getCountry getCountry with valid options object
+✅ PASS  - getAllTimezones auto-generated (prototype)
+✅ PASS  - getAllTimezones Test getAllTimezones with default options
+✅ PASS  - getAllTimezones Test getAllTimezones with custom options
+✅ PASS  - getCountryForTimezone auto-generated (prototype)
+✅ PASS  - getTimezone auto-generated (prototype)
+✅ PASS  - getCountriesForTimezone auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

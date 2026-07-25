@@ -1,0 +1,339 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/zip-a-folder
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\lib\zip-a-folder.js
+==============================
+✅ Found 1 function(s): ZipAFolder
+ℹ️ Class-like exports will use constructor prototype generation: ZipAFolder
+✅ Exported function(s): ZipAFolder
+🏛️ Class export analysis:
+   - ZipAFolder: constructor params (none), 0 prototype method(s), 2 static method(s)
+     static: zip, zipFolder
+📚 Usage snippets:
+   - 10 snippet(s) found from 4 scanned file(s)
+   - zip: 5
+   - zipFolder: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - archiver -> archiver (require:*, cjs)
+   - path -> path (require:*, cjs)
+🔗 Dependency usage:
+   ZipAFolder.zip:
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path -> path (reference)
+   ZipAFolder.zipFolder:
+   - fs.access -> fs (member-call)
+   - fs.access -> fs (member)
+   - fs -> fs (reference)
+   - fs.constants.F_OK -> fs (member-chain)
+   - fs.constants -> fs (member)
+🧩 Mock plan:
+   ZipAFolder.zip:
+   - path (builtin) members: dirname; targets: path, dirname;
+   ZipAFolder.zipFolder:
+   - fs (builtin) members: access, constants; targets: fs, access, F_OK, constants; chains: constants.F_OK;
+🧪 Rendered mocks:
+   ZipAFolder.zip: 1 mock block(s)
+   ZipAFolder.zipFolder: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\zip-a-folder.ZipAFolder.zip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\zip-a-folder.ZipAFolder.zipFolder.test.js
+
+==============================
+📄 Skipping: benchmark_packages\zip-a-folder\test\zip-a-folder.test.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  3
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for ZipAFolder
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - UNDECLARED_REFERENCE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\zip-a-folder.ZipAFolder.test.js (2)
+🧪 LLM injection summary for ZipAFolder.zip
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ZipAFolder.zip; keeping prototype only.
+🧪 LLM injection summary for ZipAFolder.zipFolder
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ZipAFolder.zipFolder; keeping prototype only.
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 3
+Failed Suites     : 0
+Total Tests       : 5
+Passed            : 5
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - ZipAFolder.zipFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder.zip auto-generated (prototype)
+✅ PASS  - ZipAFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder ZipAFolder constructor creates an instance
+✅ PASS  - ZipAFolder ZipAFolder constructor exposes an object-like result
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:28.884Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:28.888Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:28.888Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:28.888Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:28.888Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:33.100Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:37.248Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:41.256Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:45.370Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [zip-a-folder.ZipAFolder.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:49.832Z","testFile":"zip-a-folder.ZipAFolder.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.zip.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:49.872Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:49.872Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.zip.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:53.931Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.zip.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:21:57.537Z","testFile":"zip-a-folder.ZipAFolder.zip.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: zip-a-folder.ZipAFolder.zipFolder.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:57.585Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-13T07:21:57.585Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.zipFolder.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zipFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:22:01.235Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [zip-a-folder.ZipAFolder.zipFolder.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting zip-a-folder.ZipAFolder.zipFolder.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-13T07:22:04.838Z","testFile":"zip-a-folder.ZipAFolder.zipFolder.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 3
+Failed Suites     : 0
+Total Tests       : 5
+Passed            : 5
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - ZipAFolder.zipFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder.zip auto-generated (prototype)
+✅ PASS  - ZipAFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder ZipAFolder constructor creates an instance
+✅ PASS  - ZipAFolder ZipAFolder constructor exposes an object-like result
+============================================================
+
+
+✅ Done.
+

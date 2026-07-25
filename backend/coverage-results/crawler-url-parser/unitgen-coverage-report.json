@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-18T18:08:17.940Z",
+  "packageName": "crawler-url-parser",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\crawler-url-parser",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 6,
+  "totalTests": 17,
+  "passingTests": 17,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 100,
+        "covered": 93,
+        "skipped": 0,
+        "pct": 93
+      },
+      "statements": {
+        "total": 111,
+        "covered": 100,
+        "skipped": 0,
+        "pct": 90.09
+      },
+      "functions": {
+        "total": 8,
+        "covered": 8,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 80,
+        "covered": 58,
+        "skipped": 0,
+        "pct": 72.5
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": []
+}

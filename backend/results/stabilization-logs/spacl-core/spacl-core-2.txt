@@ -1,0 +1,2182 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/spacl-core
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 7 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\matcher.js
+==============================
+✅ Found 4 function(s): Matcher, compile, flatten, finalise
+ℹ️ Class-like exports will use constructor prototype generation: Matcher
+✅ Exported function(s): Matcher
+🏛️ Class export analysis:
+   - Matcher: constructor params (spec, version), 0 prototype method(s), 1 static method(s)
+     static: for
+📚 Usage snippets:
+   - 10 snippet(s) found from 14 scanned file(s)
+   - Matcher: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\policy.js
+==============================
+✅ Found 1 function(s): Policy
+ℹ️ Class-like exports will use constructor prototype generation: Policy
+✅ Exported function(s): Policy
+🏛️ Class export analysis:
+   - Policy: constructor params (name, rules), 4 prototype method(s), 1 static method(s)
+     prototype: push, query, matches, clone
+     static: for
+📚 Usage snippets:
+   - 30 snippet(s) found from 14 scanned file(s)
+   - Policy: 5
+   - push: 5
+   - query: 5
+   - matches: 5
+   - clone: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.push.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.clone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\policymap.js
+==============================
+✅ Found 1 function(s): PolicyMap
+ℹ️ Class-like exports will use constructor prototype generation: PolicyMap
+✅ Exported function(s): PolicyMap
+🏛️ Class export analysis:
+   - PolicyMap: constructor params (policies), 3 prototype method(s), 1 static method(s)
+     prototype: push, query, matches
+     static: for
+📚 Usage snippets:
+   - 23 snippet(s) found from 14 scanned file(s)
+   - PolicyMap: 3
+   - push: 5
+   - query: 5
+   - matches: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.push.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\queryable.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\rule.js
+==============================
+✅ Found 1 function(s): Rule
+ℹ️ Class-like exports will use constructor prototype generation: Rule
+✅ Exported function(s): Rule
+🏛️ Class export analysis:
+   - Rule: constructor params (spec), 5 prototype method(s), 1 static method(s)
+     prototype: allow, deny, query, matches, clone
+     static: for
+📚 Usage snippets:
+   - 34 snippet(s) found from 14 scanned file(s)
+   - Rule: 4
+   - allow: 5
+   - deny: 5
+   - query: 5
+   - matches: 5
+   - clone: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - matcher_1 -> ./matcher (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.allow.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.deny.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.clone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\jest.config.js
+==============================
+⚠️ No functions detected.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 0 API candidate(s), 0 public target candidate(s).
+ℹ️ Dynamic API preflight kept 0 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 7
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  20
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for Matcher
+   received: 5
+   sanitizer accepted: 2
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.test.js (2)
+🧪 LLM injection summary for Matcher.for
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Matcher.for; keeping prototype only.
+🧪 LLM injection summary for Policy
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - INVALID_CASE_SHAPE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.test.js (2)
+🧪 LLM injection summary for Policy.prototype.push
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Policy.prototype.push; keeping prototype only.
+🧪 LLM injection summary for Policy.prototype.query
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 4
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.query.test.js (4)
+🧪 LLM injection summary for Policy.prototype.matches
+   received: 5
+   sanitizer accepted: 1
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.matches.test.js (1)
+🧪 LLM injection summary for Policy.prototype.clone
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - CASE_PARSE_FAILED: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Policy.prototype.clone; keeping prototype only.
+🧪 LLM injection summary for Policy.for
+   received: 5
+   sanitizer accepted: 1
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.for.test.js (2)
+🧪 LLM injection summary for PolicyMap
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 1
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.test.js (2)
+🧪 LLM injection summary for PolicyMap.prototype.push
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for PolicyMap.prototype.push; keeping prototype only.
+🧪 LLM injection summary for PolicyMap.prototype.query
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 1
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.query.test.js (4)
+🧪 LLM injection summary for PolicyMap.prototype.matches
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 3
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.matches.test.js (4)
+🧪 LLM injection summary for PolicyMap.for
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 3
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.for.test.js (4)
+🧪 LLM injection summary for Rule
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.allow
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.allow; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.deny
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.deny; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.query
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.query; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.matches
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.matches; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.clone
+   received: 5
+   sanitizer accepted: 4
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.clone; keeping prototype only.
+🧪 LLM injection summary for Rule.for
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   - SKIPPED_MAX_REACHED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.for.test.js (4)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 20
+Failed Suites     : 0
+Total Tests       : 49
+Passed            : 49
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Matcher auto-generated (prototype)
+✅ PASS  - Matcher Default behavior - valid spec and default version
+✅ PASS  - Matcher Parameterized behavior - valid spec and custom version
+✅ PASS  - Matcher.for auto-generated (prototype)
+✅ PASS  - Rule.prototype.query auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches Empty rules array returns false
+✅ PASS  - Rule.prototype.matches auto-generated (prototype)
+✅ PASS  - Rule auto-generated (prototype)
+✅ PASS  - Rule.prototype.clone auto-generated (prototype)
+✅ PASS  - Rule.prototype.allow auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.push auto-generated (prototype)
+✅ PASS  - Policy.prototype.clone auto-generated (prototype)
+✅ PASS  - Rule.prototype.deny auto-generated (prototype)
+✅ PASS  - Rule.for auto-generated (prototype)
+✅ PASS  - Rule.for Default behavior - spec as string
+✅ PASS  - Rule.for Parameterized behavior - spec as variable
+✅ PASS  - Rule.for Safe invariant - result type
+✅ PASS  - Rule.for Safe invariant - result defined
+✅ PASS  - Policy.for auto-generated (prototype)
+✅ PASS  - Policy.for Policy.for checks source-aware result shape
+✅ PASS  - Policy.for Policy.for checks stable result contract
+✅ PASS  - Policy.prototype.query auto-generated (prototype)
+✅ PASS  - Policy.prototype.query Query function with no rules returns null
+✅ PASS  - Policy.prototype.query Query function with explicit allow rule returns true
+✅ PASS  - Policy.prototype.query Query function with explicit deny rule returns false
+✅ PASS  - Policy.prototype.query Query function with mixed rules returns false if all rules deny
+✅ PASS  - PolicyMap.prototype.query auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.query Query with undefined policy
+✅ PASS  - PolicyMap.prototype.query Query with simple parameterized behavior
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks stable result contract
+✅ PASS  - PolicyMap.for auto-generated (prototype)
+✅ PASS  - PolicyMap.for Create PolicyMap with one policy
+✅ PASS  - PolicyMap.for Create PolicyMap with multiple policies
+✅ PASS  - PolicyMap.for Create PolicyMap with empty policies array
+✅ PASS  - PolicyMap.for PolicyMap.for checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.matches auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.matches Policy not found, should return false
+✅ PASS  - PolicyMap.prototype.matches Policy found, does not match path, should return false
+✅ PASS  - PolicyMap.prototype.matches Policy found, matches path but not ctx, should return false
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks source-aware result shape
+✅ PASS  - Policy auto-generated (prototype)
+✅ PASS  - Policy Policy constructor creates an instance
+✅ PASS  - Policy Policy constructor exposes an object-like result
+✅ PASS  - PolicyMap auto-generated (prototype)
+✅ PASS  - PolicyMap PolicyMap constructor creates an instance
+✅ PASS  - PolicyMap PolicyMap constructor exposes an object-like result
+✅ PASS  - Policy.prototype.push auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+
+🔍 Analyzing File: matcher.Matcher.for.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:30.325Z","testFile":"matcher.Matcher.for.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:30.326Z","testFile":"matcher.Matcher.for.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:34.949Z","testFile":"matcher.Matcher.for.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:39.529Z","testFile":"matcher.Matcher.for.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: matcher.Matcher.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 7 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Invalid assertion","original":"expect(result.spec).toBe(spec)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Invalid assertion","original":"expect(result.spec).toBe(spec)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Weak assertion","original":"expect(result.props).toEqual([])","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:46:39.545Z","testFile":"matcher.Matcher.test.js","issue":"Weak assertion","original":"expect(result.props).toEqual([])","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=spec, props)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:44.409Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(result.spec).toBe(spec)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=spec, props)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:49.181Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(result.spec).toBe(spec)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:54.083Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [matcher.Matcher.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:46:59.062Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [matcher.Matcher.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:04.005Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toEqual: object(keys=spec, props)
+🧠 [AST-Repair] Optimized: toEqual
+📊 Single Target [matcher.Matcher.test.js :: toEqual + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:08.996Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(result.props).toEqual([])","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toEqual: object(keys=spec, props)
+🧠 [AST-Repair] Optimized: toEqual
+📊 Single Target [matcher.Matcher.test.js :: toEqual + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting matcher.Matcher.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:14.428Z","testFile":"matcher.Matcher.test.js","issue":"Assertion rejected","original":"expect(result.props).toEqual([])","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.for.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:14.445Z","testFile":"policy.Policy.for.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:14.446Z","testFile":"policy.Policy.for.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:14.446Z","testFile":"policy.Policy.for.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:14.446Z","testFile":"policy.Policy.for.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.for.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:19.179Z","testFile":"policy.Policy.for.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:24.023Z","testFile":"policy.Policy.for.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.for.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:28.954Z","testFile":"policy.Policy.for.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.for.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:33.764Z","testFile":"policy.Policy.for.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.prototype.clone.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:33.770Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:33.770Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:33.770Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.clone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:38.524Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.clone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:43.336Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.prototype.clone.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:48.478Z","testFile":"policy.Policy.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.prototype.matches.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:48.487Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:48.487Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:47:48.487Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.matches.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:53.446Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.matches.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.8
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:47:58.536Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.prototype.matches.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:03.502Z","testFile":"policy.Policy.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.prototype.push.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:03.508Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:03.508Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:03.508Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.push.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:09.998Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.push.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:18.374Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.prototype.push.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:23.331Z","testFile":"policy.Policy.prototype.push.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.prototype.query.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:23.342Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:23.342Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:23.342Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.query.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:28.329Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.prototype.query.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:34.332Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.prototype.query.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:38.934Z","testFile":"policy.Policy.prototype.query.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policy.Policy.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:48:38.940Z","testFile":"policy.Policy.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:43.976Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:48.850Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:53.227Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policy.Policy.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:48:57.717Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.5999999999999999
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:02.268Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=name, rules)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policy.Policy.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policy.Policy.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:06.700Z","testFile":"policy.Policy.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policymap.PolicyMap.for.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:06.708Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:06.708Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:06.708Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.for.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.200000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:11.321Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.7999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:15.867Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policymap.PolicyMap.for.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.400000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:20.241Z","testFile":"policymap.PolicyMap.for.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policymap.PolicyMap.prototype.matches.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:20.249Z","testFile":"policymap.PolicyMap.prototype.matches.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:20.249Z","testFile":"policymap.PolicyMap.prototype.matches.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:20.249Z","testFile":"policymap.PolicyMap.prototype.matches.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:20.249Z","testFile":"policymap.PolicyMap.prototype.matches.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: boolean(false)
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBeDefined: boolean(false)
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: policymap.PolicyMap.prototype.push.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:25.442Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:25.442Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:25.442Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.prototype.push.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.600000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:29.877Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.prototype.push.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1.9999999999999998
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:34.336Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policymap.PolicyMap.prototype.push.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 4.800000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.prototype.push.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:38.800Z","testFile":"policymap.PolicyMap.prototype.push.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: policymap.PolicyMap.prototype.query.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:38.806Z","testFile":"policymap.PolicyMap.prototype.query.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:38.806Z","testFile":"policymap.PolicyMap.prototype.query.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:38.806Z","testFile":"policymap.PolicyMap.prototype.query.test.js","issue":"Weak assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:38.806Z","testFile":"policymap.PolicyMap.prototype.query.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:38.806Z","testFile":"policymap.PolicyMap.prototype.query.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBeDefined: null
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: policymap.PolicyMap.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:49:45.285Z","testFile":"policymap.PolicyMap.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.000000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:49.798Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.200000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:54.423Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.400000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:49:58.958Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [policymap.PolicyMap.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.1999999999999997
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:03.537Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policymap.PolicyMap.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.4
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:08.177Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=none)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [policymap.PolicyMap.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.600000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting policymap.PolicyMap.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:12.744Z","testFile":"policymap.PolicyMap.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.for.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:12.751Z","testFile":"rule.Rule.for.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:12.751Z","testFile":"rule.Rule.for.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:12.751Z","testFile":"rule.Rule.for.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 5.8000000000000025
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:17.366Z","testFile":"rule.Rule.for.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.for.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.6
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:21.897Z","testFile":"rule.Rule.for.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.for.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.000000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.for.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:26.394Z","testFile":"rule.Rule.for.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.allow.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:26.400Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:26.400Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:26.400Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.200000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:31.034Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.400000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 2.8000000000000003
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:35.635Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.400000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:40.188Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.clone.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:40.194Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:40.194Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:40.194Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.600000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:44.708Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.800000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.0000000000000004
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:49.230Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBeDefined] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 6.800000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:53.719Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.deny.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:53.725Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:53.725Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:50:53.725Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.0000000000000036
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:50:58.160Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.200000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.2000000000000006
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:02.533Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.200000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:07.037Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.matches.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:07.042Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:07.042Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:07.042Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: boolean(false)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.400000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:11.556Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.600000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.400000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:15.953Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.600000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:20.378Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.query.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:20.383Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Weak assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:20.383Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:20.384Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: null
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 7.800000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:24.795Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 8.000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.600000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:29.309Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 8.000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:33.933Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 3 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:33.961Z","testFile":"rule.Rule.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:33.962Z","testFile":"rule.Rule.test.js","issue":"Weak assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:51:33.962Z","testFile":"rule.Rule.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 8.200000000000003
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:38.499Z","testFile":"rule.Rule.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [rule.Rule.test.js :: toBe] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 8.400000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 3.800000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:51:43.902Z","testFile":"rule.Rule.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=verbs, regex)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [rule.Rule.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 8.400000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 4.000000000000001
+  },
+  "toEqual": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:52:33.514Z","testFile":"rule.Rule.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 20
+Failed Suites     : 0
+Total Tests       : 49
+Passed            : 49
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Policy.prototype.clone auto-generated (prototype)
+✅ PASS  - Rule auto-generated (prototype)
+✅ PASS  - PolicyMap.for auto-generated (prototype)
+✅ PASS  - PolicyMap.for Create PolicyMap with one policy
+✅ PASS  - PolicyMap.for Create PolicyMap with multiple policies
+✅ PASS  - PolicyMap.for Create PolicyMap with empty policies array
+✅ PASS  - PolicyMap.for PolicyMap.for checks source-aware result shape
+✅ PASS  - Policy.prototype.matches auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches Empty rules array returns false
+✅ PASS  - Policy auto-generated (prototype)
+✅ PASS  - Policy Policy constructor creates an instance
+✅ PASS  - Policy Policy constructor exposes an object-like result
+✅ PASS  - Matcher auto-generated (prototype)
+✅ PASS  - Matcher Default behavior - valid spec and default version
+✅ PASS  - Matcher Parameterized behavior - valid spec and custom version
+✅ PASS  - Matcher.for auto-generated (prototype)
+✅ PASS  - Policy.prototype.query auto-generated (prototype)
+✅ PASS  - Policy.prototype.query Query function with no rules returns null
+✅ PASS  - Policy.prototype.query Query function with explicit allow rule returns true
+✅ PASS  - Policy.prototype.query Query function with explicit deny rule returns false
+✅ PASS  - Policy.prototype.query Query function with mixed rules returns false if all rules deny
+✅ PASS  - Rule.prototype.clone auto-generated (prototype)
+✅ PASS  - PolicyMap auto-generated (prototype)
+✅ PASS  - PolicyMap PolicyMap constructor creates an instance
+✅ PASS  - PolicyMap PolicyMap constructor exposes an object-like result
+✅ PASS  - Rule.for auto-generated (prototype)
+✅ PASS  - Rule.for Default behavior - spec as string
+✅ PASS  - Rule.for Parameterized behavior - spec as variable
+✅ PASS  - Rule.for Safe invariant - result type
+✅ PASS  - Rule.for Safe invariant - result defined
+✅ PASS  - Rule.prototype.query auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.matches auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.matches Policy not found, should return false
+✅ PASS  - PolicyMap.prototype.matches Policy found, does not match path, should return false
+✅ PASS  - PolicyMap.prototype.matches Policy found, matches path but not ctx, should return false
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.query auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.query Query with undefined policy
+✅ PASS  - PolicyMap.prototype.query Query with simple parameterized behavior
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks stable result contract
+✅ PASS  - Rule.prototype.matches auto-generated (prototype)
+✅ PASS  - Rule.prototype.deny auto-generated (prototype)
+✅ PASS  - Rule.prototype.allow auto-generated (prototype)
+✅ PASS  - Policy.prototype.push auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.push auto-generated (prototype)
+✅ PASS  - Policy.for auto-generated (prototype)
+✅ PASS  - Policy.for Policy.for checks source-aware result shape
+✅ PASS  - Policy.for Policy.for checks stable result contract
+============================================================
+
+
+✅ Done.
+

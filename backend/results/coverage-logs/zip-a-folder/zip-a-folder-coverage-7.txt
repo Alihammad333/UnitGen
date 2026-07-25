@@ -1,0 +1,30 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package zip-a-folder
+
+Jest did not produce a baseline JSON result.
+(node:18708) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/zip-a-folder.ZipAFolder.test.js
+node:events:497
+    const err = new ERR_UNHANDLED_ERROR(stringifiedEr);
+                ^
+
+Error: Unhandled error. ([TypeError: fs.readdir is not a function])
+    at Archiver.emit (node:events:497:17)
+    at errorOrDestroy (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at Archiver.onerror (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readable-stream\lib\_stream_readable.js:704:47)
+    at Archiver.emit (node:events:508:28)
+    at Archiver.onGlobError (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\archiver\lib\core.js:643:10)
+    at ReaddirGlob.emit (node:events:508:28)
+    at C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\zip-a-folder\node_modules\readdir-glob\index.js:182:14
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at processTimers (node:internal/timers:541:7) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: [TypeError: fs.readdir is not a function]
+}
+
+Node.js v24.14.0
+

@@ -1,0 +1,400 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/image-downloader
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 6 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\.eslintrc.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\index.js
+==============================
+✅ Found 1 function(s): image
+✅ Exported function(s): image
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 9 scanned file(s)
+   - image: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - path -> path (require:*, cjs)
+   - request -> ./lib/request (require:*, cjs)
+🔗 Dependency usage:
+   image:
+   - path.extname -> path (member-call)
+   - path.extname -> path (member)
+   - path -> path (reference)
+   - URL -> global:URL (global-constructor-call)
+   - URL -> global:URL (global-reference)
+   - path.basename -> path (member-call)
+   - path.basename -> path (member)
+   - path.join -> path (member-call)
+   - path.join -> path (member)
+   - path.isAbsolute -> path (member-call)
+   - path.isAbsolute -> path (member)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - request() -> ./lib/request (direct-call)
+   - request -> ./lib/request (member-call)
+   - request -> ./lib/request (reference)
+🧩 Mock plan:
+   image:
+   - path (builtin) members: extname, basename, join, isAbsolute, resolve; targets: path, extname, basename, join, isAbsolute, resolve;
+   - global:URL (global) members: URL; targets: URL;
+   - ./lib/request (local) members: none; targets: request;
+🧪 Rendered mocks:
+   image: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\index.image.test.js
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\jest.config.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\lib\request.js
+==============================
+✅ Found 1 function(s): defaultExport
+✅ Exported function(s): defaultExport
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - none found (9 file(s) scanned)
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - createWriteStream -> fs (destructured-require:createWriteStream, cjs) [createWriteStream]
+   - TimeoutError -> ./TimeoutError (destructured-require:TimeoutError, cjs) [TimeoutError]
+   - http -> follow-redirects (destructured-require:http, cjs) [http]
+   - https -> follow-redirects (destructured-require:https, cjs) [https]
+🔗 Dependency usage:
+   defaultExport:
+   - https -> follow-redirects (reference)
+   - http -> follow-redirects (reference)
+   - https.get().on.on -> follow-redirects (member-chain-call)
+   - http.get().on.on -> follow-redirects (member-chain-call)
+   - https.get().on -> follow-redirects (member-chain-call)
+   - http.get().on -> follow-redirects (member-chain-call)
+   - https.get -> follow-redirects (member-call)
+   - http.get -> follow-redirects (member-call)
+   - createWriteStream() -> fs (direct-call)
+   - createWriteStream -> fs (member-call)
+   - createWriteStream -> fs (reference)
+   - new TimeoutError() -> ./TimeoutError (constructor-call)
+   - TimeoutError -> ./TimeoutError (reference)
+🧩 Mock plan:
+   defaultExport:
+   - follow-redirects (external) members: https, http; targets: https, http, on, get; chains: https.get.on.on, http.get.on.on, https.get.on, http.get.on, https.get, http.get;
+   - fs (builtin) members: createWriteStream; targets: createWriteStream;
+   - ./TimeoutError (local) members: TimeoutError; targets: TimeoutError;
+🧪 Rendered mocks:
+   defaultExport: 2 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\request.defaultExport.test.js
+
+==============================
+📄 Processing: benchmark_packages\image-downloader\lib\TimeoutError.js
+==============================
+✅ Found 1 function(s): TimeoutError
+ℹ️ Class-like exports will use constructor prototype generation: TimeoutError
+✅ Exported function(s): TimeoutError
+🏛️ Class export analysis:
+   - TimeoutError: constructor params (none), 0 prototype method(s), 0 static method(s)
+📚 Usage snippets:
+   - 4 snippet(s) found from 9 scanned file(s)
+   - TimeoutError: 4
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\TimeoutError.TimeoutError.test.js
+
+==============================
+📄 Skipping: benchmark_packages\image-downloader\test\index.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 1 API candidate(s), 1 public target candidate(s).
+✅ Dynamic preflight passed: image
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\image-downloader.dynamic.image.image.test.js (image)
+ℹ️ Dynamic API preflight kept 1 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 1
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 6
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  4
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+Ã°Å¸Â§Âª LLM injection summary for image
+   received: 6
+   sanitizer accepted: 2
+   sanitizer rejected: 3
+   duplicates: 1
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for image; keeping prototype only.
+Ã°Å¸Â§Âª LLM injection summary for defaultExport
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   - ASSERTION_ORACLE_FAILURE: 1
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+Ã¢Å“Â¨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\request.defaultExport.test.js (2 + 1 repair candidate(s))
+Ã°Å¸Â§Âª LLM injection summary for TimeoutError
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 6
+   fallback sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for TimeoutError; keeping prototype only.
+Ã°Å¸Â§Âª LLM injection summary for image
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+Ã¢Å¡Â Ã¯Â¸Â No runtime-passing LLM or fallback cases for image; keeping prototype only.
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 4
+Failed Suites     : 1
+Total Tests       : 7
+Passed            : 4
+Failed            : 3
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\request.defaultExport.test.js
+  ● defaultExport › fallback checks source-aware result shape asynchronously Request Failed. Status Code: 404 11 | // Consume response data to free up memory 12 | res.resume(); > 13 | reject(new Error('Request Failed.\n...
+------------------------------------------------------------
+✅ PASS  - image auto-generated (prototype)
+✅ PASS  - image should be exported as a function
+✅ PASS  - defaultExport auto-generated (prototype)
+❌ FAIL  - defaultExport fallback checks source-aware result shape asynchronously
+   Error: Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\image-downloader\lib\request.js:13:16) at R...
+❌ FAIL  - defaultExport fallback checks stable result contract
+   Error: Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\benchmark_packages\image-downloader\lib\request.js:13:16) at R...
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - HTTP URL
+   Error: TypeError: Cannot read properties of undefined (reading 'on') at IncomingMessage.Readable.pipe (node:internal/streams/readable:937:8) at RedirectableRequest.pipe (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_C...
+✅ PASS  - TimeoutError auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 1
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: request.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:03.504Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:03.507Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:03.507Z","testFile":"request.defaultExport.test.js","failureType":"TIMEOUT","before":"TypeError: Cannot read properties of undefined (reading 'on') at IncomingMessage.Readable.pipe (node:internal/streams/readable:937:8) at RedirectableRequest.pipe (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:19:11) at RedirectableRequest.emit (node:events:508:28) a","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: request.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ Repaired code has syntax errors.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: request.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:06.987Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:06.988Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:06.988Z","testFile":"request.defaultExport.test.js","failureType":"TIMEOUT","before":"TypeError: Cannot read properties of undefined (reading 'on') at IncomingMessage.Readable.pipe (node:internal/streams/readable:937:8) at RedirectableRequest.pipe (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:19:11) at RedirectableRequest.emit (node:events:508:28) a","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: request.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ Repaired code has syntax errors.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: request.defaultExport.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:10.279Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:10.279Z","testFile":"request.defaultExport.test.js","failureType":"RUNTIME_THROW","before":"Error: Request Failed. Status Code: 404 at RedirectableRequest.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:13:16) at RedirectableRequest.emit (node:events:508:28) at RedirectableRequest._processResponse (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_","repairStrategy":"AST/Semantic Repair","status":"classified"}
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-17T21:41:10.279Z","testFile":"request.defaultExport.test.js","failureType":"TIMEOUT","before":"TypeError: Cannot read properties of undefined (reading 'on') at IncomingMessage.Readable.pipe (node:internal/streams/readable:937:8) at RedirectableRequest.pipe (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\image-downloader\\lib\\request.js:19:11) at RedirectableRequest.emit (node:events:508:28) a","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: request.defaultExport.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ Repaired code has syntax errors.
+
+❌ Repair attempts finished.
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: request.defaultExport.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 5 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-17T21:41:14.722Z","testFile":"request.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result).resolves.toEqual({\n  filename: '/path/to/file'\n})","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-17T21:41:14.723Z","testFile":"request.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-17T21:41:14.723Z","testFile":"request.defaultExport.test.js","issue":"Failed oracle assertion","original":"expect(result == null || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-17T21:41:14.723Z","testFile":"request.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-17T21:41:14.723Z","testFile":"request.defaultExport.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBe: object(keys=none)
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+🔬 Runtime observed for toBe: object(keys=filename)
+🧠 [AST-Repair] Optimized: toBe
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 4
+Failed Suites     : 1
+Total Tests       : 7
+Passed            : 6
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen_Final_Completed_Version\backend\tests\generated\request.defaultExport.test.js
+  ● defaultExport › [repair-candidate] Default behavior - HTTP URL expect(received).resolves.toEqual() Matcher error: received value must be a promise or a function returning a promise Received has type: object Received...
+------------------------------------------------------------
+✅ PASS  - defaultExport auto-generated (prototype)
+✅ PASS  - defaultExport fallback checks source-aware result shape asynchronously
+✅ PASS  - defaultExport fallback checks stable result contract
+❌ FAIL  - defaultExport [repair-candidate] Default behavior - HTTP URL
+   Error: Error: expect(received).resolves.toEqual() Matcher error: received value must be a promise or a function returning a promise Received has type: object Received has value: {"filename": "/path/to/file"} at Object.toEqua...
+✅ PASS  - image auto-generated (prototype)
+✅ PASS  - image should be exported as a function
+✅ PASS  - TimeoutError auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

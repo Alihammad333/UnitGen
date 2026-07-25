@@ -1,0 +1,102 @@
+
+> unitgen@1.0.0 start
+> node src/index.js ..\benchmark_packages\plural
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 2 .js file(s).
+ℹ️ Package project detected: preferring package entry/public API files.
+ℹ️ Selected 1 entry file(s) for testing.
+
+==============================
+📄 Processing: ..\benchmark_packages\plural\index.js
+==============================
+✅ Found 3 function(s): type, addRule, plural
+✅ Exported function(s): addRule, plural
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.addRule.test.js
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\index.plural.test.js
+ℹ️ Package-entry mode: using first compatible entry file and stopping further entry scanning.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 1
+⚠️ Files skipped:  0
+⚠️ Class-like exports skipped: 0
+🧾 Tests created:  2
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via Ollama...
+
+⚠️ LLM produced no safe test cases for addRule; keeping prototype only.
+⚠️ LLM produced no safe test cases for plural; keeping prototype only.
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 2
+Failed Suites     : 0
+Total Tests       : 2
+Passed            : 2
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - plural auto-generated (prototype)
+✅ PASS  - addRule auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+
+🔍 Analyzing File: index.addRule.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.addRule.test.js] -> Before: 0 | After: 2
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Regression detected (Failed suites increased).
+⚠️ Stability Check Failed: Reverting index.addRule.test.js
+
+🔍 Analyzing File: index.plural.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [index.plural.test.js] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0.2,
+    "failures": 1
+  }
+}
+✨ Optimization: Assertion strengthened without breaking stability.
+✅ Success: Enhancement committed to index.plural.test.js
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 2
+Failed Suites     : 0
+Total Tests       : 2
+Passed            : 2
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - addRule auto-generated (prototype)
+✅ PASS  - plural auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

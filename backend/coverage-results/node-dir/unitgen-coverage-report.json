@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-20T12:07:32.757Z",
+  "packageName": "node-dir",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\node-dir",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 12,
+  "totalTests": 31,
+  "passingTests": 31,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 244,
+        "covered": 181,
+        "skipped": 0,
+        "pct": 74.18
+      },
+      "statements": {
+        "total": 289,
+        "covered": 199,
+        "skipped": 0,
+        "pct": 68.85
+      },
+      "functions": {
+        "total": 33,
+        "covered": 29,
+        "skipped": 0,
+        "pct": 87.87
+      },
+      "branches": {
+        "total": 260,
+        "covered": 155,
+        "skipped": 0,
+        "pct": 59.61
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": []
+}

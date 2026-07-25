@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-06-20T19:51:48.496Z",
+  "packageName": "pull-stream",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\pull-stream",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 27,
+  "totalTests": 151,
+  "passingTests": 141,
+  "failedTests": 10,
+  "coverageMode": "passing-tests-only-isolated-coverage-runs",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 294,
+        "covered": 219,
+        "skipped": 0,
+        "pct": 74.48
+      },
+      "statements": {
+        "total": 329,
+        "covered": 235,
+        "skipped": 0,
+        "pct": 71.42
+      },
+      "functions": {
+        "total": 92,
+        "covered": 63,
+        "skipped": 0,
+        "pct": 68.47
+      },
+      "branches": {
+        "total": 214,
+        "covered": 122,
+        "skipped": 0,
+        "pct": 57
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": [
+    {
+      "file": "tests\\generated\\unique.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Normal behavior - unique numbers"
+    },
+    {
+      "file": "tests\\generated\\non-unique.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] field is an empty array"
+    },
+    {
+      "file": "tests\\generated\\log.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Safe invariant - log function returns undefined"
+    },
+    {
+      "file": "tests\\generated\\drain.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Safe invariant - abort function called without read"
+    },
+    {
+      "file": "tests\\generated\\take.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Test with ended true"
+    },
+    {
+      "file": "tests\\generated\\pull.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Parameterized behavior - multiple function arguments"
+    },
+    {
+      "file": "tests\\generated\\empty.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Return true when calling empty function"
+    },
+    {
+      "file": "tests\\generated\\concat.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Safe invariant test: Result is a string"
+    },
+    {
+      "file": "tests\\generated\\keys.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Empty object"
+    },
+    {
+      "file": "tests\\generated\\collect.defaultExport.test.js",
+      "name": "defaultExport [repair-candidate] Safe invariant - result is an array"
+    }
+  ]
+}

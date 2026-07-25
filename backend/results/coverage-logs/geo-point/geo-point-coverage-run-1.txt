@@ -1,0 +1,1258 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/geo-point
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 3 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\geo-point\build\geo-point.js
+==============================
+✅ Found 3 function(s): isObject, GeoPoint, adjust
+ℹ️ Class-like exports will use constructor prototype generation: GeoPoint
+✅ Exported function(s): GeoPoint
+🏛️ Class export analysis:
+   - GeoPoint: constructor params (latitude, longitude), 10 prototype method(s), 8 static method(s)
+     prototype: calculateDestination, calculateBearing, calculateDistance, toString, toGeoJSON, toObject, toLatLngArray, toLngLatArray, toTile, adjustPrecision
+     static: fromGeoJSON, fromObject, calculateDistance, calculateBearing, calculateDestination, fromLatLngArray, fromLngLatArray, toTile
+📚 Usage snippets:
+   - 75 snippet(s) found from 4 scanned file(s)
+   - GeoPoint: 5
+   - fromGeoJSON: 5
+   - fromObject: 5
+   - calculateDistance: 5
+   - calculateBearing: 5
+   - calculateDestination: 5
+   - fromLatLngArray: 5
+   - fromLngLatArray: 5
+   - toTile: 5
+   - toString: 5
+   - toGeoJSON: 5
+   - toObject: 5
+   - toLatLngArray: 5
+   - toLngLatArray: 5
+   - adjustPrecision: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - deg2rad -> compute-deg2rad (require:*, cjs)
+   - rad2deg -> compute-rad2deg (require:*, cjs)
+🔗 Dependency usage:
+   GeoPoint.calculateDistance:
+   - deg2rad() -> compute-deg2rad (direct-call)
+   - deg2rad -> compute-deg2rad (member-call)
+   - deg2rad -> compute-deg2rad (reference)
+   GeoPoint.calculateBearing:
+   - deg2rad() -> compute-deg2rad (direct-call)
+   - deg2rad -> compute-deg2rad (member-call)
+   - deg2rad -> compute-deg2rad (reference)
+   - rad2deg() -> compute-rad2deg (direct-call)
+   - rad2deg -> compute-rad2deg (member-call)
+   - rad2deg -> compute-rad2deg (reference)
+   GeoPoint.calculateDestination:
+   - deg2rad() -> compute-deg2rad (direct-call)
+   - deg2rad -> compute-deg2rad (member-call)
+   - deg2rad -> compute-deg2rad (reference)
+   - rad2deg() -> compute-rad2deg (direct-call)
+   - rad2deg -> compute-rad2deg (member-call)
+   - rad2deg -> compute-rad2deg (reference)
+   GeoPoint.prototype.calculateDestination:
+   - deg2rad() -> compute-deg2rad (transitive-direct-call)
+   - deg2rad -> compute-deg2rad (transitive-member-call)
+   - deg2rad -> compute-deg2rad (transitive-reference)
+   - rad2deg() -> compute-rad2deg (transitive-direct-call)
+   - rad2deg -> compute-rad2deg (transitive-member-call)
+   - rad2deg -> compute-rad2deg (transitive-reference)
+   GeoPoint.prototype.calculateBearing:
+   - deg2rad() -> compute-deg2rad (transitive-direct-call)
+   - deg2rad -> compute-deg2rad (transitive-member-call)
+   - deg2rad -> compute-deg2rad (transitive-reference)
+   - rad2deg() -> compute-rad2deg (transitive-direct-call)
+   - rad2deg -> compute-rad2deg (transitive-member-call)
+   - rad2deg -> compute-rad2deg (transitive-reference)
+   GeoPoint.prototype.calculateDistance:
+   - deg2rad() -> compute-deg2rad (transitive-direct-call)
+   - deg2rad -> compute-deg2rad (transitive-member-call)
+   - deg2rad -> compute-deg2rad (transitive-reference)
+🧩 Mock plan:
+   GeoPoint.calculateDistance:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+   GeoPoint.calculateBearing:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+   - compute-rad2deg (external) members: none; targets: rad2deg;
+   GeoPoint.calculateDestination:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+   - compute-rad2deg (external) members: none; targets: rad2deg;
+   GeoPoint.prototype.calculateDestination:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+   - compute-rad2deg (external) members: none; targets: rad2deg;
+   GeoPoint.prototype.calculateBearing:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+   - compute-rad2deg (external) members: none; targets: rad2deg;
+   GeoPoint.prototype.calculateDistance:
+   - compute-deg2rad (external) members: none; targets: deg2rad;
+🧪 Rendered mocks:
+   GeoPoint.calculateDistance: 1 mock block(s)
+   GeoPoint.calculateBearing: 2 mock block(s)
+   GeoPoint.calculateDestination: 2 mock block(s)
+   GeoPoint.prototype.calculateDestination: 2 mock block(s)
+   GeoPoint.prototype.calculateBearing: 2 mock block(s)
+   GeoPoint.prototype.calculateDistance: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromGeoJSON.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromObject.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.calculateDistance.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.calculateBearing.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.calculateDestination.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromLatLngArray.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromLngLatArray.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.toTile.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.calculateDestination.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.calculateBearing.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.calculateDistance.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toString.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toGeoJSON.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toObject.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toLatLngArray.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toLngLatArray.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toTile.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.adjustPrecision.test.js
+
+==============================
+📄 Processing: benchmark_packages\geo-point\build\geo-point.spec.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\geo-point\build\index.js
+==============================
+⚠️ No functions detected.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 0 API candidate(s), 0 public target candidate(s).
+ℹ️ Dynamic API preflight kept 0 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 3
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  19
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for GeoPoint
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.test.js (2)
+🧪 LLM injection summary for GeoPoint.fromGeoJSON
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 6
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 6
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromGeoJSON.test.js (6)
+🧪 LLM injection summary for GeoPoint.fromObject
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 1
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 4
+   - NON_REPAIRABLE_INPUT_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromObject.test.js (1)
+🧪 LLM injection summary for GeoPoint.calculateDistance
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.calculateDistance; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.calculateBearing
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.calculateBearing; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.calculateDestination
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.calculateDestination; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.fromLatLngArray
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 2
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromLatLngArray.test.js (4)
+🧪 LLM injection summary for GeoPoint.fromLngLatArray
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.fromLngLatArray.test.js (7)
+🧪 LLM injection summary for GeoPoint.toTile
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 2
+   runtime failed: 4
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.toTile.test.js (4 + 1 repair candidate(s))
+🧪 LLM injection summary for GeoPoint.prototype.calculateDestination
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.prototype.calculateDestination; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.prototype.calculateBearing
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.prototype.calculateBearing; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.prototype.calculateDistance
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for GeoPoint.prototype.calculateDistance; keeping prototype only.
+🧪 LLM injection summary for GeoPoint.prototype.toString
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toString.test.js (7 + 1 repair candidate(s))
+🧪 LLM injection summary for GeoPoint.prototype.toGeoJSON
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 3
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 6
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   - RUNTIME_PASSED: 3
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 3
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toGeoJSON.test.js (5 + 1 repair candidate(s))
+🧪 LLM injection summary for GeoPoint.prototype.toObject
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 8
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NUMERIC_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toObject.test.js (7 + 1 repair candidate(s))
+🧪 LLM injection summary for GeoPoint.prototype.toLatLngArray
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 2
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toLatLngArray.test.js (4)
+🧪 LLM injection summary for GeoPoint.prototype.toLngLatArray
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toLngLatArray.test.js (4)
+🧪 LLM injection summary for GeoPoint.prototype.toTile
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 6
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toTile.test.js (2 + 1 repair candidate(s))
+🧪 LLM injection summary for GeoPoint.prototype.adjustPrecision
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 5
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 7
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 5
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.adjustPrecision.test.js (7)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 19
+Failed Suites     : 4
+Total Tests       : 84
+Passed            : 80
+Failed            : 4
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toGeoJSON.test.js
+  ● GeoPoint.prototype.toGeoJSON › [repair-candidate] Return GeoJSON Point with longitude and latitude expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { "coordinates": Array [ - ...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toObject.test.js
+  ● GeoPoint.prototype.toObject › [repair-candidate] Return object with correct latitude and longitude values expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected diff...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.toTile.test.js
+  ● GeoPoint.toTile › [repair-candidate] Calculate tile coordinates for a given point and zoom level expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - "x": 130986, - "y": 87152...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toTile.test.js
+  ● GeoPoint.prototype.toTile › [repair-candidate] Calculate tile coordinates at zoom level 7 expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - "x": 65, - "y": 42, + "x": 64, +...
+------------------------------------------------------------
+✅ PASS  - GeoPoint.fromObject auto-generated (prototype)
+✅ PASS  - GeoPoint.fromObject Valid object with latitude and longitude properties
+✅ PASS  - GeoPoint.fromGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.fromGeoJSON Valid GeoJSON Point
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates Type
+✅ PASS  - GeoPoint.prototype.calculateDistance auto-generated (prototype)
+✅ PASS  - GeoPoint.calculateBearing auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.calculateBearing auto-generated (prototype)
+✅ PASS  - GeoPoint.calculateDistance auto-generated (prototype)
+✅ PASS  - GeoPoint auto-generated (prototype)
+✅ PASS  - GeoPoint GeoPoint constructor creates an instance
+✅ PASS  - GeoPoint GeoPoint constructor exposes an object-like result
+✅ PASS  - GeoPoint.prototype.adjustPrecision auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with zero
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with large positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision greater than number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision equal to number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks stable result contract
+✅ PASS  - GeoPoint.prototype.toLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with latitude and longitude as numbers
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with correct number of elements
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.fromLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from valid array
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from array with more than two elements
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.prototype.toGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct type
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct keys
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with keys 'type' and 'coordinates'
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks stable result contract
+❌ FAIL  - GeoPoint.prototype.toGeoJSON [repair-candidate] Return GeoJSON Point with longitude and latitude
+   Error: Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { "coordinates": Array [ - -0.15, - 51.5, + 1, + 1, ], "type": "Point", } at Object.<anonymous> (C:\Users\DELL\Documents\...
+✅ PASS  - GeoPoint.prototype.toObject auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toObject Return a plain object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with correct latitude and longitude types
+✅ PASS  - GeoPoint.prototype.toObject Return object with expected keys
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties defined
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks stable result contract
+❌ FAIL  - GeoPoint.prototype.toObject [repair-candidate] Return object with correct latitude and longitude values
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\C...
+✅ PASS  - GeoPoint.prototype.toLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result is an array
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result has length 2
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks stable result contract
+✅ PASS  - GeoPoint.fromLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with positive values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with negative values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with zero values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with decimal values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with mixed values
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks stable result contract
+✅ PASS  - GeoPoint.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.toTile Safe invariant: Result should have 'x' and 'y' properties
+✅ PASS  - GeoPoint.toTile Calculate tile coordinates for a low zoom level
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks stable result contract
+❌ FAIL  - GeoPoint.toTile [repair-candidate] Calculate tile coordinates for a given point and zoom level
+   Error: Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - "x": 130986, - "y": 87152, + "x": 63, + "y": 42, } at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continua...
+✅ PASS  - GeoPoint.prototype.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks stable result contract
+❌ FAIL  - GeoPoint.prototype.toTile [repair-candidate] Calculate tile coordinates at zoom level 7
+   Error: Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - "x": 65, - "y": 42, + "x": 64, + "y": 63, } at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Ve...
+✅ PASS  - GeoPoint.prototype.toString auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude as a string with specific values
+✅ PASS  - GeoPoint.prototype.toString Returns longitude and latitude as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with zero values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with negative values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with positive values as a string
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks stable result contract
+✅ PASS  - GeoPoint.prototype.toString [repair-candidate] Observed behavior returns "1,1"
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 5
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: geo-point.GeoPoint.prototype.toGeoJSON.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:47:57.206Z","testFile":"geo-point.GeoPoint.prototype.toGeoJSON.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { \"coordinates\": Array [ - -0.15, - 51.5, + 1, + 1, ], \"type\": \"Point\", } at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toGeoJSON.test.j","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-18T20:48:00.531Z","testFile":"geo-point.GeoPoint.prototype.toGeoJSON.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-18T20:48:00.531Z","testFile":"geo-point.GeoPoint.prototype.toGeoJSON.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🔧 Repairing file: geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:48:00.531Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toObject.test.js:325:31) at ","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-18T20:48:03.827Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: geo-point.GeoPoint.toTile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:48:03.828Z","testFile":"geo-point.GeoPoint.toTile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - \"x\": 130986, - \"y\": 87152, + \"x\": 63, + \"y\": 42, } at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.toTile.test.js:297:22) at Promise.finally.com","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-18T20:48:07.112Z","testFile":"geo-point.GeoPoint.toTile.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-18T20:48:07.112Z","testFile":"geo-point.GeoPoint.toTile.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🔧 Repairing file: geo-point.GeoPoint.prototype.toTile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:48:07.112Z","testFile":"geo-point.GeoPoint.prototype.toTile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toEqual(expected) // deep equality - Expected - 2 + Received + 2 Object { - \"x\": 65, - \"y\": 42, + \"x\": 64, + \"y\": 63, } at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toTile.test.js:280:22) at Promise.finally.","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-18T20:48:10.433Z","testFile":"geo-point.GeoPoint.prototype.toTile.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-18T20:48:10.433Z","testFile":"geo-point.GeoPoint.prototype.toTile.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🤖 LLM repairing: geo-point.GeoPoint.prototype.toObject.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:48:15.075Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toObject.test.js:325:31) at ","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-18T20:48:18.444Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: geo-point.GeoPoint.prototype.toObject.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-18T20:48:23.192Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\geo-point.GeoPoint.prototype.toObject.test.js:325:31) at ","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-18T20:48:26.597Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🤖 LLM repairing: geo-point.GeoPoint.prototype.toObject.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+
+❌ Repair attempts finished.
+
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 19
+Failed Suites     : 1
+Total Tests       : 84
+Passed            : 83
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toObject.test.js
+  ● GeoPoint.prototype.toObject › [repair-candidate] Return object with correct latitude and longitude values expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected diff...
+------------------------------------------------------------
+✅ PASS  - GeoPoint.prototype.toObject auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toObject Return a plain object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with correct latitude and longitude types
+✅ PASS  - GeoPoint.prototype.toObject Return object with expected keys
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties defined
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks stable result contract
+❌ FAIL  - GeoPoint.prototype.toObject [repair-candidate] Return object with correct latitude and longitude values
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\C...
+✅ PASS  - GeoPoint.fromGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.fromGeoJSON Valid GeoJSON Point
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates Type
+✅ PASS  - GeoPoint.prototype.toLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result is an array
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result has length 2
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks stable result contract
+✅ PASS  - GeoPoint.prototype.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks stable result contract
+✅ PASS  - GeoPoint.prototype.toTile Calculate tile coordinates at zoom level 7
+✅ PASS  - GeoPoint.prototype.toLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with latitude and longitude as numbers
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with correct number of elements
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.fromLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with positive values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with negative values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with zero values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with decimal values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with mixed values
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks stable result contract
+✅ PASS  - GeoPoint.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.toTile Safe invariant: Result should have 'x' and 'y' properties
+✅ PASS  - GeoPoint.toTile Calculate tile coordinates for a low zoom level
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks stable result contract
+✅ PASS  - GeoPoint.toTile Calculate tile coordinates for a given point and zoom level
+✅ PASS  - GeoPoint.fromLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from valid array
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from array with more than two elements
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct type
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct keys
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with keys 'type' and 'coordinates'
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks stable result contract
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with longitude and latitude
+✅ PASS  - GeoPoint.prototype.toString auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude as a string with specific values
+✅ PASS  - GeoPoint.prototype.toString Returns longitude and latitude as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with zero values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with negative values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with positive values as a string
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks stable result contract
+✅ PASS  - GeoPoint.prototype.toString [repair-candidate] Observed behavior returns "1,1"
+✅ PASS  - GeoPoint.prototype.calculateBearing auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.adjustPrecision auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with zero
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with large positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision greater than number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision equal to number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks stable result contract
+✅ PASS  - GeoPoint auto-generated (prototype)
+✅ PASS  - GeoPoint GeoPoint constructor creates an instance
+✅ PASS  - GeoPoint GeoPoint constructor exposes an object-like result
+✅ PASS  - GeoPoint.calculateBearing auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.calculateDistance auto-generated (prototype)
+✅ PASS  - GeoPoint.fromObject auto-generated (prototype)
+✅ PASS  - GeoPoint.fromObject Valid object with latitude and longitude properties
+✅ PASS  - GeoPoint.calculateDistance auto-generated (prototype)
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: geo-point.GeoPoint.prototype.toObject.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 13 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(result.latitude).toBeCloseTo(0, 5)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(result.longitude).toBeCloseTo(0, 5)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.toObject).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(typeof result.latitude).toBe('number')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(typeof result.longitude).toBe('number')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(typeof result).toBe(\"object\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Failed oracle assertion","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Weak assertion","original":"expect(result.latitude).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Weak assertion","original":"expect(result.longitude).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-18T20:48:38.136Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+🔬 Runtime observed for toBeCloseTo: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeCloseTo
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeCloseTo + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:48:42.882Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result.latitude).toBeCloseTo(0, 5)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBeCloseTo: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeCloseTo
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeCloseTo + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:48:47.631Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result.longitude).toBeCloseTo(0, 5)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:48:52.398Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.toObject).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:48:57.140Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:01.822Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:06.629Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(typeof result.latitude).toBe('number')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:11.205Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(typeof result.longitude).toBe('number')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.6
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:15.825Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe(\"object\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBe + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:20.391Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\").toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeDefined + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:25.609Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeDefined + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:34.192Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result.latitude).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeDefined + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:37.415Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result.longitude).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=latitude, longitude)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [geo-point.GeoPoint.prototype.toObject.test.js :: toBeDefined + observed] -> Before: 2 | After: 2
+📚 Learning DB State Updated: {
+  "toBeCloseTo": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting geo-point.GeoPoint.prototype.toObject.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-18T20:49:41.468Z","testFile":"geo-point.GeoPoint.prototype.toObject.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 19
+Failed Suites     : 1
+Total Tests       : 84
+Passed            : 83
+Failed            : 1
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\geo-point.GeoPoint.prototype.toObject.test.js
+  ● GeoPoint.prototype.toObject › [repair-candidate] Return object with correct latitude and longitude values expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected diff...
+------------------------------------------------------------
+✅ PASS  - GeoPoint.prototype.toObject auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toObject Return a plain object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toObject Return object with correct latitude and longitude types
+✅ PASS  - GeoPoint.prototype.toObject Return object with expected keys
+✅ PASS  - GeoPoint.prototype.toObject Return object with latitude and longitude properties defined
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toObject GeoPoint.toObject checks stable result contract
+❌ FAIL  - GeoPoint.prototype.toObject [repair-candidate] Return object with correct latitude and longitude values
+   Error: Error: expect(received).toBeCloseTo(expected, precision) Expected: 0 Received: 1 Expected precision: 5 Expected difference: < 0.000005 Received difference: 1 at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\C...
+✅ PASS  - GeoPoint.fromGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.fromGeoJSON Valid GeoJSON Point
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Missing Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Type
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates
+✅ PASS  - GeoPoint.fromGeoJSON Invalid GeoJSON Point - Incorrect Coordinates Type
+✅ PASS  - GeoPoint.prototype.toLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with latitude and longitude as numbers
+✅ PASS  - GeoPoint.prototype.toLatLngArray Returns an array with correct number of elements
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLatLngArray GeoPoint.toLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.calculateBearing auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toGeoJSON auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct type
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with correct keys
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with keys 'type' and 'coordinates'
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toGeoJSON GeoPoint.toGeoJSON checks stable result contract
+✅ PASS  - GeoPoint.prototype.toGeoJSON Return GeoJSON Point with longitude and latitude
+✅ PASS  - GeoPoint.prototype.calculateDistance auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with positive values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with negative values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with zero values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with decimal values
+✅ PASS  - GeoPoint.fromLngLatArray Create GeoPoint from LngLat array with mixed values
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLngLatArray GeoPoint.fromLngLatArray checks stable result contract
+✅ PASS  - GeoPoint.prototype.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toTile GeoPoint.toTile checks stable result contract
+✅ PASS  - GeoPoint.prototype.toTile Calculate tile coordinates at zoom level 7
+✅ PASS  - GeoPoint.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toString auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude as a string with specific values
+✅ PASS  - GeoPoint.prototype.toString Returns longitude and latitude as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with zero values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with negative values as a string
+✅ PASS  - GeoPoint.prototype.toString Returns latitude and longitude with positive values as a string
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toString GeoPoint.toString checks stable result contract
+✅ PASS  - GeoPoint.prototype.toString [repair-candidate] Observed behavior returns "1,1"
+✅ PASS  - GeoPoint.prototype.calculateDestination auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLatLngArray auto-generated (prototype)
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from valid array
+✅ PASS  - GeoPoint.fromLatLngArray Create GeoPoint from array with more than two elements
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks source-aware result shape
+✅ PASS  - GeoPoint.fromLatLngArray GeoPoint.fromLatLngArray checks stable result contract
+✅ PASS  - GeoPoint.toTile auto-generated (prototype)
+✅ PASS  - GeoPoint.toTile Safe invariant: Result should have 'x' and 'y' properties
+✅ PASS  - GeoPoint.toTile Calculate tile coordinates for a low zoom level
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks source-aware result shape
+✅ PASS  - GeoPoint.toTile GeoPoint.toTile checks stable result contract
+✅ PASS  - GeoPoint.toTile Calculate tile coordinates for a given point and zoom level
+✅ PASS  - GeoPoint.fromObject auto-generated (prototype)
+✅ PASS  - GeoPoint.fromObject Valid object with latitude and longitude properties
+✅ PASS  - GeoPoint.prototype.toLngLatArray auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result is an array
+✅ PASS  - GeoPoint.prototype.toLngLatArray Safe invariant - result has length 2
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.toLngLatArray GeoPoint.toLngLatArray checks stable result contract
+✅ PASS  - GeoPoint auto-generated (prototype)
+✅ PASS  - GeoPoint GeoPoint constructor creates an instance
+✅ PASS  - GeoPoint GeoPoint constructor exposes an object-like result
+✅ PASS  - GeoPoint.calculateDistance auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.adjustPrecision auto-generated (prototype)
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with zero
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with large positive integer
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision greater than number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision Adjust precision with precision equal to number of decimal places
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks source-aware result shape
+✅ PASS  - GeoPoint.prototype.adjustPrecision GeoPoint.adjustPrecision checks stable result contract
+✅ PASS  - GeoPoint.prototype.calculateBearing auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

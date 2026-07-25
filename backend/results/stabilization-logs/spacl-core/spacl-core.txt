@@ -1,0 +1,1313 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/spacl-core
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 7 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\index.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\matcher.js
+==============================
+✅ Found 4 function(s): Matcher, compile, flatten, finalise
+ℹ️ Class-like exports will use constructor prototype generation: Matcher
+✅ Exported function(s): Matcher
+🏛️ Class export analysis:
+   - Matcher: constructor params (spec, version), 0 prototype method(s), 1 static method(s)
+     static: for
+📚 Usage snippets:
+   - 10 snippet(s) found from 14 scanned file(s)
+   - Matcher: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\policy.js
+==============================
+✅ Found 1 function(s): Policy
+ℹ️ Class-like exports will use constructor prototype generation: Policy
+✅ Exported function(s): Policy
+🏛️ Class export analysis:
+   - Policy: constructor params (name, rules), 4 prototype method(s), 1 static method(s)
+     prototype: push, query, matches, clone
+     static: for
+📚 Usage snippets:
+   - 30 snippet(s) found from 14 scanned file(s)
+   - Policy: 5
+   - push: 5
+   - query: 5
+   - matches: 5
+   - clone: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.push.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.clone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\policymap.js
+==============================
+✅ Found 1 function(s): PolicyMap
+ℹ️ Class-like exports will use constructor prototype generation: PolicyMap
+✅ Exported function(s): PolicyMap
+🏛️ Class export analysis:
+   - PolicyMap: constructor params (policies), 3 prototype method(s), 1 static method(s)
+     prototype: push, query, matches
+     static: for
+📚 Usage snippets:
+   - 23 snippet(s) found from 14 scanned file(s)
+   - PolicyMap: 3
+   - push: 5
+   - query: 5
+   - matches: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - none
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.push.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\queryable.js
+==============================
+⚠️ No functions detected.
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\dist\rule.js
+==============================
+✅ Found 1 function(s): Rule
+ℹ️ Class-like exports will use constructor prototype generation: Rule
+✅ Exported function(s): Rule
+🏛️ Class export analysis:
+   - Rule: constructor params (spec), 5 prototype method(s), 1 static method(s)
+     prototype: allow, deny, query, matches, clone
+     static: for
+📚 Usage snippets:
+   - 34 snippet(s) found from 14 scanned file(s)
+   - Rule: 4
+   - allow: 5
+   - deny: 5
+   - query: 5
+   - matches: 5
+   - clone: 5
+   - for: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - matcher_1 -> ./matcher (require:*, cjs)
+🔗 Dependency usage:
+   - none
+🧩 Mock plan:
+   - none
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.allow.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.deny.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.query.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.matches.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.clone.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.for.test.js
+
+==============================
+📄 Processing: benchmark_packages\spacl-core\jest.config.js
+==============================
+⚠️ No functions detected.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 0 API candidate(s), 0 public target candidate(s).
+ℹ️ Dynamic API preflight kept 0 test file(s), skipped 0 unsafe/non-executable API(s).
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 7
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  20
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for Matcher
+   received: 5
+   sanitizer accepted: 2
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 2
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\matcher.Matcher.test.js (2)
+🧪 LLM injection summary for Matcher.for
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Matcher.for; keeping prototype only.
+🧪 LLM injection summary for Policy
+   received: 6
+   sanitizer accepted: 2
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.test.js (2)
+🧪 LLM injection summary for Policy.prototype.push
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Policy.prototype.push; keeping prototype only.
+🧪 LLM injection summary for Policy.prototype.query
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 3
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 0
+   fallback runtime failed: 1
+   fallback injected: 0
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.query.test.js (3)
+🧪 LLM injection summary for Policy.prototype.matches
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 3
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 0
+   fallback runtime failed: 1
+   fallback injected: 0
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.prototype.matches.test.js (3)
+🧪 LLM injection summary for Policy.prototype.clone
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 3
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Policy.prototype.clone; keeping prototype only.
+🧪 LLM injection summary for Policy.for
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policy.Policy.for.test.js (3)
+🧪 LLM injection summary for PolicyMap
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 1
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.test.js (2)
+🧪 LLM injection summary for PolicyMap.prototype.push
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 4
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for PolicyMap.prototype.push; keeping prototype only.
+🧪 LLM injection summary for PolicyMap.prototype.query
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 5
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.query.test.js (2)
+🧪 LLM injection summary for PolicyMap.prototype.matches
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 2
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.prototype.matches.test.js (4)
+🧪 LLM injection summary for PolicyMap.for
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\policymap.PolicyMap.for.test.js (4)
+🧪 LLM injection summary for Rule
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.allow
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.allow; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.deny
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.deny; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.query
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.query; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.matches
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.matches; keeping prototype only.
+🧪 LLM injection summary for Rule.prototype.clone
+   received: 5
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 5
+   fallback sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+⚠️ No runtime-passing LLM or fallback cases for Rule.prototype.clone; keeping prototype only.
+🧪 LLM injection summary for Rule.for
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 2
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.for.test.js (2)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 20
+Failed Suites     : 5
+Total Tests       : 47
+Passed            : 42
+Failed            : 5
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.deny.test.js
+  ● Rule.prototype.deny › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA-...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.clone.test.js
+  ● Rule.prototype.clone › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.allow.test.js
+  ● Rule.prototype.allow › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.query.test.js
+  ● Rule.prototype.query › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.matches.test.js
+  ● Rule.prototype.matches › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-...
+------------------------------------------------------------
+✅ PASS  - Rule.for auto-generated (prototype)
+✅ PASS  - Rule.for Default behavior - spec as string
+✅ PASS  - Rule.for Parameterized behavior - spec as variable
+✅ PASS  - Policy.prototype.clone auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches Matches function with empty rules array
+✅ PASS  - Policy.prototype.matches Matches function with one rule returning false
+✅ PASS  - Policy.prototype.matches Matches function with multiple rules, all returning false
+✅ PASS  - PolicyMap.prototype.push auto-generated (prototype)
+✅ PASS  - Matcher.for auto-generated (prototype)
+❌ FAIL  - Rule.prototype.deny auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.clone auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+✅ PASS  - Matcher auto-generated (prototype)
+✅ PASS  - Matcher Default behavior - valid spec and default version
+✅ PASS  - Matcher Parameterized behavior - valid spec and custom version
+✅ PASS  - Policy.prototype.query auto-generated (prototype)
+✅ PASS  - Policy.prototype.query Query function with no rules returns null
+✅ PASS  - Policy.prototype.query Query function with all rules returning false returns false
+✅ PASS  - Policy.prototype.query Query function with mixed rules returns false if no rule returns true
+❌ FAIL  - Rule.prototype.allow auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.query auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+✅ PASS  - Rule auto-generated (prototype)
+❌ FAIL  - Rule.prototype.matches auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+✅ PASS  - Policy.prototype.push auto-generated (prototype)
+✅ PASS  - PolicyMap auto-generated (prototype)
+✅ PASS  - PolicyMap PolicyMap constructor creates an instance
+✅ PASS  - PolicyMap PolicyMap constructor exposes an object-like result
+✅ PASS  - Policy auto-generated (prototype)
+✅ PASS  - Policy Policy constructor creates an instance
+✅ PASS  - Policy Policy constructor exposes an object-like result
+✅ PASS  - PolicyMap.prototype.query auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks stable result contract
+✅ PASS  - PolicyMap.prototype.matches auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.matches Policy found, does not match path and ctx
+✅ PASS  - PolicyMap.prototype.matches Policy not found, returns false with empty ctx
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks stable result contract
+✅ PASS  - Policy.for auto-generated (prototype)
+✅ PASS  - Policy.for Create a policy with no rules
+✅ PASS  - Policy.for Policy.for checks source-aware result shape
+✅ PASS  - Policy.for Policy.for checks stable result contract
+✅ PASS  - PolicyMap.for auto-generated (prototype)
+✅ PASS  - PolicyMap.for Safe invariant - result type check
+✅ PASS  - PolicyMap.for Safe invariant - result not null
+✅ PASS  - PolicyMap.for PolicyMap.for checks source-aware result shape
+✅ PASS  - PolicyMap.for PolicyMap.for checks stable result contract
+============================================================
+
+
+🔁 Running adaptive repair...
+
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:15:57.563Z","testFile":"rule.Rule.prototype.deny.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:15:57.598Z","testFile":"rule.Rule.prototype.clone.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:15:57.617Z","testFile":"rule.Rule.prototype.allow.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:15:57.632Z","testFile":"rule.Rule.prototype.query.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:15:57.647Z","testFile":"rule.Rule.prototype.matches.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: rule.Rule.prototype.deny.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.clone.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: rule.Rule.prototype.allow.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.query.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.matches.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:05.110Z","testFile":"rule.Rule.prototype.deny.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:05.128Z","testFile":"rule.Rule.prototype.clone.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:05.141Z","testFile":"rule.Rule.prototype.allow.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:05.165Z","testFile":"rule.Rule.prototype.query.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:05.176Z","testFile":"rule.Rule.prototype.matches.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: rule.Rule.prototype.deny.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.clone.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair introduced undeclared references.
+🤖 LLM repairing: rule.Rule.prototype.allow.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.query.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.matches.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:12.764Z","testFile":"rule.Rule.prototype.deny.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:12.774Z","testFile":"rule.Rule.prototype.clone.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:12.783Z","testFile":"rule.Rule.prototype.allow.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:12.791Z","testFile":"rule.Rule.prototype.query.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-15T19:16:12.808Z","testFile":"rule.Rule.prototype.matches.test.js","failureType":"TYPE","before":"TypeError: spec.match is not a function at new match (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\matcher.js:9:18) at new Rule (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\spacl-core\\dist\\rule.js:15:15) at Object.<anonymous> (C:\\Users\\DELL\\Documents\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: rule.Rule.prototype.deny.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.clone.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ Repaired code has syntax errors.
+🤖 LLM repairing: rule.Rule.prototype.allow.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.query.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+🤖 LLM repairing: rule.Rule.prototype.matches.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: instance
+
+❌ Repair attempts finished.
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: rule.Rule.prototype.allow.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:23.668Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.allow).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:23.668Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:23.668Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:23.668Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:26.997Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.allow).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:30.245Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:33.661Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.allow.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.allow.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:36.893Z","testFile":"rule.Rule.prototype.allow.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.clone.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:36.903Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.clone).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:36.903Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:36.903Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:36.903Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:40.163Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.clone).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:43.463Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:46.744Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.clone.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.clone.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:49.926Z","testFile":"rule.Rule.prototype.clone.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.deny.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:49.933Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.deny).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:49.933Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:49.933Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:16:49.933Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:53.118Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.deny).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:56.406Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:16:59.675Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.deny.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.deny.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:02.913Z","testFile":"rule.Rule.prototype.deny.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.matches.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:02.921Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.matches).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:02.921Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:02.921Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:02.921Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:06.092Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.matches).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.0999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:09.251Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:12.406Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.matches.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.matches.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:15.650Z","testFile":"rule.Rule.prototype.matches.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: rule.Rule.prototype.query.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:15.656Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgenInstance.query).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:15.656Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:15.656Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-15T19:17:15.656Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Weak assertion","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.3
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:18.798Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgenInstance.query).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:22.000Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBe] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5000000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:25.176Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: UNSAFE_TARGET
+📊 Single Target [rule.Rule.prototype.query.test.js :: toBeDefined] -> Before: 10 | After: 10
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5000000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.5
+  }
+}
+⚠️ Single assertion rejected. Reverting rule.Rule.prototype.query.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-15T19:17:28.468Z","testFile":"rule.Rule.prototype.query.test.js","issue":"Assertion rejected","original":"expect(__unitgenInstance).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 20
+Failed Suites     : 5
+Total Tests       : 47
+Passed            : 42
+Failed            : 5
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.deny.test.js
+  ● Rule.prototype.deny › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA-...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.query.test.js
+  ● Rule.prototype.query › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.matches.test.js
+  ● Rule.prototype.matches › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.allow.test.js
+  ● Rule.prototype.allow › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\rule.Rule.prototype.clone.test.js
+  ● Rule.prototype.clone › auto-generated (prototype) TypeError: spec.match is not a function 7 | * @param version Specification language version. */ 8 | constructor(spec, version = '1.1') { > 9 | if (spec.match(/^[a-zA...
+------------------------------------------------------------
+❌ FAIL  - Rule.prototype.deny auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.query auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.matches auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.allow auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+❌ FAIL  - Rule.prototype.clone auto-generated (prototype)
+   Error: TypeError: spec.match is not a function at new match (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\spacl-core\dist\matcher.js:9:18) at new Rule (C:\Users\DELL\Documents\FYP\Par...
+✅ PASS  - PolicyMap.prototype.query auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.query PolicyMap.query checks stable result contract
+✅ PASS  - PolicyMap.prototype.matches auto-generated (prototype)
+✅ PASS  - PolicyMap.prototype.matches Policy found, does not match path and ctx
+✅ PASS  - PolicyMap.prototype.matches Policy not found, returns false with empty ctx
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks source-aware result shape
+✅ PASS  - PolicyMap.prototype.matches PolicyMap.matches checks stable result contract
+✅ PASS  - PolicyMap.prototype.push auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches auto-generated (prototype)
+✅ PASS  - Policy.prototype.matches Matches function with empty rules array
+✅ PASS  - Policy.prototype.matches Matches function with one rule returning false
+✅ PASS  - Policy.prototype.matches Matches function with multiple rules, all returning false
+✅ PASS  - Matcher auto-generated (prototype)
+✅ PASS  - Matcher Default behavior - valid spec and default version
+✅ PASS  - Matcher Parameterized behavior - valid spec and custom version
+✅ PASS  - Policy.prototype.clone auto-generated (prototype)
+✅ PASS  - Policy.for auto-generated (prototype)
+✅ PASS  - Policy.for Create a policy with no rules
+✅ PASS  - Policy.for Policy.for checks source-aware result shape
+✅ PASS  - Policy.for Policy.for checks stable result contract
+✅ PASS  - PolicyMap auto-generated (prototype)
+✅ PASS  - PolicyMap PolicyMap constructor creates an instance
+✅ PASS  - PolicyMap PolicyMap constructor exposes an object-like result
+✅ PASS  - PolicyMap.for auto-generated (prototype)
+✅ PASS  - PolicyMap.for Safe invariant - result type check
+✅ PASS  - PolicyMap.for Safe invariant - result not null
+✅ PASS  - PolicyMap.for PolicyMap.for checks source-aware result shape
+✅ PASS  - PolicyMap.for PolicyMap.for checks stable result contract
+✅ PASS  - Policy auto-generated (prototype)
+✅ PASS  - Policy Policy constructor creates an instance
+✅ PASS  - Policy Policy constructor exposes an object-like result
+✅ PASS  - Policy.prototype.push auto-generated (prototype)
+✅ PASS  - Rule.for auto-generated (prototype)
+✅ PASS  - Rule.for Default behavior - spec as string
+✅ PASS  - Rule.for Parameterized behavior - spec as variable
+✅ PASS  - Policy.prototype.query auto-generated (prototype)
+✅ PASS  - Policy.prototype.query Query function with no rules returns null
+✅ PASS  - Policy.prototype.query Query function with all rules returning false returns false
+✅ PASS  - Policy.prototype.query Query function with mixed rules returns false if no rule returns true
+✅ PASS  - Matcher.for auto-generated (prototype)
+✅ PASS  - Rule auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

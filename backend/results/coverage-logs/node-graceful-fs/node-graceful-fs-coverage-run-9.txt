@@ -1,0 +1,2467 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/node-graceful-fs
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 9 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\node-graceful-fs\fs.js
+==============================
+✅ Found 1 function(s): clone
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\node-graceful-fs\graceful-fs.js
+==============================
+✅ Found 15 function(s): ReadStream, ReadStream$open, WriteStream, WriteStream$open, close, closeSync, createReadStream, createWriteStream, open, go, readFile, go, readdir, go, retry
+ℹ️ Class-like exports will use constructor prototype generation: ReadStream, WriteStream
+✅ Exported function(s): ReadStream, WriteStream, close, closeSync, createReadStream, createWriteStream, open, readFile, readdir
+🏛️ Class export analysis:
+   - ReadStream: constructor params (path, options), 1 prototype method(s), 0 static method(s)
+     prototype: open
+   - WriteStream: constructor params (path, options), 1 prototype method(s), 0 static method(s)
+     prototype: open
+📚 Usage snippets:
+   - 45 snippet(s) found from 10 scanned file(s)
+   - ReadStream: 5
+   - WriteStream: 5
+   - close: 5
+   - closeSync: 5
+   - createReadStream: 5
+   - createWriteStream: 5
+   - open: 5
+   - readFile: 5
+   - readdir: 5
+📝 Doc comments:
+   - 2/9 function(s) have comment context
+   - close: JSDoc
+   - createReadStream: JSDoc
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+🔗 Dependency usage:
+   ReadStream:
+   - fs.ReadStream.apply -> fs (member-chain-call)
+   - fs.ReadStream.apply -> fs (member-chain)
+   - fs.ReadStream -> fs (member)
+   - fs -> fs (reference)
+   WriteStream:
+   - fs.WriteStream.apply -> fs (member-chain-call)
+   - fs.WriteStream.apply -> fs (member-chain)
+   - fs.WriteStream -> fs (member)
+   - fs -> fs (reference)
+   close:
+   - fs.close -> fs (member-call)
+   - fs.close -> fs (member)
+   - fs -> fs (reference)
+   closeSync:
+   - fs.closeSync.apply -> fs (member-chain-call)
+   - fs.closeSync.apply -> fs (member-chain)
+   - fs.closeSync -> fs (member)
+   - fs -> fs (reference)
+   createReadStream:
+   - fs.ReadStream.apply -> fs (transitive-member-chain-call)
+   - fs.ReadStream.apply -> fs (transitive-member-chain)
+   - fs.ReadStream -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   createWriteStream:
+   - fs.WriteStream.apply -> fs (transitive-member-chain-call)
+   - fs.WriteStream.apply -> fs (transitive-member-chain)
+   - fs.WriteStream -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   open:
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   readFile:
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   readdir:
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   ReadStream.prototype.open:
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   WriteStream.prototype.open:
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.readdir -> fs (transitive-member-call)
+   - fs.readdir -> fs (transitive-member)
+   - fs.open -> fs (transitive-member-call)
+   - fs.open -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.readFile -> fs (transitive-member-call)
+   - fs.readFile -> fs (transitive-member)
+🧩 Mock plan:
+   ReadStream:
+   - fs (builtin) members: ReadStream; targets: fs, apply, ReadStream; chains: ReadStream.apply;
+   WriteStream:
+   - fs (builtin) members: WriteStream; targets: fs, apply, WriteStream; chains: WriteStream.apply;
+   close:
+   - fs (builtin) members: close; targets: fs, close;
+   closeSync:
+   - fs (builtin) members: closeSync; targets: fs, apply, closeSync; chains: closeSync.apply;
+   createReadStream:
+   - fs (builtin) members: ReadStream; targets: fs, apply, ReadStream; chains: ReadStream.apply;
+   createWriteStream:
+   - fs (builtin) members: WriteStream; targets: fs, apply, WriteStream; chains: WriteStream.apply;
+   open:
+   - fs (builtin) members: open, readFile, readdir; targets: fs, open, readFile, readdir;
+   readFile:
+   - fs (builtin) members: open, readFile, readdir; targets: fs, open, readFile, readdir;
+   readdir:
+   - fs (builtin) members: open, readFile, readdir; targets: fs, open, readFile, readdir;
+   ReadStream.prototype.open:
+   - fs (builtin) members: open, readFile, readdir; targets: fs, open, readFile, readdir;
+   WriteStream.prototype.open:
+   - fs (builtin) members: open, readFile, readdir; targets: fs, open, readFile, readdir;
+🧪 Rendered mocks:
+   ReadStream: 1 mock block(s)
+   WriteStream: 1 mock block(s)
+   close: 1 mock block(s)
+   closeSync: 1 mock block(s)
+   createReadStream: 1 mock block(s)
+   createWriteStream: 1 mock block(s)
+   open: 1 mock block(s)
+   readFile: 1 mock block(s)
+   readdir: 1 mock block(s)
+   ReadStream.prototype.open: 1 mock block(s)
+   WriteStream.prototype.open: 1 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.ReadStream.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.ReadStream.prototype.open.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.WriteStream.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.WriteStream.prototype.open.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.close.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.closeSync.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.createReadStream.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.createWriteStream.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.open.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readdir.test.js
+
+==============================
+📄 Processing: benchmark_packages\node-graceful-fs\polyfills.js
+==============================
+✅ Found 3 function(s): chownFix, chownFixSync, chownErOk
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\max-open.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\open.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\read-write-stream.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\readdir-sort.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\stats.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\node-graceful-fs\test\write-then-read.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 114 API candidate(s), 112 public target candidate(s).
+✅ Dynamic preflight passed: chown
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chown.chown.test.js (chown)
+✅ Dynamic preflight passed: chownSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chownSync.chownSync.test.js (chownSync)
+✅ Dynamic preflight passed: chmod
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chmod.chmod.test.js (chmod)
+✅ Dynamic preflight passed: chmodSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chmodSync.chmodSync.test.js (chmodSync)
+✅ Dynamic preflight passed: fchown
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fchown.fchown.test.js (fchown)
+✅ Dynamic preflight passed: fchownSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fchownSync.fchownSync.test.js (fchownSync)
+✅ Dynamic preflight passed: fchmod
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fchmod.fchmod.test.js (fchmod)
+✅ Dynamic preflight passed: fchmodSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fchmodSync.fchmodSync.test.js (fchmodSync)
+✅ Dynamic preflight passed: lchown
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchown.lchown.test.js (lchown)
+✅ Dynamic preflight passed: lchownSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchownSync.lchownSync.test.js (lchownSync)
+✅ Dynamic preflight passed: read
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.read.read.test.js (read)
+✅ Dynamic preflight passed: readSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readSync.readSync.test.js (readSync)
+✅ Dynamic preflight passed: appendFile
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: appendFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.appendFile.appendFile.test.js (appendFile)
+✅ Dynamic preflight passed: appendFileSync
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: appendFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.appendFileSync.appendFileSync.test.js (appendFileSync)
+✅ Dynamic preflight passed: access
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.access.access.test.js (access)
+✅ Dynamic preflight passed: accessSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.accessSync.accessSync.test.js (accessSync)
+✅ Dynamic preflight passed: close
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: close
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.close.close.test.js (close)
+✅ Dynamic preflight passed: closeSync
+ℹ️ Keeping dynamic export smoke test only for side-effectful API: closeSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.closeSync.closeSync.test.js (closeSync)
+✅ Dynamic preflight passed: copyFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFile.copyFile.test.js (copyFile)
+✅ Dynamic preflight passed: copyFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFileSync.copyFileSync.test.js (copyFileSync)
+✅ Dynamic preflight passed: cp
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.cp.cp.test.js (cp)
+✅ Dynamic preflight passed: cpSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.cpSync.cpSync.test.js (cpSync)
+✅ Dynamic preflight passed: createReadStream
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.createReadStream.createReadStream.test.js (createReadStream)
+✅ Dynamic preflight passed: createWriteStream
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.createWriteStream.createWriteStream.test.js (createWriteStream)
+✅ Dynamic preflight passed: exists
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.exists.exists.test.js (exists)
+✅ Dynamic preflight passed: existsSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.existsSync.existsSync.test.js (existsSync)
+✅ Dynamic preflight passed: fdatasync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fdatasync.fdatasync.test.js (fdatasync)
+✅ Dynamic preflight passed: fdatasyncSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fdatasyncSync.fdatasyncSync.test.js (fdatasyncSync)
+✅ Dynamic preflight passed: fstat
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fstat.fstat.test.js (fstat)
+✅ Dynamic preflight passed: fstatSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fstatSync.fstatSync.test.js (fstatSync)
+✅ Dynamic preflight passed: fsync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fsync.fsync.test.js (fsync)
+✅ Dynamic preflight passed: fsyncSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fsyncSync.fsyncSync.test.js (fsyncSync)
+✅ Dynamic preflight passed: ftruncate
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.ftruncate.ftruncate.test.js (ftruncate)
+✅ Dynamic preflight passed: ftruncateSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.ftruncateSync.ftruncateSync.test.js (ftruncateSync)
+✅ Dynamic preflight passed: futimes
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.futimes.futimes.test.js (futimes)
+✅ Dynamic preflight passed: futimesSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.futimesSync.futimesSync.test.js (futimesSync)
+✅ Dynamic preflight passed: glob
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.glob.glob.test.js (glob)
+✅ Dynamic preflight passed: globSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.globSync.globSync.test.js (globSync)
+✅ Dynamic preflight passed: lchmod
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchmod.lchmod.test.js (lchmod)
+✅ Dynamic preflight passed: lchmodSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchmodSync.lchmodSync.test.js (lchmodSync)
+✅ Dynamic preflight passed: link
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.link.link.test.js (link)
+✅ Dynamic preflight passed: linkSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.linkSync.linkSync.test.js (linkSync)
+✅ Dynamic preflight passed: lstat
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lstat.lstat.test.js (lstat)
+✅ Dynamic preflight passed: lstatSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lstatSync.lstatSync.test.js (lstatSync)
+✅ Dynamic preflight passed: lutimes
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lutimes.lutimes.test.js (lutimes)
+✅ Dynamic preflight passed: lutimesSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lutimesSync.lutimesSync.test.js (lutimesSync)
+✅ Dynamic preflight passed: mkdir
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.mkdir.mkdir.test.js (mkdir)
+✅ Dynamic preflight passed: mkdirSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.mkdirSync.mkdirSync.test.js (mkdirSync)
+✅ Dynamic preflight passed: mkdtemp
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.mkdtemp.mkdtemp.test.js (mkdtemp)
+✅ Dynamic preflight passed: mkdtempSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.mkdtempSync.mkdtempSync.test.js (mkdtempSync)
+✅ Dynamic preflight passed: mkdtempDisposableSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.mkdtempDisposableSync.mkdtempDisposableSync.test.js (mkdtempDisposableSync)
+✅ Dynamic preflight passed: open
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.open.open.test.js (open)
+✅ Dynamic preflight passed: openSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.openSync.openSync.test.js (openSync)
+✅ Dynamic preflight passed: openAsBlob
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.openAsBlob.openAsBlob.test.js (openAsBlob)
+✅ Dynamic preflight passed: readdir
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readdir.readdir.test.js (readdir)
+✅ Dynamic preflight passed: readdirSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readdirSync.readdirSync.test.js (readdirSync)
+✅ Dynamic preflight passed: readv
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readv.readv.test.js (readv)
+✅ Dynamic preflight passed: readvSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readvSync.readvSync.test.js (readvSync)
+✅ Dynamic preflight passed: readFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readFile.readFile.test.js (readFile)
+✅ Dynamic preflight passed: readFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readFileSync.readFileSync.test.js (readFileSync)
+✅ Dynamic preflight passed: readlink
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readlink.readlink.test.js (readlink)
+✅ Dynamic preflight passed: readlinkSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readlinkSync.readlinkSync.test.js (readlinkSync)
+✅ Dynamic preflight passed: realpath
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.realpath.realpath.test.js (realpath)
+✅ Dynamic preflight passed: realpath.native
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.realpath.native.realpath.native.test.js (realpath.native)
+✅ Dynamic preflight passed: realpathSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.realpathSync.realpathSync.test.js (realpathSync)
+✅ Dynamic preflight passed: realpathSync.native
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.realpathSync.native.realpathSync.native.test.js (realpathSync.native)
+✅ Dynamic preflight passed: rename
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.rename.rename.test.js (rename)
+✅ Dynamic preflight passed: renameSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.renameSync.renameSync.test.js (renameSync)
+✅ Dynamic preflight passed: rm
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.rm.rm.test.js (rm)
+✅ Dynamic preflight passed: rmSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.rmSync.rmSync.test.js (rmSync)
+✅ Dynamic preflight passed: rmdir
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.rmdir.rmdir.test.js (rmdir)
+✅ Dynamic preflight passed: rmdirSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.rmdirSync.rmdirSync.test.js (rmdirSync)
+✅ Dynamic preflight passed: stat
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.stat.stat.test.js (stat)
+✅ Dynamic preflight passed: statfs
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.statfs.statfs.test.js (statfs)
+✅ Dynamic preflight passed: statSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.statSync.statSync.test.js (statSync)
+✅ Dynamic preflight passed: statfsSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.statfsSync.statfsSync.test.js (statfsSync)
+✅ Dynamic preflight passed: symlink
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.symlink.symlink.test.js (symlink)
+✅ Dynamic preflight passed: symlinkSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.symlinkSync.symlinkSync.test.js (symlinkSync)
+✅ Dynamic preflight passed: truncate
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.truncate.truncate.test.js (truncate)
+✅ Dynamic preflight passed: truncateSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.truncateSync.truncateSync.test.js (truncateSync)
+✅ Dynamic preflight passed: unwatchFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.unwatchFile.unwatchFile.test.js (unwatchFile)
+✅ Dynamic preflight passed: unlink
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.unlink.unlink.test.js (unlink)
+✅ Dynamic preflight passed: unlinkSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.unlinkSync.unlinkSync.test.js (unlinkSync)
+✅ Dynamic preflight passed: utimes
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.utimes.utimes.test.js (utimes)
+✅ Dynamic preflight passed: utimesSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.utimesSync.utimesSync.test.js (utimesSync)
+✅ Dynamic preflight passed: watch
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.watch.watch.test.js (watch)
+✅ Dynamic preflight passed: watchFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.watchFile.watchFile.test.js (watchFile)
+✅ Dynamic preflight passed: writeFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.writeFile.writeFile.test.js (writeFile)
+✅ Dynamic preflight passed: writeFileSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.writeFileSync.writeFileSync.test.js (writeFileSync)
+✅ Dynamic preflight passed: write
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.write.write.test.js (write)
+✅ Dynamic preflight passed: writeSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.writeSync.writeSync.test.js (writeSync)
+✅ Dynamic preflight passed: writev
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.writev.writev.test.js (writev)
+✅ Dynamic preflight passed: writevSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.writevSync.writevSync.test.js (writevSync)
+✅ Dynamic preflight passed: Dirent
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.Dirent.test.js (Dirent)
+✅ Dynamic preflight passed: Dirent.prototype.isDirectory
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isDirectory.Dirent.prototype.isDirectory.test.js (Dirent.prototype.isDirectory)
+✅ Dynamic preflight passed: Dirent.prototype.isFile
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isFile.Dirent.prototype.isFile.test.js (Dirent.prototype.isFile)
+✅ Dynamic preflight passed: Dirent.prototype.isBlockDevice
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isBlockDevice.Dirent.prototype.isBlockDevice.test.js (Dirent.prototype.isBlockDevice)
+✅ Dynamic preflight passed: Dirent.prototype.isCharacterDevice
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isCharacterDevice.Dirent.prototype.isCharacterDevice.test.js (Dirent.prototype.isCharacterDevice)
+✅ Dynamic preflight passed: Dirent.prototype.isSymbolicLink
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isSymbolicLink.Dirent.prototype.isSymbolicLink.test.js (Dirent.prototype.isSymbolicLink)
+✅ Dynamic preflight passed: Dirent.prototype.isFIFO
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isFIFO.Dirent.prototype.isFIFO.test.js (Dirent.prototype.isFIFO)
+✅ Dynamic preflight passed: Dirent.prototype.isSocket
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dirent.prototype.isSocket.Dirent.prototype.isSocket.test.js (Dirent.prototype.isSocket)
+✅ Dynamic preflight passed: Stats
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Stats.Stats.test.js (Stats)
+✅ Dynamic preflight passed: Dir
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.Dir.test.js (Dir)
+✅ Dynamic preflight passed: Dir.prototype.read
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.read.Dir.prototype.read.test.js (Dir.prototype.read)
+✅ Dynamic preflight passed: Dir.prototype.processReadResult
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.processReadResult.Dir.prototype.processReadResult.test.js (Dir.prototype.processReadResult)
+✅ Dynamic preflight passed: Dir.prototype.readSyncRecursive
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.readSyncRecursive.Dir.prototype.readSyncRecursive.test.js (Dir.prototype.readSyncRecursive)
+✅ Dynamic preflight passed: Dir.prototype.readSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.readSync.Dir.prototype.readSync.test.js (Dir.prototype.readSync)
+✅ Dynamic preflight passed: Dir.prototype.close
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.close.Dir.prototype.close.test.js (Dir.prototype.close)
+✅ Dynamic preflight passed: Dir.prototype.closeSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.closeSync.Dir.prototype.closeSync.test.js (Dir.prototype.closeSync)
+✅ Dynamic preflight passed: Dir.prototype.entries
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.Dir.prototype.entries.Dir.prototype.entries.test.js (Dir.prototype.entries)
+✅ Dynamic preflight passed: opendir
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.opendir.opendir.test.js (opendir)
+✅ Dynamic preflight passed: opendirSync
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.opendirSync.opendirSync.test.js (opendirSync)
+ℹ️ Dynamic API preflight kept 112 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 20
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 4
+⚠️ Files skipped:  6
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  123
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for ReadStream
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ReadStream; keeping prototype only.
+🧪 LLM injection summary for ReadStream.prototype.open
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 0
+   runtime failed: 7
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 7
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ReadStream.prototype.open; keeping prototype only.
+🧪 LLM injection summary for WriteStream
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for WriteStream; keeping prototype only.
+🧪 LLM injection summary for WriteStream.prototype.open
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 0
+   runtime failed: 7
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 7
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for WriteStream.prototype.open; keeping prototype only.
+🧪 LLM injection summary for close
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 1
+   runtime failed: 3
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - CALLBACK_PARAM_WITHOUT_FUNCTION_LITERAL: 1
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 1
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.close.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for closeSync
+   received: 7
+   sanitizer accepted: 7
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 7
+   runtime passed: 0
+   runtime failed: 7
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 7
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for closeSync; keeping prototype only.
+🧪 LLM injection summary for createReadStream
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for createReadStream; keeping prototype only.
+🧪 LLM injection summary for createWriteStream
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for createWriteStream; keeping prototype only.
+🧪 LLM injection summary for open
+   received: 8
+   sanitizer accepted: 4
+   sanitizer rejected: 3
+   duplicates: 1
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - CALLBACK_CASE_WITH_EMPTY_OR_NULL_INPUT: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.open.test.js (2)
+🧪 LLM injection summary for readFile
+   received: 8
+   sanitizer accepted: 2
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   - CALLBACK_PARAM_WITHOUT_FUNCTION_LITERAL: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.test.js (0 + 1 repair candidate(s))
+🧪 LLM injection summary for readdir
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readdir.test.js (2)
+🧪 LLM injection summary for chown
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 3
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   - RUNTIME_PASSED: 3
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 2
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chown.chown.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for chownSync
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 2
+   runtime failed: 4
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - THROW_ORACLE_FAILURE: 2
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chownSync.chownSync.test.js (2 + 1 repair candidate(s))
+🧪 LLM injection summary for chmod
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for chmod; keeping prototype only.
+🧪 LLM injection summary for chmodSync
+   received: 8
+   sanitizer accepted: 2
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 0
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - CALLBACK_PARAM_WITHOUT_FUNCTION_LITERAL: 6
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for chmodSync; keeping prototype only.
+🧪 LLM injection summary for fchown
+   received: 6
+   sanitizer accepted: 5
+   sanitizer rejected: 0
+   duplicates: 1
+   runtime attempted: 5
+   runtime passed: 0
+   runtime failed: 5
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 5
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for fchown; keeping prototype only.
+🧪 LLM injection summary for fchownSync
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 3
+   runtime failed: 3
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   - RUNTIME_PASSED: 3
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.fchownSync.fchownSync.test.js (3)
+🧪 LLM injection summary for fchmod
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_TYPE_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for fchmod; keeping prototype only.
+🧪 LLM injection summary for fchmodSync
+   received: 7
+   sanitizer accepted: 0
+   sanitizer rejected: 7
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for fchmodSync; keeping prototype only.
+🧪 LLM injection summary for lchown
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 2
+   runtime attempted: 4
+   runtime passed: 3
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchown.lchown.test.js (3 + 1 repair candidate(s))
+🧪 LLM injection summary for lchownSync
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 1
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 2
+   - NON_REPAIRABLE_TYPE_ERROR: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchownSync.lchownSync.test.js (0 + 1 repair candidate(s))
+🧪 LLM injection summary for read
+   received: 7
+   sanitizer accepted: 0
+   sanitizer rejected: 7
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 4
+   - ASSERTION_NOT_RESULT_CENTERED: 2
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.read.read.test.js (1)
+🧪 LLM injection summary for readSync
+   received: 6
+   sanitizer accepted: 3
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.readSync.readSync.test.js (2)
+🧪 LLM injection summary for access
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - FORBIDDEN_TOP_LEVEL_CONSTRUCT: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for access; keeping prototype only.
+🧪 LLM injection summary for accessSync
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 0
+   runtime failed: 6
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 6
+   LLM runtime failure types:
+   - NON_REPAIRABLE_INPUT_ERROR: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.accessSync.accessSync.test.js (2)
+🧪 LLM injection summary for copyFile
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 1
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 5
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFile.copyFile.test.js (0 + 1 repair candidate(s))
+🧪 LLM injection summary for copyFileSync
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 4
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 2
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFileSync.copyFileSync.test.js (4)
+🧪 LLM injection summary for cp
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 4
+   - UNDECLARED_REFERENCE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for cp; keeping prototype only.
+🧪 LLM injection summary for cpSync
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for cpSync; keeping prototype only.
+🧪 LLM injection summary for createReadStream
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 6
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for createReadStream; keeping prototype only.
+🧪 LLM injection summary for createWriteStream
+   received: 7
+   sanitizer accepted: 0
+   sanitizer rejected: 7
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 7
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for createWriteStream; keeping prototype only.
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 123
+Failed Suites     : 6
+Total Tests       : 157
+Passed            : 151
+Failed            : 6
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.test.js
+  ● readFile › [repair-candidate] Read file with valid path and callback expect(received).toBeDefined() Received: undefined 262 | const cb = (err, data) => {} 263 | const result = readFile(file, {}, cb); > 264 | expect(...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchown.lchown.test.js
+  ● lchown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | exp...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchownSync.lchownSync.test.js
+  ● lchownSync › [repair-candidate] Safe invariant test: valid inputs expect(received).toBeDefined() Received: undefined 23 | const gid = 2; 24 | const result = __unitgen_target__(target, uid, gid); > 25 | expect(result...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFile.copyFile.test.js
+  ● copyFile › [repair-candidate] Callback is invoked expect(received).toBe(expected) // Object.is equality Expected: true Received: false 25 | const callback = () => { callbackInvoked = true; }; 26 | const result = __u...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chown.chown.test.js
+  ● chown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | expe...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chownSync.chownSync.test.js
+  ● chownSync › [repair-candidate] Normal behavior test: successful call to orig expect(received).toBeDefined() Received: undefined 44 | const gid = 2; 45 | const result = __unitgen_target__(target, uid, gid); > 46 | ex...
+------------------------------------------------------------
+✅ PASS  - readFile auto-generated (prototype)
+❌ FAIL  - readFile [repair-candidate] Read file with valid path and callback
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.tes...
+✅ PASS  - WriteStream auto-generated (prototype)
+✅ PASS  - fchmodSync should be exported as a function
+✅ PASS  - access should be exported as a function
+✅ PASS  - lchown should be exported as a function
+✅ PASS  - lchown Default behavior - safe invariant test
+✅ PASS  - lchown Parameterized behavior - safe invariant test
+✅ PASS  - lchown Safe invariant test
+❌ FAIL  - lchown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - lchownSync should be exported as a function
+❌ FAIL  - lchownSync [repair-candidate] Safe invariant test: valid inputs
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - createWriteStream should be exported as a function
+✅ PASS  - copyFileSync should be exported as a function
+✅ PASS  - copyFileSync Copy file with invalid source path
+✅ PASS  - copyFileSync Copy file with invalid destination path
+✅ PASS  - copyFileSync Copy file with null mode
+✅ PASS  - copyFileSync Copy file with empty source and destination paths
+✅ PASS  - createReadStream should be exported as a function
+✅ PASS  - cp should be exported as a function
+✅ PASS  - cpSync should be exported as a function
+✅ PASS  - copyFile should be exported as a function
+❌ FAIL  - copyFile [repair-candidate] Callback is invoked
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - chown should be exported as a function
+✅ PASS  - chown Default behavior - safe invariant test
+✅ PASS  - chown Parameterized behavior - safe invariant test
+✅ PASS  - chown Safe invariant test
+❌ FAIL  - chown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - ReadStream.prototype.open auto-generated (prototype)
+✅ PASS  - ReadStream auto-generated (prototype)
+✅ PASS  - createWriteStream auto-generated (prototype)
+✅ PASS  - WriteStream.prototype.open auto-generated (prototype)
+✅ PASS  - createReadStream auto-generated (prototype)
+✅ PASS  - chmodSync should be exported as a function
+✅ PASS  - chmod should be exported as a function
+✅ PASS  - chownSync should be exported as a function
+✅ PASS  - chownSync Safe invariant test: catch block with chownErOk
+✅ PASS  - chownSync Safe invariant test: undefined uid and gid
+❌ FAIL  - chownSync [repair-candidate] Normal behavior test: successful call to orig
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - fchmod should be exported as a function
+✅ PASS  - closeSync auto-generated (prototype)
+✅ PASS  - fchownSync should be exported as a function
+✅ PASS  - fchownSync Safe invariant test: catch block without chownErOk
+✅ PASS  - fchownSync Safe invariant test: empty target
+✅ PASS  - fchownSync Safe invariant test: undefined uid
+✅ PASS  - fchown should be exported as a function
+✅ PASS  - read should be exported as a function
+✅ PASS  - read fallback reads from a real file descriptor through callback
+✅ PASS  - accessSync should be exported as a function
+✅ PASS  - accessSync fallback checks source-aware result shape
+✅ PASS  - accessSync fallback checks stable result contract
+✅ PASS  - readvSync should be exported as a function
+✅ PASS  - unwatchFile should be exported as a function
+✅ PASS  - readdir auto-generated (prototype)
+✅ PASS  - readdir fallback observes successful callback result
+✅ PASS  - readdir fallback reports a missing path through callback
+✅ PASS  - lstat should be exported as a function
+✅ PASS  - lstatSync should be exported as a function
+✅ PASS  - statfsSync should be exported as a function
+✅ PASS  - mkdtempSync should be exported as a function
+✅ PASS  - appendFileSync should be exported as a function
+✅ PASS  - readlinkSync should be exported as a function
+✅ PASS  - mkdirSync should be exported as a function
+✅ PASS  - mkdir should be exported as a function
+✅ PASS  - Dir should be exported as a function
+✅ PASS  - readdirSync should be exported as a function
+✅ PASS  - glob should be exported as a function
+✅ PASS  - appendFile should be exported as a function
+✅ PASS  - symlinkSync should be exported as a function
+✅ PASS  - statSync should be exported as a function
+✅ PASS  - Stats should be exported as a function
+✅ PASS  - openSync should be exported as a function
+✅ PASS  - rmSync should be exported as a function
+✅ PASS  - link should be exported as a function
+✅ PASS  - open should be exported as a function
+✅ PASS  - realpathSync.native should be exported as a function
+✅ PASS  - utimesSync should be exported as a function
+✅ PASS  - readSync should be exported as a function
+✅ PASS  - readSync Safe invariant - catch block throws error if not 'EAGAIN'
+✅ PASS  - readSync fallback reads from a real file descriptor synchronously
+✅ PASS  - mkdtemp should be exported as a function
+✅ PASS  - realpath should be exported as a function
+✅ PASS  - exists should be exported as a function
+✅ PASS  - readFileSync should be exported as a function
+✅ PASS  - close auto-generated (prototype)
+✅ PASS  - close Close function with valid file descriptor and callback
+✅ PASS  - close fallback checks source-aware result shape
+✅ PASS  - close fallback checks stable result contract
+✅ PASS  - close [repair-candidate] Observed behavior returns undefined
+✅ PASS  - opendir should be exported as a function
+✅ PASS  - globSync should be exported as a function
+✅ PASS  - readv should be exported as a function
+✅ PASS  - statfs should be exported as a function
+✅ PASS  - fdatasyncSync should be exported as a function
+✅ PASS  - truncate should be exported as a function
+✅ PASS  - lutimes should be exported as a function
+✅ PASS  - lchmod should be exported as a function
+✅ PASS  - ftruncate should be exported as a function
+✅ PASS  - watch should be exported as a function
+✅ PASS  - fsyncSync should be exported as a function
+✅ PASS  - close should be exported as a function
+✅ PASS  - write should be exported as a function
+✅ PASS  - Dir.prototype.close should be exported as a function
+✅ PASS  - readFile should be exported as a function
+✅ PASS  - rename should be exported as a function
+✅ PASS  - unlinkSync should be exported as a function
+✅ PASS  - mkdtempDisposableSync should be exported as a function
+✅ PASS  - renameSync should be exported as a function
+✅ PASS  - opendirSync should be exported as a function
+✅ PASS  - open auto-generated (prototype)
+✅ PASS  - open fallback observes successful callback result
+✅ PASS  - open fallback reports a missing path through callback
+✅ PASS  - unlink should be exported as a function
+✅ PASS  - rm should be exported as a function
+✅ PASS  - readdir should be exported as a function
+✅ PASS  - writeFile should be exported as a function
+✅ PASS  - realpathSync should be exported as a function
+✅ PASS  - futimesSync should be exported as a function
+✅ PASS  - Dirent.prototype.isFIFO should be exported as a function
+✅ PASS  - Dir.prototype.closeSync should be exported as a function
+✅ PASS  - watchFile should be exported as a function
+✅ PASS  - utimes should be exported as a function
+✅ PASS  - fstat should be exported as a function
+✅ PASS  - Dirent.prototype.isSocket should be exported as a function
+✅ PASS  - writeSync should be exported as a function
+✅ PASS  - futimes should be exported as a function
+✅ PASS  - linkSync should be exported as a function
+✅ PASS  - fdatasync should be exported as a function
+✅ PASS  - Dir.prototype.readSync should be exported as a function
+✅ PASS  - lutimesSync should be exported as a function
+✅ PASS  - existsSync should be exported as a function
+✅ PASS  - Dirent.prototype.isDirectory should be exported as a function
+✅ PASS  - fsync should be exported as a function
+✅ PASS  - Dir.prototype.entries should be exported as a function
+✅ PASS  - Dirent.prototype.isSymbolicLink should be exported as a function
+✅ PASS  - writevSync should be exported as a function
+✅ PASS  - symlink should be exported as a function
+✅ PASS  - ftruncateSync should be exported as a function
+✅ PASS  - writev should be exported as a function
+✅ PASS  - truncateSync should be exported as a function
+✅ PASS  - realpath.native should be exported as a function
+✅ PASS  - openAsBlob should be exported as a function
+✅ PASS  - Dir.prototype.processReadResult should be exported as a function
+✅ PASS  - lchmodSync should be exported as a function
+✅ PASS  - fstatSync should be exported as a function
+✅ PASS  - closeSync should be exported as a function
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - Dirent.prototype.isBlockDevice should be exported as a function
+✅ PASS  - Dir.prototype.readSyncRecursive should be exported as a function
+✅ PASS  - Dirent should be exported as a function
+✅ PASS  - rmdir should be exported as a function
+✅ PASS  - Dir.prototype.read should be exported as a function
+✅ PASS  - readlink should be exported as a function
+✅ PASS  - rmdirSync should be exported as a function
+✅ PASS  - Dirent.prototype.isFile should be exported as a function
+✅ PASS  - stat should be exported as a function
+✅ PASS  - Dirent.prototype.isCharacterDevice should be exported as a function
+============================================================
+
+
+🔁 Running adaptive repair...
+
+🔧 Repair candidates detected: 7
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:08:32.616Z","testFile":"graceful-fs.readFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\graceful-fs.readFile.test.js:264:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-19T20:09:15.106Z","testFile":"graceful-fs.readFile.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:09:15.109Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.lchown.lchown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Com","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🔧 Repairing file: node-graceful-fs.dynamic.lchownSync.lchownSync.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:09:58.023Z","testFile":"node-graceful-fs.dynamic.lchownSync.lchownSync.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.lchownSync.lchownSync.test.js:25:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_F","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-19T20:10:40.567Z","testFile":"node-graceful-fs.dynamic.lchownSync.lchownSync.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-19T20:10:40.567Z","testFile":"node-graceful-fs.dynamic.lchownSync.lchownSync.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🔧 Repairing file: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:10:40.568Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.copyFile.copyFile.test.js:27:31) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:10:40.574Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.chown.chown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🔧 Repairing file: node-graceful-fs.dynamic.chownSync.chownSync.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:11:12.101Z","testFile":"node-graceful-fs.dynamic.chownSync.chownSync.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.chownSync.chownSync.test.js:46:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Fin","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+✅ AST/Semantic repair accepted.
+__UNITGEN_EVENT__{"type":"repair_accepted","timestamp":"2026-07-19T20:11:29.401Z","testFile":"node-graceful-fs.dynamic.chownSync.chownSync.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair accepted after Jest validation","status":"accepted"}
+__UNITGEN_EVENT__{"type":"repair_candidate_repaired","timestamp":"2026-07-19T20:11:29.401Z","testFile":"node-graceful-fs.dynamic.chownSync.chownSync.test.js","failureType":"Repair candidate","repairStrategy":"AST/Semantic Repair","after":"Repair candidate marker removed or candidate repaired","status":"repaired"}
+🤖 LLM repairing: graceful-fs.readFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: node-graceful-fs.dynamic.chown.chown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ Regression detected. Reverting.
+🤖 LLM repairing: node-graceful-fs.dynamic.lchown.lchown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ Regression detected. Reverting.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:12:27.913Z","testFile":"graceful-fs.readFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\graceful-fs.readFile.test.js:264:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-19T20:12:45.185Z","testFile":"graceful-fs.readFile.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:12:45.187Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.copyFile.copyFile.test.js:27:31) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:12:45.190Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.chown.chown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🔧 Repairing file: node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:13:02.427Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.lchown.lchown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Com","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🤖 LLM repairing: graceful-fs.readFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: node-graceful-fs.dynamic.chown.chown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ JSON parse failed.
+🤖 LLM repairing: node-graceful-fs.dynamic.lchown.lchown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ Regression detected. Reverting.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:13:42.797Z","testFile":"graceful-fs.readFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\graceful-fs.readFile.test.js:264:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\ba","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Local repair was not an improvement. Reverting.
+__UNITGEN_EVENT__{"type":"repair_rejected","timestamp":"2026-07-19T20:14:16.578Z","testFile":"graceful-fs.readFile.test.js","failureType":"Local repair","repairStrategy":"AST/Semantic Repair","after":"Repair rejected because it was not an improvement","status":"rejected"}
+🔧 Repairing file: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:14:16.581Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.copyFile.copyFile.test.js:27:31) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:14:16.586Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.chown.chown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Compl","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🔧 Repairing file: node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-07-19T20:14:55.882Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","failureType":"ASSERTION","before":"Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated\\node-graceful-fs.dynamic.lchown.lchown.test.js:62:22) at Promise.finally.completed (C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Com","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+🧠 Semantic Repair Applied
+⚠️ Regression detected. Reverting.
+🤖 LLM repairing: graceful-fs.readFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+✅ LLM repair applied.
+⚠️ LLM repair was not an improvement. Reverting.
+🤖 LLM repairing: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: node-graceful-fs.dynamic.chown.chown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ Regression detected. Reverting.
+🤖 LLM repairing: node-graceful-fs.dynamic.lchown.lchown.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+✅ LLM repair applied.
+⚠️ Regression detected. Reverting.
+
+❌ Repair attempts finished.
+
+
+🧪 Re-running Jest after adaptive repair...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 123
+Failed Suites     : 4
+Total Tests       : 157
+Passed            : 153
+Failed            : 4
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.test.js
+  ● readFile › [repair-candidate] Read file with valid path and callback expect(received).toBeDefined() Received: undefined 262 | const cb = (err, data) => {} 263 | const result = readFile(file, {}, cb); > 264 | expect(...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chown.chown.test.js
+  ● chown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | expe...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchown.lchown.test.js
+  ● lchown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | exp...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFile.copyFile.test.js
+  ● copyFile › [repair-candidate] Callback is invoked expect(received).toBe(expected) // Object.is equality Expected: true Received: false 25 | const callback = () => { callbackInvoked = true; }; 26 | const result = __u...
+------------------------------------------------------------
+✅ PASS  - readFile auto-generated (prototype)
+❌ FAIL  - readFile [repair-candidate] Read file with valid path and callback
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.tes...
+✅ PASS  - chown should be exported as a function
+✅ PASS  - chown Default behavior - safe invariant test
+✅ PASS  - chown Parameterized behavior - safe invariant test
+✅ PASS  - chown Safe invariant test
+❌ FAIL  - chown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - lchown should be exported as a function
+✅ PASS  - lchown Default behavior - safe invariant test
+✅ PASS  - lchown Parameterized behavior - safe invariant test
+✅ PASS  - lchown Safe invariant test
+❌ FAIL  - lchown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - copyFile should be exported as a function
+❌ FAIL  - copyFile [repair-candidate] Callback is invoked
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - readdir auto-generated (prototype)
+✅ PASS  - readdir fallback observes successful callback result
+✅ PASS  - readdir fallback reports a missing path through callback
+✅ PASS  - glob should be exported as a function
+✅ PASS  - mkdir should be exported as a function
+✅ PASS  - close auto-generated (prototype)
+✅ PASS  - close Close function with valid file descriptor and callback
+✅ PASS  - close fallback checks source-aware result shape
+✅ PASS  - close fallback checks stable result contract
+✅ PASS  - close [repair-candidate] Observed behavior returns undefined
+✅ PASS  - exists should be exported as a function
+✅ PASS  - realpathSync.native should be exported as a function
+✅ PASS  - readSync should be exported as a function
+✅ PASS  - readSync Safe invariant - catch block throws error if not 'EAGAIN'
+✅ PASS  - readSync fallback reads from a real file descriptor synchronously
+✅ PASS  - unlinkSync should be exported as a function
+✅ PASS  - ftruncateSync should be exported as a function
+✅ PASS  - stat should be exported as a function
+✅ PASS  - write should be exported as a function
+✅ PASS  - appendFile should be exported as a function
+✅ PASS  - symlinkSync should be exported as a function
+✅ PASS  - watch should be exported as a function
+✅ PASS  - link should be exported as a function
+✅ PASS  - rename should be exported as a function
+✅ PASS  - readFile should be exported as a function
+✅ PASS  - readdirSync should be exported as a function
+✅ PASS  - close should be exported as a function
+✅ PASS  - accessSync should be exported as a function
+✅ PASS  - accessSync fallback checks source-aware result shape
+✅ PASS  - accessSync fallback checks stable result contract
+✅ PASS  - futimes should be exported as a function
+✅ PASS  - chmod should be exported as a function
+✅ PASS  - opendirSync should be exported as a function
+✅ PASS  - Dir.prototype.entries should be exported as a function
+✅ PASS  - realpath.native should be exported as a function
+✅ PASS  - createWriteStream should be exported as a function
+✅ PASS  - statSync should be exported as a function
+✅ PASS  - fdatasyncSync should be exported as a function
+✅ PASS  - writev should be exported as a function
+✅ PASS  - writevSync should be exported as a function
+✅ PASS  - realpathSync should be exported as a function
+✅ PASS  - Dir.prototype.readSyncRecursive should be exported as a function
+✅ PASS  - watchFile should be exported as a function
+✅ PASS  - fdatasync should be exported as a function
+✅ PASS  - realpath should be exported as a function
+✅ PASS  - Dir.prototype.read should be exported as a function
+✅ PASS  - Stats should be exported as a function
+✅ PASS  - createReadStream should be exported as a function
+✅ PASS  - chmodSync should be exported as a function
+✅ PASS  - readFileSync should be exported as a function
+✅ PASS  - Dir.prototype.processReadResult should be exported as a function
+✅ PASS  - Dir should be exported as a function
+✅ PASS  - fchmodSync should be exported as a function
+✅ PASS  - Dirent.prototype.isDirectory should be exported as a function
+✅ PASS  - readlinkSync should be exported as a function
+✅ PASS  - access should be exported as a function
+✅ PASS  - read should be exported as a function
+✅ PASS  - read fallback reads from a real file descriptor through callback
+✅ PASS  - fsync should be exported as a function
+✅ PASS  - fchownSync should be exported as a function
+✅ PASS  - fchownSync Safe invariant test: catch block without chownErOk
+✅ PASS  - fchownSync Safe invariant test: empty target
+✅ PASS  - fchownSync Safe invariant test: undefined uid
+✅ PASS  - closeSync should be exported as a function
+✅ PASS  - writeFile should be exported as a function
+✅ PASS  - globSync should be exported as a function
+✅ PASS  - fstatSync should be exported as a function
+✅ PASS  - lstatSync should be exported as a function
+✅ PASS  - Dirent.prototype.isSymbolicLink should be exported as a function
+✅ PASS  - mkdtemp should be exported as a function
+✅ PASS  - ReadStream.prototype.open auto-generated (prototype)
+✅ PASS  - readvSync should be exported as a function
+✅ PASS  - rmSync should be exported as a function
+✅ PASS  - Dirent.prototype.isSocket should be exported as a function
+✅ PASS  - readdir should be exported as a function
+✅ PASS  - copyFileSync should be exported as a function
+✅ PASS  - copyFileSync Copy file with invalid source path
+✅ PASS  - copyFileSync Copy file with invalid destination path
+✅ PASS  - copyFileSync Copy file with null mode
+✅ PASS  - copyFileSync Copy file with empty source and destination paths
+✅ PASS  - chownSync should be exported as a function
+✅ PASS  - chownSync Safe invariant test: catch block with chownErOk
+✅ PASS  - chownSync Safe invariant test: undefined uid and gid
+✅ PASS  - chownSync Normal behavior test: successful call to orig
+✅ PASS  - rmdirSync should be exported as a function
+✅ PASS  - Dir.prototype.close should be exported as a function
+✅ PASS  - statfsSync should be exported as a function
+✅ PASS  - mkdtempSync should be exported as a function
+✅ PASS  - appendFileSync should be exported as a function
+✅ PASS  - truncateSync should be exported as a function
+✅ PASS  - lutimes should be exported as a function
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - Dir.prototype.closeSync should be exported as a function
+✅ PASS  - unwatchFile should be exported as a function
+✅ PASS  - statfs should be exported as a function
+✅ PASS  - writeSync should be exported as a function
+✅ PASS  - fchmod should be exported as a function
+✅ PASS  - Dir.prototype.readSync should be exported as a function
+✅ PASS  - ReadStream auto-generated (prototype)
+✅ PASS  - linkSync should be exported as a function
+✅ PASS  - Dirent.prototype.isCharacterDevice should be exported as a function
+✅ PASS  - fsyncSync should be exported as a function
+✅ PASS  - rm should be exported as a function
+✅ PASS  - lchownSync should be exported as a function
+✅ PASS  - lchownSync Safe invariant test: valid inputs
+✅ PASS  - futimesSync should be exported as a function
+✅ PASS  - WriteStream auto-generated (prototype)
+✅ PASS  - opendir should be exported as a function
+✅ PASS  - cpSync should be exported as a function
+✅ PASS  - symlink should be exported as a function
+✅ PASS  - readlink should be exported as a function
+✅ PASS  - lchmod should be exported as a function
+✅ PASS  - createWriteStream auto-generated (prototype)
+✅ PASS  - createReadStream auto-generated (prototype)
+✅ PASS  - openAsBlob should be exported as a function
+✅ PASS  - closeSync auto-generated (prototype)
+✅ PASS  - Dirent.prototype.isBlockDevice should be exported as a function
+✅ PASS  - utimesSync should be exported as a function
+✅ PASS  - Dirent.prototype.isFIFO should be exported as a function
+✅ PASS  - lutimesSync should be exported as a function
+✅ PASS  - WriteStream.prototype.open auto-generated (prototype)
+✅ PASS  - truncate should be exported as a function
+✅ PASS  - fchown should be exported as a function
+✅ PASS  - mkdirSync should be exported as a function
+✅ PASS  - existsSync should be exported as a function
+✅ PASS  - readv should be exported as a function
+✅ PASS  - Dirent should be exported as a function
+✅ PASS  - fstat should be exported as a function
+✅ PASS  - lchmodSync should be exported as a function
+✅ PASS  - open auto-generated (prototype)
+✅ PASS  - open fallback observes successful callback result
+✅ PASS  - open fallback reports a missing path through callback
+✅ PASS  - cp should be exported as a function
+✅ PASS  - Dirent.prototype.isFile should be exported as a function
+✅ PASS  - open should be exported as a function
+✅ PASS  - unlink should be exported as a function
+✅ PASS  - openSync should be exported as a function
+✅ PASS  - lstat should be exported as a function
+✅ PASS  - rmdir should be exported as a function
+✅ PASS  - utimes should be exported as a function
+✅ PASS  - mkdtempDisposableSync should be exported as a function
+✅ PASS  - ftruncate should be exported as a function
+✅ PASS  - renameSync should be exported as a function
+============================================================
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: graceful-fs.readFile.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 4 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:19:08.947Z","testFile":"graceful-fs.readFile.test.js","issue":"Failed oracle assertion","original":"expect(typeof result === 'object' || typeof result === 'string').toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:19:08.947Z","testFile":"graceful-fs.readFile.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:19:08.947Z","testFile":"graceful-fs.readFile.test.js","issue":"Failed oracle assertion","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:19:08.947Z","testFile":"graceful-fs.readFile.test.js","issue":"Failed oracle assertion","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [graceful-fs.readFile.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:19:50.827Z","testFile":"graceful-fs.readFile.test.js","issue":"Assertion rejected","original":"expect(typeof result === 'object' || typeof result === 'string').toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [graceful-fs.readFile.test.js :: toBeDefined] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.1
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:20:34.588Z","testFile":"graceful-fs.readFile.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [graceful-fs.readFile.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:21:21.935Z","testFile":"graceful-fs.readFile.test.js","issue":"Assertion rejected","original":"expect(result === undefined || result !== undefined).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [graceful-fs.readFile.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting graceful-fs.readFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:22:08.977Z","testFile":"graceful-fs.readFile.test.js","issue":"Assertion rejected","original":"expect(error && (error instanceof Error || typeof error.message === \"string\")).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: node-graceful-fs.dynamic.chown.chown.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:08.999Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Failed oracle assertion","original":"expect(typeof result).toBe('undefined')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:08.999Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:08.999Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:09.000Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:09.000Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:22:09.000Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:22:56.451Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('undefined')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.1
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:23:44.642Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBeDefined] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.5
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:24:31.863Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:25:20.047Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:26:08.431Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.chown.chown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.7999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.chown.chown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:26:56.465Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: node-graceful-fs.dynamic.copyFile.copyFile.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 2 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:26:56.475Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","issue":"Failed oracle assertion","original":"expect(callbackInvoked).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:26:56.475Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: boolean(false)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [node-graceful-fs.dynamic.copyFile.copyFile.test.js :: toBe + observed] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.8999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.copyFile.copyFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:27:44.925Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","issue":"Assertion rejected","original":"expect(callbackInvoked).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.copyFile.copyFile.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.9999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.copyFile.copyFile.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:28:28.787Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+
+🔍 Analyzing File: node-graceful-fs.dynamic.lchown.lchown.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.801Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Failed oracle assertion","original":"expect(typeof result).toBe('undefined')","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.801Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.801Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.801Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Failed oracle assertion","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.801Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-07-19T20:28:28.802Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Failed oracle assertion","original":"expect(result == null).toBe(true)","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.0999999999999999
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:29:16.560Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(typeof result).toBe('undefined')","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:30:04.143Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBeDefined: OBSERVED
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBeDefined] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.2
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:30:52.025Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.3
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:31:40.523Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(typeof __unitgen_target__).toBe(\"function\")","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.4000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:32:28.829Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Runtime observation skipped for toBe: OBSERVED
+📊 Single Target [node-graceful-fs.dynamic.lchown.lchown.test.js :: toBe] -> Before: 8 | After: 8
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 1.5000000000000002
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.30000000000000004
+  }
+}
+⚠️ Single assertion rejected. Reverting node-graceful-fs.dynamic.lchown.lchown.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-07-19T20:33:16.650Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","issue":"Assertion rejected","original":"expect(result == null).toBe(true)","suggested":"Rejected because targeted failed test did not improve","status":"reverted"}
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 123
+Failed Suites     : 4
+Total Tests       : 157
+Passed            : 153
+Failed            : 4
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.lchown.lchown.test.js
+  ● lchown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | exp...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.test.js
+  ● readFile › [repair-candidate] Read file with valid path and callback expect(received).toBeDefined() Received: undefined 262 | const cb = (err, data) => {} 263 | const result = readFile(file, {}, cb); > 264 | expect(...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.copyFile.copyFile.test.js
+  ● copyFile › [repair-candidate] Callback is invoked expect(received).toBe(expected) // Object.is equality Expected: true Received: false 25 | const callback = () => { callbackInvoked = true; }; 26 | const result = __u...
+- C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic.chown.chown.test.js
+  ● chown › [repair-candidate] Default behavior - safe invariant test expect(received).toBeDefined() Received: undefined 60 | const cb = () => {} 61 | const result = __unitgen_target__(target, uid, gid, cb); > 62 | expe...
+------------------------------------------------------------
+✅ PASS  - lchown should be exported as a function
+✅ PASS  - lchown Default behavior - safe invariant test
+✅ PASS  - lchown Parameterized behavior - safe invariant test
+✅ PASS  - lchown Safe invariant test
+❌ FAIL  - lchown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - readFile auto-generated (prototype)
+❌ FAIL  - readFile [repair-candidate] Read file with valid path and callback
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\graceful-fs.readFile.tes...
+✅ PASS  - copyFile should be exported as a function
+❌ FAIL  - copyFile [repair-candidate] Callback is invoked
+   Error: Error: expect(received).toBe(expected) // Object.is equality Expected: true Received: false at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\...
+✅ PASS  - chown should be exported as a function
+✅ PASS  - chown Default behavior - safe invariant test
+✅ PASS  - chown Parameterized behavior - safe invariant test
+✅ PASS  - chown Safe invariant test
+❌ FAIL  - chown [repair-candidate] Default behavior - safe invariant test
+   Error: Error: expect(received).toBeDefined() Received: undefined at Object.<anonymous> (C:\Users\DELL\Documents\FYP\Part 2\Continuation Version\UnitGen_Final_Completed_Version\backend\tests\generated\node-graceful-fs.dynamic...
+✅ PASS  - readdirSync should be exported as a function
+✅ PASS  - readdir auto-generated (prototype)
+✅ PASS  - readdir fallback observes successful callback result
+✅ PASS  - readdir fallback reports a missing path through callback
+✅ PASS  - fchownSync should be exported as a function
+✅ PASS  - fchownSync Safe invariant test: catch block without chownErOk
+✅ PASS  - fchownSync Safe invariant test: empty target
+✅ PASS  - fchownSync Safe invariant test: undefined uid
+✅ PASS  - copyFileSync should be exported as a function
+✅ PASS  - copyFileSync Copy file with invalid source path
+✅ PASS  - copyFileSync Copy file with invalid destination path
+✅ PASS  - copyFileSync Copy file with null mode
+✅ PASS  - copyFileSync Copy file with empty source and destination paths
+✅ PASS  - Dirent.prototype.isFile should be exported as a function
+✅ PASS  - existsSync should be exported as a function
+✅ PASS  - close auto-generated (prototype)
+✅ PASS  - close Close function with valid file descriptor and callback
+✅ PASS  - close fallback checks source-aware result shape
+✅ PASS  - close fallback checks stable result contract
+✅ PASS  - close [repair-candidate] Observed behavior returns undefined
+✅ PASS  - fstat should be exported as a function
+✅ PASS  - access should be exported as a function
+✅ PASS  - openAsBlob should be exported as a function
+✅ PASS  - readFile should be exported as a function
+✅ PASS  - watch should be exported as a function
+✅ PASS  - mkdir should be exported as a function
+✅ PASS  - cp should be exported as a function
+✅ PASS  - lchmodSync should be exported as a function
+✅ PASS  - readSync should be exported as a function
+✅ PASS  - readSync Safe invariant - catch block throws error if not 'EAGAIN'
+✅ PASS  - readSync fallback reads from a real file descriptor synchronously
+✅ PASS  - fchmod should be exported as a function
+✅ PASS  - fdatasyncSync should be exported as a function
+✅ PASS  - openSync should be exported as a function
+✅ PASS  - fsync should be exported as a function
+✅ PASS  - futimesSync should be exported as a function
+✅ PASS  - readvSync should be exported as a function
+✅ PASS  - Dir.prototype.read should be exported as a function
+✅ PASS  - chmodSync should be exported as a function
+✅ PASS  - realpathSync.native should be exported as a function
+✅ PASS  - writev should be exported as a function
+✅ PASS  - readdir should be exported as a function
+✅ PASS  - Stats should be exported as a function
+✅ PASS  - Dir.prototype.entries should be exported as a function
+✅ PASS  - ReadStream.prototype.open auto-generated (prototype)
+✅ PASS  - writevSync should be exported as a function
+✅ PASS  - writeFile should be exported as a function
+✅ PASS  - realpath should be exported as a function
+✅ PASS  - glob should be exported as a function
+✅ PASS  - fchmodSync should be exported as a function
+✅ PASS  - exists should be exported as a function
+✅ PASS  - opendirSync should be exported as a function
+✅ PASS  - readFileSync should be exported as a function
+✅ PASS  - open should be exported as a function
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - globSync should be exported as a function
+✅ PASS  - createWriteStream auto-generated (prototype)
+✅ PASS  - truncateSync should be exported as a function
+✅ PASS  - Dir.prototype.readSyncRecursive should be exported as a function
+✅ PASS  - writeSync should be exported as a function
+✅ PASS  - rmSync should be exported as a function
+✅ PASS  - opendir should be exported as a function
+✅ PASS  - ftruncate should be exported as a function
+✅ PASS  - linkSync should be exported as a function
+✅ PASS  - closeSync should be exported as a function
+✅ PASS  - realpath.native should be exported as a function
+✅ PASS  - mkdtempDisposableSync should be exported as a function
+✅ PASS  - chownSync should be exported as a function
+✅ PASS  - chownSync Safe invariant test: catch block with chownErOk
+✅ PASS  - chownSync Safe invariant test: undefined uid and gid
+✅ PASS  - chownSync Normal behavior test: successful call to orig
+✅ PASS  - stat should be exported as a function
+✅ PASS  - symlinkSync should be exported as a function
+✅ PASS  - fsyncSync should be exported as a function
+✅ PASS  - Dirent.prototype.isDirectory should be exported as a function
+✅ PASS  - appendFile should be exported as a function
+✅ PASS  - futimes should be exported as a function
+✅ PASS  - statSync should be exported as a function
+✅ PASS  - readlinkSync should be exported as a function
+✅ PASS  - Dir.prototype.closeSync should be exported as a function
+✅ PASS  - fchown should be exported as a function
+✅ PASS  - Dirent.prototype.isCharacterDevice should be exported as a function
+✅ PASS  - link should be exported as a function
+✅ PASS  - chmod should be exported as a function
+✅ PASS  - close should be exported as a function
+✅ PASS  - realpathSync should be exported as a function
+✅ PASS  - rename should be exported as a function
+✅ PASS  - read should be exported as a function
+✅ PASS  - read fallback reads from a real file descriptor through callback
+✅ PASS  - appendFileSync should be exported as a function
+✅ PASS  - lstat should be exported as a function
+✅ PASS  - createWriteStream should be exported as a function
+✅ PASS  - Dirent.prototype.isFIFO should be exported as a function
+✅ PASS  - mkdtemp should be exported as a function
+✅ PASS  - mkdirSync should be exported as a function
+✅ PASS  - lutimesSync should be exported as a function
+✅ PASS  - Dirent.prototype.isSymbolicLink should be exported as a function
+✅ PASS  - cpSync should be exported as a function
+✅ PASS  - watchFile should be exported as a function
+✅ PASS  - lchownSync should be exported as a function
+✅ PASS  - lchownSync Safe invariant test: valid inputs
+✅ PASS  - Dirent.prototype.isBlockDevice should be exported as a function
+✅ PASS  - rm should be exported as a function
+✅ PASS  - statfs should be exported as a function
+✅ PASS  - Dirent should be exported as a function
+✅ PASS  - createReadStream should be exported as a function
+✅ PASS  - unlinkSync should be exported as a function
+✅ PASS  - ftruncateSync should be exported as a function
+✅ PASS  - renameSync should be exported as a function
+✅ PASS  - Dirent.prototype.isSocket should be exported as a function
+✅ PASS  - fstatSync should be exported as a function
+✅ PASS  - rmdirSync should be exported as a function
+✅ PASS  - utimesSync should be exported as a function
+✅ PASS  - ReadStream auto-generated (prototype)
+✅ PASS  - Dir should be exported as a function
+✅ PASS  - readlink should be exported as a function
+✅ PASS  - rmdir should be exported as a function
+✅ PASS  - truncate should be exported as a function
+✅ PASS  - write should be exported as a function
+✅ PASS  - statfsSync should be exported as a function
+✅ PASS  - fdatasync should be exported as a function
+✅ PASS  - lutimes should be exported as a function
+✅ PASS  - readv should be exported as a function
+✅ PASS  - Dir.prototype.readSync should be exported as a function
+✅ PASS  - unwatchFile should be exported as a function
+✅ PASS  - mkdtempSync should be exported as a function
+✅ PASS  - WriteStream.prototype.open auto-generated (prototype)
+✅ PASS  - unlink should be exported as a function
+✅ PASS  - Dir.prototype.processReadResult should be exported as a function
+✅ PASS  - lstatSync should be exported as a function
+✅ PASS  - open auto-generated (prototype)
+✅ PASS  - open fallback observes successful callback result
+✅ PASS  - open fallback reports a missing path through callback
+✅ PASS  - closeSync auto-generated (prototype)
+✅ PASS  - symlink should be exported as a function
+✅ PASS  - WriteStream auto-generated (prototype)
+✅ PASS  - createReadStream auto-generated (prototype)
+✅ PASS  - accessSync should be exported as a function
+✅ PASS  - accessSync fallback checks source-aware result shape
+✅ PASS  - accessSync fallback checks stable result contract
+✅ PASS  - utimes should be exported as a function
+✅ PASS  - Dir.prototype.close should be exported as a function
+✅ PASS  - lchmod should be exported as a function
+============================================================
+
+__UNITGEN_EVENT__{"type":"repair_candidate_quarantined","timestamp":"2026-07-19T20:34:03.421Z","testFile":"graceful-fs.close.test.js","failureType":"Unresolved repair candidate","repairStrategy":"Repair Candidate Quarantine","after":"1 unresolved repair candidate(s) removed before final export","status":"quarantined"}
+🧯 Quarantined 1 unresolved repair candidate(s) from graceful-fs.close.test.js.
+__UNITGEN_EVENT__{"type":"repair_candidate_quarantined","timestamp":"2026-07-19T20:34:03.432Z","testFile":"graceful-fs.readFile.test.js","failureType":"Unresolved repair candidate","repairStrategy":"Repair Candidate Quarantine","after":"1 unresolved repair candidate(s) removed before final export","status":"quarantined"}
+🧯 Quarantined 1 unresolved repair candidate(s) from graceful-fs.readFile.test.js.
+__UNITGEN_EVENT__{"type":"repair_candidate_quarantined","timestamp":"2026-07-19T20:34:03.440Z","testFile":"node-graceful-fs.dynamic.chown.chown.test.js","failureType":"Unresolved repair candidate","repairStrategy":"Repair Candidate Quarantine","after":"1 unresolved repair candidate(s) removed before final export","status":"quarantined"}
+🧯 Quarantined 1 unresolved repair candidate(s) from node-graceful-fs.dynamic.chown.chown.test.js.
+__UNITGEN_EVENT__{"type":"repair_candidate_quarantined","timestamp":"2026-07-19T20:34:03.450Z","testFile":"node-graceful-fs.dynamic.lchown.lchown.test.js","failureType":"Unresolved repair candidate","repairStrategy":"Repair Candidate Quarantine","after":"1 unresolved repair candidate(s) removed before final export","status":"quarantined"}
+🧯 Quarantined 1 unresolved repair candidate(s) from node-graceful-fs.dynamic.lchown.lchown.test.js.
+__UNITGEN_EVENT__{"type":"repair_candidate_quarantined","timestamp":"2026-07-19T20:34:03.458Z","testFile":"node-graceful-fs.dynamic.copyFile.copyFile.test.js","failureType":"Unresolved repair candidate","repairStrategy":"Repair Candidate Quarantine","after":"1 unresolved repair candidate(s) removed before final export","status":"quarantined"}
+🧯 Quarantined 1 unresolved repair candidate(s) from node-graceful-fs.dynamic.copyFile.copyFile.test.js.
+
+Re-running Jest after unresolved repair-candidate quarantine...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 123
+Failed Suites     : 0
+Total Tests       : 152
+Passed            : 152
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - lchown should be exported as a function
+✅ PASS  - lchown Default behavior - safe invariant test
+✅ PASS  - lchown Parameterized behavior - safe invariant test
+✅ PASS  - lchown Safe invariant test
+✅ PASS  - readFile auto-generated (prototype)
+✅ PASS  - copyFile should be exported as a function
+✅ PASS  - chown should be exported as a function
+✅ PASS  - chown Default behavior - safe invariant test
+✅ PASS  - chown Parameterized behavior - safe invariant test
+✅ PASS  - chown Safe invariant test
+✅ PASS  - open auto-generated (prototype)
+✅ PASS  - open fallback observes successful callback result
+✅ PASS  - open fallback reports a missing path through callback
+✅ PASS  - Dir.prototype.readSync should be exported as a function
+✅ PASS  - unwatchFile should be exported as a function
+✅ PASS  - createReadStream auto-generated (prototype)
+✅ PASS  - truncate should be exported as a function
+✅ PASS  - accessSync should be exported as a function
+✅ PASS  - accessSync fallback checks source-aware result shape
+✅ PASS  - accessSync fallback checks stable result contract
+✅ PASS  - WriteStream auto-generated (prototype)
+✅ PASS  - WriteStream.prototype.open auto-generated (prototype)
+✅ PASS  - lchmod should be exported as a function
+✅ PASS  - closeSync auto-generated (prototype)
+✅ PASS  - unlink should be exported as a function
+✅ PASS  - symlink should be exported as a function
+✅ PASS  - utimes should be exported as a function
+✅ PASS  - lstatSync should be exported as a function
+✅ PASS  - write should be exported as a function
+✅ PASS  - statfsSync should be exported as a function
+✅ PASS  - Dir.prototype.processReadResult should be exported as a function
+✅ PASS  - Dir.prototype.close should be exported as a function
+✅ PASS  - lutimes should be exported as a function
+✅ PASS  - fdatasync should be exported as a function
+✅ PASS  - renameSync should be exported as a function
+✅ PASS  - mkdtempSync should be exported as a function
+✅ PASS  - ReadStream auto-generated (prototype)
+✅ PASS  - readv should be exported as a function
+✅ PASS  - readlink should be exported as a function
+✅ PASS  - rmdir should be exported as a function
+✅ PASS  - utimesSync should be exported as a function
+✅ PASS  - rmdirSync should be exported as a function
+✅ PASS  - fstatSync should be exported as a function
+✅ PASS  - lstat should be exported as a function
+✅ PASS  - Dir should be exported as a function
+✅ PASS  - rm should be exported as a function
+✅ PASS  - mkdirSync should be exported as a function
+✅ PASS  - lutimesSync should be exported as a function
+✅ PASS  - mkdtemp should be exported as a function
+✅ PASS  - Dirent should be exported as a function
+✅ PASS  - lchownSync should be exported as a function
+✅ PASS  - lchownSync Safe invariant test: valid inputs
+✅ PASS  - ftruncateSync should be exported as a function
+✅ PASS  - Dir.prototype.entries should be exported as a function
+✅ PASS  - Dirent.prototype.isSocket should be exported as a function
+✅ PASS  - Dirent.prototype.isFIFO should be exported as a function
+✅ PASS  - Dirent.prototype.isSymbolicLink should be exported as a function
+✅ PASS  - appendFileSync should be exported as a function
+✅ PASS  - unlinkSync should be exported as a function
+✅ PASS  - createReadStream should be exported as a function
+✅ PASS  - statfs should be exported as a function
+✅ PASS  - rename should be exported as a function
+✅ PASS  - cpSync should be exported as a function
+✅ PASS  - read should be exported as a function
+✅ PASS  - read fallback reads from a real file descriptor through callback
+✅ PASS  - Dirent.prototype.isBlockDevice should be exported as a function
+✅ PASS  - link should be exported as a function
+✅ PASS  - appendFile should be exported as a function
+✅ PASS  - fchown should be exported as a function
+✅ PASS  - chownSync should be exported as a function
+✅ PASS  - chownSync Safe invariant test: catch block with chownErOk
+✅ PASS  - chownSync Safe invariant test: undefined uid and gid
+✅ PASS  - chownSync Normal behavior test: successful call to orig
+✅ PASS  - Dirent.prototype.isCharacterDevice should be exported as a function
+✅ PASS  - watchFile should be exported as a function
+✅ PASS  - readlinkSync should be exported as a function
+✅ PASS  - statSync should be exported as a function
+✅ PASS  - futimes should be exported as a function
+✅ PASS  - createWriteStream should be exported as a function
+✅ PASS  - close should be exported as a function
+✅ PASS  - mkdtempDisposableSync should be exported as a function
+✅ PASS  - symlinkSync should be exported as a function
+✅ PASS  - realpathSync should be exported as a function
+✅ PASS  - closeSync should be exported as a function
+✅ PASS  - chmod should be exported as a function
+✅ PASS  - realpath.native should be exported as a function
+✅ PASS  - Dir.prototype.closeSync should be exported as a function
+✅ PASS  - stat should be exported as a function
+✅ PASS  - Dirent.prototype.isDirectory should be exported as a function
+✅ PASS  - createWriteStream auto-generated (prototype)
+✅ PASS  - fsyncSync should be exported as a function
+✅ PASS  - truncateSync should be exported as a function
+✅ PASS  - realpath should be exported as a function
+✅ PASS  - opendir should be exported as a function
+✅ PASS  - ftruncate should be exported as a function
+✅ PASS  - rmSync should be exported as a function
+✅ PASS  - linkSync should be exported as a function
+✅ PASS  - readdir should be exported as a function
+✅ PASS  - opendirSync should be exported as a function
+✅ PASS  - open should be exported as a function
+✅ PASS  - exists should be exported as a function
+✅ PASS  - glob should be exported as a function
+✅ PASS  - writeFileSync should be exported as a function
+✅ PASS  - Stats should be exported as a function
+✅ PASS  - readFileSync should be exported as a function
+✅ PASS  - ReadStream.prototype.open auto-generated (prototype)
+✅ PASS  - writevSync should be exported as a function
+✅ PASS  - writeSync should be exported as a function
+✅ PASS  - realpathSync.native should be exported as a function
+✅ PASS  - futimesSync should be exported as a function
+✅ PASS  - Dir.prototype.readSyncRecursive should be exported as a function
+✅ PASS  - globSync should be exported as a function
+✅ PASS  - readSync should be exported as a function
+✅ PASS  - readSync Safe invariant - catch block throws error if not 'EAGAIN'
+✅ PASS  - readSync fallback reads from a real file descriptor synchronously
+✅ PASS  - fchmodSync should be exported as a function
+✅ PASS  - chmodSync should be exported as a function
+✅ PASS  - openSync should be exported as a function
+✅ PASS  - writeFile should be exported as a function
+✅ PASS  - writev should be exported as a function
+✅ PASS  - lchmodSync should be exported as a function
+✅ PASS  - fchmod should be exported as a function
+✅ PASS  - Dir.prototype.read should be exported as a function
+✅ PASS  - readvSync should be exported as a function
+✅ PASS  - mkdir should be exported as a function
+✅ PASS  - fsync should be exported as a function
+✅ PASS  - watch should be exported as a function
+✅ PASS  - fdatasyncSync should be exported as a function
+✅ PASS  - cp should be exported as a function
+✅ PASS  - readFile should be exported as a function
+✅ PASS  - readdir auto-generated (prototype)
+✅ PASS  - readdir fallback observes successful callback result
+✅ PASS  - readdir fallback reports a missing path through callback
+✅ PASS  - fchownSync should be exported as a function
+✅ PASS  - fchownSync Safe invariant test: catch block without chownErOk
+✅ PASS  - fchownSync Safe invariant test: empty target
+✅ PASS  - fchownSync Safe invariant test: undefined uid
+✅ PASS  - close auto-generated (prototype)
+✅ PASS  - close Close function with valid file descriptor and callback
+✅ PASS  - close fallback checks source-aware result shape
+✅ PASS  - close fallback checks stable result contract
+✅ PASS  - readdirSync should be exported as a function
+✅ PASS  - openAsBlob should be exported as a function
+✅ PASS  - fstat should be exported as a function
+✅ PASS  - access should be exported as a function
+✅ PASS  - copyFileSync should be exported as a function
+✅ PASS  - copyFileSync Copy file with invalid source path
+✅ PASS  - copyFileSync Copy file with invalid destination path
+✅ PASS  - copyFileSync Copy file with null mode
+✅ PASS  - copyFileSync Copy file with empty source and destination paths
+✅ PASS  - existsSync should be exported as a function
+✅ PASS  - Dirent.prototype.isFile should be exported as a function
+============================================================
+
+
+✅ Done.
+

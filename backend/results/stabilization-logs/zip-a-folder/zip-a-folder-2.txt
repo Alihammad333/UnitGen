@@ -1,0 +1,1253 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/zip-a-folder
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 3 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\dist\cli.mjs
+==============================
+✅ Found 39 function(s): crc32$1, encode7zNumber, dateToFiletime, Native7z, collectEntriesFromDirectory, worker, collectGlobEntries, worker, crc32, dateToDosTime, dateToDosDate, writeString, writeOctal, writeUInt64LE, writeToStream, onError, looksLikeGlob, createTarHeader, NativeTar, ZipEntry, NativeZip, ZipAFolder, onError, onFinish, cleanup, zip, tar, sevenZip, printHelp, printVersion, parseArgs, formatBytes, getArchiveType, getSourceSize, walkDir, countFiles, walkDir, ProgressReporter, main
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\dist\ZipAFolder.cjs
+==============================
+✅ Found 30 function(s): __copyProps, __toESM, crc32$1, encode7zNumber, dateToFiletime, Native7z, collectEntriesFromDirectory, worker, collectGlobEntries, worker, crc32, dateToDosTime, dateToDosDate, writeString, writeOctal, writeUInt64LE, writeToStream, onError, looksLikeGlob, createTarHeader, NativeTar, ZipEntry, NativeZip, ZipAFolder, onError, onFinish, cleanup, zip, tar, sevenZip
+ℹ️ Class-like exports will use constructor prototype generation: ZipAFolder
+✅ Exported function(s): ZipAFolder, zip, tar, sevenZip
+🏛️ Class export analysis:
+   - ZipAFolder: constructor params (none), 0 prototype method(s), 3 static method(s)
+     static: zip, tar, sevenZip
+   - Native7z: constructor params (compressionLevel), 13 prototype method(s), 0 static method(s)
+     prototype: addFile, compressLzma, writeToStream, buildArchive, buildHeader, buildMainStreamsInfo, buildPackInfo, buildUnpackInfo, buildSubStreamsInfo, buildFilesInfo, buildFileNames, buildMTimes, buildAttributes
+   - NativeTar: constructor params (stream), 3 prototype method(s), 0 static method(s)
+     prototype: addDirectory, addFile, finalize
+   - NativeZip: constructor params (options), 3 prototype method(s), 0 static method(s)
+     prototype: addDirectoryEntry, addFileFromFs, writeToStream
+📚 Usage snippets:
+   - 15 snippet(s) found from 1 scanned file(s)
+   - zip: 5
+   - tar: 5
+   - sevenZip: 5
+📝 Doc comments:
+   - 3/4 function(s) have comment context
+   - zip: JSDoc, 9 param tag(s)
+   - tar: JSDoc, 9 param tag(s)
+   - sevenZip: JSDoc, 3 param tag(s)
+🔎 Import map:
+   - fs -> fs (require:*, cjs)
+   - path -> path (require:*, cjs)
+   - zlib -> zlib (require:*, cjs)
+   - lzma -> lzma (require:*, cjs)
+   - tinyglobby -> tinyglobby (require:*, cjs)
+🔗 Dependency usage:
+   zip:
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (transitive-member-chain)
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - zlib.deflateRawSync -> zlib (transitive-member-call)
+   - zlib.deflateRawSync -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   tar:
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants.BROTLI_PARAM_QUALITY -> zlib (transitive-member-chain)
+   - zlib.constants.BROTLI_MAX_QUALITY -> zlib (transitive-member-chain)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - zlib.createGzip -> zlib (transitive-member-call)
+   - zlib.createGzip -> zlib (transitive-member)
+   - zlib.createBrotliCompress -> zlib (transitive-member-call)
+   - zlib.createBrotliCompress -> zlib (transitive-member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   sevenZip:
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   ZipAFolder.zip:
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (member-chain)
+   - zlib.constants -> zlib (member)
+   - zlib -> zlib (reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (member-chain)
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - zlib.deflateRawSync -> zlib (transitive-member-call)
+   - zlib.deflateRawSync -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   ZipAFolder.tar:
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (member-chain)
+   - zlib.constants -> zlib (member)
+   - zlib -> zlib (reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (member-chain)
+   - zlib.constants.BROTLI_PARAM_QUALITY -> zlib (member-chain)
+   - zlib.constants.BROTLI_MAX_QUALITY -> zlib (member-chain)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - zlib.createGzip -> zlib (member-call)
+   - zlib.createGzip -> zlib (member)
+   - zlib.createBrotliCompress -> zlib (member-call)
+   - zlib.createBrotliCompress -> zlib (member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   ZipAFolder.sevenZip:
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - tinyglobby.globSync -> tinyglobby (transitive-member)
+   - tinyglobby -> tinyglobby (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+🧩 Mock plan:
+   zip:
+   - zlib (builtin) members: constants, deflateRawSync; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, deflateRawSync; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION;
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat; chains: alloc, concat;
+   tar:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - zlib (builtin) members: constants, createGzip, createBrotliCompress; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, BROTLI_PARAM_QUALITY, BROTLI_MAX_QUALITY, createGzip, createBrotliCompress; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION, constants.BROTLI_PARAM_QUALITY, constants.BROTLI_MAX_QUALITY;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc; chains: alloc;
+   sevenZip:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat; chains: alloc, concat;
+   ZipAFolder.zip:
+   - zlib (builtin) members: constants, deflateRawSync; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, deflateRawSync; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION;
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat, from; chains: alloc, concat, from;
+   ZipAFolder.tar:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - zlib (builtin) members: constants, createGzip, createBrotliCompress; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, BROTLI_PARAM_QUALITY, BROTLI_MAX_QUALITY, createGzip, createBrotliCompress; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION, constants.BROTLI_PARAM_QUALITY, constants.BROTLI_MAX_QUALITY;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, from, concat; chains: alloc, from, concat;
+   ZipAFolder.sevenZip:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: tinyglobby, globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, from, concat; chains: alloc, from, concat;
+🧪 Rendered mocks:
+   zip: 4 mock block(s)
+   tar: 4 mock block(s)
+   sevenZip: 3 mock block(s)
+   ZipAFolder.zip: 4 mock block(s)
+   ZipAFolder.tar: 4 mock block(s)
+   ZipAFolder.sevenZip: 3 mock block(s)
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.ZipAFolder.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.ZipAFolder.zip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.ZipAFolder.tar.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.ZipAFolder.sevenZip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.zip.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.tar.test.js
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.sevenZip.test.js
+
+==============================
+📄 Processing: benchmark_packages\zip-a-folder\dist\ZipAFolder.mjs
+==============================
+✅ Found 28 function(s): crc32$1, encode7zNumber, dateToFiletime, Native7z, collectEntriesFromDirectory, worker, collectGlobEntries, worker, crc32, dateToDosTime, dateToDosDate, writeString, writeOctal, writeUInt64LE, writeToStream, onError, looksLikeGlob, createTarHeader, NativeTar, ZipEntry, NativeZip, ZipAFolder, onError, onFinish, cleanup, zip, tar, sevenZip
+ℹ️ Class-like exports will use constructor prototype generation: ZipAFolder
+✅ Exported function(s): ZipAFolder, zip, tar, sevenZip
+🏛️ Class export analysis:
+   - ZipAFolder: constructor params (none), 0 prototype method(s), 3 static method(s)
+     static: zip, tar, sevenZip
+   - Native7z: constructor params (compressionLevel), 13 prototype method(s), 0 static method(s)
+     prototype: addFile, compressLzma, writeToStream, buildArchive, buildHeader, buildMainStreamsInfo, buildPackInfo, buildUnpackInfo, buildSubStreamsInfo, buildFilesInfo, buildFileNames, buildMTimes, buildAttributes
+   - NativeTar: constructor params (stream), 3 prototype method(s), 0 static method(s)
+     prototype: addDirectory, addFile, finalize
+   - NativeZip: constructor params (options), 3 prototype method(s), 0 static method(s)
+     prototype: addDirectoryEntry, addFileFromFs, writeToStream
+📚 Usage snippets:
+   - 15 snippet(s) found from 1 scanned file(s)
+   - zip: 5
+   - tar: 5
+   - sevenZip: 5
+📝 Doc comments:
+   - 3/4 function(s) have comment context
+   - zip: JSDoc, 9 param tag(s)
+   - tar: JSDoc, 9 param tag(s)
+   - sevenZip: JSDoc, 3 param tag(s)
+🔎 Import map:
+   - fs -> fs (namespace:*, esm)
+   - path -> path (namespace:*, esm)
+   - zlib -> zlib (namespace:*, esm)
+   - LZMA -> lzma (default:default, esm)
+   - globSync -> tinyglobby (named:globSync, esm) [globSync]
+🔗 Dependency usage:
+   zip:
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (transitive-member-chain)
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - zlib.deflateRawSync -> zlib (transitive-member-call)
+   - zlib.deflateRawSync -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   tar:
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (transitive-member-chain)
+   - zlib.constants.BROTLI_PARAM_QUALITY -> zlib (transitive-member-chain)
+   - zlib.constants.BROTLI_MAX_QUALITY -> zlib (transitive-member-chain)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - zlib.createGzip -> zlib (transitive-member-call)
+   - zlib.createGzip -> zlib (transitive-member)
+   - zlib.createBrotliCompress -> zlib (transitive-member-call)
+   - zlib.createBrotliCompress -> zlib (transitive-member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   sevenZip:
+   - process.cwd -> global:process (transitive-global-member-call)
+   - process.cwd -> global:process (transitive-global-member)
+   - process -> global:process (transitive-global-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (transitive-member-chain)
+   - fs.promises.stat -> fs (transitive-member-chain-call)
+   - fs.promises.stat -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - path.dirname -> path (transitive-member-call)
+   - path.dirname -> path (transitive-member)
+   - path.sep -> path (transitive-member)
+   - fs.createWriteStream -> fs (transitive-member-call)
+   - fs.createWriteStream -> fs (transitive-member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   ZipAFolder.zip:
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (member-chain)
+   - zlib.constants -> zlib (member)
+   - zlib -> zlib (reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (member-chain)
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - zlib.deflateRawSync -> zlib (transitive-member-call)
+   - zlib.deflateRawSync -> zlib (transitive-member)
+   - zlib -> zlib (transitive-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   ZipAFolder.tar:
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - zlib.constants.Z_DEFAULT_COMPRESSION -> zlib (member-chain)
+   - zlib.constants -> zlib (member)
+   - zlib -> zlib (reference)
+   - zlib.constants.Z_BEST_COMPRESSION -> zlib (member-chain)
+   - zlib.constants.BROTLI_PARAM_QUALITY -> zlib (member-chain)
+   - zlib.constants.BROTLI_MAX_QUALITY -> zlib (member-chain)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - zlib.createGzip -> zlib (member-call)
+   - zlib.createGzip -> zlib (member)
+   - zlib.createBrotliCompress -> zlib (member-call)
+   - zlib.createBrotliCompress -> zlib (member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   ZipAFolder.sevenZip:
+   - process.cwd -> global:process (global-member-call)
+   - process.cwd -> global:process (global-member)
+   - process -> global:process (global-reference)
+   - path.resolve -> path (member-call)
+   - path.resolve -> path (member)
+   - path -> path (reference)
+   - fs.promises().stat.isDirectory -> fs (member-chain-call)
+   - fs.promises().stat.isDirectory -> fs (member-chain)
+   - fs.promises.stat -> fs (member-chain-call)
+   - fs.promises.stat -> fs (member-chain)
+   - fs.promises -> fs (member)
+   - fs -> fs (reference)
+   - path.dirname -> path (member-call)
+   - path.dirname -> path (member)
+   - path.sep -> path (member)
+   - fs.createWriteStream -> fs (member-call)
+   - fs.createWriteStream -> fs (member)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - path.resolve -> path (transitive-member-call)
+   - path.resolve -> path (transitive-member)
+   - path -> path (transitive-reference)
+   - globSync() -> tinyglobby (transitive-direct-call)
+   - globSync -> tinyglobby (transitive-member-call)
+   - globSync -> tinyglobby (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - fs.promises.readFile -> fs (transitive-member-chain-call)
+   - fs.promises.readFile -> fs (transitive-member-chain)
+   - fs.promises -> fs (transitive-member)
+   - fs -> fs (transitive-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.alloc -> global:Buffer (transitive-global-member-call)
+   - Buffer.alloc -> global:Buffer (transitive-global-member)
+   - Buffer.from -> global:Buffer (transitive-global-member-call)
+   - Buffer.from -> global:Buffer (transitive-global-member)
+   - Buffer -> global:Buffer (transitive-global-reference)
+   - Buffer.concat -> global:Buffer (transitive-global-member-call)
+   - Buffer.concat -> global:Buffer (transitive-global-member)
+🧩 Mock plan:
+   zip:
+   - zlib (builtin) members: constants, deflateRawSync; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, deflateRawSync; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION;
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat; chains: alloc, concat;
+   tar:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - zlib (builtin) members: constants, createGzip, createBrotliCompress; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, BROTLI_PARAM_QUALITY, BROTLI_MAX_QUALITY, createGzip, createBrotliCompress; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION, constants.BROTLI_PARAM_QUALITY, constants.BROTLI_MAX_QUALITY;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc; chains: alloc;
+   sevenZip:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat; chains: alloc, concat;
+   ZipAFolder.zip:
+   - zlib (builtin) members: constants, deflateRawSync; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, deflateRawSync; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION;
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, concat, from; chains: alloc, concat, from;
+   ZipAFolder.tar:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - zlib (builtin) members: constants, createGzip, createBrotliCompress; targets: zlib, Z_DEFAULT_COMPRESSION, constants, Z_BEST_COMPRESSION, BROTLI_PARAM_QUALITY, BROTLI_MAX_QUALITY, createGzip, createBrotliCompress; chains: constants.Z_DEFAULT_COMPRESSION, constants.Z_BEST_COMPRESSION, constants.BROTLI_PARAM_QUALITY, constants.BROTLI_MAX_QUALITY;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, from, concat; chains: alloc, from, concat;
+   ZipAFolder.sevenZip:
+   - global:process (global) members: process; targets: process, cwd; chains: cwd;
+   - path (builtin) members: resolve, dirname, sep; targets: path, resolve, dirname, sep;
+   - fs (builtin) members: promises, createWriteStream; targets: fs, isDirectory, promises, stat, createWriteStream, readFile; chains: promises.stat.isDirectory, promises.stat, promises.readFile;
+   - tinyglobby (external) members: globSync; targets: globSync;
+   - global:Buffer (global) members: Buffer; targets: Buffer, alloc, from, concat; chains: alloc, from, concat;
+🧪 Rendered mocks:
+   zip: 4 mock block(s)
+   tar: 4 mock block(s)
+   sevenZip: 3 mock block(s)
+   ZipAFolder.zip: 4 mock block(s)
+   ZipAFolder.tar: 4 mock block(s)
+   ZipAFolder.sevenZip: 3 mock block(s)
+⚠️ Duplicate generated test target skipped: ZipAFolder.ZipAFolder.test.js from benchmark_packages\zip-a-folder\dist\ZipAFolder.mjs
+⚠️ Duplicate generated test target skipped: ZipAFolder.zip.test.js from benchmark_packages\zip-a-folder\dist\ZipAFolder.mjs
+⚠️ Duplicate generated test target skipped: ZipAFolder.tar.test.js from benchmark_packages\zip-a-folder\dist\ZipAFolder.mjs
+⚠️ Duplicate generated test target skipped: ZipAFolder.sevenZip.test.js from benchmark_packages\zip-a-folder\dist\ZipAFolder.mjs
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 3
+⚠️ Files skipped:  0
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  7
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for ZipAFolder
+   received: 6
+   sanitizer accepted: 4
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 2
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 4
+   LLM sanitizer reasons:
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 2
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.ZipAFolder.test.js (4)
+🧪 LLM injection summary for ZipAFolder.zip
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ZipAFolder.zip; keeping prototype only.
+🧪 LLM injection summary for ZipAFolder.tar
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 3
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ZipAFolder.tar; keeping prototype only.
+🧪 LLM injection summary for ZipAFolder.sevenZip
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 3
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for ZipAFolder.sevenZip; keeping prototype only.
+🧪 LLM injection summary for zip
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for zip; keeping prototype only.
+🧪 LLM injection summary for tar
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 3
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for tar; keeping prototype only.
+🧪 LLM injection summary for sevenZip
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - NON_REPAIRABLE_FILESYSTEM_ERROR: 2
+   - NON_REPAIRABLE_REFERENCE_ERROR: 1
+   - NON_REPAIRABLE_UNKNOWN_RUNTIME_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for sevenZip; keeping prototype only.
+
+ℹ️ Post-LLM preflight skipped for static-full-scan flow.
+
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 7
+Failed Suites     : 3
+Total Tests       : 11
+Passed            : 8
+Failed            : 3
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.zip.test.js
+  ● zip › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 903 | const customWS = options.customWriteStream; 904 | const hasTargetPath = !!(targetFilePath && ta...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.tar.test.js
+  ● tar › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 976 | const customWS = options.customWriteStream; 977 | const hasTargetPath = !!(targetFilePath && ta...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.sevenZip.test.js
+  ● sevenZip › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 1073 | const customWS = options.customWriteStream; 1074 | const hasTargetPath = !!(targetFilePat...
+------------------------------------------------------------
+✅ PASS  - ZipAFolder.tar auto-generated (prototype)
+✅ PASS  - ZipAFolder.zip auto-generated (prototype)
+❌ FAIL  - zip auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.zip (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\ZipAFo...
+❌ FAIL  - tar auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.tar (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\ZipAFo...
+❌ FAIL  - sevenZip auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.sevenZip (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\Z...
+✅ PASS  - ZipAFolder.sevenZip auto-generated (prototype)
+✅ PASS  - ZipAFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder ZipAFolder - Safe invariant test
+✅ PASS  - ZipAFolder ZipAFolder - Safe invariant test
+✅ PASS  - ZipAFolder ZipAFolder constructor creates an instance
+✅ PASS  - ZipAFolder ZipAFolder constructor exposes an object-like result
+============================================================
+
+
+🔁 Running adaptive repair...
+
+
+===== REPAIR ATTEMPT 1/3 =====
+
+🔧 Repairing file: ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:33.541Z","testFile":"ZipAFolder.zip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:905:42) at zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.tar.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:33.570Z","testFile":"ZipAFolder.tar.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:978:42) at tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.sevenZip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:33.588Z","testFile":"ZipAFolder.sevenZip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:1075:42) at sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folde","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: ZipAFolder.zip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.tar.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.sevenZip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ Repaired code has syntax errors.
+
+===== REPAIR ATTEMPT 2/3 =====
+
+🔧 Repairing file: ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:37.579Z","testFile":"ZipAFolder.zip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:905:42) at zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.tar.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:37.588Z","testFile":"ZipAFolder.tar.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:978:42) at tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.sevenZip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:37.600Z","testFile":"ZipAFolder.sevenZip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:1075:42) at sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folde","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: ZipAFolder.zip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.tar.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.sevenZip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+
+===== REPAIR ATTEMPT 3/3 =====
+
+🔧 Repairing file: ZipAFolder.zip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:42.051Z","testFile":"ZipAFolder.zip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:905:42) at zip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.tar.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:42.061Z","testFile":"ZipAFolder.tar.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:978:42) at tar (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipA","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🔧 Repairing file: ZipAFolder.sevenZip.test.js
+__UNITGEN_EVENT__{"type":"failure_classified","timestamp":"2026-06-12T21:31:42.068Z","testFile":"ZipAFolder.sevenZip.test.js","failureType":"RUNTIME_THROW","before":"Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folder\\dist\\ZipAFolder.cjs:1075:42) at sevenZip (C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen App version\\backend\\benchmark_packages\\zip-a-folde","repairStrategy":"AST/Semantic Repair","status":"classified"}
+➡️ AST skipped
+➡️ Semantic skipped
+🤖 LLM repairing: ZipAFolder.zip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.tar.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ No usable LLM repair cases.
+🤖 LLM repairing: ZipAFolder.sevenZip.test.js
+🤖 OpenAI LLM Request (Attempt 1/3)
+✅ OpenAI LLM response received
+ℹ️ Extraction fallback used.
+⚠️ LLM repair introduced new top-level identifiers: fsMock
+
+❌ Repair attempts finished.
+
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+⚠️ Baseline has failing tests. Running failed-test assertion repair mode only...
+
+🔍 Analyzing File: ZipAFolder.sevenZip.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-12T21:31:47.648Z","testFile":"ZipAFolder.sevenZip.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: ZipAFolder.tar.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-12T21:31:48.385Z","testFile":"ZipAFolder.tar.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+
+🔍 Analyzing File: ZipAFolder.zip.test.js
+🩹 Mode: failed-test assertion repair
+🧠 Identified 1 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-12T21:31:49.112Z","testFile":"ZipAFolder.zip.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single failed assertion repair will be attempted","status":"detected"}
+ℹ️ Runtime observation skipped for toBeDefined: NO_RUNTIME_VALUE_CAPTURED
+🧠 [AST-Repair] Optimized: toBeDefined
+⚠️ Transformer produced invalid syntax. Reverting file.
+⚠️ Single-assertion proposal failed syntax validation.
+ℹ️ Suite still has failing tests after assertion repair. Passing files were not modified.
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 7
+Failed Suites     : 3
+Total Tests       : 11
+Passed            : 8
+Failed            : 3
+------------------------------------------------------------
+❌ Suite Load/Runtime Errors:
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.zip.test.js
+  ● zip › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 903 | const customWS = options.customWriteStream; 904 | const hasTargetPath = !!(targetFilePath && ta...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.sevenZip.test.js
+  ● sevenZip › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 1073 | const customWS = options.customWriteStream; 1074 | const hasTargetPath = !!(targetFilePat...
+- C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\ZipAFolder.tar.test.js
+  ● tar › auto-generated (prototype) You must either provide a target file path or a custom write stream to write to. 976 | const customWS = options.customWriteStream; 977 | const hasTargetPath = !!(targetFilePath && ta...
+------------------------------------------------------------
+❌ FAIL  - zip auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.zip (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\ZipAFo...
+❌ FAIL  - sevenZip auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.sevenZip (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\Z...
+❌ FAIL  - tar auto-generated (prototype)
+   Error: Error: You must either provide a target file path or a custom write stream to write to. at ZipAFolder.tar (C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\zip-a-folder\dist\ZipAFo...
+✅ PASS  - ZipAFolder.sevenZip auto-generated (prototype)
+✅ PASS  - ZipAFolder auto-generated (prototype)
+✅ PASS  - ZipAFolder ZipAFolder - Safe invariant test
+✅ PASS  - ZipAFolder ZipAFolder - Safe invariant test
+✅ PASS  - ZipAFolder ZipAFolder constructor creates an instance
+✅ PASS  - ZipAFolder ZipAFolder constructor exposes an object-like result
+✅ PASS  - ZipAFolder.tar auto-generated (prototype)
+✅ PASS  - ZipAFolder.zip auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

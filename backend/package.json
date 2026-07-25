@@ -1,0 +1,31 @@
+{
+    "name":  "unitgen",
+    "version":  "1.0.0",
+    "main":  "index.js",
+    "type":  "module",
+    "scripts":  {
+                    "start":  "node src/index.js",
+                    "test":  "jest",
+                    "coverage:unitgen":  "node scripts/measure-unitgen-coverage.js"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "description":  "",
+    "dependencies":  {
+                         "@babel/generator":  "^7.28.5",
+                         "@babel/parser":  "^7.28.5",
+                         "@babel/traverse":  "^7.28.5",
+                         "dotenv":  "^17.4.2",
+                         "node-fetch":  "^3.3.2",
+                         "openai":  "^6.34.0"
+                     },
+    "devDependencies":  {
+                            "@babel/core":  "^7.29.0",
+                            "@babel/preset-env":  "^7.29.2",
+                            "babel-jest":  "^30.3.0",
+                            "jest":  "^30.2.0"
+                        }
+}

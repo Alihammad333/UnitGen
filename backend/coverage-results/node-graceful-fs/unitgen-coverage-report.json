@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-07-19T20:46:47.172Z",
+  "packageName": "node-graceful-fs",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\node-graceful-fs",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 123,
+  "totalTests": 152,
+  "passingTests": 152,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 208,
+        "covered": 107,
+        "skipped": 0,
+        "pct": 51.44
+      },
+      "statements": {
+        "total": 217,
+        "covered": 109,
+        "skipped": 0,
+        "pct": 50.23
+      },
+      "functions": {
+        "total": 52,
+        "covered": 21,
+        "skipped": 0,
+        "pct": 40.38
+      },
+      "branches": {
+        "total": 132,
+        "covered": 45,
+        "skipped": 0,
+        "pct": 34.09
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "includedCoverageFiles": [
+    "fs.js",
+    "graceful-fs.js",
+    "polyfills.js"
+  ],
+  "excludedCoverageFiles": [],
+  "failedTestNames": []
+}

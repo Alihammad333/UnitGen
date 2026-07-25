@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-07-18T20:36:36.762Z",
+  "packageName": "simple-statistics",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\simple-statistics",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2\\Continuation Version\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 184,
+  "totalTests": 1172,
+  "passingTests": 1157,
+  "failedTests": 15,
+  "coverageMode": "passing-tests-only-isolated-coverage-runs",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 969,
+        "covered": 925,
+        "skipped": 0,
+        "pct": 95.45
+      },
+      "statements": {
+        "total": 1762,
+        "covered": 1644,
+        "skipped": 0,
+        "pct": 93.3
+      },
+      "functions": {
+        "total": 253,
+        "covered": 251,
+        "skipped": 0,
+        "pct": 99.2
+      },
+      "branches": {
+        "total": 663,
+        "covered": 544,
+        "skipped": 0,
+        "pct": 82.05
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": [
+    {
+      "file": "tests\\generated\\simple-statistics.equalIntervalBreaks.test.js",
+      "name": "equalIntervalBreaks [repair-candidate] Returns breaks array with equal intervals for nClasses greater than 1 (edge case: nClasses = 3)"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.sampleCovariance.test.js",
+      "name": "sampleCovariance [repair-candidate] Two datasets with positive correlation - additional example"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.sampleVariance.test.js",
+      "name": "sampleVariance [repair-candidate] Sample variance of an array with more data points"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.harmonicMean.test.js",
+      "name": "harmonicMean [repair-candidate] Valid input with more numbers"
+    },
+    {
+      "file": "tests\\generated\\sample_correlation.sampleCorrelation.test.js",
+      "name": "sampleCorrelation [repair-candidate] Parameterized behavior - small values"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.sampleSkewness.test.js",
+      "name": "sampleSkewness [repair-candidate] Sample skewness of an array with 3 data points"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.errorFunction.test.js",
+      "name": "errorFunction [repair-candidate] Observed behavior returns -3.0000000483809686"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.interquartileRange.test.js",
+      "name": "interquartileRange [repair-candidate] Array with one element"
+    },
+    {
+      "file": "tests\\generated\\interquartile_range.interquartileRange.test.js",
+      "name": "interquartileRange [repair-candidate] Input array with one element"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.PerceptronModel.test.js",
+      "name": "PerceptronModel [repair-candidate] Predict with score over 0"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.shuffle.test.js",
+      "name": "shuffle [repair-candidate] Shuffle array with 5 elements using custom random source"
+    },
+    {
+      "file": "tests\\generated\\r_squared.rSquared.test.js",
+      "name": "rSquared [repair-candidate] Perfect fit line returns 1"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.inverseErrorFunction.test.js",
+      "name": "inverseErrorFunction [repair-candidate] Safe invariant test 2"
+    },
+    {
+      "file": "tests\\generated\\silhouette_metric.silhouetteMetric.test.js",
+      "name": "silhouetteMetric [repair-candidate] Calculate silhouette metric for one point with label"
+    },
+    {
+      "file": "tests\\generated\\simple-statistics.rSquared.test.js",
+      "name": "rSquared [repair-candidate] Perfect fit with linear regression line"
+    }
+  ]
+}

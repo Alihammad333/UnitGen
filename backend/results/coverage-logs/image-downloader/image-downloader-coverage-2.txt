@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package image-downloader
+
+
+================ UnitGen Coverage Summary ================
+Package            : image-downloader
+Generated test files: 3
+Total tests         : 5
+Passing tests       : 5
+Failed tests        : 0
+Coverage mode       : all-tests-pass-single-coverage-run
+Statement coverage  : 57.57%
+Branch coverage     : 50%
+==========================================================
+

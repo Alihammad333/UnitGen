@@ -1,0 +1,123 @@
+
+> unitgen@1.0.0 start
+> node src/index.js ..\benchmark_packages\complex.js
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 6 .js file(s).
+ℹ️ Package project detected: preferring package entry/public API files.
+ℹ️ Selected 1 entry file(s) for testing.
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\dist\complex.js
+==============================
+✅ Found 6 function(s): cosm1, hypot, parser_exit, logHypot, parse, Complex
+⚠️ No exported functions to test.
+
+⚠️ Package-entry mode produced no tests. Falling back to full project scan...
+
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\dist\complex.js
+==============================
+✅ Found 6 function(s): cosm1, hypot, parser_exit, logHypot, parse, Complex
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: ..\benchmark_packages\complex.js\dist\complex.min.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\dist\complex.mjs
+==============================
+✅ Found 6 function(s): cosm1, hypot, parser_exit, logHypot, parse, Complex
+ℹ️ Class-like exports will use constructor prototype generation: Complex
+✅ Exported function(s): Complex
+✅ Generated: C:\Users\rvhun\OneDrive\Documents\BSE223183\FYP\Development\Part 2\UnitGen\tests\generated\complex.Complex.test.js
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\examples\gamma.js
+==============================
+✅ Found 1 function(s): gamma
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\src\complex.js
+==============================
+✅ Found 6 function(s): cosm1, hypot, parser_exit, logHypot, parse, Complex
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: ..\benchmark_packages\complex.js\tests\complex.test.js
+==============================
+✅ Found 2 function(s): stringify, describeTest
+⚠️ No exported functions to test.
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 5
+⚠️ Files skipped:  1
+ℹ️ Class-like exports handled via constructor prototype generation when detected.
+🧾 Tests created:  1
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via Ollama...
+
+⚠️ LLM produced no safe test cases for Complex; keeping prototype only.
+
+🧪 Running Jest...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 1
+Passed            : 1
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Complex auto-generated (prototype)
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+
+🔍 Analyzing File: complex.Complex.test.js
+🧠 Identified 1 targets for optimization.
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Stats [complex.Complex.test.js] -> Before: 0 | After: 2
+📚 Learning DB State Updated: {
+  "toBeDefined": {
+    "success": 0,
+    "failures": 1
+  }
+}
+⚠️ Regression detected (Failed suites increased).
+⚠️ Stability Check Failed: Reverting complex.Complex.test.js
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 1
+Failed Suites     : 0
+Total Tests       : 1
+Passed            : 1
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - Complex auto-generated (prototype)
+============================================================
+
+
+✅ Done.
+

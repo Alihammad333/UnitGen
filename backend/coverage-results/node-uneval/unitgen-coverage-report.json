@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-18T18:31:36.663Z",
+  "packageName": "node-uneval",
+  "packageRoot": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\benchmark_packages\\node-uneval",
+  "testDir": "C:\\Users\\DELL\\Documents\\FYP\\Part 2 Dev\\UnitGen_Final_Completed_Version\\backend\\tests\\generated",
+  "generatedTestFiles": 1,
+  "totalTests": 4,
+  "passingTests": 4,
+  "failedTests": 0,
+  "coverageMode": "all-tests-pass-single-coverage-run",
+  "coverage": {
+    "total": {
+      "lines": {
+        "total": 31,
+        "covered": 23,
+        "skipped": 0,
+        "pct": 74.19
+      },
+      "statements": {
+        "total": 32,
+        "covered": 23,
+        "skipped": 0,
+        "pct": 71.87
+      },
+      "functions": {
+        "total": 4,
+        "covered": 3,
+        "skipped": 0,
+        "pct": 75
+      },
+      "branches": {
+        "total": 24,
+        "covered": 14,
+        "skipped": 0,
+        "pct": 58.33
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  },
+  "failedTestNames": []
+}

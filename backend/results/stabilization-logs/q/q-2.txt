@@ -1,0 +1,1535 @@
+
+> unitgen@1.0.0 start
+> node src/index.js benchmark_packages/q
+
+ℹ️ Input: Node.js project folder (package.json found)
+ℹ️ Discovered 24 .js file(s).
+ℹ️ Top-level external import mocking: enabled with risk/missing-dependency filtering.
+
+==============================
+📄 Skipping: benchmark_packages\q\benchmark\compare-with-callbacks.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\benchmark\scenarios.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q0.js
+==============================
+✅ Found 1 function(s): defer
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q1.js
+==============================
+✅ Found 1 function(s): defer
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q2.js
+==============================
+✅ Found 3 function(s): Promise, isPromise, defer
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q3.js
+==============================
+✅ Found 2 function(s): isPromise, defer
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q4.js
+==============================
+✅ Found 4 function(s): isPromise, defer, callback, ref
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q5.js
+==============================
+✅ Found 6 function(s): isPromise, defer, callback, errback, ref, reject
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q6.js
+==============================
+✅ Found 6 function(s): isPromise, defer, callback, errback, ref, reject
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\design\q7.js
+==============================
+✅ Found 10 function(s): enqueue, isPromise, defer, callback, errback, ref, reject, when, callback, errback
+⚠️ No exported functions to test.
+
+==============================
+📄 Skipping: benchmark_packages\q\examples\all.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\examples\async-generators\1-return.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\examples\async-generators\2-error-propagation.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\examples\async-generators\3-spawn.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\examples\async-generators\4-flow-control.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\Gruntfile.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Processing: benchmark_packages\q\q.js
+==============================
+✅ Found 57 function(s): noop, flush, runSingle, requestPortTick, uncurryThis, Type, isObject, isStopIteration, makeStackTraceLong, filterStackString, isNodeFrame, getFileNameAndLineNumber, isInternalFrame, captureLine, deprecate, Q, defer, become, promise, race, Promise, _fulfilled, _rejected, _progressed, when, nearer, isPromise, isPromiseAlike, isPending, isFulfilled, isRejected, resetUnhandledRejections, trackRejection, untrackRejection, reject, fulfill, coerce, master, spread, async, continuer, spawn, _return, promised, dispatch, all, any, onFulfilled, onRejected, onProgress, allResolved, allSettled, regardless, progress, onUnhandledError, bound, nodeify
+⚠️ No exported functions to test.
+
+==============================
+📄 Processing: benchmark_packages\q\queue.js
+==============================
+✅ Found 1 function(s): Queue
+ℹ️ Class-like exports will use constructor prototype generation: Queue
+✅ Exported function(s): Queue
+🏛️ Class export analysis:
+   - none
+📚 Usage snippets:
+   - 5 snippet(s) found from 31 scanned file(s)
+   - Queue: 5
+📝 Doc comments:
+   - none found for 1 function(s)
+🔎 Import map:
+   - Q -> ./q (require:*, cjs)
+🔗 Dependency usage:
+   Queue:
+   - Q.defer -> ./q (member-call)
+   - Q.defer -> ./q (member)
+   - Q -> ./q (reference)
+🧩 Mock plan:
+   Queue:
+   - ./q (local) members: defer; targets: Q, defer;
+🧪 Rendered mocks:
+   - none
+✅ Generated: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\queue.Queue.test.js
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\aplus-adapter.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\lib\jasmine-1.2.0\jasmine-html.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\lib\jasmine-1.2.0\jasmine.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\lib\jasmine-promise.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\q-spec.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+==============================
+📄 Skipping: benchmark_packages\q\spec\queue-spec.js
+==============================
+⚠️ Skipped generated/minified/bundled artifact.
+
+ℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...
+
+ℹ️ Static behavior coverage is very small; preparing up to 20 dynamic API behavior context(s).
+
+🔎 Running dynamic package API discovery fallback...
+
+✅ Dynamic API discovery found 108 API candidate(s), 108 public target candidate(s).
+✅ Dynamic preflight passed: Q
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Q.default.test.js (Q)
+✅ Dynamic preflight passed: nextTick
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.nextTick.test.js (nextTick)
+✅ Dynamic preflight passed: nextTick.runAfter
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.runAfter.nextTick.runAfter.test.js (nextTick.runAfter)
+✅ Dynamic preflight passed: defer
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.defer.test.js (defer)
+✅ Dynamic preflight passed: defer.prototype.makeNodeResolver
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.prototype.makeNodeResolver.defer.prototype.makeNodeResolver.test.js (defer.prototype.makeNodeResolver)
+✅ Dynamic preflight passed: Promise
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.Promise.test.js (Promise)
+✅ Dynamic preflight passed: Promise.race
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.race.Promise.race.test.js (Promise.race)
+✅ Dynamic preflight passed: Promise.all
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.all.Promise.all.test.js (Promise.all)
+✅ Dynamic preflight passed: Promise.reject
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.reject.Promise.reject.test.js (Promise.reject)
+✅ Dynamic preflight passed: passByCopy
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.passByCopy.passByCopy.test.js (passByCopy)
+✅ Dynamic preflight passed: join
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.join.join.test.js (join)
+✅ Dynamic preflight passed: makePromise
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.makePromise.test.js (makePromise)
+✅ Dynamic preflight passed: makePromise.prototype.passByCopy
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.passByCopy.makePromise.prototype.passByCopy.test.js (makePromise.prototype.passByCopy)
+✅ Dynamic preflight passed: makePromise.prototype.join
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.join.makePromise.prototype.join.test.js (makePromise.prototype.join)
+✅ Dynamic preflight passed: makePromise.prototype.race
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.race.makePromise.prototype.race.test.js (makePromise.prototype.race)
+✅ Dynamic preflight passed: makePromise.prototype.toString
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.toString.makePromise.prototype.toString.test.js (makePromise.prototype.toString)
+✅ Dynamic preflight passed: makePromise.prototype.then
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.then.makePromise.prototype.then.test.js (makePromise.prototype.then)
+✅ Dynamic preflight passed: makePromise.prototype.tap
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.tap.makePromise.prototype.tap.test.js (makePromise.prototype.tap)
+✅ Dynamic preflight passed: makePromise.prototype.thenResolve
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenResolve.makePromise.prototype.thenResolve.test.js (makePromise.prototype.thenResolve)
+✅ Dynamic preflight passed: makePromise.prototype.thenReject
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenReject.makePromise.prototype.thenReject.test.js (makePromise.prototype.thenReject)
+✅ Dynamic preflight passed: makePromise.prototype.isPending
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.isPending.makePromise.prototype.isPending.test.js (makePromise.prototype.isPending)
+✅ Dynamic preflight passed: makePromise.prototype.isFulfilled
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.isFulfilled.makePromise.prototype.isFulfilled.test.js (makePromise.prototype.isFulfilled)
+✅ Dynamic preflight passed: makePromise.prototype.isRejected
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.isRejected.makePromise.prototype.isRejected.test.js (makePromise.prototype.isRejected)
+✅ Dynamic preflight passed: makePromise.prototype.spread
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.spread.makePromise.prototype.spread.test.js (makePromise.prototype.spread)
+✅ Dynamic preflight passed: makePromise.prototype.dispatch
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.dispatch.makePromise.prototype.dispatch.test.js (makePromise.prototype.dispatch)
+✅ Dynamic preflight passed: makePromise.prototype.get
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.get.makePromise.prototype.get.test.js (makePromise.prototype.get)
+✅ Dynamic preflight passed: makePromise.prototype.set
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.set.makePromise.prototype.set.test.js (makePromise.prototype.set)
+✅ Dynamic preflight passed: makePromise.prototype.delete
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.delete.makePromise.prototype.delete.test.js (makePromise.prototype.delete)
+✅ Dynamic preflight passed: makePromise.prototype.del
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.del.makePromise.prototype.del.test.js (makePromise.prototype.del)
+✅ Dynamic preflight passed: makePromise.prototype.post
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.post.makePromise.prototype.post.test.js (makePromise.prototype.post)
+✅ Dynamic preflight passed: makePromise.prototype.mapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.mapply.makePromise.prototype.mapply.test.js (makePromise.prototype.mapply)
+✅ Dynamic preflight passed: makePromise.prototype.invoke
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.invoke.makePromise.prototype.invoke.test.js (makePromise.prototype.invoke)
+✅ Dynamic preflight passed: makePromise.prototype.mcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.mcall.makePromise.prototype.mcall.test.js (makePromise.prototype.mcall)
+✅ Dynamic preflight passed: makePromise.prototype.send
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.send.makePromise.prototype.send.test.js (makePromise.prototype.send)
+✅ Dynamic preflight passed: makePromise.prototype.fapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.fapply.makePromise.prototype.fapply.test.js (makePromise.prototype.fapply)
+✅ Dynamic preflight passed: makePromise.prototype.fcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.fcall.makePromise.prototype.fcall.test.js (makePromise.prototype.fcall)
+✅ Dynamic preflight passed: makePromise.prototype.fbind
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.fbind.makePromise.prototype.fbind.test.js (makePromise.prototype.fbind)
+✅ Dynamic preflight passed: makePromise.prototype.keys
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.keys.makePromise.prototype.keys.test.js (makePromise.prototype.keys)
+✅ Dynamic preflight passed: makePromise.prototype.all
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.all.makePromise.prototype.all.test.js (makePromise.prototype.all)
+✅ Dynamic preflight passed: makePromise.prototype.any
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.any.makePromise.prototype.any.test.js (makePromise.prototype.any)
+✅ Dynamic preflight passed: makePromise.prototype.allResolved
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.allResolved.makePromise.prototype.allResolved.test.js (makePromise.prototype.allResolved)
+✅ Dynamic preflight passed: makePromise.prototype.allSettled
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.allSettled.makePromise.prototype.allSettled.test.js (makePromise.prototype.allSettled)
+✅ Dynamic preflight passed: makePromise.prototype.catch
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.catch.makePromise.prototype.catch.test.js (makePromise.prototype.catch)
+✅ Dynamic preflight passed: makePromise.prototype.fail
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.fail.makePromise.prototype.fail.test.js (makePromise.prototype.fail)
+✅ Dynamic preflight passed: makePromise.prototype.progress
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.progress.makePromise.prototype.progress.test.js (makePromise.prototype.progress)
+✅ Dynamic preflight passed: makePromise.prototype.finally
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.finally.makePromise.prototype.finally.test.js (makePromise.prototype.finally)
+✅ Dynamic preflight passed: makePromise.prototype.fin
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.fin.makePromise.prototype.fin.test.js (makePromise.prototype.fin)
+✅ Dynamic preflight passed: makePromise.prototype.done
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.done.makePromise.prototype.done.test.js (makePromise.prototype.done)
+✅ Dynamic preflight passed: makePromise.prototype.timeout
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.timeout.makePromise.prototype.timeout.test.js (makePromise.prototype.timeout)
+✅ Dynamic preflight passed: makePromise.prototype.delay
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.delay.makePromise.prototype.delay.test.js (makePromise.prototype.delay)
+✅ Dynamic preflight passed: makePromise.prototype.nfapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nfapply.makePromise.prototype.nfapply.test.js (makePromise.prototype.nfapply)
+✅ Dynamic preflight passed: makePromise.prototype.nfcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nfcall.makePromise.prototype.nfcall.test.js (makePromise.prototype.nfcall)
+✅ Dynamic preflight passed: makePromise.prototype.denodeify
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.denodeify.makePromise.prototype.denodeify.test.js (makePromise.prototype.denodeify)
+✅ Dynamic preflight passed: makePromise.prototype.nfbind
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nfbind.makePromise.prototype.nfbind.test.js (makePromise.prototype.nfbind)
+✅ Dynamic preflight passed: makePromise.prototype.nbind
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nbind.makePromise.prototype.nbind.test.js (makePromise.prototype.nbind)
+✅ Dynamic preflight passed: makePromise.prototype.npost
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.npost.makePromise.prototype.npost.test.js (makePromise.prototype.npost)
+✅ Dynamic preflight passed: makePromise.prototype.nmapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nmapply.makePromise.prototype.nmapply.test.js (makePromise.prototype.nmapply)
+✅ Dynamic preflight passed: makePromise.prototype.ninvoke
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.ninvoke.makePromise.prototype.ninvoke.test.js (makePromise.prototype.ninvoke)
+✅ Dynamic preflight passed: makePromise.prototype.nmcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nmcall.makePromise.prototype.nmcall.test.js (makePromise.prototype.nmcall)
+✅ Dynamic preflight passed: makePromise.prototype.nsend
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nsend.makePromise.prototype.nsend.test.js (makePromise.prototype.nsend)
+✅ Dynamic preflight passed: makePromise.prototype.nodeify
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.nodeify.makePromise.prototype.nodeify.test.js (makePromise.prototype.nodeify)
+✅ Dynamic preflight passed: tap
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.tap.tap.test.js (tap)
+✅ Dynamic preflight passed: when
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.when.when.test.js (when)
+✅ Dynamic preflight passed: thenResolve
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.thenResolve.thenResolve.test.js (thenResolve)
+✅ Dynamic preflight passed: thenReject
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.thenReject.thenReject.test.js (thenReject)
+✅ Dynamic preflight passed: nearer
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nearer.nearer.test.js (nearer)
+✅ Dynamic preflight passed: isPromise
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.isPromise.isPromise.test.js (isPromise)
+✅ Dynamic preflight passed: isPromiseAlike
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.isPromiseAlike.isPromiseAlike.test.js (isPromiseAlike)
+✅ Dynamic preflight passed: isPending
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.isPending.isPending.test.js (isPending)
+✅ Dynamic preflight passed: isFulfilled
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.isFulfilled.isFulfilled.test.js (isFulfilled)
+✅ Dynamic preflight passed: isRejected
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.isRejected.isRejected.test.js (isRejected)
+✅ Dynamic preflight passed: resetUnhandledRejections
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.resetUnhandledRejections.resetUnhandledRejections.test.js (resetUnhandledRejections)
+✅ Dynamic preflight passed: getUnhandledReasons
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.getUnhandledReasons.getUnhandledReasons.test.js (getUnhandledReasons)
+✅ Dynamic preflight passed: stopUnhandledRejectionTracking
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.stopUnhandledRejectionTracking.stopUnhandledRejectionTracking.test.js (stopUnhandledRejectionTracking)
+✅ Dynamic preflight passed: fulfill
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.fulfill.fulfill.test.js (fulfill)
+✅ Dynamic preflight passed: master
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.master.master.test.js (master)
+✅ Dynamic preflight passed: spread
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.spread.spread.test.js (spread)
+✅ Dynamic preflight passed: async
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.async.async.test.js (async)
+✅ Dynamic preflight passed: spawn
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.spawn.spawn.test.js (spawn)
+✅ Dynamic preflight passed: return
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.return.return.test.js (return)
+✅ Dynamic preflight passed: promised
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.promised.promised.test.js (promised)
+✅ Dynamic preflight passed: dispatch
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.dispatch.dispatch.test.js (dispatch)
+✅ Dynamic preflight passed: get
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.get.get.test.js (get)
+✅ Dynamic preflight passed: set
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.set.set.test.js (set)
+✅ Dynamic preflight passed: delete
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.delete.delete.test.js (delete)
+✅ Dynamic preflight passed: post
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.post.post.test.js (post)
+✅ Dynamic preflight passed: invoke
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.invoke.invoke.test.js (invoke)
+✅ Dynamic preflight passed: fapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.fapply.fapply.test.js (fapply)
+✅ Dynamic preflight passed: fcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.fcall.fcall.test.js (fcall)
+✅ Dynamic preflight passed: fbind
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.fbind.fbind.test.js (fbind)
+✅ Dynamic preflight passed: keys
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.keys.keys.test.js (keys)
+✅ Dynamic preflight passed: any
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.any.any.test.js (any)
+✅ Dynamic preflight passed: allResolved
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.allResolved.allResolved.test.js (allResolved)
+✅ Dynamic preflight passed: allSettled
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.allSettled.allSettled.test.js (allSettled)
+✅ Dynamic preflight passed: catch
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.catch.catch.test.js (catch)
+✅ Dynamic preflight passed: progress
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.progress.progress.test.js (progress)
+✅ Dynamic preflight passed: finally
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.finally.finally.test.js (finally)
+✅ Dynamic preflight passed: done
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.done.done.test.js (done)
+✅ Dynamic preflight passed: timeout
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.timeout.timeout.test.js (timeout)
+✅ Dynamic preflight passed: delay
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.delay.delay.test.js (delay)
+✅ Dynamic preflight passed: nfapply
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nfapply.nfapply.test.js (nfapply)
+✅ Dynamic preflight passed: nfcall
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nfcall.nfcall.test.js (nfcall)
+✅ Dynamic preflight passed: denodeify
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.denodeify.denodeify.test.js (denodeify)
+✅ Dynamic preflight passed: nbind
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nbind.nbind.test.js (nbind)
+✅ Dynamic preflight passed: npost
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.npost.npost.test.js (npost)
+✅ Dynamic preflight passed: ninvoke
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.ninvoke.ninvoke.test.js (ninvoke)
+✅ Dynamic preflight passed: nodeify
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nodeify.nodeify.test.js (nodeify)
+✅ Dynamic preflight passed: noConflict
+✅ Generated dynamic API test: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.noConflict.noConflict.test.js (noConflict)
+ℹ️ Dynamic API preflight kept 108 test file(s), skipped 0 unsafe/non-executable API(s).
+ℹ️ Dynamic API behavior contexts prepared for LLM/fallback: 20
+
+==============================
+📌 Summary
+==============================
+✅ Files processed: 11
+⚠️ Files skipped:  14
+ℹ️ Class-like exports handled via constructor/static/prototype generation when detected.
+🧾 Tests created:  109
+📁 Output folder:  tests/generated/
+
+🤖 Improving tests via LLM...
+
+🧪 LLM injection summary for Queue
+   received: 6
+   sanitizer accepted: 1
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - INVALID_CASE_SHAPE: 5
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\queue.Queue.test.js (3)
+🧪 LLM injection summary for Q
+   received: 6
+   sanitizer accepted: 6
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 6
+   runtime passed: 4
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+   - RUNTIME_FAILED: 2
+   LLM runtime failure types:
+   - DEEP_EQUALITY_ORACLE_FAILURE: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Q.default.test.js (4)
+🧪 LLM injection summary for nextTick
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   - UNDECLARED_REFERENCE: 1
+   - ASSERTION_NOT_RESULT_CENTERED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.nextTick.test.js (2)
+🧪 LLM injection summary for nextTick.runAfter
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.runAfter.nextTick.runAfter.test.js (2)
+🧪 LLM injection summary for defer
+   received: 6
+   sanitizer accepted: 0
+   sanitizer rejected: 6
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 6
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.defer.test.js (2)
+🧪 LLM injection summary for defer.prototype.makeNodeResolver
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 2
+   - MOCK_CALL_ASSERTION_NOT_ALLOWED: 2
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.prototype.makeNodeResolver.defer.prototype.makeNodeResolver.test.js (2)
+🧪 LLM injection summary for Promise
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 0
+   fallback runtime failed: 2
+   fallback injected: 0
+   final injected: 0
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 2
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - NON_REPAIRABLE_REFERENCE_ERROR: 1
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 2
+⚠️ No runtime-passing LLM or fallback cases for Promise; keeping prototype only.
+🧪 LLM injection summary for Promise.race
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 1
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - ASYNC_MATCHER_MISUSE: 3
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.race.Promise.race.test.js (3)
+🧪 LLM injection summary for Promise.all
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - ASYNC_MATCHER_MISUSE: 4
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.all.Promise.all.test.js (2)
+🧪 LLM injection summary for Promise.reject
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 4
+   - UNDECLARED_REFERENCE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.reject.Promise.reject.test.js (2)
+🧪 LLM injection summary for passByCopy
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.passByCopy.passByCopy.test.js (4)
+🧪 LLM injection summary for join
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 0
+   runtime failed: 3
+   runtime repair candidates available: 3
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 3
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 2
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.join.join.test.js (2)
+🧪 LLM injection summary for makePromise
+   received: 5
+   sanitizer accepted: 0
+   sanitizer rejected: 5
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 1
+   fallback runtime failed: 1
+   fallback injected: 1
+   final injected: 1
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 5
+   fallback runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.makePromise.test.js (1)
+🧪 LLM injection summary for makePromise.prototype.passByCopy
+   received: 5
+   sanitizer accepted: 4
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 3
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 1
+   fallback sanitizer accepted: 1
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 1
+   fallback runtime passed: 1
+   fallback runtime failed: 0
+   fallback injected: 1
+   final injected: 4
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 3
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - UNDEFINED_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 1
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.passByCopy.makePromise.prototype.passByCopy.test.js (4)
+🧪 LLM injection summary for makePromise.prototype.join
+   received: 4
+   sanitizer accepted: 1
+   sanitizer rejected: 3
+   duplicates: 0
+   runtime attempted: 1
+   runtime passed: 0
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 3
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.join.makePromise.prototype.join.test.js (2)
+🧪 LLM injection summary for makePromise.prototype.race
+   received: 4
+   sanitizer accepted: 3
+   sanitizer rejected: 1
+   duplicates: 0
+   runtime attempted: 3
+   runtime passed: 1
+   runtime failed: 2
+   runtime repair candidates available: 2
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 2
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - NULL_ORACLE_FAILURE: 1
+   - BOOLEAN_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.race.makePromise.prototype.race.test.js (3)
+🧪 LLM injection summary for makePromise.prototype.toString
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 4
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 0
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 4
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 4
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.toString.makePromise.prototype.toString.test.js (4)
+🧪 LLM injection summary for makePromise.prototype.then
+   received: 4
+   sanitizer accepted: 0
+   sanitizer rejected: 4
+   duplicates: 0
+   runtime attempted: 0
+   runtime passed: 0
+   runtime failed: 0
+   runtime repair candidates available: 0
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 3
+   - ASYNC_MATCHER_MISUSE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.then.makePromise.prototype.then.test.js (2)
+🧪 LLM injection summary for makePromise.prototype.tap
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 3
+   LLM sanitizer reasons:
+   - UNDECLARED_REFERENCE: 1
+   - ASYNC_MATCHER_MISUSE: 1
+   LLM runtime reasons:
+   - RUNTIME_PASSED: 1
+   - RUNTIME_FAILED: 1
+   LLM runtime failure types:
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.tap.makePromise.prototype.tap.test.js (3)
+🧪 LLM injection summary for makePromise.prototype.thenResolve
+   received: 4
+   sanitizer accepted: 4
+   sanitizer rejected: 0
+   duplicates: 0
+   runtime attempted: 4
+   runtime passed: 0
+   runtime failed: 4
+   runtime repair candidates available: 4
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 2
+   fallback sanitizer rejected: 0
+   fallback runtime attempted: 2
+   fallback runtime passed: 2
+   fallback runtime failed: 0
+   fallback injected: 2
+   final injected: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 4
+   LLM runtime failure types:
+   - VALUE_ORACLE_FAILURE: 2
+   - NULL_ORACLE_FAILURE: 1
+   - DEEP_EQUALITY_ORACLE_FAILURE: 1
+   fallback runtime reasons:
+   - RUNTIME_PASSED: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenResolve.makePromise.prototype.thenResolve.test.js (2)
+🧪 LLM injection summary for makePromise.prototype.thenReject
+   received: 4
+   sanitizer accepted: 2
+   sanitizer rejected: 2
+   duplicates: 0
+   runtime attempted: 2
+   runtime passed: 1
+   runtime failed: 1
+   runtime repair candidates available: 1
+   runtime repair candidates injected: 0
+   fallback sanitizer received: 2
+   fallback sanitizer accepted: 0
+   fallback sanitizer rejected: 2
+   fallback runtime attempted: 0
+   fallback runtime passed: 0
+   fallback runtime failed: 0
+   fallback injected: 0
+   final injected: 1
+   LLM sanitizer reasons:
+   - STATEMENT_LEVEL_SYNTAX_ISSUE: 2
+   LLM runtime reasons:
+   - RUNTIME_FAILED: 1
+   - RUNTIME_PASSED: 1
+   LLM runtime failure types:
+   - ASSERTION_ORACLE_FAILURE: 1
+   fallback sanitizer reasons:
+   - INVALID_OR_ERROR_CASE_WITHOUT_THROW_ASSERTION: 2
+✨ Runtime-validated tests injected: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenReject.makePromise.prototype.thenReject.test.js (1)
+
+ℹ️ Post-LLM preflight skipped for static-full-scan+dynamic-api flow.
+
+
+🧪 Running Jest...
+
+❌ Jest did not produce a JSON result file.
+---- Jest stdout ----
+(empty)
+---- Jest stderr ----
+(node:2044) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/generated/q.dynamic.Promise.Promise.test.js
+PASS tests/generated/q.dynamic.Q.default.test.js
+PASS tests/generated/q.dynamic.finally.finally.test.js
+PASS tests/generated/q.dynamic.Promise.all.Promise.all.test.js
+PASS tests/generated/q.dynamic.passByCopy.passByCopy.test.js
+C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\benchmark_packages\q\q.js:152
+          throw e;
+          ^
+
+[TypeError: task is not a function]
+
+Node.js v24.14.0
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 0
+Failed Suites     : 0
+Total Tests       : 0
+Passed            : 0
+Failed            : 0
+------------------------------------------------------------
+============================================================
+
+
+Initial Jest run crashed before producing JSON. Running generated-test safety preflight...
+
+
+🛡️ Running post-LLM generated test preflight...
+
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\queue.Queue.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Q.default.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.nextTick.test.js
+⚠️ Removing unrecoverable generated test file: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.nextTick.runAfter.nextTick.runAfter.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.defer.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.defer.prototype.makeNodeResolver.defer.prototype.makeNodeResolver.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.Promise.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.race.Promise.race.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.all.Promise.all.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.Promise.reject.Promise.reject.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.passByCopy.passByCopy.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.join.join.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.makePromise.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.passByCopy.makePromise.prototype.passByCopy.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.join.makePromise.prototype.join.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.race.makePromise.prototype.race.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.toString.makePromise.prototype.toString.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.then.makePromise.prototype.then.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.tap.makePromise.prototype.tap.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenResolve.makePromise.prototype.thenResolve.test.js
+✅ Post-LLM preflight kept: C:\Users\DELL\Documents\FYP\Part 2 Dev\UnitGen App version\backend\tests\generated\q.dynamic.makePromise.prototype.thenReject.makePromise.prototype.thenReject.test.js
+⚠️ Full-suite preflight found unrecoverable Jest crash. Cleanup round 1/3.
+⚠️ Could not isolate crashing generated test file automatically.
+
+🛡️ Post-LLM preflight completed. Kept 19 file(s), removed 2 unsafe file(s).
+
+
+Re-running Jest after generated-test safety preflight...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 107
+Failed Suites     : 0
+Total Tests       : 153
+Passed            : 153
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - finally should be exported as a function
+✅ PASS  - Q should be exported as a function
+✅ PASS  - Q Value is Promise-like, coerce it
+✅ PASS  - Q Value is not Promise-like, fulfill it
+✅ PASS  - Q Value is Promise-like, coerce it (invariant)
+✅ PASS  - Q Value is not Promise-like, fulfill it (invariant)
+✅ PASS  - makePromise.prototype.delay should be exported as a function
+✅ PASS  - makePromise.prototype.catch should be exported as a function
+✅ PASS  - Promise.all should be exported as a function
+✅ PASS  - Promise.all fallback checks source-aware result shape
+✅ PASS  - Promise.all fallback checks stable result contract
+✅ PASS  - makePromise.prototype.npost should be exported as a function
+✅ PASS  - makePromise.prototype.all should be exported as a function
+✅ PASS  - makePromise.prototype.denodeify should be exported as a function
+✅ PASS  - makePromise.prototype.spread should be exported as a function
+✅ PASS  - fcall should be exported as a function
+✅ PASS  - makePromise.prototype.post should be exported as a function
+✅ PASS  - makePromise.prototype.any should be exported as a function
+✅ PASS  - async should be exported as a function
+✅ PASS  - join should be exported as a function
+✅ PASS  - join fallback checks source-aware result shape
+✅ PASS  - join fallback checks stable result contract
+✅ PASS  - delete should be exported as a function
+✅ PASS  - isPromiseAlike should be exported as a function
+✅ PASS  - makePromise.prototype.mapply should be exported as a function
+✅ PASS  - nearer should be exported as a function
+✅ PASS  - makePromise.prototype.timeout should be exported as a function
+✅ PASS  - makePromise.prototype.thenResolve should be exported as a function
+✅ PASS  - makePromise.prototype.thenResolve makePromise.thenResolve checks source-aware result shape
+✅ PASS  - makePromise.prototype.thenResolve makePromise.thenResolve checks stable result contract
+✅ PASS  - makePromise.prototype.del should be exported as a function
+✅ PASS  - ninvoke should be exported as a function
+✅ PASS  - makePromise.prototype.race should be exported as a function
+✅ PASS  - makePromise.prototype.race Safe invariant - result properties check
+✅ PASS  - makePromise.prototype.race makePromise.race checks source-aware result shape
+✅ PASS  - makePromise.prototype.race makePromise.race checks stable result contract
+✅ PASS  - isPromise should be exported as a function
+✅ PASS  - fbind should be exported as a function
+✅ PASS  - makePromise.prototype.fail should be exported as a function
+✅ PASS  - makePromise.prototype.fapply should be exported as a function
+✅ PASS  - tap should be exported as a function
+✅ PASS  - stopUnhandledRejectionTracking should be exported as a function
+✅ PASS  - isPending should be exported as a function
+✅ PASS  - makePromise.prototype.nmcall should be exported as a function
+✅ PASS  - Promise.reject should be exported as a function
+✅ PASS  - Promise.reject fallback checks source-aware result shape
+✅ PASS  - Promise.reject fallback checks stable result contract
+✅ PASS  - makePromise.prototype.nodeify should be exported as a function
+✅ PASS  - makePromise.prototype.mcall should be exported as a function
+✅ PASS  - makePromise.prototype.fbind should be exported as a function
+✅ PASS  - Queue auto-generated (prototype)
+✅ PASS  - Queue Queue default behavior - enqueue then dequeue
+✅ PASS  - Queue Queue constructor creates an instance
+✅ PASS  - Queue Queue constructor exposes an object-like result
+✅ PASS  - defer should be exported as a function
+✅ PASS  - defer fallback checks source-aware result shape
+✅ PASS  - defer fallback checks stable result contract
+✅ PASS  - spawn should be exported as a function
+✅ PASS  - set should be exported as a function
+✅ PASS  - passByCopy should be exported as a function
+✅ PASS  - passByCopy Returns the input object
+✅ PASS  - passByCopy Safe invariant test: Result is defined
+✅ PASS  - passByCopy Safe invariant test: Result type is object
+✅ PASS  - passByCopy Parameterized behavior test: Empty object
+✅ PASS  - makePromise.prototype.ninvoke should be exported as a function
+✅ PASS  - makePromise.prototype.invoke should be exported as a function
+✅ PASS  - makePromise.prototype.nsend should be exported as a function
+✅ PASS  - defer.prototype.makeNodeResolver should be exported as a function
+✅ PASS  - defer.prototype.makeNodeResolver defer.makeNodeResolver checks source-aware result shape
+✅ PASS  - defer.prototype.makeNodeResolver defer.makeNodeResolver checks stable result contract
+✅ PASS  - makePromise.prototype.finally should be exported as a function
+✅ PASS  - Promise.race should be exported as a function
+✅ PASS  - Promise.race Empty input array
+✅ PASS  - Promise.race fallback checks source-aware result shape
+✅ PASS  - Promise.race fallback checks stable result contract
+✅ PASS  - resetUnhandledRejections should be exported as a function
+✅ PASS  - fulfill should be exported as a function
+✅ PASS  - makePromise.prototype.isRejected should be exported as a function
+✅ PASS  - makePromise.prototype.keys should be exported as a function
+✅ PASS  - makePromise.prototype.delete should be exported as a function
+✅ PASS  - makePromise.prototype.join should be exported as a function
+✅ PASS  - makePromise.prototype.join makePromise.join checks source-aware result shape
+✅ PASS  - makePromise.prototype.join makePromise.join checks stable result contract
+✅ PASS  - makePromise.prototype.send should be exported as a function
+✅ PASS  - makePromise.prototype.nfapply should be exported as a function
+✅ PASS  - makePromise.prototype.toString should be exported as a function
+✅ PASS  - makePromise.prototype.toString Default behavior - returns '[object Promise]'
+✅ PASS  - makePromise.prototype.toString Safe invariant - result is defined
+✅ PASS  - makePromise.prototype.toString Safe invariant - result is a string
+✅ PASS  - makePromise.prototype.toString Safe invariant - result length is 16
+✅ PASS  - makePromise.prototype.set should be exported as a function
+✅ PASS  - makePromise.prototype.isFulfilled should be exported as a function
+✅ PASS  - thenReject should be exported as a function
+✅ PASS  - master should be exported as a function
+✅ PASS  - makePromise.prototype.thenReject should be exported as a function
+✅ PASS  - makePromise.prototype.thenReject Safe invariant - result should not be null
+✅ PASS  - makePromise.prototype.isPending should be exported as a function
+✅ PASS  - getUnhandledReasons should be exported as a function
+✅ PASS  - Promise should be exported as a function
+✅ PASS  - invoke should be exported as a function
+✅ PASS  - done should be exported as a function
+✅ PASS  - makePromise.prototype.nbind should be exported as a function
+✅ PASS  - makePromise.prototype.nfbind should be exported as a function
+✅ PASS  - makePromise.prototype.passByCopy should be exported as a function
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is defined
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is not null
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is an object
+✅ PASS  - makePromise.prototype.passByCopy makePromise.passByCopy checks source-aware result shape
+✅ PASS  - spread should be exported as a function
+✅ PASS  - makePromise should be exported as a function
+✅ PASS  - makePromise fallback checks stable result contract
+✅ PASS  - makePromise.prototype.then should be exported as a function
+✅ PASS  - makePromise.prototype.then makePromise.then checks source-aware result shape
+✅ PASS  - makePromise.prototype.then makePromise.then checks stable result contract
+✅ PASS  - when should be exported as a function
+✅ PASS  - makePromise.prototype.tap should be exported as a function
+✅ PASS  - makePromise.prototype.tap Default behavior
+✅ PASS  - makePromise.prototype.tap makePromise.tap checks source-aware result shape
+✅ PASS  - makePromise.prototype.tap makePromise.tap checks stable result contract
+✅ PASS  - makePromise.prototype.allResolved should be exported as a function
+✅ PASS  - return should be exported as a function
+✅ PASS  - thenResolve should be exported as a function
+✅ PASS  - makePromise.prototype.dispatch should be exported as a function
+✅ PASS  - makePromise.prototype.fcall should be exported as a function
+✅ PASS  - fapply should be exported as a function
+✅ PASS  - get should be exported as a function
+✅ PASS  - makePromise.prototype.fin should be exported as a function
+✅ PASS  - post should be exported as a function
+✅ PASS  - timeout should be exported as a function
+✅ PASS  - dispatch should be exported as a function
+✅ PASS  - makePromise.prototype.get should be exported as a function
+✅ PASS  - promised should be exported as a function
+✅ PASS  - isRejected should be exported as a function
+✅ PASS  - makePromise.prototype.nfcall should be exported as a function
+✅ PASS  - delay should be exported as a function
+✅ PASS  - makePromise.prototype.done should be exported as a function
+✅ PASS  - isFulfilled should be exported as a function
+✅ PASS  - makePromise.prototype.allSettled should be exported as a function
+✅ PASS  - any should be exported as a function
+✅ PASS  - makePromise.prototype.nmapply should be exported as a function
+✅ PASS  - allSettled should be exported as a function
+✅ PASS  - catch should be exported as a function
+✅ PASS  - nbind should be exported as a function
+✅ PASS  - denodeify should be exported as a function
+✅ PASS  - nodeify should be exported as a function
+✅ PASS  - progress should be exported as a function
+✅ PASS  - npost should be exported as a function
+✅ PASS  - keys should be exported as a function
+✅ PASS  - noConflict should be exported as a function
+✅ PASS  - makePromise.prototype.progress should be exported as a function
+✅ PASS  - nfapply should be exported as a function
+✅ PASS  - allResolved should be exported as a function
+✅ PASS  - nfcall should be exported as a function
+============================================================
+
+
+🔁 Running adaptive repair...
+
+✅ All tests already passing.
+
+🧠 Running assertion enhancer...
+
+
+🚀 [Assertion Engine] Initializing Enhancement Cycle...
+✅ Jest suite is stable. Running normal assertion strengthening mode.
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.allResolved.allResolved.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.allSettled.allSettled.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.any.any.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.async.async.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.catch.catch.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.defer.defer.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.defer.prototype.makeNodeResolver.defer.prototype.makeNodeResolver.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.delay.delay.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.delete.delete.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.denodeify.denodeify.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.dispatch.dispatch.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.done.done.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.fapply.fapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.fbind.fbind.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.fcall.fcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.finally.finally.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.fulfill.fulfill.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.get.get.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.getUnhandledReasons.getUnhandledReasons.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.invoke.invoke.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.isFulfilled.isFulfilled.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.isPending.isPending.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.isPromise.isPromise.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.isPromiseAlike.isPromiseAlike.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.isRejected.isRejected.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.join.join.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.keys.keys.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.makePromise.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.all.makePromise.prototype.all.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.allResolved.makePromise.prototype.allResolved.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.allSettled.makePromise.prototype.allSettled.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.any.makePromise.prototype.any.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.catch.makePromise.prototype.catch.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.del.makePromise.prototype.del.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.delay.makePromise.prototype.delay.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.delete.makePromise.prototype.delete.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.denodeify.makePromise.prototype.denodeify.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.dispatch.makePromise.prototype.dispatch.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.done.makePromise.prototype.done.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.fail.makePromise.prototype.fail.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.fapply.makePromise.prototype.fapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.fbind.makePromise.prototype.fbind.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.fcall.makePromise.prototype.fcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.fin.makePromise.prototype.fin.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.finally.makePromise.prototype.finally.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.get.makePromise.prototype.get.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.invoke.makePromise.prototype.invoke.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.isFulfilled.makePromise.prototype.isFulfilled.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.isPending.makePromise.prototype.isPending.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.isRejected.makePromise.prototype.isRejected.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.join.makePromise.prototype.join.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.keys.makePromise.prototype.keys.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.mapply.makePromise.prototype.mapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.mcall.makePromise.prototype.mcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nbind.makePromise.prototype.nbind.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nfapply.makePromise.prototype.nfapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nfbind.makePromise.prototype.nfbind.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nfcall.makePromise.prototype.nfcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.ninvoke.makePromise.prototype.ninvoke.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nmapply.makePromise.prototype.nmapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nmcall.makePromise.prototype.nmcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nodeify.makePromise.prototype.nodeify.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.npost.makePromise.prototype.npost.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.nsend.makePromise.prototype.nsend.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.passByCopy.makePromise.prototype.passByCopy.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.post.makePromise.prototype.post.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.progress.makePromise.prototype.progress.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.race.makePromise.prototype.race.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.send.makePromise.prototype.send.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.set.makePromise.prototype.set.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.spread.makePromise.prototype.spread.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.tap.makePromise.prototype.tap.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.then.makePromise.prototype.then.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.thenReject.makePromise.prototype.thenReject.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.thenResolve.makePromise.prototype.thenResolve.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.timeout.makePromise.prototype.timeout.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.makePromise.prototype.toString.makePromise.prototype.toString.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.master.master.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.nbind.nbind.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.nearer.nearer.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.nfapply.nfapply.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.nfcall.nfcall.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.ninvoke.ninvoke.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.noConflict.noConflict.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.nodeify.nodeify.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.npost.npost.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.passByCopy.passByCopy.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.post.post.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.progress.progress.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.Promise.all.Promise.all.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.Promise.Promise.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.Promise.race.Promise.race.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.Promise.reject.Promise.reject.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.promised.promised.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.Q.default.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.resetUnhandledRejections.resetUnhandledRejections.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.return.return.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.set.set.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.spawn.spawn.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.spread.spread.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.stopUnhandledRejectionTracking.stopUnhandledRejectionTracking.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.tap.tap.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.thenReject.thenReject.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.thenResolve.thenResolve.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.timeout.timeout.test.js
+ℹ️ Skipping dynamic API export smoke test during assertion strengthening: q.dynamic.when.when.test.js
+
+🔍 Analyzing File: queue.Queue.test.js
+🛡️ Mode: stable assertion strengthening
+🧠 Identified 6 single-assertion target(s).
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.695Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.698Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.698Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.698Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.699Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+__UNITGEN_EVENT__{"type":"assertion_detected","timestamp":"2026-06-14T15:55:10.699Z","testFile":"queue.Queue.test.js","issue":"Weak assertion","original":"expect(result).toBeDefined()","suggested":"Single assertion strengthening will be attempted","status":"detected"}
+🔬 Runtime observed for toBe: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [queue.Queue.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:55:53.544Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [queue.Queue.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:56:31.945Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBe: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBe
+📊 Single Target [queue.Queue.test.js :: toBe + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:57:15.370Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(result == null || typeof result === \"object\" || typeof result === \"function\").toBe(true)","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [queue.Queue.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.2
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:58:00.316Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [queue.Queue.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.4
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:58:45.295Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+🔬 Runtime observed for toBeDefined: object(keys=put, get, closed, close)
+🧠 [AST-Repair] Optimized: toBeDefined
+📊 Single Target [queue.Queue.test.js :: toBeDefined + observed] -> Before: 0 | After: 0
+📚 Learning DB State Updated: {
+  "toBe": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  },
+  "toBeDefined": {
+    "success": 0,
+    "failures": 0.6000000000000001
+  }
+}
+⚠️ Single assertion rejected. Reverting queue.Queue.test.js
+__UNITGEN_EVENT__{"type":"assertion_rejected","timestamp":"2026-06-14T15:59:29.761Z","testFile":"queue.Queue.test.js","issue":"Assertion rejected","original":"expect(result).toBeDefined()","suggested":"Rejected because assertion quality did not improve safely","status":"reverted"}
+
+🎯 [Assertion Engine] Cycle Completed Successfully.
+
+
+🧪 Re-running Jest after assertion enhancement...
+
+
+==================== UnitGen Test Report ====================
+Total Test Suites : 107
+Failed Suites     : 0
+Total Tests       : 153
+Passed            : 153
+Failed            : 0
+------------------------------------------------------------
+✅ PASS  - makePromise.prototype.allSettled should be exported as a function
+✅ PASS  - makePromise.prototype.toString should be exported as a function
+✅ PASS  - makePromise.prototype.toString Default behavior - returns '[object Promise]'
+✅ PASS  - makePromise.prototype.toString Safe invariant - result is defined
+✅ PASS  - makePromise.prototype.toString Safe invariant - result is a string
+✅ PASS  - makePromise.prototype.toString Safe invariant - result length is 16
+✅ PASS  - Promise should be exported as a function
+✅ PASS  - invoke should be exported as a function
+✅ PASS  - makePromise.prototype.mcall should be exported as a function
+✅ PASS  - isPromise should be exported as a function
+✅ PASS  - spread should be exported as a function
+✅ PASS  - makePromise.prototype.fbind should be exported as a function
+✅ PASS  - resetUnhandledRejections should be exported as a function
+✅ PASS  - makePromise.prototype.allResolved should be exported as a function
+✅ PASS  - getUnhandledReasons should be exported as a function
+✅ PASS  - isPending should be exported as a function
+✅ PASS  - Q should be exported as a function
+✅ PASS  - Q Value is Promise-like, coerce it
+✅ PASS  - Q Value is not Promise-like, fulfill it
+✅ PASS  - Q Value is Promise-like, coerce it (invariant)
+✅ PASS  - Q Value is not Promise-like, fulfill it (invariant)
+✅ PASS  - makePromise.prototype.fcall should be exported as a function
+✅ PASS  - makePromise.prototype.send should be exported as a function
+✅ PASS  - makePromise.prototype.progress should be exported as a function
+✅ PASS  - makePromise should be exported as a function
+✅ PASS  - makePromise fallback checks stable result contract
+✅ PASS  - npost should be exported as a function
+✅ PASS  - delete should be exported as a function
+✅ PASS  - defer.prototype.makeNodeResolver should be exported as a function
+✅ PASS  - defer.prototype.makeNodeResolver defer.makeNodeResolver checks source-aware result shape
+✅ PASS  - defer.prototype.makeNodeResolver defer.makeNodeResolver checks stable result contract
+✅ PASS  - promised should be exported as a function
+✅ PASS  - delay should be exported as a function
+✅ PASS  - timeout should be exported as a function
+✅ PASS  - makePromise.prototype.then should be exported as a function
+✅ PASS  - makePromise.prototype.then makePromise.then checks source-aware result shape
+✅ PASS  - makePromise.prototype.then makePromise.then checks stable result contract
+✅ PASS  - makePromise.prototype.nfcall should be exported as a function
+✅ PASS  - makePromise.prototype.any should be exported as a function
+✅ PASS  - makePromise.prototype.get should be exported as a function
+✅ PASS  - done should be exported as a function
+✅ PASS  - makePromise.prototype.nodeify should be exported as a function
+✅ PASS  - return should be exported as a function
+✅ PASS  - makePromise.prototype.delete should be exported as a function
+✅ PASS  - nfapply should be exported as a function
+✅ PASS  - stopUnhandledRejectionTracking should be exported as a function
+✅ PASS  - makePromise.prototype.fapply should be exported as a function
+✅ PASS  - isRejected should be exported as a function
+✅ PASS  - dispatch should be exported as a function
+✅ PASS  - makePromise.prototype.nmapply should be exported as a function
+✅ PASS  - makePromise.prototype.fin should be exported as a function
+✅ PASS  - makePromise.prototype.done should be exported as a function
+✅ PASS  - makePromise.prototype.set should be exported as a function
+✅ PASS  - post should be exported as a function
+✅ PASS  - makePromise.prototype.npost should be exported as a function
+✅ PASS  - makePromise.prototype.thenReject should be exported as a function
+✅ PASS  - makePromise.prototype.thenReject Safe invariant - result should not be null
+✅ PASS  - nearer should be exported as a function
+✅ PASS  - makePromise.prototype.finally should be exported as a function
+✅ PASS  - makePromise.prototype.race should be exported as a function
+✅ PASS  - makePromise.prototype.race Safe invariant - result properties check
+✅ PASS  - makePromise.prototype.race makePromise.race checks source-aware result shape
+✅ PASS  - makePromise.prototype.race makePromise.race checks stable result contract
+✅ PASS  - spawn should be exported as a function
+✅ PASS  - makePromise.prototype.join should be exported as a function
+✅ PASS  - makePromise.prototype.join makePromise.join checks source-aware result shape
+✅ PASS  - makePromise.prototype.join makePromise.join checks stable result contract
+✅ PASS  - nodeify should be exported as a function
+✅ PASS  - async should be exported as a function
+✅ PASS  - fulfill should be exported as a function
+✅ PASS  - set should be exported as a function
+✅ PASS  - makePromise.prototype.nsend should be exported as a function
+✅ PASS  - makePromise.prototype.nfapply should be exported as a function
+✅ PASS  - makePromise.prototype.nmcall should be exported as a function
+✅ PASS  - makePromise.prototype.fail should be exported as a function
+✅ PASS  - passByCopy should be exported as a function
+✅ PASS  - passByCopy Returns the input object
+✅ PASS  - passByCopy Safe invariant test: Result is defined
+✅ PASS  - passByCopy Safe invariant test: Result type is object
+✅ PASS  - passByCopy Parameterized behavior test: Empty object
+✅ PASS  - any should be exported as a function
+✅ PASS  - Promise.all should be exported as a function
+✅ PASS  - Promise.all fallback checks source-aware result shape
+✅ PASS  - Promise.all fallback checks stable result contract
+✅ PASS  - progress should be exported as a function
+✅ PASS  - defer should be exported as a function
+✅ PASS  - defer fallback checks source-aware result shape
+✅ PASS  - defer fallback checks stable result contract
+✅ PASS  - makePromise.prototype.invoke should be exported as a function
+✅ PASS  - makePromise.prototype.del should be exported as a function
+✅ PASS  - fcall should be exported as a function
+✅ PASS  - makePromise.prototype.denodeify should be exported as a function
+✅ PASS  - makePromise.prototype.all should be exported as a function
+✅ PASS  - when should be exported as a function
+✅ PASS  - nbind should be exported as a function
+✅ PASS  - makePromise.prototype.delay should be exported as a function
+✅ PASS  - allResolved should be exported as a function
+✅ PASS  - denodeify should be exported as a function
+✅ PASS  - Promise.race should be exported as a function
+✅ PASS  - Promise.race Empty input array
+✅ PASS  - Promise.race fallback checks source-aware result shape
+✅ PASS  - Promise.race fallback checks stable result contract
+✅ PASS  - join should be exported as a function
+✅ PASS  - join fallback checks source-aware result shape
+✅ PASS  - join fallback checks stable result contract
+✅ PASS  - tap should be exported as a function
+✅ PASS  - makePromise.prototype.thenResolve should be exported as a function
+✅ PASS  - makePromise.prototype.thenResolve makePromise.thenResolve checks source-aware result shape
+✅ PASS  - makePromise.prototype.thenResolve makePromise.thenResolve checks stable result contract
+✅ PASS  - keys should be exported as a function
+✅ PASS  - finally should be exported as a function
+✅ PASS  - makePromise.prototype.nfbind should be exported as a function
+✅ PASS  - fapply should be exported as a function
+✅ PASS  - makePromise.prototype.spread should be exported as a function
+✅ PASS  - makePromise.prototype.isFulfilled should be exported as a function
+✅ PASS  - makePromise.prototype.catch should be exported as a function
+✅ PASS  - Promise.reject should be exported as a function
+✅ PASS  - Promise.reject fallback checks source-aware result shape
+✅ PASS  - Promise.reject fallback checks stable result contract
+✅ PASS  - allSettled should be exported as a function
+✅ PASS  - master should be exported as a function
+✅ PASS  - makePromise.prototype.post should be exported as a function
+✅ PASS  - makePromise.prototype.dispatch should be exported as a function
+✅ PASS  - makePromise.prototype.isRejected should be exported as a function
+✅ PASS  - makePromise.prototype.ninvoke should be exported as a function
+✅ PASS  - catch should be exported as a function
+✅ PASS  - makePromise.prototype.timeout should be exported as a function
+✅ PASS  - isFulfilled should be exported as a function
+✅ PASS  - thenReject should be exported as a function
+✅ PASS  - Queue auto-generated (prototype)
+✅ PASS  - Queue Queue default behavior - enqueue then dequeue
+✅ PASS  - Queue Queue constructor creates an instance
+✅ PASS  - Queue Queue constructor exposes an object-like result
+✅ PASS  - thenResolve should be exported as a function
+✅ PASS  - isPromiseAlike should be exported as a function
+✅ PASS  - ninvoke should be exported as a function
+✅ PASS  - makePromise.prototype.tap should be exported as a function
+✅ PASS  - makePromise.prototype.tap Default behavior
+✅ PASS  - makePromise.prototype.tap makePromise.tap checks source-aware result shape
+✅ PASS  - makePromise.prototype.tap makePromise.tap checks stable result contract
+✅ PASS  - nfcall should be exported as a function
+✅ PASS  - makePromise.prototype.passByCopy should be exported as a function
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is defined
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is not null
+✅ PASS  - makePromise.prototype.passByCopy Safe invariant - result is an object
+✅ PASS  - makePromise.prototype.passByCopy makePromise.passByCopy checks source-aware result shape
+✅ PASS  - makePromise.prototype.nbind should be exported as a function
+✅ PASS  - fbind should be exported as a function
+✅ PASS  - noConflict should be exported as a function
+✅ PASS  - get should be exported as a function
+✅ PASS  - makePromise.prototype.keys should be exported as a function
+✅ PASS  - makePromise.prototype.mapply should be exported as a function
+✅ PASS  - makePromise.prototype.isPending should be exported as a function
+============================================================
+
+
+✅ Done.
+

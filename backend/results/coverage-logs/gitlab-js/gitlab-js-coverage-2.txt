@@ -1,0 +1,16 @@
+
+> unitgen@1.0.0 coverage:unitgen
+> node scripts/measure-unitgen-coverage.js --package gitlab-js
+
+
+================ UnitGen Coverage Summary ================
+Package            : gitlab-js
+Generated test files: 30
+Total tests         : 89
+Passing tests       : 88
+Failed tests        : 1
+Coverage mode       : passing-tests-only-isolated-coverage-runs
+Statement coverage  : 55.12%
+Branch coverage     : 23.61%
+==========================================================
+
