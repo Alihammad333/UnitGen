@@ -852,6 +852,139 @@ pre.code-block {
   margin-top: 18px;
 }
 
+#summaryList {
+  min-height: 0;
+}
+
+#generatedTestsList,
+#passedTestsList {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.summary-item.passed {
+  border-color: var(--success);
+  background: #f0fdf4;
+}
+
+.summary-item.failed {
+  border-color: var(--error);
+  background: #fef2f2;
+}
+
+.summary-value {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.summary-item.passed .summary-value {
+  color: #15803d;
+}
+
+.summary-item.failed .summary-value {
+  color: #b91c1c;
+}
+
+.summary-label {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.summary-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.summary-pill.passed {
+  background: #15803d;
+  color: #fff;
+}
+
+.summary-pill.failed {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.error-banner {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12.5px;
+}
+
+.file-row:last-child {
+  border-bottom: 0;
+}
+
+.file-row.muted {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.file-icon {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.file-name {
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.passed-row {
+  gap: 6px;
+}
+
+.passed-check {
+  flex-shrink: 0;
+  color: var(--success);
+  font-weight: 700;
+}
+
 .hidden {
   display: none !important;
 }

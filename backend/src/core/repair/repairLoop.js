@@ -13,6 +13,7 @@ import { attemptLLMRepair } from "./strategies/llmRepairEngine.js";
 import { isRunnableTest } from "../validation/validateSyntax.js";
 
 import { emitEvent } from "../report/eventEmitter.js";
+import { recordRepairedAssertion } from "../report/finalReportWriter.js";
 
 const traverse = traverseModule.default;
 
@@ -683,7 +684,7 @@ async function tryLocalRepair({
 
     const newFailures = extractFailures(getJestJson(result));
 
-    if (isImproved(failures, newFailures, lastResult, result)) {
+      if (isImproved(failures, newFailures, lastResult, result)) {
       console.log("✅ AST/Semantic repair accepted.");
 
       emitEvent("repair_accepted", {
@@ -693,6 +694,12 @@ async function tryLocalRepair({
         after: "Repair accepted after Jest validation",
         status: "accepted",
       });
+
+      for (const f of fileFailures) {
+        if (f.testName) {
+          recordRepairedAssertion(filePath, f.testName, "Repaired via AST/Semantic repair");
+        }
+      }
 
       if (
         hasRepairCandidateMarker(originalCode) &&
@@ -850,7 +857,7 @@ async function tryLLMRepair({
 
     const newFailures = extractFailures(getJestJson(result));
 
-    if (isImproved(failures, newFailures, lastResult, result)) {
+      if (isImproved(failures, newFailures, lastResult, result)) {
       console.log("✅ LLM repair accepted.");
 
       emitEvent("repair_accepted", {
@@ -860,6 +867,12 @@ async function tryLLMRepair({
         after: "Repair accepted after Jest validation",
         status: "accepted",
       });
+
+      for (const f of fileFailures) {
+        if (f.testName) {
+          recordRepairedAssertion(filePath, f.testName, "Repaired via LLM repair");
+        }
+      }
 
       if (
         hasRepairCandidateMarker(originalCode) &&

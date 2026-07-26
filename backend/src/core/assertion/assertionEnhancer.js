@@ -17,6 +17,7 @@ import {
 } from "./runtimeValueObserver.js";
 
 import { emitEvent } from "../report/eventEmitter.js";
+import { recordRepairedAssertion } from "../report/finalReportWriter.js";
 
 const generate = generatorModule.default;
 
@@ -1012,6 +1013,12 @@ async function trySingleAssertionTransform({
     if (accepted) {
       console.log(`✅ Success: Single assertion committed in ${fileName}`);
 
+      const suggested = freshTarget.runtimeObserved
+        ? "Runtime-observed assertion strengthened safely"
+        : mode === "failed"
+          ? "Single failed assertion improved safely"
+          : "Single assertion strengthened safely";
+
       emitEvent("assertion_enhanced", {
         testFile: fileName,
         issue:
@@ -1019,14 +1026,15 @@ async function trySingleAssertionTransform({
             ? "Failed assertion repaired/enhanced"
             : "Assertion enhanced",
         original: freshTarget.source || freshTarget.matcher || "Weak assertion",
-        suggested:
-          freshTarget.runtimeObserved
-            ? "Runtime-observed assertion strengthened safely"
-            : mode === "failed"
-              ? "Single failed assertion improved safely"
-              : "Single assertion strengthened safely",
+        suggested,
         status: "committed",
       });
+
+      recordRepairedAssertion(
+        filePath,
+        freshTarget.testName || "",
+        suggested
+      );
 
       return {
         accepted: true,

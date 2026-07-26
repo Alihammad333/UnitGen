@@ -94,6 +94,30 @@
         <div class="right-column">
           <section class="section-card">
             <div class="section-heading">
+              <h2>Test Summary</h2>
+              <p>Overall pass/fail counts from the final Jest run.</p>
+            </div>
+            <div id="summaryList"></div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Generated Test Files</h2>
+              <p>List of generated .test.js files produced by UnitGen.</p>
+            </div>
+            <div id="generatedTestsList" class="scroll-list placeholder">No generated test files.</div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
+              <h2>Passed Tests</h2>
+              <p>Individual passing test cases from the final suite.</p>
+            </div>
+            <div id="passedTestsList" class="scroll-list placeholder">No passed test details.</div>
+          </section>
+
+          <section class="section-card">
+            <div class="section-heading">
               <h2>Dependencies &amp; Mocks</h2>
               <p>External calls detected in your project and their generated mock templates.</p>
             </div>

@@ -228,8 +228,14 @@ function parseBackendLine(line) {
   const markerIndex = line.indexOf(eventMarker);
 
   if (markerIndex >= 0) {
-    const event = line.slice(markerIndex + eventMarker.length).trim();
-    send("unitgen:event", { event, timestamp: time });
+    const raw = line.slice(markerIndex + eventMarker.length).trim();
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch {
+      parsed = { type: raw, raw };
+    }
+    send("unitgen:event", { event: parsed.type || raw, timestamp: time, payload: parsed });
     return;
   }
 

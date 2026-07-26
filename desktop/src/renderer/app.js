@@ -81,6 +81,9 @@ function cacheElements() {
     activityWrap: document.querySelector(".activity-wrap"),
     activityBody: document.getElementById("activityBody"),
     timeline: document.getElementById("timeline"),
+    summaryList: document.getElementById("summaryList"),
+    generatedTestsList: document.getElementById("generatedTestsList"),
+    passedTestsList: document.getElementById("passedTestsList"),
     dependenciesList: document.getElementById("dependenciesList"),
     repairList: document.getElementById("repairList"),
     assertionList: document.getElementById("assertionList"),
@@ -214,8 +217,11 @@ function bindIpc() {
     advanceTimelineFromEvent(line);
   });
 
-  window.electronAPI.onEvent(({ event }) => {
+  window.electronAPI.onEvent(({ event, payload }) => {
     advanceTimelineFromEvent(event);
+    if (payload && payload.type) {
+      addEventRow(payload, nowTimestamp());
+    }
   });
 
   window.electronAPI.onDone(({ exitCode, report }) => {
@@ -445,9 +451,12 @@ function clearActivity() {
 }
 
 function populateReportCards(report) {
+  populateSummary(report);
+  populateGeneratedTests(report);
   populateDependencies(report);
   populateRepairs(report);
   populateAssertions(report);
+  populatePassedTests(report);
 }
 
 function populateDependencies(report) {
@@ -569,9 +578,113 @@ function renderDependencyCard(item) {
 }
 
 function resetReportCards() {
+  els.summaryList.innerHTML = "";
+  els.generatedTestsList.innerHTML = "";
+  els.passedTestsList.innerHTML = "";
   setPlaceholder(els.dependenciesList, "No dependencies detected yet.");
   setPlaceholder(els.repairList, "When tests fail, they will be classified and repaired here.");
   setPlaceholder(els.assertionList, "Weak assertions will be listed here.");
+}
+
+function populateSummary(report) {
+  const s = report.summary;
+  if (!s) {
+    els.summaryList.innerHTML = "<div class='placeholder'>No test results yet.</div>";
+    return;
+  }
+  els.summaryList.classList.remove("placeholder");
+  const success = s.success ? "passed" : "failed";
+  const passedLabel = s.success ? "All tests passing" : "Tests failing";
+  els.summaryList.innerHTML = `
+    <div class="summary-cards">
+      <div class="summary-item ${success}">
+        <span class="summary-value">${s.totalTests}</span>
+        <span class="summary-label">Total Tests</span>
+      </div>
+      <div class="summary-item passed">
+        <span class="summary-value">${s.passedTests}</span>
+        <span class="summary-label">Passed</span>
+      </div>
+      <div class="summary-item failed">
+        <span class="summary-value">${s.failedTests}</span>
+        <span class="summary-label">Failed</span>
+      </div>
+      <div class="summary-item ${success}">
+        <span class="summary-value">${s.totalSuites}</span>
+        <span class="summary-label">Suites</span>
+      </div>
+      <div class="summary-item ${success}">
+        <span class="summary-pill ${success}">${passedLabel}</span>
+      </div>
+    </div>
+    ${!s.success ? `<div class="error-banner">⚠ Jest run reported failures. Check repair cards below.</div>` : ""}
+  `;
+}
+
+function populateGeneratedTests(report) {
+  const tests = report.desktop?.generatedTests;
+  if (!tests || !tests.length) {
+    setPlaceholder(els.generatedTestsList, "No generated test files.");
+    return;
+  }
+  els.generatedTestsList.classList.remove("placeholder");
+  els.generatedTestsList.innerHTML = tests.slice(0, 30).map((t) => `
+    <div class="file-row">
+      <span class="file-icon">📄</span>
+      <span class="file-name" title="${escapeAttr(t.filePath)}">${escapeHtml(t.fileName)}</span>
+    </div>
+  `).join("");
+  if (tests.length > 30) {
+    els.generatedTestsList.innerHTML += `<div class="file-row muted">… and ${tests.length - 30} more</div>`;
+  }
+}
+
+function populatePassedTests(report) {
+  const passed = Array.isArray(report.passedTests) ? report.passedTests : [];
+  if (!passed.length) {
+    setPlaceholder(els.passedTestsList, "No passed test details.");
+    return;
+  }
+  els.passedTestsList.classList.remove("placeholder");
+  els.passedTestsList.innerHTML = passed.slice(0, 30).map((t) => `
+    <div class="file-row passed-row">
+      <span class="passed-check">✓</span>
+      <span class="file-name" title="${escapeAttr(t.testName)}">${escapeHtml(t.testName)}</span>
+      <span class="card-path">${escapeHtml(compactPath(t.testFile))}</span>
+    </div>
+  `).join("");
+  if (passed.length > 30) {
+    els.passedTestsList.innerHTML += `<div class="file-row muted">… and ${passed.length - 30} more passed tests</div>`;
+  }
+}
+
+function addEventRow(payload, timestamp) {
+  const empty = els.activityBody.querySelector(".empty-row");
+  if (empty) empty.remove();
+
+  const type = payload.type || "event";
+  const statusMap = {
+    failure_classified: "Failed",
+    repair_accepted: "Passed",
+    repair_rejected: "Failed",
+    assertion_detected: "Log",
+    assertion_enhanced: "Enhanced",
+    assertion_rejected: "Failed",
+    repair_candidate_repaired: "Passed",
+    repair_candidate_quarantined: "Failed",
+  };
+  const status = statusMap[type] || "Log";
+  const className = status.toLowerCase();
+  const detail = payload.testFile || payload.fnName || payload.file || "";
+
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>${escapeHtml(timestamp)}</td>
+    <td title="${escapeAttr(type + (detail ? ": " + detail : ""))}">${escapeHtml(type)}${detail ? ": " + escapeHtml(detail) : ""}</td>
+    <td><span class="badge ${className}">${escapeHtml(status)}</span></td>
+  `;
+  els.activityBody.appendChild(row);
+  scheduleScroll(els.activityWrap);
 }
 
 function setPlaceholder(element, text) {

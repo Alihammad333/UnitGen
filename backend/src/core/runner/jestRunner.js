@@ -64,8 +64,12 @@ function makeEmptyResult(extra = {}) {
 }
 
 function normalizeTestPath(filePath) {
+  const absPath = path.resolve(filePath);
+  if (process.env.UNITGEN_OUTPUT_DIR) {
+    return absPath;
+  }
   return path
-    .relative(process.cwd(), path.resolve(filePath))
+    .relative(process.cwd(), absPath)
     .split(path.sep)
     .join(path.posix.sep);
 }

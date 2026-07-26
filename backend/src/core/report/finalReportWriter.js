@@ -1,6 +1,18 @@
 import fs from "fs";
 import path from "path";
 
+const repairedAssertions = new Map();
+
+export function recordRepairedAssertion(filePath, testName, assertion) {
+  const key = `${path.resolve(filePath)}::${testName}`;
+  repairedAssertions.set(key, assertion);
+}
+
+export function getRepairedAssertion(filePath, testName) {
+  const key = `${path.resolve(filePath)}::${testName}`;
+  return repairedAssertions.get(key) || null;
+}
+
 function unwrapJestJson(data) {
   if (!data || typeof data !== "object") {
     return {};
@@ -129,21 +141,25 @@ export function buildFinalReport(data) {
           ? String(messages[0]).split("\n").slice(0, 8).join("\n")
           : "Unknown test failure";
 
+        const repairedAssertion = getRepairedAssertion(testFile, testName);
         failedTests.push({
           testFile,
           testName,
           status: "failed",
           errorMessage,
+          ...(repairedAssertion ? { repairedAssertion } : {}),
         });
       }
     }
 
     if (suite?.status === "failed" && suite?.message) {
+      const suiteRepairedAssertion = getRepairedAssertion(testFile, "Suite runtime error");
       failedTests.push({
         testFile,
         testName: "Suite runtime error",
         status: "failed",
         errorMessage: String(suite.message).split("\n").slice(0, 8).join("\n"),
+        ...(suiteRepairedAssertion ? { repairedAssertion: suiteRepairedAssertion } : {}),
       });
     }
   }
@@ -166,6 +182,8 @@ export function buildFinalReport(data) {
     passedTests: passedTestDetails,
 
     failedTests,
+
+    llmContexts: data.llmContexts || null,
 
     runner: {
       status: jestJson?.runnerStatus ?? null,
