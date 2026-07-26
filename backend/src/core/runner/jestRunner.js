@@ -8,17 +8,8 @@ function getOutputDir() {
     : process.cwd();
 }
 
-function ensureOutputDirNodeModules() {
-  if (!process.env.UNITGEN_OUTPUT_DIR) return;
-  const nmLink = path.resolve(process.env.UNITGEN_OUTPUT_DIR, "node_modules");
-  if (fs.existsSync(nmLink)) return;
-  const actualNm = path.resolve(process.cwd(), "node_modules");
-  if (!fs.existsSync(actualNm)) return;
-  try {
-    fs.symlinkSync(actualNm, nmLink);
-  } catch {
-    // output dir might be on a different volume; safe fallback
-  }
+function getNodeModulesPath() {
+  return path.resolve(process.cwd(), "node_modules");
 }
 
 function getGeneratedDir() {
@@ -147,16 +138,21 @@ function runJestInternal({
     resultsPath,
   });
 
-  ensureOutputDirNodeModules();
+  const jestCwd = getOutputDir();
+  const nodeModulesPath = getNodeModulesPath();
+  const env = {
+    ...process.env,
+    NODE_ENV: "test",
+    FORCE_COLOR: "0",
+  };
+  if (process.env.UNITGEN_OUTPUT_DIR && fs.existsSync(nodeModulesPath)) {
+    env.NODE_PATH = nodeModulesPath;
+  }
 
   const proc = spawnSync(process.execPath, args, {
-    cwd: getOutputDir(),
+    cwd: jestCwd,
     encoding: "utf8",
-    env: {
-      ...process.env,
-      NODE_ENV: "test",
-      FORCE_COLOR: "0",
-    },
+    env,
   });
 
   const parsed = safeReadJson(resultsPath);

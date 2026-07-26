@@ -1,0 +1,578 @@
+{
+  "generatedAt": "2026-07-26T18:37:49.695Z",
+  "project": {
+    "input": {
+      "ok": true,
+      "kind": "folder",
+      "root": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1",
+      "files": [
+        "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js"
+      ],
+      "messages": [
+        {
+          "level": "warn",
+          "text": "No package.json found. Treating as a plain JS folder."
+        },
+        {
+          "level": "info",
+          "text": "Discovered 1 .js file(s)."
+        }
+      ]
+    },
+    "processedFiles": 1,
+    "skippedFiles": 0,
+    "generatedTestFiles": 2
+  },
+  "summary": {
+    "totalSuites": 2,
+    "passedSuites": 2,
+    "failedSuites": 0,
+    "totalTests": 11,
+    "passedTests": 11,
+    "failedTests": 0,
+    "success": true
+  },
+  "passedTests": [
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser fallback checks source-aware result shape asynchronously",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
+      "testName": "fetchUser fallback checks stable result contract",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Normal behavior: positive numbers",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Normal behavior: negative numbers",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Safe invariant: division by zero",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Simple parameterized behavior: small numbers",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Safe invariant: result type",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide Normal behavior: decimal numbers",
+      "status": "passed"
+    },
+    {
+      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "testName": "divide fallback checks source-aware result shape",
+      "status": "passed"
+    }
+  ],
+  "failedTests": [],
+  "llmContexts": [
+    {
+      "fnName": "divide",
+      "targetKey": "divide",
+      "displayName": "divide",
+      "isAsync": false,
+      "isDefault": false,
+      "isClassLike": false,
+      "isClassMethod": false,
+      "ownerClassName": "",
+      "methodName": "",
+      "methodKind": "",
+      "constructorParams": [],
+      "constructorCode": "",
+      "classCode": "function divide(a, b) {\r\n  if (b === 0) {\r\n    throw new Error(\"Division by zero\");\r\n  }\r\n  return a / b;\r\n}",
+      "classMethods": [],
+      "params": [
+        "a",
+        "b"
+      ],
+      "functionCode": "function divide(a, b) {\r\n  if (b === 0) {\r\n    throw new Error(\"Division by zero\");\r\n  }\r\n  return a / b;\r\n}",
+      "testFilePath": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
+      "importPath": "../../../tests/sample1/input.js",
+      "sourceFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js",
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { divide } from \"../../../tests/sample1/input.js\";\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });",
+      "mockEntries": [],
+      "dependencyUsage": [],
+      "dependencies": [],
+      "usageSnippets": [],
+      "docComment": {
+        "name": "divide",
+        "comment": "",
+        "leadingComment": "",
+        "trailingComment": "",
+        "nearbyComment": "",
+        "jsDoc": {
+          "params": [],
+          "returns": "",
+          "throws": [],
+          "examples": [],
+          "description": "",
+          "rawTags": []
+        },
+        "params": [
+          "a",
+          "b"
+        ],
+        "loc": {
+          "startLine": 5,
+          "endLine": 10
+        }
+      },
+      "llmInjectionSummary": {
+        "displayName": "divide",
+        "llmGenerationError": "",
+        "sanitizerReceived": 6,
+        "sanitizerAccepted": 6,
+        "sanitizerRejected": 0,
+        "llmRuntimePassed": 6,
+        "llmRuntimeFailed": 0,
+        "fallbackInjected": 1,
+        "repairCandidatesAvailable": 0,
+        "repairCandidatesInjected": 0,
+        "finalPassingInjected": 7,
+        "finalInjected": 7
+      }
+    },
+    {
+      "fnName": "fetchUser",
+      "targetKey": "fetchUser",
+      "displayName": "fetchUser",
+      "isAsync": true,
+      "isDefault": false,
+      "isClassLike": false,
+      "isClassMethod": false,
+      "ownerClassName": "",
+      "methodName": "",
+      "methodKind": "",
+      "constructorParams": [],
+      "constructorCode": "",
+      "classCode": "async function fetchUser(id) {\r\n  const file = path.join(\"data\", \"x.txt\");\r\n  const txt = readFileSync(file, \"utf8\");\r\n  const res = await axios.get(`/user/${id}`);\r\n  return { id, txt, data: res.data };\r\n}",
+      "classMethods": [],
+      "params": [
+        "id"
+      ],
+      "functionCode": "async function fetchUser(id) {\r\n  const file = path.join(\"data\", \"x.txt\");\r\n  const txt = readFileSync(file, \"utf8\");\r\n  const res = await axios.get(`/user/${id}`);\r\n  return { id, txt, data: res.data };\r\n}",
+      "testFilePath": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
+      "importPath": "../../../tests/sample1/input.js",
+      "sourceFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js",
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { fetchUser } from \"../../../tests/sample1/input.js\";\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });\n\njest.mock(\"path\", () => {\n  const api = {\n      join: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      resolve: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      dirname: jest.fn((p) => String(p).split('/').slice(0, -1).join('/') || '.'),\n      basename: jest.fn((p) => String(p).split('/').pop()),\n      extname: jest.fn((p) => {\n        const base = String(p).split(\"/\").pop() || \"\";\n        const i = base.lastIndexOf(\".\");\n        return i >= 0 ? base.slice(i) : \"\";\n      }),\n      normalize: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      relative: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n});\n\njest.mock(\"fs\", () => {\n  const api = {\n      readFileSync: jest.fn(() => 'dummy file'),\n      writeFileSync: jest.fn(() => undefined),\n      existsSync: jest.fn(() => true),\n      mkdirSync: jest.fn(() => undefined),\n      rmSync: jest.fn(() => undefined),\n      unlinkSync: jest.fn(() => undefined),\n      readdirSync: jest.fn(() => []),\n      statSync: jest.fn(() => ({ isFile: () => true, isDirectory: () => false })),\n      readFile: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, \"dummy file\");\n        return undefined;\n      }),\n      writeFile: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null);\n        return undefined;\n      }),\n      readdir: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, []);\n        return [];\n      }),\n      stat: jest.fn((...args) => {\n        const value = { isFile: () => true, isDirectory: () => false };\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, value);\n        return value;\n      }),\n      lstat: jest.fn((...args) => {\n        const value = { isFile: () => true, isDirectory: () => false };\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, value);\n        return value;\n      }),\n      promises: {\n        readFile: jest.fn().mockResolvedValue('dummy file'),\n        writeFile: jest.fn().mockResolvedValue(undefined),\n        mkdir: jest.fn().mockResolvedValue(undefined),\n        readdir: jest.fn().mockResolvedValue([]),\n        stat: jest.fn().mockResolvedValue({ isFile: () => true, isDirectory: () => false }),\n        access: jest.fn().mockResolvedValue(undefined),\n        unlink: jest.fn(() => undefined),\n        rm: jest.fn(() => undefined),\n        copyFile: jest.fn(() => undefined),\n      },\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n});\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });",
+      "mockEntries": [
+        {
+          "module": "path",
+          "normalizedModule": "path",
+          "type": "builtin",
+          "imports": [
+            {
+              "localName": "path",
+              "importKind": "namespace",
+              "importedName": "*",
+              "sourceType": "esm",
+              "accessPath": [
+                "join"
+              ]
+            },
+            {
+              "localName": "path",
+              "importKind": "namespace",
+              "importedName": "*",
+              "sourceType": "esm",
+              "accessPath": []
+            }
+          ],
+          "members": [
+            "join"
+          ],
+          "memberChains": [],
+          "globals": [],
+          "targets": [
+            "path",
+            "join"
+          ],
+          "usages": [
+            {
+              "moduleName": "path",
+              "normalizedModuleName": "path",
+              "localName": "path",
+              "importKind": "namespace",
+              "importedName": "*",
+              "sourceType": "esm",
+              "accessPath": [
+                "join"
+              ],
+              "usage": "path.join",
+              "usageKind": "member-call",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "path",
+              "normalizedModuleName": "path",
+              "localName": "path",
+              "importKind": "namespace",
+              "importedName": "*",
+              "sourceType": "esm",
+              "accessPath": [
+                "join"
+              ],
+              "usage": "path.join",
+              "usageKind": "member",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "path",
+              "normalizedModuleName": "path",
+              "localName": "path",
+              "importKind": "namespace",
+              "importedName": "*",
+              "sourceType": "esm",
+              "accessPath": [],
+              "usage": "path",
+              "usageKind": "reference",
+              "transitive": false,
+              "via": []
+            }
+          ]
+        },
+        {
+          "module": "fs",
+          "normalizedModule": "fs",
+          "type": "builtin",
+          "imports": [
+            {
+              "localName": "readFileSync",
+              "importKind": "named",
+              "importedName": "readFileSync",
+              "sourceType": "esm",
+              "accessPath": []
+            }
+          ],
+          "members": [
+            "readFileSync"
+          ],
+          "memberChains": [],
+          "globals": [],
+          "targets": [
+            "readFileSync"
+          ],
+          "usages": [
+            {
+              "moduleName": "fs",
+              "normalizedModuleName": "fs",
+              "localName": "readFileSync",
+              "importKind": "named",
+              "importedName": "readFileSync",
+              "sourceType": "esm",
+              "accessPath": [],
+              "usage": "readFileSync()",
+              "usageKind": "direct-call",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "fs",
+              "normalizedModuleName": "fs",
+              "localName": "readFileSync",
+              "importKind": "named",
+              "importedName": "readFileSync",
+              "sourceType": "esm",
+              "accessPath": [],
+              "usage": "readFileSync",
+              "usageKind": "member-call",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "fs",
+              "normalizedModuleName": "fs",
+              "localName": "readFileSync",
+              "importKind": "named",
+              "importedName": "readFileSync",
+              "sourceType": "esm",
+              "accessPath": [],
+              "usage": "readFileSync",
+              "usageKind": "reference",
+              "transitive": false,
+              "via": []
+            }
+          ]
+        },
+        {
+          "module": "axios",
+          "normalizedModule": "axios",
+          "type": "external",
+          "imports": [
+            {
+              "localName": "axios",
+              "importKind": "default",
+              "importedName": "default",
+              "sourceType": "esm",
+              "accessPath": [
+                "get"
+              ]
+            },
+            {
+              "localName": "axios",
+              "importKind": "default",
+              "importedName": "default",
+              "sourceType": "esm",
+              "accessPath": []
+            }
+          ],
+          "members": [
+            "get"
+          ],
+          "memberChains": [],
+          "globals": [],
+          "targets": [
+            "axios",
+            "get"
+          ],
+          "usages": [
+            {
+              "moduleName": "axios",
+              "normalizedModuleName": "axios",
+              "localName": "axios",
+              "importKind": "default",
+              "importedName": "default",
+              "sourceType": "esm",
+              "accessPath": [
+                "get"
+              ],
+              "usage": "axios.get",
+              "usageKind": "member-call",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "axios",
+              "normalizedModuleName": "axios",
+              "localName": "axios",
+              "importKind": "default",
+              "importedName": "default",
+              "sourceType": "esm",
+              "accessPath": [
+                "get"
+              ],
+              "usage": "axios.get",
+              "usageKind": "member",
+              "transitive": false,
+              "via": []
+            },
+            {
+              "moduleName": "axios",
+              "normalizedModuleName": "axios",
+              "localName": "axios",
+              "importKind": "default",
+              "importedName": "default",
+              "sourceType": "esm",
+              "accessPath": [],
+              "usage": "axios",
+              "usageKind": "reference",
+              "transitive": false,
+              "via": []
+            }
+          ]
+        }
+      ],
+      "dependencyUsage": [
+        {
+          "moduleName": "path",
+          "normalizedModuleName": "path",
+          "localName": "path",
+          "importKind": "namespace",
+          "importedName": "*",
+          "sourceType": "esm",
+          "accessPath": [
+            "join"
+          ],
+          "usage": "path.join",
+          "usageKind": "member-call",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "path",
+          "normalizedModuleName": "path",
+          "localName": "path",
+          "importKind": "namespace",
+          "importedName": "*",
+          "sourceType": "esm",
+          "accessPath": [
+            "join"
+          ],
+          "usage": "path.join",
+          "usageKind": "member",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "path",
+          "normalizedModuleName": "path",
+          "localName": "path",
+          "importKind": "namespace",
+          "importedName": "*",
+          "sourceType": "esm",
+          "accessPath": [],
+          "usage": "path",
+          "usageKind": "reference",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "fs",
+          "normalizedModuleName": "fs",
+          "localName": "readFileSync",
+          "importKind": "named",
+          "importedName": "readFileSync",
+          "sourceType": "esm",
+          "accessPath": [],
+          "usage": "readFileSync()",
+          "usageKind": "direct-call",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "fs",
+          "normalizedModuleName": "fs",
+          "localName": "readFileSync",
+          "importKind": "named",
+          "importedName": "readFileSync",
+          "sourceType": "esm",
+          "accessPath": [],
+          "usage": "readFileSync",
+          "usageKind": "member-call",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "fs",
+          "normalizedModuleName": "fs",
+          "localName": "readFileSync",
+          "importKind": "named",
+          "importedName": "readFileSync",
+          "sourceType": "esm",
+          "accessPath": [],
+          "usage": "readFileSync",
+          "usageKind": "reference",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "axios",
+          "normalizedModuleName": "axios",
+          "localName": "axios",
+          "importKind": "default",
+          "importedName": "default",
+          "sourceType": "esm",
+          "accessPath": [
+            "get"
+          ],
+          "usage": "axios.get",
+          "usageKind": "member-call",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "axios",
+          "normalizedModuleName": "axios",
+          "localName": "axios",
+          "importKind": "default",
+          "importedName": "default",
+          "sourceType": "esm",
+          "accessPath": [
+            "get"
+          ],
+          "usage": "axios.get",
+          "usageKind": "member",
+          "transitive": false,
+          "via": []
+        },
+        {
+          "moduleName": "axios",
+          "normalizedModuleName": "axios",
+          "localName": "axios",
+          "importKind": "default",
+          "importedName": "default",
+          "sourceType": "esm",
+          "accessPath": [],
+          "usage": "axios",
+          "usageKind": "reference",
+          "transitive": false,
+          "via": []
+        }
+      ],
+      "dependencies": [
+        "path",
+        "fs",
+        "axios"
+      ],
+      "usageSnippets": [],
+      "docComment": {
+        "name": "fetchUser",
+        "comment": "",
+        "leadingComment": "",
+        "trailingComment": "",
+        "nearbyComment": "",
+        "jsDoc": {
+          "params": [],
+          "returns": "",
+          "throws": [],
+          "examples": [],
+          "description": "",
+          "rawTags": []
+        },
+        "params": [
+          "id"
+        ],
+        "loc": {
+          "startLine": 12,
+          "endLine": 17
+        }
+      },
+      "llmInjectionSummary": {
+        "displayName": "fetchUser",
+        "llmGenerationError": "",
+        "sanitizerReceived": 6,
+        "sanitizerAccepted": 6,
+        "sanitizerRejected": 0,
+        "llmRuntimePassed": 0,
+        "llmRuntimeFailed": 6,
+        "fallbackInjected": 2,
+        "repairCandidatesAvailable": 6,
+        "repairCandidatesInjected": 1,
+        "finalPassingInjected": 2,
+        "finalInjected": 3
+      }
+    }
+  ],
+  "runner": {
+    "status": 0,
+    "signal": null,
+    "stderr": "(node:37223) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `electron --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/input.fetchUser.test.js\nPASS tests/generated/input.divide.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       11 passed, 11 total\nSnapshots:   0 total\nTime:        0.249 s, estimated 1 s\nRan all test suites within paths \"tests/generated/input.divide.test.js\", \"tests/generated/input.fetchUser.test.js\".\nTest results written to: tests/generated/.jest-results.36791.all.json\n"
+  }
+}
