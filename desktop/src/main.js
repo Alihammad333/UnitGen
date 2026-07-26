@@ -13,12 +13,46 @@ const DEFAULT_OLLAMA_HOST = "http://localhost:11434";
 delete process.env.NODE_OPTIONS;
 
 const isDev = !app.isPackaged;
-const backendPath = isDev
+
+// In dev, the backend source tree is writable — everything lives together.
+// In production (Snap/AppImage) the packaged backend is read-only, so we
+// mirror the entire backend tree into userData on first launch.  This
+// replicates the dev layout exactly: outputDir sits *inside* backendPath,
+// so Jest's upward node_modules traversal finds dependencies naturally.
+const sourceBackendPath = isDev
   ? path.join(__dirname, "../../backend")
   : path.join(process.resourcesPath, "backend");
-const outputDir = isDev
+
+let backendPath = sourceBackendPath;
+let outputDir = isDev
   ? path.join(backendPath, "unitgen-output")
   : path.join(app.getPath("userData"), "unitgen-output");
+
+if (!isDev) {
+  const syncedBackend = path.join(app.getPath("userData"), "unitgen-backend");
+  syncBackend(sourceBackendPath, syncedBackend);
+  backendPath = syncedBackend;
+  outputDir = path.join(backendPath, "unitgen-output");
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+function syncBackend(src, dest) {
+  if (fs.existsSync(dest)) return;
+  fs.mkdirSync(dest, { recursive: true });
+  fs.cpSync(src, dest, {
+    recursive: true,
+    filter: (srcPath) => {
+      const rel = path.relative(src, srcPath);
+      if (rel === "") return true;
+      if (rel.startsWith("node_modules")) return true;
+      if (rel.startsWith("unitgen-output")) return false;
+      if (rel.startsWith("tests")) return false;
+      if (rel.startsWith("output")) return false;
+      if (rel.startsWith("results")) return false;
+      return true;
+    }
+  });
+}
 
 let mainWindow = null;
 let activeChild = null;
