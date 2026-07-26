@@ -2,6 +2,25 @@ import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
 
+function getOutputDir() {
+  return process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR)
+    : process.cwd();
+}
+
+function ensureOutputDirNodeModules() {
+  if (!process.env.UNITGEN_OUTPUT_DIR) return;
+  const nmLink = path.resolve(process.env.UNITGEN_OUTPUT_DIR, "node_modules");
+  if (fs.existsSync(nmLink)) return;
+  const actualNm = path.resolve(process.cwd(), "node_modules");
+  if (!fs.existsSync(actualNm)) return;
+  try {
+    fs.symlinkSync(actualNm, nmLink);
+  } catch {
+    // output dir might be on a different volume; safe fallback
+  }
+}
+
 function getGeneratedDir() {
   return process.env.UNITGEN_OUTPUT_DIR
     ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
@@ -65,11 +84,9 @@ function makeEmptyResult(extra = {}) {
 
 function normalizeTestPath(filePath) {
   const absPath = path.resolve(filePath);
-  if (process.env.UNITGEN_OUTPUT_DIR) {
-    return absPath;
-  }
+  const base = getOutputDir();
   return path
-    .relative(process.cwd(), absPath)
+    .relative(base, absPath)
     .split(path.sep)
     .join(path.posix.sep);
 }
@@ -130,8 +147,10 @@ function runJestInternal({
     resultsPath,
   });
 
+  ensureOutputDirNodeModules();
+
   const proc = spawnSync(process.execPath, args, {
-    cwd: process.cwd(),
+    cwd: getOutputDir(),
     encoding: "utf8",
     env: {
       ...process.env,
