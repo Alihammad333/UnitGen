@@ -6,6 +6,12 @@ const { spawn } = require("node:child_process");
 const OPENAI_BASE_URL = "https://api.openai.com/v1";
 const DEFAULT_OLLAMA_HOST = "http://localhost:11434";
 
+// Clearing NODE_OPTIONS because:
+// (a) Electron packaged mode rejects most NODE_OPTIONS at startup,
+// (b) the backend child process inherits it, which can cause memory
+// flags to conflict with the Snap's classic-confinement environment.
+delete process.env.NODE_OPTIONS;
+
 const isDev = !app.isPackaged;
 const backendPath = isDev
   ? path.join(__dirname, "../../backend")

@@ -73,6 +73,7 @@ module.exports = {
   },
   snap: {
     grade: "stable",
-    confinement: "classic"
+    confinement: "classic",
+    plugs: ["x11", "opengl", "home", "network", "network-bind", "wayland"]
   }
 }
