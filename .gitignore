@@ -2,3 +2,6 @@
 .vscode/
 .codex/
 node_modules/
+.opencode/
+dist/
+.cache/

@@ -57,6 +57,9 @@ import {
 ====================================================== */
 
 const ACTIVE_MODEL = process.env.OPENAI_MODEL || "gpt-3.5-turbo";
+const OUTPUT_DIR = process.env.UNITGEN_OUTPUT_DIR
+  ? path.resolve(process.env.UNITGEN_OUTPUT_DIR)
+  : process.cwd();
 
 /*
   Top-level external mocking is useful for risky/missing dependencies, but
@@ -184,14 +187,18 @@ function safeTestStem(sourceFile, fnName) {
 }
 
 function computeImportPath(sourceFileAbs) {
-  const fromDir = path.resolve("tests", "generated");
+  const fromDir = process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated");
   let rel = path.relative(fromDir, sourceFileAbs);
   if (!rel.startsWith(".")) rel = `./${rel}`;
   return rel.split(path.sep).join(path.posix.sep);
 }
 
 function cleanGeneratedTests() {
-  const genDir = path.resolve("tests", "generated");
+  const genDir = process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated");
   if (!fs.existsSync(genDir)) return;
 
   for (const f of fs.readdirSync(genDir)) {
@@ -869,6 +876,7 @@ function ensureMissingExternalModuleStubs(moduleNames = [], options = {}) {
     );
   }
 
+  possibleRoots.push(path.resolve(OUTPUT_DIR, "node_modules"));
   possibleRoots.push(path.resolve(process.cwd(), "node_modules"));
 
   const candidateDirs = Array.from(new Set(possibleRoots.filter(Boolean)));
@@ -2129,7 +2137,7 @@ if (!input.ok) process.exit(1);
 cleanGeneratedTests();
 const runtimeArtifactBaseline = createRuntimeArtifactSnapshot();
 process.on("exit", () =>
-  cleanupRuntimeArtifacts(process.cwd(), { baselineNames: runtimeArtifactBaseline })
+  cleanupRuntimeArtifacts(OUTPUT_DIR, { baselineNames: runtimeArtifactBaseline })
 );
 
 const selection = selectFilesForTesting(input);
@@ -2307,7 +2315,7 @@ console.log(
 console.log(`🧾 Tests created:  ${generatedTestFiles}`);
 console.log(`📁 Output folder:  tests/generated/`);
 
-cleanupRuntimeArtifacts(process.cwd(), { baselineNames: runtimeArtifactBaseline });
+cleanupRuntimeArtifacts(OUTPUT_DIR, { baselineNames: runtimeArtifactBaseline });
 
 /* ======================================================
    LLM → JEST → ADAPTIVE REPAIR
@@ -2429,7 +2437,9 @@ if (repairResults?.updated) {
 console.log("\n🧠 Running assertion enhancer...\n");
 
 await runAssertionEnhancer({
-  testDir: path.resolve("tests", "generated"),
+  testDir: process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated"),
 });
 
 console.log("\n🧪 Re-running Jest after assertion enhancement...\n");
@@ -2460,6 +2470,6 @@ writeFinalReport({
   llmContexts,
   jestResults: finalResults,
 });
-cleanupRuntimeArtifacts(process.cwd(), { baselineNames: runtimeArtifactBaseline });
+cleanupRuntimeArtifacts(OUTPUT_DIR, { baselineNames: runtimeArtifactBaseline });
 
 console.log("\n✅ Done.\n");

@@ -1,16 +1,14 @@
-// src/core/testgen/testWriter.js
 import fs from "fs";
 import path from "path";
 
-/**
- * Writes test content into tests/generated/<fnName>.test.js
- * Creates directory if missing.
- *
- * ✅ FIX: return ABSOLUTE outFile path so it matches Jest JSON paths on Windows.
- * Variable names kept as requested: outDir, outFile.
- */
+function getOutputDir() {
+  return process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated");
+}
+
 export function writeGeneratedTest(fnName, content) {
-  const outDir = path.resolve("tests", "generated");
+  const outDir = getOutputDir();
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir, { recursive: true });
   }

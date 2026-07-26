@@ -2,8 +2,22 @@ import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
 
+function getGeneratedDir() {
+  return process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated");
+}
+
+function getResultFilePath(label = "all") {
+  const safeLabel = String(label || "all").replace(/[^a-zA-Z0-9._-]/g, "_");
+  const baseDir = process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "tests", "generated")
+    : path.resolve("tests", "generated");
+  return path.resolve(baseDir, `.jest-results.${process.pid}.${safeLabel}.json`);
+}
+
 function getGeneratedTestFiles() {
-  const dir = path.resolve("tests", "generated");
+  const dir = getGeneratedDir();
 
   if (!fs.existsSync(dir)) return [];
 
@@ -54,15 +68,6 @@ function normalizeTestPath(filePath) {
     .relative(process.cwd(), path.resolve(filePath))
     .split(path.sep)
     .join(path.posix.sep);
-}
-
-function getResultFilePath(label = "all") {
-  const safeLabel = String(label || "all").replace(/[^a-zA-Z0-9._-]/g, "_");
-  return path.resolve(
-    "tests",
-    "generated",
-    `.jest-results.${process.pid}.${safeLabel}.json`
-  );
 }
 
 function buildJestArgs({ testFiles, resultsPath }) {

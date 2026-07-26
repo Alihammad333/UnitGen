@@ -10,6 +10,9 @@ const isDev = !app.isPackaged;
 const backendPath = isDev
   ? path.join(__dirname, "../../backend")
   : path.join(process.resourcesPath, "backend");
+const outputDir = isDev
+  ? path.join(backendPath, "unitgen-output")
+  : path.join(app.getPath("userData"), "unitgen-output");
 
 let mainWindow = null;
 let activeChild = null;
@@ -235,7 +238,7 @@ function parseBackendLine(line) {
 
 function readFinalReport() {
   try {
-    const reportPath = path.join(backendPath, "output", "final-report.json");
+    const reportPath = path.join(outputDir, "output", "final-report.json");
     const report = JSON.parse(fs.readFileSync(reportPath, "utf8"));
     return augmentReportForDesktop(report);
   } catch {
@@ -244,7 +247,7 @@ function readFinalReport() {
 }
 
 function readGeneratedTestFiles() {
-  const generatedDir = path.join(backendPath, "tests", "generated");
+  const generatedDir = path.join(outputDir, "tests", "generated");
   if (!fs.existsSync(generatedDir)) return [];
 
   return fs
@@ -510,6 +513,7 @@ ipcMain.handle("unitgen:run", async (_event, targetPath, envVars = {}) => {
   const nodeEnv = {
     ...process.env,
     ELECTRON_RUN_AS_NODE: "1",
+    UNITGEN_OUTPUT_DIR: outputDir,
     ...providerEnv,
     ...normalizeAdvancedEnv(
       envVars.advanced || envVars.advancedVars || settings.advanced
@@ -571,7 +575,7 @@ ipcMain.handle("unitgen:downloadTests", async () => {
 
   if (result.canceled || !result.filePaths.length) return null;
 
-  const source = path.join(backendPath, "tests", "generated");
+  const source = path.join(outputDir, "tests", "generated");
   const destination = path.join(result.filePaths[0], "unitgen-generated-tests");
   copyDirectory(source, destination);
 

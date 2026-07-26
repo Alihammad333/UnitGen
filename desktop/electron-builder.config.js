@@ -73,6 +73,6 @@ module.exports = {
   },
   snap: {
     grade: "stable",
-    confinement: "strict"
+    confinement: "classic"
   }
 }

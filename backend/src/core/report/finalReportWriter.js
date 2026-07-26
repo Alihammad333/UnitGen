@@ -175,10 +175,16 @@ export function buildFinalReport(data) {
   };
 }
 
+function getOutputDir() {
+  return process.env.UNITGEN_OUTPUT_DIR
+    ? path.resolve(process.env.UNITGEN_OUTPUT_DIR, "output")
+    : path.resolve("output");
+}
+
 export function writeFinalReport(data, outPath = "output/final-report.json") {
   const report = buildFinalReport(data);
-
-  const absOut = path.resolve(outPath);
+  const baseDir = getOutputDir();
+  const absOut = path.join(baseDir, "final-report.json");
   fs.mkdirSync(path.dirname(absOut), { recursive: true });
   fs.writeFileSync(absOut, JSON.stringify(report, null, 2), "utf8");
 
