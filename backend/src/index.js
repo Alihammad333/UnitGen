@@ -855,8 +855,23 @@ module.exports.rad2deg = api.rad2deg;
 `;
 }
 
-function ensureMissingExternalModuleStubs(moduleNames = []) {
-  const rootNodeModules = path.resolve(process.cwd(), "node_modules");
+function ensureMissingExternalModuleStubs(moduleNames = [], options = {}) {
+  const possibleRoots = [];
+
+  const projRoot = options.projectRoot || getContextProjectRoot(options);
+  if (projRoot) {
+    possibleRoots.push(path.resolve(projRoot, "node_modules"));
+  }
+
+  if (options.filePathAbs) {
+    possibleRoots.push(
+      path.resolve(path.dirname(options.filePathAbs), "node_modules")
+    );
+  }
+
+  possibleRoots.push(path.resolve(process.cwd(), "node_modules"));
+
+  const candidateDirs = Array.from(new Set(possibleRoots.filter(Boolean)));
 
   for (const rawName of moduleNames) {
     const moduleName = normalizeModuleName(String(rawName || "").trim());
@@ -867,31 +882,39 @@ function ensureMissingExternalModuleStubs(moduleNames = []) {
     const packageRootName = getPackageRootName(moduleName);
     if (!packageRootName) continue;
 
-    const packageDir = packageRootName.startsWith("@")
-      ? path.join(rootNodeModules, ...packageRootName.split("/"))
-      : path.join(rootNodeModules, packageRootName);
+    for (const rootNodeModules of candidateDirs) {
+      try {
+        const packageDir = packageRootName.startsWith("@")
+          ? path.join(rootNodeModules, ...packageRootName.split("/"))
+          : path.join(rootNodeModules, packageRootName);
 
-    if (fs.existsSync(packageDir)) continue;
+        if (fs.existsSync(packageDir)) break;
 
-    fs.mkdirSync(packageDir, { recursive: true });
+        fs.mkdirSync(packageDir, { recursive: true });
 
-    fs.writeFileSync(
-      path.join(packageDir, "package.json"),
-      JSON.stringify(
-        {
-          name: packageRootName,
-          version: "0.0.0-unitgen-stub",
-          main: "index.cjs",
-        },
-        null,
-        2
-      )
-    );
+        fs.writeFileSync(
+          path.join(packageDir, "package.json"),
+          JSON.stringify(
+            {
+              name: packageRootName,
+              version: "0.0.0-unitgen-stub",
+              main: "index.cjs",
+            },
+            null,
+            2
+          )
+        );
 
-    fs.writeFileSync(
-      path.join(packageDir, "index.cjs"),
-      buildCjsStubSource(moduleName)
-    );
+        fs.writeFileSync(
+          path.join(packageDir, "index.cjs"),
+          buildCjsStubSource(moduleName)
+        );
+
+        break;
+      } catch (err) {
+        // Safe fallback for read-only filesystem mounts (such as Ubuntu Snap packages) or permission limits
+      }
+    }
   }
 }
 
@@ -1882,7 +1905,11 @@ function generateFromFiles(files, entryFileSet = new Set(), options = {}) {
       ensureMissingExternalModuleStubs(
         topLevelExternalMockEntries.map(
           (entry) => entry.normalizedModule || entry.module
-        )
+        ),
+        {
+          filePathAbs,
+          projectRoot: getContextProjectRoot({ options, filePathAbs }),
+        }
       );
     }
 
