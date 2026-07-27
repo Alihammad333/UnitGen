@@ -260,6 +260,9 @@ function looksArrayLikeParam(paramName) {
     lower === "list" ||
     lower === "items" ||
     lower === "values" ||
+    lower === "promises" ||
+    lower === "iterable" ||
+    lower === "iterables" ||
     lower === "data" ||
     lower.endsWith("arr") ||
     lower.endsWith("array") ||
@@ -467,7 +470,7 @@ function buildFunctionLiteral(paramName) {
     return "() => 1";
   }
 
-  return "() => 0";
+  return "(value) => value";
 }
 
 function extractComparedStringLiterals(functionCode = "", paramName = "") {
@@ -630,6 +633,18 @@ function buildBetterDefaultValueForParam(
   }
 
   if (looksOptionsLikeParam(paramName)) {
+    const safeParam = String(paramName || "").replace(
+      /[.*+?^${}()|[\]\\]/g,
+      "\\$&"
+    );
+    const optionsInspectedLocally = safeParam
+      ? new RegExp(`\\b${safeParam}\\s*(?:\\.|\\[)`).test(
+          normalizeCode(functionCode)
+        )
+      : false;
+
+    if (!optionsInspectedLocally && !secondary) return "undefined";
+
     return buildOptionsObjectLiteral(functionCode, variant);
   }
 

@@ -1297,6 +1297,38 @@ ${moduleMocks.trim()}`);
   return sections.length > 0 ? `${sections.join("\n\n")}\n` : "";
 }
 
+function buildEffectiveMockSection({
+  fnName,
+  params = [],
+  jestMocks = "",
+  isClassMethod = false,
+  constructorParams = [],
+}) {
+  const useFsHarness = shouldUseFsHarness(
+    fnName,
+    isClassMethod ? [...(constructorParams || []), ...(params || [])] : params
+  );
+  const { globalSetupMocks, moduleMocks } = splitMockCode(jestMocks);
+  const effectiveModuleMocks = useFsHarness
+    ? removeControlledFsHarnessMocks(moduleMocks)
+    : moduleMocks;
+
+  return buildMockSection({
+    globalSetupMocks,
+    moduleMocks: effectiveModuleMocks,
+  });
+}
+
+export function renderJestMockModule(options = {}) {
+  const mockSection = buildEffectiveMockSection(options);
+
+  if (!mockSection) return "";
+
+  return `import { jest, beforeAll, beforeEach, afterEach, afterAll } from "@jest/globals";
+
+${mockSection}`;
+}
+
 function buildModuleLoader(importPath) {
   const safeImportPath = JSON.stringify(importPath);
 
@@ -1680,6 +1712,7 @@ export function renderJestTestTemplate({
   params = [],
   functionCode = "",
   jestMocks = "",
+  mockModulePath = "",
 
   // Class-method context fields. These are optional and backward-compatible.
   isClassMethod = false,
@@ -1692,14 +1725,18 @@ export function renderJestTestTemplate({
     fnName,
     isClassMethod ? [...(constructorParams || []), ...(params || [])] : params
   );
-  const { globalSetupMocks, moduleMocks } = splitMockCode(jestMocks);
-  const effectiveModuleMocks = useFsHarness
-    ? removeControlledFsHarnessMocks(moduleMocks)
-    : moduleMocks;
-  const mockSection = buildMockSection({
-    globalSetupMocks,
-    moduleMocks: effectiveModuleMocks,
-  });
+  const mockSection = mockModulePath
+    ? ""
+    : buildEffectiveMockSection({
+        fnName,
+        params,
+        jestMocks,
+        isClassMethod,
+        constructorParams,
+      });
+  const mockModuleImport = mockModulePath
+    ? `import ${JSON.stringify(mockModulePath)};\n`
+    : "";
 
   const safeFnName = safeLocalBindingName(fnName, "__unitgenTarget");
   const safeOwnerClassName = safeLocalBindingName(
@@ -1765,7 +1802,7 @@ import {
 import * as __unitgenFs from "node:fs";
 import * as __unitgenPath from "node:path";
 ${fsImports}
-${mockSection}// Import/load AFTER global setup and module mocks
+${mockModuleImport}${mockSection}// Import/load AFTER global setup and module mocks
 ${buildModuleLoader(importPath)}
 ${buildExportResolver()}
 

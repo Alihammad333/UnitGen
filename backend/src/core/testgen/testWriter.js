@@ -18,3 +18,15 @@ export function writeGeneratedTest(fnName, content) {
 
   return outFile;
 }
+
+export function writeGeneratedMock(fnName, content) {
+  const outDir = getOutputDir();
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true });
+  }
+
+  const outFile = path.join(outDir, `${fnName}.mocks.js`);
+  fs.writeFileSync(outFile, content, "utf8");
+
+  return outFile;
+}

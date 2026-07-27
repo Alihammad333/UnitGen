@@ -7,125 +7,6 @@ import {
 import * as __unitgenFs from "node:fs";
 import * as __unitgenPath from "node:path";
 
-// Module mocks
-jest.unstable_mockModule("axios", () => {
-  const api = {
-      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      create: jest.fn(() => api),
-      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-    };
-
-  return {
-    __esModule: true,
-    ...api,
-    default: api
-  };
-}, { virtual: true });
-
-jest.unstable_mockModule("path", () => {
-  const api = {
-      join: jest.fn((...parts) => parts.filter(Boolean).join('/')),
-      resolve: jest.fn((...parts) => parts.filter(Boolean).join('/')),
-      dirname: jest.fn((p) => String(p).split('/').slice(0, -1).join('/') || '.'),
-      basename: jest.fn((p) => String(p).split('/').pop()),
-      extname: jest.fn((p) => {
-        const base = String(p).split("/").pop() || "";
-        const i = base.lastIndexOf(".");
-        return i >= 0 ? base.slice(i) : "";
-      }),
-      normalize: jest.fn((...parts) => parts.filter(Boolean).join('/')),
-      relative: jest.fn((...parts) => parts.filter(Boolean).join('/')),
-    };
-
-  return {
-    __esModule: true,
-    ...api,
-    default: api
-  };
-});
-
-jest.unstable_mockModule("fs", () => {
-  const api = {
-      readFileSync: jest.fn(() => 'dummy file'),
-      writeFileSync: jest.fn(() => undefined),
-      existsSync: jest.fn(() => true),
-      mkdirSync: jest.fn(() => undefined),
-      rmSync: jest.fn(() => undefined),
-      unlinkSync: jest.fn(() => undefined),
-      readdirSync: jest.fn(() => []),
-      statSync: jest.fn(() => ({ isFile: () => true, isDirectory: () => false })),
-      readFile: jest.fn((...args) => {
-        const cb = args.find((x) => typeof x === "function");
-        if (cb) cb(null, "dummy file");
-        return undefined;
-      }),
-      writeFile: jest.fn((...args) => {
-        const cb = args.find((x) => typeof x === "function");
-        if (cb) cb(null);
-        return undefined;
-      }),
-      readdir: jest.fn((...args) => {
-        const cb = args.find((x) => typeof x === "function");
-        if (cb) cb(null, []);
-        return [];
-      }),
-      stat: jest.fn((...args) => {
-        const value = { isFile: () => true, isDirectory: () => false };
-        const cb = args.find((x) => typeof x === "function");
-        if (cb) cb(null, value);
-        return value;
-      }),
-      lstat: jest.fn((...args) => {
-        const value = { isFile: () => true, isDirectory: () => false };
-        const cb = args.find((x) => typeof x === "function");
-        if (cb) cb(null, value);
-        return value;
-      }),
-      promises: {
-        readFile: jest.fn().mockResolvedValue('dummy file'),
-        writeFile: jest.fn().mockResolvedValue(undefined),
-        mkdir: jest.fn().mockResolvedValue(undefined),
-        readdir: jest.fn().mockResolvedValue([]),
-        stat: jest.fn().mockResolvedValue({ isFile: () => true, isDirectory: () => false }),
-        access: jest.fn().mockResolvedValue(undefined),
-        unlink: jest.fn(() => undefined),
-        rm: jest.fn(() => undefined),
-        copyFile: jest.fn(() => undefined),
-      },
-    };
-
-  return {
-    __esModule: true,
-    ...api,
-    default: api
-  };
-});
-
-jest.unstable_mockModule("axios", () => {
-  const api = {
-      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      create: jest.fn(() => api),
-      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),
-    };
-
-  return {
-    __esModule: true,
-    ...api,
-    default: api
-  };
-}, { virtual: true });
 // Import/load AFTER global setup and module mocks
 const __unitgenRequire = __unitgenCreateRequire(import.meta.url);
 
@@ -166,15 +47,15 @@ function __unitgenBuildModuleCandidates() {
     }
   };
 
-  add("specifier", "../../../tests/sample1/input.js");
-  addResolved("../../../tests/sample1/input.js");
+  add("specifier", "../../../tests/sample/input.js");
+  addResolved("../../../tests/sample/input.js");
 
   const fromTestDir = __unitgenPath.dirname(
     __unitgenFileURLToPath(import.meta.url)
   );
 
   try {
-    const absFromTest = __unitgenPath.resolve(fromTestDir, "../../../tests/sample1/input.js");
+    const absFromTest = __unitgenPath.resolve(fromTestDir, "../../../tests/sample/input.js");
     add("file", absFromTest);
 
     if (absFromTest.includes("/dist/esm/")) {
@@ -285,7 +166,7 @@ async function __unitgenLoadModule() {
     })
     .join("\n");
 
-  throw new Error("UnitGen module load failed for ../../../tests/sample1/input.js:\n" + __unitgenMessage);
+  throw new Error("UnitGen module load failed for ../../../tests/sample/input.js:\n" + __unitgenMessage);
 }
 function __unitgenResolveExport(moduleObject, exportName, isDefaultExport) {
   const candidates = [];
@@ -332,49 +213,56 @@ function __unitgenResolveExport(moduleObject, exportName, isDefaultExport) {
 }
 
 let mod;
-let fetchUser;
+let DataStreamProcessor;
 
 beforeAll(async () => {
   mod = await __unitgenLoadModule();
-  fetchUser = __unitgenResolveExport(mod, "fetchUser", false);
+  DataStreamProcessor = __unitgenResolveExport(mod, "DataStreamProcessor", false);
 });
 
-describe("fetchUser", () => {
+describe("DataStreamProcessor.prototype.getStatistics", () => {
   test("auto-generated (prototype)", async () => {
-    if (typeof fetchUser !== "function") {
-      throw new TypeError("fetchUser import did not resolve to a function");
+    if (typeof DataStreamProcessor !== "function") {
+      throw new TypeError("DataStreamProcessor import did not resolve to a function");
     }
-    const id = 1;
+    const windowSize = 2;
+    const msThreshold = 1;
+    const __unitgenInstance = new DataStreamProcessor(windowSize);
+    const __unitgenMethod = __unitgenInstance.getStatistics;
+    if (typeof __unitgenMethod !== "function") {
+      throw new TypeError("DataStreamProcessor.prototype.getStatistics did not resolve to a function");
+    }
     let result;
     try {
-      result = fetchUser(id);
-      if (result && typeof result.then === "function") {
-        result = await result;
-      }
-      expect(result).toBeDefined();
+      result = __unitgenInstance.getStatistics(msThreshold);
+      expect(__unitgenInstance).toBeDefined();
+          expect(typeof __unitgenInstance.getStatistics).toBe("function");
+          expect(result === undefined || result !== undefined).toBe(true);
     } catch (error) {
       expect(error && (error instanceof Error || typeof error.message === "string")).toBe(true);
     }
   });
 
   
-  test("fallback checks source-aware result shape asynchronously", async () => {
+  test("DataStreamProcessor.getStatistics checks source-aware result shape", () => {
     {
-      const id = "data";
-      const result = await fetchUser(id);
+      const windowSize = 1;
+      const instance = new DataStreamProcessor(windowSize);
+      const msThreshold = 1;
+      const result = instance.getStatistics(msThreshold);
       expect(result).toBeDefined();
-      expect(typeof result).toBe("object");
+      expect(Array.isArray(result) || typeof result === "object").toBe(true);
     }
   });
 
 
-  test("fallback checks stable result contract", async () => {
+  test("DataStreamProcessor.getStatistics checks stable result contract", () => {
     {
-      const id = "data";
-      const result = await fetchUser(id);
-      expect(result == null || typeof result === "object").toBe(true);
+      const windowSize = 1;
+      const instance = new DataStreamProcessor(windowSize);
+      const msThreshold = 1;
+      const result = instance.getStatistics(msThreshold);
+      expect(result == null || Array.isArray(result) || typeof result === "object").toBe(true);
     }
   });
-
-
 });

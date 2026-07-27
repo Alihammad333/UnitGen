@@ -16,8 +16,14 @@ import {
 } from "./core/dependency/dependencyDetector.js";
 import { buildMockPlan } from "./core/mock/mockPlanBuilder.js";
 import { renderJestMocks } from "./core/mock/jestMockRenderer.js";
-import { renderJestTestTemplate } from "./core/testgen/jestTestTemplate.js";
-import { writeGeneratedTest } from "./core/testgen/testWriter.js";
+import {
+  renderJestMockModule,
+  renderJestTestTemplate,
+} from "./core/testgen/jestTestTemplate.js";
+import {
+  writeGeneratedMock,
+  writeGeneratedTest,
+} from "./core/testgen/testWriter.js";
 import { fillGeneratedTestsWithLLM } from "./core/llm/llmFillTests.js";
 import {
   preflightGeneratedTestFilesAfterLLM,
@@ -202,7 +208,7 @@ function cleanGeneratedTests() {
   if (!fs.existsSync(genDir)) return;
 
   for (const f of fs.readdirSync(genDir)) {
-    if (f.endsWith(".test.js")) {
+    if (f.endsWith(".test.js") || f.endsWith(".mocks.js")) {
       try {
         fs.unlinkSync(path.join(genDir, f));
       } catch {}
@@ -592,11 +598,7 @@ function shouldSupplementWithDynamicApiDiscovery(input, generatedTestFiles) {
   if (!shouldTryDynamicApiFallback(input)) return false;
   if (generatedTestFiles <= 0) return false;
 
-  const minStaticTestsForPackageSurface = Number(
-    process.env.UNITGEN_DYNAMIC_SUPPLEMENT_STATIC_TEST_FLOOR || 25
-  );
-
-  return generatedTestFiles < minStaticTestsForPackageSurface;
+  return true;
 }
 
 function shouldSupplementAfterSafetyPreflight({
@@ -624,19 +626,9 @@ function shouldSupplementAfterSafetyPreflight({
   return removalRatio >= maxRemovedRatio;
 }
 
-function shouldAddDynamicBehaviorContexts(generatedTestFiles) {
-  const maxStaticTestsForDynamicBehavior = Number(
-    process.env.UNITGEN_DYNAMIC_BEHAVIOR_STATIC_TEST_FLOOR ||
-      process.env.UNITGEN_DYNAMIC_SUPPLEMENT_STATIC_TEST_FLOOR ||
-      25
-  );
-
-  return generatedTestFiles < maxStaticTestsForDynamicBehavior;
-}
-
 function getDynamicBehaviorContextLimit() {
-  const limit = Number(process.env.UNITGEN_DYNAMIC_BEHAVIOR_CONTEXT_LIMIT || 20);
-  if (!Number.isFinite(limit) || limit < 0) return 20;
+  const limit = Number(process.env.UNITGEN_DYNAMIC_BEHAVIOR_CONTEXT_LIMIT || 40);
+  if (!Number.isFinite(limit) || limit < 0) return 40;
   return Math.floor(limit);
 }
 
@@ -1949,6 +1941,14 @@ function generateFromFiles(files, entryFileSet = new Set(), options = {}) {
         jestMocksByTarget[fnTargetKey] || ""
       );
 
+      const plannedStem = safeTestStem(filePathAbs, fnName);
+      const mockContent = renderJestMockModule({
+        fnName,
+        params,
+        jestMocks,
+      });
+      const mockModulePath = mockContent ? `./${plannedStem}.mocks.js` : "";
+
       const testContent = renderJestTestTemplate({
         fnName,
         isAsync,
@@ -1958,6 +1958,7 @@ function generateFromFiles(files, entryFileSet = new Set(), options = {}) {
         params,
         functionCode: fn.code,
         jestMocks,
+        mockModulePath,
 
         ownerClassName: fn.isClassLike ? fnName : "",
         methodKind: fn.isClassLike ? "constructor" : "",
@@ -1981,6 +1982,10 @@ function generateFromFiles(files, entryFileSet = new Set(), options = {}) {
       }
 
       generatedTestStems.add(stem);
+
+      if (mockContent) {
+        writeGeneratedMock(stem, mockContent);
+      }
 
       const outFile = writeGeneratedTest(stem, testContent);
 
@@ -2048,6 +2053,18 @@ ${importStatement}`,
             jestMocksByTarget[targetKey] || ""
           );
 
+          const plannedMethodStem = safeTestStem(filePathAbs, target.displayName);
+          const methodMockContent = renderJestMockModule({
+            fnName: target.fnName,
+            params: target.params,
+            jestMocks: methodJestMocks,
+            isClassMethod: true,
+            constructorParams: target.constructorParams,
+          });
+          const methodMockModulePath = methodMockContent
+            ? `./${plannedMethodStem}.mocks.js`
+            : "";
+
           const methodTestContent = renderJestTestTemplate({
             fnName: target.fnName,
             displayName: target.displayName,
@@ -2066,6 +2083,7 @@ ${importStatement}`,
             params: target.params,
             functionCode: target.functionCode,
             jestMocks: methodJestMocks,
+            mockModulePath: methodMockModulePath,
           });
 
           const methodStem = safeTestStem(filePathAbs, target.displayName);
@@ -2078,6 +2096,10 @@ ${importStatement}`,
           }
 
           generatedTestStems.add(methodStem);
+
+          if (methodMockContent) {
+            writeGeneratedMock(methodStem, methodMockContent);
+          }
 
           const methodOutFile = writeGeneratedTest(methodStem, methodTestContent);
 
@@ -2243,25 +2265,18 @@ if (
 
 if (generationFlow !== "dynamic-api" && shouldSupplementWithDynamicApiDiscovery(input, generatedTestFiles)) {
   console.log(
-    "\nℹ️ Static generation produced a small package API surface. Supplementing with dynamic public API export checks...\n"
+    "\nℹ️ Static package generation completed. Supplementing it with runtime public API export checks...\n"
   );
 
-  const includeDynamicBehaviorContexts =
-    shouldAddDynamicBehaviorContexts(generatedTestFiles);
-  const dynamicBehaviorContextLimit = includeDynamicBehaviorContexts
-    ? getDynamicBehaviorContextLimit()
-    : 0;
-
-  if (includeDynamicBehaviorContexts) {
-    console.log(
-      `ℹ️ Static behavior coverage is very small; preparing up to ${dynamicBehaviorContextLimit} dynamic API behavior context(s).`
-    );
-  }
+  const dynamicBehaviorContextLimit = getDynamicBehaviorContextLimit();
+  console.log(
+    `ℹ️ Preparing up to ${dynamicBehaviorContextLimit} bounded public API behavior context(s).`
+  );
 
   const dynamicSupplement = await generateDynamicApiTests({
     projectRoot: input.root,
     writeGeneratedTest,
-    includeLlmContexts: includeDynamicBehaviorContexts,
+    includeLlmContexts: dynamicBehaviorContextLimit > 0,
     maxLlmContexts: dynamicBehaviorContextLimit,
   });
 

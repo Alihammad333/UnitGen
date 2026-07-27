@@ -955,6 +955,19 @@ async function trySingleAssertionTransform({
     );
 
     const optimizedCode = generate(optimizedAST).code;
+    const proposedAssertions = detectAssertions(optimizedAST, learningDB);
+    const proposedAssertion = proposedAssertions.find(
+      (candidate) =>
+        candidate.testName === freshTarget.testName &&
+        candidate.assertionIndex === freshTarget.assertionIndex &&
+        candidate.source &&
+        candidate.source !== freshTarget.source
+    );
+    const suggestedAssertion =
+      proposedAssertion?.source ||
+      freshTarget.source ||
+      freshTarget.matcher ||
+      "No concrete assertion proposal produced";
 
     if (!optimizedCode || optimizedCode === originalCode) {
       console.log("ℹ️ No meaningful single-assertion change proposed.");
@@ -1013,12 +1026,6 @@ async function trySingleAssertionTransform({
     if (accepted) {
       console.log(`✅ Success: Single assertion committed in ${fileName}`);
 
-      const suggested = freshTarget.runtimeObserved
-        ? "Runtime-observed assertion strengthened safely"
-        : mode === "failed"
-          ? "Single failed assertion improved safely"
-          : "Single assertion strengthened safely";
-
       emitEvent("assertion_enhanced", {
         testFile: fileName,
         issue:
@@ -1026,14 +1033,20 @@ async function trySingleAssertionTransform({
             ? "Failed assertion repaired/enhanced"
             : "Assertion enhanced",
         original: freshTarget.source || freshTarget.matcher || "Weak assertion",
-        suggested,
+        suggested: suggestedAssertion,
+        rationale:
+          freshTarget.runtimeObserved
+            ? "Derived from the runtime-observed result and validated by Jest"
+            : mode === "failed"
+              ? "Repaired assertion validated against the failed test and full suite"
+              : "Stronger assertion validated against the full Jest suite",
         status: "committed",
       });
 
       recordRepairedAssertion(
         filePath,
         freshTarget.testName || "",
-        suggested
+        suggestedAssertion
       );
 
       return {
@@ -1048,7 +1061,8 @@ async function trySingleAssertionTransform({
       testFile: fileName,
       issue: "Assertion rejected",
       original: freshTarget.source || freshTarget.matcher || "Weak assertion",
-      suggested:
+      suggested: suggestedAssertion,
+      rationale:
         mode === "failed"
           ? "Rejected because targeted failed test did not improve"
           : "Rejected because assertion quality did not improve safely",
@@ -1140,10 +1154,11 @@ async function processFileTargets({
             ? "Invalid assertion"
             : "Weak assertion",
       original: target.source || target.matcher || "Assertion target detected",
-      suggested:
+      suggested: "",
+      rationale:
         mode === "failed"
-          ? "Single failed assertion repair will be attempted"
-          : "Single assertion strengthening will be attempted",
+          ? "A concrete repair proposal will be reported after transformation"
+          : "A concrete strengthening proposal will be reported after transformation",
       status: "detected",
     });
   }

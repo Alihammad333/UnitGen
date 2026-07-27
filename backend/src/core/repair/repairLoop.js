@@ -98,7 +98,7 @@ function getCandidateFilePathsFromContexts(contexts = []) {
  *
  * If a candidate cannot be safely identified, the original code is returned.
  */
-function removeRepairCandidateBlocks(code = "") {
+export function removeRepairCandidateBlocks(code = "") {
   const source = String(code || "");
 
   if (!hasRepairCandidateMarker(source)) {

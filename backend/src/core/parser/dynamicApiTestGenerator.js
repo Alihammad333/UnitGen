@@ -133,7 +133,9 @@ function ownerNameFromApi(api = {}) {
   const parts = ownerPath.split(".").filter(Boolean);
   const last = parts[parts.length - 1] || "Subject";
 
-  return sanitizeIdentifier(last === "pkg" ? api.rootIdentifier || "Subject" : last, "Subject");
+  if (last === String(api.rootIdentifier || "pkg")) return "Subject";
+
+  return sanitizeIdentifier(last, "Subject");
 }
 
 /* ======================================================
@@ -215,6 +217,33 @@ function dedupeDynamicTargets(apis = []) {
   return output;
 }
 
+function dynamicBehaviorPriority(api = {}) {
+  const source = String(api.functionCode || "");
+  const accessPath = String(api.accessPath || "");
+  const name = String(api.methodName || api.fnName || api.exportName || "");
+  const branchSignals = (
+    source.match(/\bif\b|\bswitch\b|\bcase\b|\?|&&|\|\|/g) || []
+  ).length;
+  const arity = normalizeParamList(api.params || []).length;
+  let score = 0;
+
+  if (hasSourceRecognizedFilesystemWrapper(api)) score += 100;
+  if (source && !/\[native code\]/.test(source)) score += 40;
+  else if (/\[native code\]/.test(source)) score -= 40;
+
+  score += Math.min(branchSignals, 10) * 3;
+  score += Math.min(arity, 4) * 3;
+  score += Math.min(Math.floor(Math.log2(source.length + 1)), 10);
+
+  if (!api.isPrototypeMethod) score += 10;
+  else score += 6;
+
+  if (accessPath.split(".").some((part) => part.startsWith("_"))) score -= 30;
+  if (/^(?:constructor\$?|toString|valueOf|toLocaleString)$/i.test(name)) score -= 15;
+
+  return score;
+}
+
 /* ======================================================
    TEST TEMPLATE
 ====================================================== */
@@ -279,8 +308,10 @@ function buildDynamicLlmContext({
   packageName,
 }) {
   const displayName = api.fnName || api.accessPath;
-  const params = normalizeParamList(api.params || []);
-  const isAsync = !!api.isAsync || /\basync\b/.test(api.functionCode || "");
+  const params = normalizeParamList(api.params || []).filter(
+    (name) => !String(name || "").startsWith("_")
+  );
+  const isAsync = true;
   const ownerClassName = api.isPrototypeMethod ? ownerNameFromApi(api) : "";
   const methodName = api.isPrototypeMethod ? String(api.methodName || api.exportName || "") : "";
 
@@ -399,9 +430,7 @@ export async function generateDynamicApiTests({
   const apis = dedupeDynamicTargets(
     (discovery.apis || []).filter(shouldGenerateDynamicApiTarget)
   ).sort(
-    (left, right) =>
-      Number(hasSourceRecognizedFilesystemWrapper(right)) -
-      Number(hasSourceRecognizedFilesystemWrapper(left))
+    (left, right) => dynamicBehaviorPriority(right) - dynamicBehaviorPriority(left)
   );
 
   console.log(

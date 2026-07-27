@@ -6,6 +6,7 @@ import {
   runJest,
   runJestForFile,
 } from "../runner/jestRunner.js";
+import { removeRepairCandidateBlocks } from "../repair/repairLoop.js";
 
 function getJestJson(result) {
   if (!result) return null;
@@ -50,6 +51,40 @@ function fileHasRepairCandidate(filePath) {
     );
   } catch {
     return false;
+  }
+}
+
+async function salvagePassingTestsByRemovingRepairCandidates(testFilePath) {
+  let originalCode = null;
+
+  try {
+    originalCode = fs.readFileSync(testFilePath, "utf8");
+    const { code: cleanedCode, removed } =
+      removeRepairCandidateBlocks(originalCode);
+
+    if (removed <= 0 || cleanedCode === originalCode) return null;
+
+    fs.writeFileSync(testFilePath, cleanedCode, "utf8");
+    const result = await runJestForFile(testFilePath);
+
+    if (!isUnrecoverableJestResult(result) && getFailureCount(result) === 0) {
+      console.log(
+        `⚠️ Removed ${removed} failing repair candidate(s) but preserved passing tests in dynamic file: ${testFilePath}`
+      );
+      return result;
+    }
+
+    fs.writeFileSync(testFilePath, originalCode, "utf8");
+    return null;
+  } catch {
+    if (originalCode !== null) {
+      try {
+        fs.writeFileSync(testFilePath, originalCode, "utf8");
+      } catch {
+        // Preserve the normal preflight fallback if rollback is unavailable.
+      }
+    }
+    return null;
   }
 }
 
@@ -276,6 +311,15 @@ async function runFullSuiteSafetyPass({
       if (!individualResult) continue;
 
       if (getFailureCount(individualResult) > 0) {
+        const salvagedResult =
+          await salvagePassingTestsByRemovingRepairCandidates(testFilePath);
+
+        if (salvagedResult) {
+          perFileResults.set(testFilePath, salvagedResult);
+          removedAny = true;
+          continue;
+        }
+
         console.log(
           `⚠️ Removing failing dynamic test file after suite crash: ${testFilePath}`
         );

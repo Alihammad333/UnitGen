@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-26T18:37:49.695Z",
+  "generatedAt": "2026-07-27T19:04:33.995Z",
   "project": {
     "input": {
       "ok": true,
       "kind": "folder",
-      "root": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1",
+      "root": "D:\\clone\\UnitGen\\backend\\tests\\sample",
       "files": [
-        "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js"
+        "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js"
       ],
       "messages": [
         {
@@ -21,80 +21,432 @@
     },
     "processedFiles": 1,
     "skippedFiles": 0,
-    "generatedTestFiles": 2
+    "generatedTestFiles": 4
   },
   "summary": {
-    "totalSuites": 2,
-    "passedSuites": 2,
+    "totalSuites": 4,
+    "passedSuites": 4,
     "failedSuites": 0,
-    "totalTests": 11,
-    "passedTests": 11,
+    "totalTests": 21,
+    "passedTests": 21,
     "failedTests": 0,
     "success": true
   },
   "passedTests": [
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
-      "testName": "fetchUser auto-generated (prototype)",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "testName": "DataStreamProcessor.prototype.process auto-generated (prototype)",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
-      "testName": "fetchUser fallback checks source-aware result shape asynchronously",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "testName": "DataStreamProcessor.prototype.process Valid number input, buffer shift not needed",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
-      "testName": "fetchUser fallback checks stable result contract",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "testName": "DataStreamProcessor.prototype.process DataStreamProcessor.process checks source-aware result shape asynchronously",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide auto-generated (prototype)",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "testName": "DataStreamProcessor.prototype.process DataStreamProcessor.process checks stable result contract",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Normal behavior: positive numbers",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "testName": "DataStreamProcessor.prototype.process Valid number input, buffer shift needed",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Normal behavior: negative numbers",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.getStatistics.test.js",
+      "testName": "DataStreamProcessor.prototype.getStatistics auto-generated (prototype)",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Safe invariant: division by zero",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.getStatistics.test.js",
+      "testName": "DataStreamProcessor.prototype.getStatistics DataStreamProcessor.getStatistics checks source-aware result shape",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Simple parameterized behavior: small numbers",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.getStatistics.test.js",
+      "testName": "DataStreamProcessor.prototype.getStatistics DataStreamProcessor.getStatistics checks stable result contract",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Safe invariant: result type",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold auto-generated (prototype)",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide Normal behavior: decimal numbers",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Valid threshold value",
       "status": "passed"
     },
     {
-      "testFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "testName": "divide fallback checks source-aware result shape",
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Invalid threshold value",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Negative threshold value",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Zero threshold value",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Boundary threshold value (1000)",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold Boundary threshold value (1001)",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold fallback checks source-aware result shape",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "testName": "validateThreshold fallback checks stable result contract",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.test.js",
+      "testName": "DataStreamProcessor auto-generated (prototype)",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.test.js",
+      "testName": "DataStreamProcessor DataStreamProcessor constructor creates an instance",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.test.js",
+      "testName": "DataStreamProcessor DataStreamProcessor constructor exposes an object-like result",
+      "status": "passed"
+    },
+    {
+      "testFile": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.test.js",
+      "testName": "DataStreamProcessor [repair-candidate] Process with valid number input",
       "status": "passed"
     }
   ],
   "failedTests": [],
   "llmContexts": [
     {
-      "fnName": "divide",
-      "targetKey": "divide",
-      "displayName": "divide",
+      "fnName": "DataStreamProcessor",
+      "targetKey": "DataStreamProcessor",
+      "displayName": "DataStreamProcessor",
+      "isAsync": true,
+      "isDefault": false,
+      "isClassLike": true,
+      "isClassMethod": false,
+      "ownerClassName": "DataStreamProcessor",
+      "methodName": "",
+      "methodKind": "constructor",
+      "constructorParams": [
+        "windowSize"
+      ],
+      "constructorCode": "constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }",
+      "classCode": "class DataStreamProcessor {\r\n  constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }\r\n\r\n  /**\r\n   * Challenge 1: Async state management. \r\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\r\n   */\r\n  async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }\r\n\r\n  /**\r\n   * Challenge 2: Data transformation and math.\r\n   * Testing if Assertion Enhancer can calculate variance accurately.\r\n   */\r\n  getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }\r\n}",
+      "classMethods": [
+        "process",
+        "getStatistics"
+      ],
+      "params": [
+        "windowSize"
+      ],
+      "functionCode": "class DataStreamProcessor {\r\n  constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }\r\n\r\n  /**\r\n   * Challenge 1: Async state management. \r\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\r\n   */\r\n  async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }\r\n\r\n  /**\r\n   * Challenge 2: Data transformation and math.\r\n   * Testing if Assertion Enhancer can calculate variance accurately.\r\n   */\r\n  getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }\r\n}",
+      "testFilePath": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.test.js",
+      "importPath": "../../../tests/sample/input.js",
+      "sourceFile": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { DataStreamProcessor } from \"../../../tests/sample/input.js\";",
+      "mockEntries": [],
+      "dependencyUsage": [],
+      "dependencies": [],
+      "usageSnippets": [],
+      "docComment": {
+        "name": "DataStreamProcessor",
+        "comment": "",
+        "leadingComment": "",
+        "trailingComment": "",
+        "nearbyComment": "",
+        "jsDoc": {
+          "params": [],
+          "returns": "",
+          "throws": [],
+          "examples": [],
+          "description": "",
+          "rawTags": []
+        },
+        "params": [],
+        "loc": {
+          "startLine": 0,
+          "endLine": 0
+        }
+      },
+      "llmInjectionSummary": {
+        "displayName": "DataStreamProcessor",
+        "llmGenerationError": "",
+        "sanitizerReceived": 6,
+        "sanitizerAccepted": 2,
+        "sanitizerRejected": 4,
+        "llmRuntimePassed": 0,
+        "llmRuntimeFailed": 2,
+        "fallbackInjected": 2,
+        "repairCandidatesAvailable": 2,
+        "repairCandidatesInjected": 1,
+        "finalPassingInjected": 2,
+        "finalInjected": 3
+      }
+    },
+    {
+      "name": "process",
+      "fnName": "process",
+      "targetKey": "DataStreamProcessor.prototype.process",
+      "displayName": "DataStreamProcessor.prototype.process",
+      "dependencyAliases": [
+        "DataStreamProcessor.prototype.process",
+        "process",
+        "DataStreamProcessor.process",
+        "DataStreamProcessor.prototype.process"
+      ],
+      "isAsync": true,
+      "isDefault": false,
+      "isClassLike": false,
+      "isClassMethod": true,
+      "ownerClassName": "DataStreamProcessor",
+      "methodName": "process",
+      "methodKind": "prototype",
+      "constructorParams": [
+        "windowSize"
+      ],
+      "constructorCode": "constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }",
+      "classCode": "class DataStreamProcessor {\r\n  constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }\r\n\r\n  /**\r\n   * Challenge 1: Async state management. \r\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\r\n   */\r\n  async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }\r\n\r\n  /**\r\n   * Challenge 2: Data transformation and math.\r\n   * Testing if Assertion Enhancer can calculate variance accurately.\r\n   */\r\n  getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }\r\n}",
+      "params": [
+        "value"
+      ],
+      "code": "async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }",
+      "functionCode": "async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }",
+      "sourceFile": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+      "importPath": "../../../tests/sample/input.js",
+      "usageSnippets": [
+        {
+          "fnName": "process",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "/**\n   * Challenge 1: Async state management.\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\n   */\n  async process(value) {\n    if (typeof value !== 'number' || isNaN(value)) {\n      throw new TypeError(\"Stream input must be a valid number\");\n    }\n\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\n    await new Promise(resolve => setTimeout(resolve, 50));",
+          "score": 55
+        },
+        {
+          "fnName": "process",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "* Challenge 1: Async state management.\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\n   */\n  async process(value) {\n    if (typeof value !== 'number' || isNaN(value)) {\n      throw new TypeError(\"Stream input must be a valid number\");\n    }\n\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\n    await new Promise(resolve => setTimeout(resolve, 50));\n\n    this.buffer.push(value);",
+          "score": 55
+        },
+        {
+          "fnName": "process",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "* Testing if UnitGen handles Promises and buffer shifts correctly.\n   */\n  async process(value) {\n    if (typeof value !== 'number' || isNaN(value)) {\n      throw new TypeError(\"Stream input must be a valid number\");\n    }\n\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\n    await new Promise(resolve => setTimeout(resolve, 50));\n\n    this.buffer.push(value);\n    if (this.buffer.length > this.windowSize) {",
+          "score": 55
+        },
+        {
+          "fnName": "process",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "export class DataStreamProcessor {\n  constructor(windowSize = 3) {\n    this.windowSize = windowSize;\n    this.buffer = [];\n    this.cache = new Map();\n  }\n\n  /**\n   * Challenge 1: Async state management.\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\n   */\n  async process(value) {",
+          "score": 45
+        }
+      ],
+      "docComment": {
+        "name": "DataStreamProcessor",
+        "comment": "",
+        "leadingComment": "",
+        "trailingComment": "",
+        "nearbyComment": "",
+        "jsDoc": {
+          "params": [],
+          "returns": "",
+          "throws": [],
+          "examples": [],
+          "description": "",
+          "rawTags": []
+        },
+        "params": [],
+        "loc": {
+          "startLine": 0,
+          "endLine": 0
+        }
+      },
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport { DataStreamProcessor } from \"../../../tests/sample/input.js\";",
+      "mockEntries": [],
+      "dependencyUsage": [],
+      "dependencies": [],
+      "classMethods": [
+        "process",
+        "getStatistics"
+      ],
+      "testFilePath": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.process.test.js",
+      "jestMocks": "",
+      "llmInjectionSummary": {
+        "displayName": "DataStreamProcessor.prototype.process",
+        "llmGenerationError": "",
+        "sanitizerReceived": 6,
+        "sanitizerAccepted": 6,
+        "sanitizerRejected": 0,
+        "llmRuntimePassed": 1,
+        "llmRuntimeFailed": 5,
+        "fallbackInjected": 2,
+        "repairCandidatesAvailable": 2,
+        "repairCandidatesInjected": 1,
+        "finalPassingInjected": 3,
+        "finalInjected": 4
+      }
+    },
+    {
+      "name": "getStatistics",
+      "fnName": "getStatistics",
+      "targetKey": "DataStreamProcessor.prototype.getStatistics",
+      "displayName": "DataStreamProcessor.prototype.getStatistics",
+      "dependencyAliases": [
+        "DataStreamProcessor.prototype.getStatistics",
+        "getStatistics",
+        "DataStreamProcessor.getStatistics",
+        "DataStreamProcessor.prototype.getStatistics"
+      ],
+      "isAsync": false,
+      "isDefault": false,
+      "isClassLike": false,
+      "isClassMethod": true,
+      "ownerClassName": "DataStreamProcessor",
+      "methodName": "getStatistics",
+      "methodKind": "prototype",
+      "constructorParams": [
+        "windowSize"
+      ],
+      "constructorCode": "constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }",
+      "classCode": "class DataStreamProcessor {\r\n  constructor(windowSize = 3) {\r\n    this.windowSize = windowSize;\r\n    this.buffer = [];\r\n    this.cache = new Map();\r\n  }\r\n\r\n  /**\r\n   * Challenge 1: Async state management. \r\n   * Testing if UnitGen handles Promises and buffer shifts correctly.\r\n   */\r\n  async process(value) {\r\n    if (typeof value !== 'number' || isNaN(value)) {\r\n      throw new TypeError(\"Stream input must be a valid number\");\r\n    }\r\n\r\n    // Artificial delay to test if UnitGen uses 'await' in generated tests\r\n    await new Promise(resolve => setTimeout(resolve, 50));\r\n\r\n    this.buffer.push(value);\r\n    if (this.buffer.length > this.windowSize) {\r\n      this.buffer.shift();\r\n    }\r\n\r\n    const sum = this.buffer.reduce((acc, val, idx) => acc + val * (idx + 1), 0);\r\n    const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\r\n    const result = sum / weightSum;\r\n\r\n    this.cache.set(Date.now(), result);\r\n    return parseFloat(result.toFixed(4));\r\n  }\r\n\r\n  /**\r\n   * Challenge 2: Data transformation and math.\r\n   * Testing if Assertion Enhancer can calculate variance accurately.\r\n   */\r\n  getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }\r\n}",
+      "params": [
+        "msThreshold"
+      ],
+      "code": "getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }",
+      "functionCode": "getStatistics(msThreshold) {\r\n    const now = Date.now();\r\n    const relevantValues = Array.from(this.cache.entries())\r\n      .filter(([timestamp]) => now - timestamp < msThreshold)\r\n      .map(([, val]) => val);\r\n\r\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\r\n\r\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\r\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;\r\n\r\n    return {\r\n      mean: parseFloat(mean.toFixed(4)),\r\n      variance: parseFloat(variance.toFixed(4))\r\n    };\r\n  }",
+      "sourceFile": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+      "importPath": "../../../tests/sample/input.js",
+      "usageSnippets": [
+        {
+          "fnName": "getStatistics",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "const weightSum = (this.buffer.length * (this.buffer.length + 1)) / 2;\n    const result = sum / weightSum;\n\n    this.cache.set(Date.now(), result);\n    return parseFloat(result.toFixed(4));\n  }\n\n  /**\n   * Challenge 2: Data transformation and math.\n   * Testing if Assertion Enhancer can calculate variance accurately.\n   */\n  getStatistics(msThreshold) {",
+          "score": 53
+        },
+        {
+          "fnName": "getStatistics",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "/**\n   * Challenge 2: Data transformation and math.\n   * Testing if Assertion Enhancer can calculate variance accurately.\n   */\n  getStatistics(msThreshold) {\n    const now = Date.now();\n    const relevantValues = Array.from(this.cache.entries())\n      .filter(([timestamp]) => now - timestamp < msThreshold)\n      .map(([, val]) => val);\n\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };",
+          "score": 53
+        },
+        {
+          "fnName": "getStatistics",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "* Challenge 2: Data transformation and math.\n   * Testing if Assertion Enhancer can calculate variance accurately.\n   */\n  getStatistics(msThreshold) {\n    const now = Date.now();\n    const relevantValues = Array.from(this.cache.entries())\n      .filter(([timestamp]) => now - timestamp < msThreshold)\n      .map(([, val]) => val);\n\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\n\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;",
+          "score": 53
+        },
+        {
+          "fnName": "getStatistics",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "* Testing if Assertion Enhancer can calculate variance accurately.\n   */\n  getStatistics(msThreshold) {\n    const now = Date.now();\n    const relevantValues = Array.from(this.cache.entries())\n      .filter(([timestamp]) => now - timestamp < msThreshold)\n      .map(([, val]) => val);\n\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\n\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;",
+          "score": 53
+        },
+        {
+          "fnName": "getStatistics",
+          "sourcePath": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+          "relativePath": "input.js",
+          "kind": "code-nearby-lines",
+          "language": "javascript",
+          "snippet": "*/\n  getStatistics(msThreshold) {\n    const now = Date.now();\n    const relevantValues = Array.from(this.cache.entries())\n      .filter(([timestamp]) => now - timestamp < msThreshold)\n      .map(([, val]) => val);\n\n    if (relevantValues.length === 0) return { mean: 0, variance: 0 };\n\n    const mean = relevantValues.reduce((a, b) => a + b, 0) / relevantValues.length;\n    const variance = relevantValues.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / relevantValues.length;",
+          "score": 53
+        }
+      ],
+      "docComment": {
+        "name": "DataStreamProcessor",
+        "comment": "",
+        "leadingComment": "",
+        "trailingComment": "",
+        "nearbyComment": "",
+        "jsDoc": {
+          "params": [],
+          "returns": "",
+          "throws": [],
+          "examples": [],
+          "description": "",
+          "rawTags": []
+        },
+        "params": [],
+        "loc": {
+          "startLine": 0,
+          "endLine": 0
+        }
+      },
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport { DataStreamProcessor } from \"../../../tests/sample/input.js\";",
+      "mockEntries": [],
+      "dependencyUsage": [],
+      "dependencies": [],
+      "classMethods": [
+        "process",
+        "getStatistics"
+      ],
+      "testFilePath": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.DataStreamProcessor.prototype.getStatistics.test.js",
+      "jestMocks": "",
+      "llmInjectionSummary": {
+        "displayName": "DataStreamProcessor.prototype.getStatistics",
+        "llmGenerationError": "",
+        "sanitizerReceived": 6,
+        "sanitizerAccepted": 6,
+        "sanitizerRejected": 0,
+        "llmRuntimePassed": 0,
+        "llmRuntimeFailed": 6,
+        "fallbackInjected": 2,
+        "repairCandidatesAvailable": 0,
+        "repairCandidatesInjected": 0,
+        "finalPassingInjected": 2,
+        "finalInjected": 2
+      }
+    },
+    {
+      "fnName": "validateThreshold",
+      "targetKey": "validateThreshold",
+      "displayName": "validateThreshold",
       "isAsync": false,
       "isDefault": false,
       "isClassLike": false,
@@ -104,475 +456,61 @@
       "methodKind": "",
       "constructorParams": [],
       "constructorCode": "",
-      "classCode": "function divide(a, b) {\r\n  if (b === 0) {\r\n    throw new Error(\"Division by zero\");\r\n  }\r\n  return a / b;\r\n}",
+      "classCode": "function validateThreshold(val) {\r\n    return val >= 0 && val <= 1000;\r\n}",
       "classMethods": [],
       "params": [
-        "a",
-        "b"
+        "val"
       ],
-      "functionCode": "function divide(a, b) {\r\n  if (b === 0) {\r\n    throw new Error(\"Division by zero\");\r\n  }\r\n  return a / b;\r\n}",
-      "testFilePath": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.divide.test.js",
-      "importPath": "../../../tests/sample1/input.js",
-      "sourceFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js",
-      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { divide } from \"../../../tests/sample1/input.js\";\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });",
+      "functionCode": "function validateThreshold(val) {\r\n    return val >= 0 && val <= 1000;\r\n}",
+      "testFilePath": "D:\\clone\\UnitGen\\backend\\unitgen-output\\tests\\generated\\input.validateThreshold.test.js",
+      "importPath": "../../../tests/sample/input.js",
+      "sourceFile": "D:\\clone\\UnitGen\\backend\\tests\\sample\\input.js",
+      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { validateThreshold } from \"../../../tests/sample/input.js\";",
       "mockEntries": [],
       "dependencyUsage": [],
       "dependencies": [],
       "usageSnippets": [],
       "docComment": {
-        "name": "divide",
-        "comment": "",
+        "name": "validateThreshold",
+        "comment": "Challenge 3: Independent Function\nTesting if your tool picks up both classes and stand-alone functions.",
         "leadingComment": "",
         "trailingComment": "",
-        "nearbyComment": "",
+        "nearbyComment": "Challenge 3: Independent Function\nTesting if your tool picks up both classes and stand-alone functions.",
         "jsDoc": {
           "params": [],
           "returns": "",
           "throws": [],
           "examples": [],
-          "description": "",
+          "description": "Challenge 3: Independent Function\nTesting if your tool picks up both classes and stand-alone functions.",
           "rawTags": []
         },
         "params": [
-          "a",
-          "b"
+          "val"
         ],
         "loc": {
-          "startLine": 5,
-          "endLine": 10
+          "startLine": 63,
+          "endLine": 65
         }
       },
       "llmInjectionSummary": {
-        "displayName": "divide",
+        "displayName": "validateThreshold",
         "llmGenerationError": "",
         "sanitizerReceived": 6,
         "sanitizerAccepted": 6,
         "sanitizerRejected": 0,
         "llmRuntimePassed": 6,
         "llmRuntimeFailed": 0,
-        "fallbackInjected": 1,
+        "fallbackInjected": 2,
         "repairCandidatesAvailable": 0,
         "repairCandidatesInjected": 0,
-        "finalPassingInjected": 7,
-        "finalInjected": 7
-      }
-    },
-    {
-      "fnName": "fetchUser",
-      "targetKey": "fetchUser",
-      "displayName": "fetchUser",
-      "isAsync": true,
-      "isDefault": false,
-      "isClassLike": false,
-      "isClassMethod": false,
-      "ownerClassName": "",
-      "methodName": "",
-      "methodKind": "",
-      "constructorParams": [],
-      "constructorCode": "",
-      "classCode": "async function fetchUser(id) {\r\n  const file = path.join(\"data\", \"x.txt\");\r\n  const txt = readFileSync(file, \"utf8\");\r\n  const res = await axios.get(`/user/${id}`);\r\n  return { id, txt, data: res.data };\r\n}",
-      "classMethods": [],
-      "params": [
-        "id"
-      ],
-      "functionCode": "async function fetchUser(id) {\r\n  const file = path.join(\"data\", \"x.txt\");\r\n  const txt = readFileSync(file, \"utf8\");\r\n  const res = await axios.get(`/user/${id}`);\r\n  return { id, txt, data: res.data };\r\n}",
-      "testFilePath": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/unitgen-output/tests/generated/input.fetchUser.test.js",
-      "importPath": "../../../tests/sample1/input.js",
-      "sourceFile": "/home/hasnain/Upgraded UnitGen/UnitGen FinalVersion/UnitGen_Final_Completed_Version/backend/tests/sample1/input.js",
-      "mockHeader": "import fs from \"fs\";\nimport path from \"path\";\nimport os from \"os\";\nimport { fetchUser } from \"../../../tests/sample1/input.js\";\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });\n\njest.mock(\"path\", () => {\n  const api = {\n      join: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      resolve: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      dirname: jest.fn((p) => String(p).split('/').slice(0, -1).join('/') || '.'),\n      basename: jest.fn((p) => String(p).split('/').pop()),\n      extname: jest.fn((p) => {\n        const base = String(p).split(\"/\").pop() || \"\";\n        const i = base.lastIndexOf(\".\");\n        return i >= 0 ? base.slice(i) : \"\";\n      }),\n      normalize: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n      relative: jest.fn((...parts) => parts.filter(Boolean).join('/')),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n});\n\njest.mock(\"fs\", () => {\n  const api = {\n      readFileSync: jest.fn(() => 'dummy file'),\n      writeFileSync: jest.fn(() => undefined),\n      existsSync: jest.fn(() => true),\n      mkdirSync: jest.fn(() => undefined),\n      rmSync: jest.fn(() => undefined),\n      unlinkSync: jest.fn(() => undefined),\n      readdirSync: jest.fn(() => []),\n      statSync: jest.fn(() => ({ isFile: () => true, isDirectory: () => false })),\n      readFile: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, \"dummy file\");\n        return undefined;\n      }),\n      writeFile: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null);\n        return undefined;\n      }),\n      readdir: jest.fn((...args) => {\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, []);\n        return [];\n      }),\n      stat: jest.fn((...args) => {\n        const value = { isFile: () => true, isDirectory: () => false };\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, value);\n        return value;\n      }),\n      lstat: jest.fn((...args) => {\n        const value = { isFile: () => true, isDirectory: () => false };\n        const cb = args.find((x) => typeof x === \"function\");\n        if (cb) cb(null, value);\n        return value;\n      }),\n      promises: {\n        readFile: jest.fn().mockResolvedValue('dummy file'),\n        writeFile: jest.fn().mockResolvedValue(undefined),\n        mkdir: jest.fn().mockResolvedValue(undefined),\n        readdir: jest.fn().mockResolvedValue([]),\n        stat: jest.fn().mockResolvedValue({ isFile: () => true, isDirectory: () => false }),\n        access: jest.fn().mockResolvedValue(undefined),\n        unlink: jest.fn(() => undefined),\n        rm: jest.fn(() => undefined),\n        copyFile: jest.fn(() => undefined),\n      },\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n});\n\njest.mock(\"axios\", () => {\n  const api = {\n      get: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      post: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      put: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      patch: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      delete: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      request: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      create: jest.fn(() => api),\n      head: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n      options: jest.fn().mockResolvedValue({ data: {}, status: 200, headers: {} }),\n    };\n\n  return {\n    __esModule: true,\n    ...api,\n    default: api\n  };\n}, { virtual: true });",
-      "mockEntries": [
-        {
-          "module": "path",
-          "normalizedModule": "path",
-          "type": "builtin",
-          "imports": [
-            {
-              "localName": "path",
-              "importKind": "namespace",
-              "importedName": "*",
-              "sourceType": "esm",
-              "accessPath": [
-                "join"
-              ]
-            },
-            {
-              "localName": "path",
-              "importKind": "namespace",
-              "importedName": "*",
-              "sourceType": "esm",
-              "accessPath": []
-            }
-          ],
-          "members": [
-            "join"
-          ],
-          "memberChains": [],
-          "globals": [],
-          "targets": [
-            "path",
-            "join"
-          ],
-          "usages": [
-            {
-              "moduleName": "path",
-              "normalizedModuleName": "path",
-              "localName": "path",
-              "importKind": "namespace",
-              "importedName": "*",
-              "sourceType": "esm",
-              "accessPath": [
-                "join"
-              ],
-              "usage": "path.join",
-              "usageKind": "member-call",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "path",
-              "normalizedModuleName": "path",
-              "localName": "path",
-              "importKind": "namespace",
-              "importedName": "*",
-              "sourceType": "esm",
-              "accessPath": [
-                "join"
-              ],
-              "usage": "path.join",
-              "usageKind": "member",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "path",
-              "normalizedModuleName": "path",
-              "localName": "path",
-              "importKind": "namespace",
-              "importedName": "*",
-              "sourceType": "esm",
-              "accessPath": [],
-              "usage": "path",
-              "usageKind": "reference",
-              "transitive": false,
-              "via": []
-            }
-          ]
-        },
-        {
-          "module": "fs",
-          "normalizedModule": "fs",
-          "type": "builtin",
-          "imports": [
-            {
-              "localName": "readFileSync",
-              "importKind": "named",
-              "importedName": "readFileSync",
-              "sourceType": "esm",
-              "accessPath": []
-            }
-          ],
-          "members": [
-            "readFileSync"
-          ],
-          "memberChains": [],
-          "globals": [],
-          "targets": [
-            "readFileSync"
-          ],
-          "usages": [
-            {
-              "moduleName": "fs",
-              "normalizedModuleName": "fs",
-              "localName": "readFileSync",
-              "importKind": "named",
-              "importedName": "readFileSync",
-              "sourceType": "esm",
-              "accessPath": [],
-              "usage": "readFileSync()",
-              "usageKind": "direct-call",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "fs",
-              "normalizedModuleName": "fs",
-              "localName": "readFileSync",
-              "importKind": "named",
-              "importedName": "readFileSync",
-              "sourceType": "esm",
-              "accessPath": [],
-              "usage": "readFileSync",
-              "usageKind": "member-call",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "fs",
-              "normalizedModuleName": "fs",
-              "localName": "readFileSync",
-              "importKind": "named",
-              "importedName": "readFileSync",
-              "sourceType": "esm",
-              "accessPath": [],
-              "usage": "readFileSync",
-              "usageKind": "reference",
-              "transitive": false,
-              "via": []
-            }
-          ]
-        },
-        {
-          "module": "axios",
-          "normalizedModule": "axios",
-          "type": "external",
-          "imports": [
-            {
-              "localName": "axios",
-              "importKind": "default",
-              "importedName": "default",
-              "sourceType": "esm",
-              "accessPath": [
-                "get"
-              ]
-            },
-            {
-              "localName": "axios",
-              "importKind": "default",
-              "importedName": "default",
-              "sourceType": "esm",
-              "accessPath": []
-            }
-          ],
-          "members": [
-            "get"
-          ],
-          "memberChains": [],
-          "globals": [],
-          "targets": [
-            "axios",
-            "get"
-          ],
-          "usages": [
-            {
-              "moduleName": "axios",
-              "normalizedModuleName": "axios",
-              "localName": "axios",
-              "importKind": "default",
-              "importedName": "default",
-              "sourceType": "esm",
-              "accessPath": [
-                "get"
-              ],
-              "usage": "axios.get",
-              "usageKind": "member-call",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "axios",
-              "normalizedModuleName": "axios",
-              "localName": "axios",
-              "importKind": "default",
-              "importedName": "default",
-              "sourceType": "esm",
-              "accessPath": [
-                "get"
-              ],
-              "usage": "axios.get",
-              "usageKind": "member",
-              "transitive": false,
-              "via": []
-            },
-            {
-              "moduleName": "axios",
-              "normalizedModuleName": "axios",
-              "localName": "axios",
-              "importKind": "default",
-              "importedName": "default",
-              "sourceType": "esm",
-              "accessPath": [],
-              "usage": "axios",
-              "usageKind": "reference",
-              "transitive": false,
-              "via": []
-            }
-          ]
-        }
-      ],
-      "dependencyUsage": [
-        {
-          "moduleName": "path",
-          "normalizedModuleName": "path",
-          "localName": "path",
-          "importKind": "namespace",
-          "importedName": "*",
-          "sourceType": "esm",
-          "accessPath": [
-            "join"
-          ],
-          "usage": "path.join",
-          "usageKind": "member-call",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "path",
-          "normalizedModuleName": "path",
-          "localName": "path",
-          "importKind": "namespace",
-          "importedName": "*",
-          "sourceType": "esm",
-          "accessPath": [
-            "join"
-          ],
-          "usage": "path.join",
-          "usageKind": "member",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "path",
-          "normalizedModuleName": "path",
-          "localName": "path",
-          "importKind": "namespace",
-          "importedName": "*",
-          "sourceType": "esm",
-          "accessPath": [],
-          "usage": "path",
-          "usageKind": "reference",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "fs",
-          "normalizedModuleName": "fs",
-          "localName": "readFileSync",
-          "importKind": "named",
-          "importedName": "readFileSync",
-          "sourceType": "esm",
-          "accessPath": [],
-          "usage": "readFileSync()",
-          "usageKind": "direct-call",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "fs",
-          "normalizedModuleName": "fs",
-          "localName": "readFileSync",
-          "importKind": "named",
-          "importedName": "readFileSync",
-          "sourceType": "esm",
-          "accessPath": [],
-          "usage": "readFileSync",
-          "usageKind": "member-call",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "fs",
-          "normalizedModuleName": "fs",
-          "localName": "readFileSync",
-          "importKind": "named",
-          "importedName": "readFileSync",
-          "sourceType": "esm",
-          "accessPath": [],
-          "usage": "readFileSync",
-          "usageKind": "reference",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "axios",
-          "normalizedModuleName": "axios",
-          "localName": "axios",
-          "importKind": "default",
-          "importedName": "default",
-          "sourceType": "esm",
-          "accessPath": [
-            "get"
-          ],
-          "usage": "axios.get",
-          "usageKind": "member-call",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "axios",
-          "normalizedModuleName": "axios",
-          "localName": "axios",
-          "importKind": "default",
-          "importedName": "default",
-          "sourceType": "esm",
-          "accessPath": [
-            "get"
-          ],
-          "usage": "axios.get",
-          "usageKind": "member",
-          "transitive": false,
-          "via": []
-        },
-        {
-          "moduleName": "axios",
-          "normalizedModuleName": "axios",
-          "localName": "axios",
-          "importKind": "default",
-          "importedName": "default",
-          "sourceType": "esm",
-          "accessPath": [],
-          "usage": "axios",
-          "usageKind": "reference",
-          "transitive": false,
-          "via": []
-        }
-      ],
-      "dependencies": [
-        "path",
-        "fs",
-        "axios"
-      ],
-      "usageSnippets": [],
-      "docComment": {
-        "name": "fetchUser",
-        "comment": "",
-        "leadingComment": "",
-        "trailingComment": "",
-        "nearbyComment": "",
-        "jsDoc": {
-          "params": [],
-          "returns": "",
-          "throws": [],
-          "examples": [],
-          "description": "",
-          "rawTags": []
-        },
-        "params": [
-          "id"
-        ],
-        "loc": {
-          "startLine": 12,
-          "endLine": 17
-        }
-      },
-      "llmInjectionSummary": {
-        "displayName": "fetchUser",
-        "llmGenerationError": "",
-        "sanitizerReceived": 6,
-        "sanitizerAccepted": 6,
-        "sanitizerRejected": 0,
-        "llmRuntimePassed": 0,
-        "llmRuntimeFailed": 6,
-        "fallbackInjected": 2,
-        "repairCandidatesAvailable": 6,
-        "repairCandidatesInjected": 1,
-        "finalPassingInjected": 2,
-        "finalInjected": 3
+        "finalPassingInjected": 8,
+        "finalInjected": 8
       }
     }
   ],
   "runner": {
     "status": 0,
     "signal": null,
-    "stderr": "(node:37223) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `electron --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/input.fetchUser.test.js\nPASS tests/generated/input.divide.test.js\n\nTest Suites: 2 passed, 2 total\nTests:       11 passed, 11 total\nSnapshots:   0 total\nTime:        0.249 s, estimated 1 s\nRan all test suites within paths \"tests/generated/input.divide.test.js\", \"tests/generated/input.fetchUser.test.js\".\nTest results written to: tests/generated/.jest-results.36791.all.json\n"
+    "stderr": "(node:2712) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `electron --trace-warnings ...` to show where the warning was created)\nPASS tests/generated/input.DataStreamProcessor.prototype.process.test.js\nPASS tests/generated/input.DataStreamProcessor.prototype.getStatistics.test.js\nPASS tests/generated/input.validateThreshold.test.js\nPASS tests/generated/input.DataStreamProcessor.test.js\n\nTest Suites: 4 passed, 4 total\nTests:       21 passed, 21 total\nSnapshots:   0 total\nTime:        0.859 s, estimated 1 s\nRan all test suites within paths \"tests/generated/input.DataStreamProcessor.prototype.getStatistics.test.js\", \"tests/generated/input.DataStreamProcessor.prototype.process.test.js\", \"tests/generated/input.DataStreamProcessor.test.js\", \"tests/generated/input.validateThreshold.test.js\".\nTest results written to: tests\\generated\\.jest-results.16268.all.json\n"
   }
 }

@@ -7,7 +7,8 @@ function on(channel, callback) {
 }
 
 contextBridge.exposeInMainWorld("electronAPI", {
-  "dialog:openPath": () => ipcRenderer.invoke("dialog:openPath"),
+  "dialog:openPath": (mode = "directory") =>
+    ipcRenderer.invoke("dialog:openPath", mode),
   "unitgen:run": (targetPath, envVars) =>
     ipcRenderer.invoke("unitgen:run", targetPath, envVars),
   "unitgen:stop": () => ipcRenderer.invoke("unitgen:stop"),
@@ -21,7 +22,9 @@ contextBridge.exposeInMainWorld("electronAPI", {
     ipcRenderer.invoke("ollama:checkConnection", host),
   "shell:openExternal": (url) => ipcRenderer.invoke("shell:openExternal", url),
 
-  openPath: () => ipcRenderer.invoke("dialog:openPath"),
+  openPath: () => ipcRenderer.invoke("dialog:openPath", "directory"),
+  openFile: () => ipcRenderer.invoke("dialog:openPath", "file"),
+  openDirectory: () => ipcRenderer.invoke("dialog:openPath", "directory"),
   runUnitGen: (targetPath, envVars) =>
     ipcRenderer.invoke("unitgen:run", targetPath, envVars),
   stopUnitGen: () => ipcRenderer.invoke("unitgen:stop"),

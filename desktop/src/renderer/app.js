@@ -73,7 +73,8 @@ function cacheElements() {
     dropZone: document.getElementById("dropZone"),
     dropTitle: document.getElementById("dropTitle"),
     dropSubtitle: document.getElementById("dropSubtitle"),
-    browseBtn: document.getElementById("browseBtn"),
+    folderBtn: document.getElementById("folderBtn"),
+    fileBtn: document.getElementById("fileBtn"),
     startBtn: document.getElementById("startBtn"),
     startText: document.getElementById("startText"),
     stopBtn: document.getElementById("stopBtn"),
@@ -116,8 +117,9 @@ function cacheElements() {
 }
 
 function bindUi() {
-  els.dropZone.addEventListener("click", pickPath);
-  els.browseBtn.addEventListener("click", pickPath);
+  els.dropZone.addEventListener("click", pickFile);
+  els.folderBtn.addEventListener("click", pickDirectory);
+  els.fileBtn.addEventListener("click", pickFile);
 
   els.dropZone.addEventListener("dragover", (event) => {
     event.preventDefault();
@@ -244,8 +246,13 @@ function bindIpc() {
   });
 }
 
-async function pickPath() {
-  const selected = await window.electronAPI.openPath();
+async function pickFile() {
+  const selected = await window.electronAPI.openFile();
+  if (selected) setSelectedPath(selected);
+}
+
+async function pickDirectory() {
+  const selected = await window.electronAPI.openDirectory();
   if (selected) setSelectedPath(selected);
 }
 
@@ -529,7 +536,9 @@ function populateAssertions(report) {
     ? report.desktop.assertionQuality.map((item) => ({
         file: compactPath(item.file || "test file"),
         original: item.original || "Weak assertion",
-        suggested: item.suggested || "Stronger assertion"
+        suggested: item.suggested || "Concrete assertion unavailable",
+        rationale: item.rationale || "",
+        status: item.status || ""
       }))
     : [];
 
@@ -539,7 +548,9 @@ function populateAssertions(report) {
       ctx.assertionQuality.map((item) => ({
         file: compactPath(ctx.testFilePath || ctx.sourceFile || "test file"),
         original: item.original || item.before || "Weak assertion",
-        suggested: item.suggested || item.after || "Stronger assertion"
+        suggested: item.suggested || item.after || "Concrete assertion unavailable",
+        rationale: item.rationale || "",
+        status: item.status || ""
       }))
     ));
 
@@ -549,18 +560,29 @@ function populateAssertions(report) {
   }
 
   els.assertionList.classList.remove("placeholder");
-  els.assertionList.innerHTML = assertionItems.slice(0, 20).map((item) => `
+  els.assertionList.innerHTML = assertionItems.slice(0, 20).map((item) => {
+    const committed = item.status === "committed";
+    const rejected = item.status === "reverted";
+    const statusLabel = committed
+      ? "Enhanced Assertion"
+      : rejected
+        ? "Rejected Proposal"
+        : "Weak Assertion";
+
+    return `
     <article class="info-card">
       <div class="card-top">
         <span class="card-path">${escapeHtml(item.file)}</span>
-        <span class="failure-pill weak">Weak Assertion</span>
+        <span class="failure-pill weak">${escapeHtml(statusLabel)}</span>
       </div>
       <span class="small-label">Original:</span>
       <pre class="code-block">${escapeHtml(item.original)}</pre>
-      <span class="small-label">Suggested:</span>
+      <span class="small-label">${committed ? "Applied:" : rejected ? "Proposed:" : "Suggested:"}</span>
       <pre class="code-block">${escapeHtml(item.suggested)}</pre>
+      ${item.rationale ? `<p class="muted">${escapeHtml(item.rationale)}</p>` : ""}
     </article>
-  `).join("");
+  `;
+  }).join("");
 }
 
 function renderDependencyCard(item) {

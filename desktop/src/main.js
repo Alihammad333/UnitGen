@@ -56,6 +56,7 @@ function syncBackend(src, dest) {
 
 let mainWindow = null;
 let activeChild = null;
+let activeAssertionEvents = [];
 
 function getSettingsPath() {
   return path.join(app.getPath("userData"), "settings.json");
@@ -275,6 +276,12 @@ function parseBackendLine(line) {
     } catch {
       parsed = { type: raw, raw };
     }
+    if (
+      ["assertion_enhanced", "assertion_rejected"].includes(parsed?.type) &&
+      String(parsed?.suggested || "").trim()
+    ) {
+      activeAssertionEvents.push(parsed);
+    }
     send("unitgen:event", { event: parsed.type || raw, timestamp: time, payload: parsed });
     return;
   }
@@ -286,7 +293,7 @@ function readFinalReport() {
   try {
     const reportPath = path.join(outputDir, "output", "final-report.json");
     const report = JSON.parse(fs.readFileSync(reportPath, "utf8"));
-    return augmentReportForDesktop(report);
+    return augmentReportForDesktop(report, activeAssertionEvents);
   } catch {
     return null;
   }
@@ -305,6 +312,10 @@ function readGeneratedTestFiles() {
 
       try {
         source = fs.readFileSync(filePath, "utf8");
+        const mockPath = filePath.replace(/\.test\.js$/, ".mocks.js");
+        if (fs.existsSync(mockPath)) {
+          source += `\n${fs.readFileSync(mockPath, "utf8")}`;
+        }
       } catch {
         source = "";
       }
@@ -352,7 +363,24 @@ function extractDesktopDependencies(testFiles = []) {
   return dependencies.slice(0, 40);
 }
 
-function extractDesktopAssertionQuality(testFiles = []) {
+function extractDesktopAssertionQuality(testFiles = [], assertionEvents = []) {
+  const concreteItems = assertionEvents
+    .filter(
+      (event) =>
+        ["assertion_enhanced", "assertion_rejected"].includes(event?.type) &&
+        String(event?.suggested || "").trim()
+    )
+    .map((event) => ({
+      file: event.testFile || "test file",
+      original: event.original || "Weak assertion",
+      suggested: event.suggested,
+      rationale: event.rationale || "",
+      status: event.status || ""
+    }))
+    .slice(0, 40);
+
+  if (concreteItems.length) return concreteItems;
+
   const weakMatchers = [
     "toBeDefined",
     "toBeTruthy",
@@ -372,7 +400,9 @@ function extractDesktopAssertionQuality(testFiles = []) {
       items.push({
         file: file.filePath,
         original: trimmed,
-        suggested: "Prefer an exact value, shape, type, or range assertion based on the observed result."
+        suggested: "Prefer an exact value, shape, type, or range assertion based on the observed result.",
+        rationale: "Static scan found a weak matcher; no validated runtime proposal was emitted.",
+        status: "detected"
       });
     }
   }
@@ -380,7 +410,7 @@ function extractDesktopAssertionQuality(testFiles = []) {
   return items.slice(0, 40);
 }
 
-function augmentReportForDesktop(report) {
+function augmentReportForDesktop(report, assertionEvents = []) {
   const testFiles = readGeneratedTestFiles();
 
   return {
@@ -391,7 +421,7 @@ function augmentReportForDesktop(report) {
         filePath: file.filePath
       })),
       dependencies: extractDesktopDependencies(testFiles),
-      assertionQuality: extractDesktopAssertionQuality(testFiles)
+      assertionQuality: extractDesktopAssertionQuality(testFiles, assertionEvents)
     }
   };
 }
@@ -506,18 +536,27 @@ function copyDirectory(source, destination) {
   }
 }
 
-ipcMain.handle("dialog:openPath", async () => {
+ipcMain.handle("dialog:openPath", async (_event, requestedMode = "directory") => {
+  const mode = requestedMode === "file" ? "file" : "directory";
+  const isFileMode = mode === "file";
   const result = await dialog.showOpenDialog(mainWindow, {
-    title: "Select JavaScript file or Node.js project folder",
-    properties: ["openFile", "openDirectory"],
-    filters: [
-      { name: "JavaScript", extensions: ["js", "mjs", "cjs"] },
-      { name: "All Files", extensions: ["*"] }
-    ]
+    title: isFileMode
+      ? "Select a JavaScript file"
+      : "Select a Node.js project folder",
+    properties: [isFileMode ? "openFile" : "openDirectory"],
+    ...(isFileMode
+      ? { filters: [{ name: "JavaScript", extensions: ["js"] }] }
+      : {})
   });
 
   if (result.canceled || !result.filePaths.length) return null;
-  return result.filePaths[0];
+  const selectedPath = result.filePaths[0];
+
+  if (isFileMode && path.extname(selectedPath).toLowerCase() !== ".js") {
+    throw new Error("Please select a .js file.");
+  }
+
+  return selectedPath;
 });
 
 ipcMain.handle("settings:load", async () => loadSettings());
@@ -554,6 +593,7 @@ ipcMain.handle("unitgen:run", async (_event, targetPath, envVars = {}) => {
 
   let stdoutBuffer = "";
   let stderrBuffer = "";
+  activeAssertionEvents = [];
 
   const nodeExecutable = process.execPath;
   const nodeEnv = {
